@@ -12438,4 +12438,18 @@ $(document).ready(function() {
 	    target: '.navbar-fixed-top'
 	})
 
+	// Refresh the scrollspy (to ensure it's accurate) when the device orientation changes.
+	window.addEventListener("orientationchange", function() {
+		// Not working as expected.
+		// location.reload(); // The default browser on Samsung galaxy Tab 2 hangs after reloading.
+		// refreshScrollSpy();
+	}, false);
+
+	
+	function refreshScrollSpy() {
+	    $('[data-spy="scroll"]').each(function () {
+	        $('body').scrollspy('refresh');
+	    }); 
+};
+
 });
