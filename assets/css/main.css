@@ -5598,7 +5598,7 @@ td.visible-print {
 }
 
 
-@media (max-width: 991px) { /* Phones and tablets */
+@media (max-width: 1024px) { /* Phones and tablets */
   /* This changes the behavior of the images from "fixed" to "scroll". This ensures consistency
   across all mobile devices because iphone and ipad don't allow fixed background images */
   #mainpic, #second-pic, #second-sub-pic, #third-pic, #fourth-pic {
@@ -6112,7 +6112,7 @@ h3.cap-title {
 }
 
 .dashboard-block-title {
-  font-size: 23px;
+  font-size: 22px;
 }
 
 .dark-blue-reap.dashboard-title-container {
