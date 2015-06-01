@@ -12450,6 +12450,6 @@ $(document).ready(function() {
 	    $('[data-spy="scroll"]').each(function () {
 	        $('body').scrollspy('refresh');
 	    }); 
-};
+	};
 
 });
