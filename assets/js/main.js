@@ -12415,10 +12415,9 @@ $(document).ready(function() {
 	});
 
 	// jQuery for page scrolling feature on homepage
-	$("body a[href^='#']").on('click', function(e) {
+	$("body a[href^='#']").not(".no-page-scroll").on('click', function(e) {
 	    // prevent default anchor click behavior
 	    e.preventDefault();
-
 	    // store hash
 	    var hash = this.hash;
 
