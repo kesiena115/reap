@@ -6482,6 +6482,30 @@ h3.about-page-subtitle {
 	margin-top:10px !important;
 }
 
+.content-row-about .full-width-img {
+  width: 100%;
+  padding: 0;
+  max-width: 300px;
+}
+
+#learning-cycle-img {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+#learning-cycle-img:hover, #learning-cycle-img:focus{
+  border-color: rgb(37,132,184);
+}
+
+@media (min-width: 992px) { /* md devices */
+  .modal-lg {
+    width: 900px;
+  }
+}
+
 .apply-header {
 	text-align: center;
 	color:white;
