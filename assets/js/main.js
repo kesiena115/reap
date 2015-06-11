@@ -12434,7 +12434,8 @@ $(document).ready(function() {
 
 	// Highlight the top nav as scrolling occurs
 	$('body').scrollspy({
-	    target: '.navbar-fixed-top'
+	    target: '.navbar-fixed-top',
+	    offset: 300
 	})
 
 	// Refresh the scrollspy (to ensure it's accurate) when the device orientation changes.

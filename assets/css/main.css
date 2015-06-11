@@ -29,13 +29,6 @@ body {
     font-style: normal;
 }
 
-#reaplogo {
-	height:65px;
-	position:relative;
-	top:-5px;
-
-}
-
 .resource-header2 {
 	text-align: center;
   padding:5px 0px;
@@ -523,8 +516,9 @@ div.content-row {
 }
 
 .navbar-banner {
-  margin-top:-10px;
   margin-right:25px;
+  width: 100%;
+  text-align: right;
 }
 
 .navbar-banner > a{
@@ -534,7 +528,7 @@ div.content-row {
 
 .navbar-brand {
 	padding-top:10px !important;
-	padding-bottom:8px !important;
+	padding-bottom:0px !important;
 }
  
 .navbar-link {
@@ -633,8 +627,32 @@ h1 {
 	top:4px;
 }
 
-.reap-nav2 .navbar-link {
-	margin-top:0px;
+#reaplogo {
+  height:65px;
+  position:relative;
+  top:-5px;
+}
+
+#reaplogo-small {
+  height:40px;
+  position:relative;
+  top:-5px;
+}
+
+#navbar-brand-sm {
+  display: none;
+}
+
+.navbar-shrink .navbar-banner, .navbar-shrink #navbar-brand-lg {
+  display: none;
+}
+
+.navbar-shrink #navbar-brand-sm {
+  display: block;
+} 
+
+#reap-navbar .navbar-link {
+  padding: 5px 12px;
 }
 
 #reap-navbar .active>a, #reap-navbar .active>a:hover {
@@ -642,6 +660,7 @@ h1 {
   color: white;
   border-radius: 5px;
   font-weight: bold;
+  cursor: default;
 }
 
 #reap-navbar a:hover {
