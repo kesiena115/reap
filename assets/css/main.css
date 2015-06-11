@@ -6265,7 +6265,7 @@ h6 {
 }
 
 .text-contact-form {
-	height:200px !important;
+	height:100px !important;
 	resize: none;
 }
 
@@ -6504,6 +6504,42 @@ h3.about-page-subtitle {
   .modal-lg {
     width: 900px;
   }
+}
+
+#mit-advantage {
+  width: 500px;
+  height: 1000px;
+}
+
+.text-danger {
+  color: white;
+  color: rgb(192,84,140);
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.text-danger:hover {
+  color: rgb(192,84,140);
+}
+
+.text-danger ul {
+  text-align: left;
+}
+
+#success > div.alert {
+  background-color: white;
+  border-style: none; 
+  padding: 5px 10px;
+  font-size: 1.2em;
+}
+
+#success button.close{
+  color: gray;
+  opacity: 1;
+}
+
+#success button.close:hover{
+  color: rgb(192,84,140);
 }
 
 .apply-header {
