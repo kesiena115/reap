@@ -516,9 +516,8 @@ div.content-row {
 }
 
 .navbar-banner {
-  margin-right:25px;
-  width: 100%;
-  text-align: right;
+  margin-right:20px;
+  text-align: left;
 }
 
 .navbar-banner > a{
