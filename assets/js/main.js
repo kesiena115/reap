@@ -12388,14 +12388,16 @@ $(document).ready(function() {
     $(this).toggleInitiatives();
   })
 
-  $("a.navbar-link").click(function() {
-  		// Close the menu after selecting an option from the navbar. 
-  		// This applies to small devices that show the navbar button e.g. mobile phones.
-		$("#reap-navbar-btn").click();
-	});
+  $("a.navbar-link").not(".dropdown-toggle").click(function() {
+  	// Closes the Responsive Menu on Menu Item Click
+  	$('.navbar-toggle:visible').click();
+  });
   
 	// jQuery for page scrolling feature on resource page (when a sidebar option is clicked)
 	$(".resource-panel ul li a[href^='#']").on('click', function(e) {
+		if($(window).width() < 992) {
+			return; // Only scroll with md and large devices i.e. do not scroll in tablets or mobile phones.
+		}
 	   // prevent.resource-panel default anchor click behavior
 	   e.preventDefault();
 
@@ -12416,6 +12418,9 @@ $(document).ready(function() {
 
 	// jQuery for page scrolling feature on homepage
 	$("body a[href^='#']").not(".no-page-scroll").on('click', function(e) {
+		if($(window).width() < 992) {
+			return; // Only scroll with md and large devices i.e. do not scroll in tablets or mobile phones.
+		}
 	    // prevent default anchor click behavior
 	    e.preventDefault();
 	    // store hash

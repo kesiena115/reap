@@ -27,8 +27,8 @@
 						<span class="icon-bar"></span>
 					</button>
 
-					<a id="navbar-brand-lg" class="navbar-brand" href="/"><img alt="Reaplogo beta" id="reaplogo" src="./assets/images/reaplogo.png" /></a>
-					<a id="navbar-brand-sm" class="navbar-brand" href="/"><img alt="Reaplogo beta" id="reaplogo-small" src="./assets/images/reaplogo-small.png" /></a>
+					<a id="navbar-brand-lg" class="navbar-brand" href="/"><img alt="Reaplogo" id="reaplogo" src="./assets/images/reaplogo.png" /></a>
+					<a id="navbar-brand-sm" class="navbar-brand" href="/"><img alt="Reaplogo" id="reaplogo-small" src="./assets/images/reaplogo-small.png" /></a>
 
 				</div>
 
@@ -37,8 +37,13 @@
 					<ul class="nav navbar-nav navbar-right reap-nav1">
 						<li class="active"><a href="#home" class='navbar-link'>Home</a></li>
 						<li><a href="./about/" class='navbar-link'>About</a></li>
-						<li><a class="navbar-link" href="./assets/pdf/advantage.pdf">MIT Advantage</a></li>
-						<li><a class="navbar-link" href="#partner-regions" id="partner-regions-link">Partner Regions</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle navbar-link no-page-scroll" data-toggle="dropdown" role="button" aria-expanded="false">Partner Regions <span class="fa fa-caret-down"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#regions-cohort1" class='navbar-link'>Cohort One</a></li>
+								<li><a href="#regions-cohort2" class='navbar-link'>Cohort Two</a></li>
+							</ul>
+						</li>
 						<li><a class="navbar-link" href="#our-team" id="our-team-link">Our Team</a></li>
 						<li><a href="./apply/" class='navbar-link'>Next Steps</a></li>
             			<li><a class="navbar-link" href="./resources/">Resources</a></li>            
@@ -107,8 +112,7 @@
 			</div>
 
 			<!-- Panel -->
-			<a id="partner-regions"></a>
-			<div class="container" id="partner-regions">
+			<div class="container" id="regions-cohort1">
 				<div class="content">
 					<div class="row col-md-12 country-header-row">
 						<h2 class="padded-header">Cohort One Partner Regions</h2>
@@ -194,7 +198,7 @@
 			</div>
 
 			<!-- Panel -->
-			<div class="container" id="partner-regions">
+			<div class="container" id="regions-cohort2">
 				<div class="content">
 					<div class="row col-md-12 country-header-row">
 						<h2 class="padded-header">Cohort Two Partner Regions</h2>
@@ -711,9 +715,9 @@
 							</div>
 						</div>
 						<div id="success"></div>
-						<div class="row submit-button-row">
-							<div class="col-sm-offset-11 col-sm-1">
-								<button class="btn" name="commit" type="submit">Submit</button>
+						<div class="row">
+							<div class="col-sm-1">
+								<button id="submit" class="btn" name="commit" type="submit">Submit</button>
 							</div>
 						</div>
 					</form>	

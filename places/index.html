@@ -25,16 +25,21 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           </button>
-          <a id="navbar-brand-lg" class="navbar-brand" href="/"><img alt="Reaplogo beta" id="reaplogo" src="./assets/images/reaplogo.png" /></a>
-          <a id="navbar-brand-sm" class="navbar-brand" href="/"><img alt="Reaplogo beta" id="reaplogo-small" src="./assets/images/reaplogo-small.png" /></a>
+          <a id="navbar-brand-lg" class="navbar-brand" href="/"><img alt="Reaplogo" id="reaplogo" src="../assets/images/reaplogo.png" /></a>
+          <a id="navbar-brand-sm" class="navbar-brand" href="/"><img alt="Reaplogo" id="reaplogo-small" src="../assets/images/reaplogo-small.png" /></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="reap-navbar">
           <ul class="nav navbar-nav navbar-right reap-nav1">
             <li><a href="../" class='navbar-link'>Home</a></li>
             <li><a href="../about/" class='navbar-link'>About</a></li>
-            <li><a class="navbar-link" href="../assets/pdf/advantage.pdf">MIT Advantage</a></li>
-            <li><a class="navbar-link" href="../#partner-regions" id="partner-regions-link">Partner Regions</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle navbar-link no-page-scroll" data-toggle="dropdown" role="button" aria-expanded="false">Partner Regions <span class="fa fa-caret-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../#regions-cohort1" class='navbar-link'>Cohort One</a></li>
+                <li><a href="../#regions-cohort2" class='navbar-link'>Cohort Two</a></li>
+              </ul>
+            </li>
             <li><a class="navbar-link" href="../#our-team" id="our-team-link">Our Team</a></li>
             <li><a href="../apply/" class='navbar-link'>Next Steps</a></li>
             <li><a href="../resources/" class='navbar-link'>Resources</a></li>

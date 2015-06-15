@@ -511,38 +511,6 @@ div.content-row {
 	text-align: center;
 }
 
-.navbar {
-	margin-bottom:0px !important;
-}
-
-.navbar-banner {
-  margin-right:20px;
-  text-align: left;
-}
-
-.navbar-banner > a{
-  color:red;
-  font-size:14px;
-}
-
-.navbar-brand {
-	padding-top:10px !important;
-	padding-bottom:0px !important;
-}
- 
-.navbar-link {
-	margin-top:16px;
-	font-size: 16px;
-}
-
-@media (max-width: 900px) { 
-  /* minimize gap between the logo and the top nav bar for small screen sizes
-  i.e. when the navbar appears under the logo */
-  .navbar-link {
-    margin-top:0px;
-  }  
-}
-
 h2, h3 {
 	margin-top:-10px !important;
 	font-family: whitney_htflight_condensed !important;
@@ -597,8 +565,13 @@ h1 {
 }
 
 .padded-header {
-	padding-top:45px;
+	padding-top:100px;
 	font-weight: bolder;
+  color: rgb(47,43,40);
+}
+.contact-us .container {
+  padding-top: 50px;
+  padding-bottom: 10px;
 }
 
 .white-title {
@@ -638,6 +611,42 @@ h1 {
   top:-5px;
 }
 
+.navbar {
+  margin-bottom:0px !important;
+}
+
+.navbar-banner {
+  margin-right:20px;
+  text-align: left;
+}
+
+.navbar-banner > a{
+  color:red;
+  font-size:14px;
+}
+
+.navbar-brand {
+  padding-top:10px !important;
+  padding-bottom:0px !important;
+}
+ 
+.navbar-link {
+  margin-top:16px;
+  font-size: 16px;
+}
+
+.dropdown-menu .navbar-link {
+  margin-top: 0;
+}
+
+@media (max-width: 900px) { 
+  /* minimize gap between the logo and the top nav bar for small screen sizes
+  i.e. when the navbar appears under the logo */
+  .navbar-link {
+    margin-top:0px;
+  }  
+}
+
 #navbar-brand-sm {
   display: none;
 }
@@ -655,7 +664,7 @@ h1 {
 }
 
 #reap-navbar .active>a, #reap-navbar .active>a:hover {
-  background: rgb(192,84,140);
+  background-color: rgb(192,84,140);
   color: white;
   border-radius: 5px;
   font-weight: bold;
@@ -663,7 +672,7 @@ h1 {
 }
 
 #reap-navbar a:hover {
-  background: #dddddd;
+  background-color: #dddddd;
   border-radius: 5px;
   font-weight: bold;
   color: rgb(192,84,140);
@@ -6047,11 +6056,13 @@ td.visible-print {
 }
 
 .info-col-line-double {
-	border-right: 1px solid rgb(220, 220, 220);
-	border-left: 1px solid rgb(220, 220, 220);
+  border-right: 1px solid rgb(220, 220, 220);
+  border-left: 1px solid rgb(220, 220, 220);
+  border-top: 0;
+  border-bottom: 0;
 }
 
-@media (max-width: 768px) { /* mobile phone */
+@media (max-width: 767px) { /* mobile phone */
   .info-col-line-double {
     border-top: 1px solid rgb(220, 220, 220);
     border-bottom: 1px solid rgb(220, 220, 220);
@@ -6287,8 +6298,9 @@ h6 {
 	resize: none;
 }
 
-.submit-button-row {
-	text-align: right;
+#submit {
+	background-color: rgb(192,84,140);
+  color: white;
 }
 
 .bottom-circle-label-name {
