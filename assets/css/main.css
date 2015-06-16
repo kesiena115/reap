@@ -120,6 +120,15 @@ body {
   margin-top: 30px;
 }
 
+.resource-column .section-anchor {
+  /*Ensures that the navbar does not cover the section headings.*/
+  position: relative;
+  top: -50px;  
+  z-index: -10;
+  width: 0;
+  height: 0;
+}
+
 .resource-column > .resource-panel {
   margin:10px 10px 10px 0px;
   border-radius:5px;
@@ -6606,23 +6615,16 @@ h4.apply-timeline-header {
 	padding-right:20px;
 	padding-top:5px;
 	color:white;
+  margin: 10px auto;
 }
 
 .no-resize-area {
 	resize:none;
 }
 
-.buffered-form-row {
+.buffered-form-div {
 	margin-top:5px;
 	margin-bottom:5px;
-}
-
-.champion-profile {
-	margin-top:230px;
-}
-
-.team-profile {
-	margin-top:350px;
 }
 
 .risk-capital-offset {

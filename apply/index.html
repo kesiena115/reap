@@ -77,20 +77,40 @@
 						<input name="authenticity_token" type="hidden" value="b5M7Yl24JKrqUjl/pUF1n/FqwzTJzJoCPiQdCLAlihQ=" />
 					</div>
 
-					<div class='row col-sm-12 apply-container'>
-						<div class='col-sm-6'>
-							<div class='row buffered-form-row'>
-								<h4 class="apply-timeline-header col-sm-3">
+					<div class='row apply-container'>
+						<div class='col-sm-5 col-sm-offset-1 col-sm-push-6'>
+							<div class='row timeline-container'>
+								<h4 class="apply-timeline-header">Timeline</h4>
+								<p>
+									1 - Submit Application to nominate Champion (rolling admission)
+								</p>
+								<p>
+									2 - Receive Admissions decision by MIT REAP committee
+								</p>
+								<p>
+									3 - Champion Submits Signed Letter of Agreement to reserve a spot in the 2014 Cohort (upon acceptance)
+								</p>
+								<p>
+									4 - Submit Final Team Application (deadline TBD)
+								</p>
+								<p>
+									5 - Submit First Tuition Payment (Following Agreement submission, deadline TBD)
+								</p>
+							</div>
+						</div> <!-- col -->
+						<div class='col-sm-6 col-sm-pull-6'>
+							<div class='row'>
+								<h4 class="apply-timeline-header">
 									1. Region Name
 								</h4>
-								<div class='col-sm-9'>
+								<div>
 									<input class="form-control" id="app_region_name" name="app_region_name" type="text" />
 								</div>
 							</div>
-							<h4 class="apply-timeline-header">
-								2. Region Details
-							</h4>
-							<div class='row buffered-form-row'>
+							<div class='row'>
+								<h4 class="apply-timeline-header">
+									2. Region Details
+								</h4>
 								<div class='col-sm-5'>
 									a. Region population size (Desired size: between 3-10 Million)
 								</div>
@@ -98,40 +118,55 @@
 									<input class="form-control" id="app_region_population_size" name="app_region_population_size" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-5'>
 									b. If your proposed region is a specific part of a country, please help us by clarifying the borders.
 								</div>
 								<div class='col-sm-7'>
-									<textarea class="form-control no-resize-area" id="app_region_borders" name="app_region_borders">
-				</textarea>
+									<textarea class="form-control no-resize-area" id="app_region_borders" name="app_region_borders"></textarea>
 								</div>
 							</div>
-							<div class='row'>
-								<div class='col-sm-5 buffered-form-row'>
+							<div class='row buffered-form-div'>
+								<div class='col-sm-5'>
 									c. What are the current top three industries in the region?
 								</div>
 								<div class='col-sm-7'>
-									<input class="form-control buffered-form-row" id="app_top_industry_1" name="app_top_industry_1" resize="none" type="text" />
-									<input class="form-control buffered-form-row" id="app_top_industry_2" name="app_top_industry_2" resize="none" type="text" />
-									<input class="form-control buffered-form-row" id="app_top_industry_3" name="app_top_industry_3" resize="none" type="text" />
+									<input class="form-control buffered-form-div" id="app_top_industry_1" name="app_top_industry_1" resize="none" type="text" />
+									<input class="form-control buffered-form-div" id="app_top_industry_2" name="app_top_industry_2" resize="none" type="text" />
+									<input class="form-control buffered-form-div" id="app_top_industry_3" name="app_top_industry_3" resize="none" type="text" />
 								</div>
 							</div>
-							<h4 class="apply-timeline-header">
-								3. Your Ecosystem
-							</h4>
-							<p>
-								Please describe your region's challenges around Innovation-Driven Entrepreneurial Ecosystem development:
-							</p>
-							<textarea class="form-control no-resize-area" id="app_region_challenges_ide" name="app_region_challenges_ide">
-				</textarea>
-							<h4 class="apply-timeline-header">
-								4. Champion Information
-							</h4>
+							<div class='row'>
+								<h4 class="apply-timeline-header">
+									3. Your Ecosystem
+								</h4>
+								<p>
+									Please describe your region's challenges around Innovation-Driven Entrepreneurial Ecosystem development:
+								</p>
+								<textarea class="form-control no-resize-area" id="app_region_challenges_ide" name="app_region_challenges_ide"></textarea>
+							</div>
+						</div> <!-- col -->
+					</div> <!-- row -->
+					<div class='row apply-container'>
+						<h4 class="apply-timeline-header">
+							4. Champion Information
+						</h4>
+						<div class='col-sm-5 col-sm-offset-1 col-sm-push-6'>
+							<div class='row timeline-container'>
+								<h4 class="apply-timeline-header">REAP Champion profile:</h4>
+								<p>
+									The REAP Champion is the leader of his or her team and is deeply connected to the mission of inspiring innovation-based entrepreneurial ecosystems. This individual works in this capacity on a daily basis, and will understand the local landscape and which key players to engage to create the greatest impact.  This individual will be critical in helping to build regional support for the program, assemble key players to serve on the regional REAP team of 5-7, secure funding for participation, and work closely with the MIT REAP staff team.  
+								</p>
+								<p>
+									Though champions may come from many places and should be determined based on the regional context, our experience shows that successful champions often have the following profile: energetic, once-practicing Entrepreneurs now seated in a business-facing public policy, government, or economic development role, with strong ties to regional and national government and deep connections across stakeholders.  This person should have a current organizational mission aligned with that of MIT REAP and a job role related to accountability for creating or implementing a regional strategy to accelerate regional prosperity and economic growth and development through innovation-driven entrepreneurship. 
+								</p>
+							</div>
+						</div> <!-- col -->
+						<div class='col-sm-6 col-sm-pull-6'>
 							<p>
 								Please nominate your region's "Champion" here (self nominations requested).
 							</p>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Name
 								</div>
@@ -139,7 +174,7 @@
 									<input class="form-control no-resize-area" id="app_champion_name" name="app_champion_name" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Organization and Title
 								</div>
@@ -147,7 +182,7 @@
 									<input class="form-control no-resize-area" id="app_champion_organization" name="app_champion_organization" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Email Address
 								</div>
@@ -155,7 +190,7 @@
 									<input class="form-control no-resize-area" id="app_champion_email" name="app_champion_email" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Phone Number
 								</div>
@@ -163,7 +198,7 @@
 									<input class="form-control no-resize-area" id="app_champion_phone" name="app_champion_phone" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Mailing Address
 								</div>
@@ -171,37 +206,66 @@
 									<input class="form-control no-resize-area" id="app_champion_address" name="app_champion_address" type="text" />
 								</div>
 							</div>
-							<h4 class="apply-timeline-header">
-								5. Your Champion's Role
-							</h4>
-							<p>Please take this opportunity to tell us more about your champion's current role in transforming your regional economy and accelerating your region's entrepreneurial ecosystem and why you should be selected as your regional MIT REAP Champion.</p>
-							<textarea class="form-control no-resize-area" id="app_champion_current_role" name="app_champion_current_role">
-				</textarea>
-							<h4 class="apply-timeline-header">
-								6. Vision
-							</h4>
-							<p>Please share your vision for how participation in MIT REAP will assist in transforming your regional economy and innovation-driven entrepreneurial ecosystem.</p>
-							<textarea class="form-control no-resize-area" id="app_why_reap" name="app_why_reap">
-				</textarea>
-							<h4 class="apply-timeline-header">
-								7. Funding
-							</h4>
-							<p>Is there an explicit entity/organization (e.g. regional economic development agency or corporate sponsor) already identified and willing to fund REAP participation? If yes, please identify and note whether this budget is under your control.</p>
-							<textarea class="form-control no-resize-area" id="app_sponsor_entity" name="app_sponsor_entity">
-				</textarea>
-							<h4 class="apply-timeline-header">
-								8. Team Plan
-							</h4>
-							<p><b>Do you have a team in place?:</b> If you have identified your team members, please skip to question #9 below to provide their detailed information.</p>
-							<p><b>Are you are still in the beginning stages of team planning?:</b> Please use the space below to briefly describe your preliminary plan for who you would engage on your regional team to represent the 5 stakeholder seats -- (Government/Economic Development, Entrepreneur, Big Corporate, University, Risk Capital) -- organizations or individual names are appropriate here.  This should represent clear thinking about key stakeholders and leaders in your region necessary to make participation in this effort a success, and how you are able to engage them. </p>
-							<textarea class="form-control no-resize-area" id="app_team_in_place" name="app_team_in_place">
-				</textarea>
-							<h4 class="apply-timeline-header">
-								9. Team Roster
-							</h4>
-							<h5>a. Government/Economic Development Representative</h5>
-							<p>Typical profile: Currently part of an economic development team promoting entrepreneurship and innovation and is able to make or significantly influence policy and strategic programs. Regional and national governments should be represented as appropriate. Note: This person is usually the team champion and takes on a strong leadership role.</p>
-							<div class='row buffered-form-row'>
+							<div class="row">
+								<h4 class="apply-timeline-header">
+									5. Your Champion's Role
+								</h4>
+								<p>Please take this opportunity to tell us more about your champion's current role in transforming your regional economy and accelerating your region's entrepreneurial ecosystem and why you should be selected as your regional MIT REAP Champion.</p>
+								<textarea class="form-control no-resize-area" id="app_champion_current_role" name="app_champion_current_role"></textarea>
+								<h4 class="apply-timeline-header">
+									6. Vision
+								</h4>
+								<p>Please share your vision for how participation in MIT REAP will assist in transforming your regional economy and innovation-driven entrepreneurial ecosystem.</p>
+								<textarea class="form-control no-resize-area" id="app_why_reap" name="app_why_reap"></textarea>
+								<h4 class="apply-timeline-header">
+									7. Funding
+								</h4>
+								<p>Is there an explicit entity/organization (e.g. regional economic development agency or corporate sponsor) already identified and willing to fund REAP participation? If yes, please identify and note whether this budget is under your control.</p>
+								<textarea class="form-control no-resize-area" id="app_sponsor_entity" name="app_sponsor_entity"></textarea>
+							</div>
+						</div> <!-- col -->
+					</div> <!-- row -->
+					<div class='row apply-container'>
+						<h4 class="apply-timeline-header">
+							8. Team Plan
+						</h4>
+						<div class='col-sm-5 col-sm-offset-1 col-sm-push-6'>
+							<div class='row timeline-container'>
+								<h4 class="apply-timeline-header">
+									Team Assembly information
+								</h4>
+								<p>
+									Each REAP team consists of 5-7 team members. The acceptance of regions into the MIT REAP Program is evaluated based on the strength and commitment of the champion and ability to engage core team members across the stakeholder groups.
+								</p>
+								<p>
+									These stakeholders should be decision-makers of executive level, and have the ability to influence the creation of policy and programs in their own sector, and they should bring an intimate understanding of the current ecosystem and its challenges from their perspectives.  With participation comes responsibility.  Each team member will take on the responsibility of being a Sector Chief, responsible for representing the interests of their sector, identifying opportunities, and working to build support in their sector to execute on various elements of their regional REAP strategy.
+								</p>
+							</div>
+						</div> <!-- col -->
+						<div class='col-sm-6 col-sm-pull-6'>
+							<div class='row'>
+								<p>
+									<b>Do you have a team in place?:</b> If you have identified your team members, please skip to question #9 below to provide their detailed information.
+								</p>
+								<p>
+									<b>Are you are still in the beginning stages of team planning?:</b> Please use the space below to briefly describe your preliminary plan for who you would engage on your regional team to represent the 5 stakeholder seats -- (Government/Economic Development, Entrepreneur, Big Corporate, University, Risk Capital) -- organizations or individual names are appropriate here.  This should represent clear thinking about key stakeholders and leaders in your region necessary to make participation in this effort a success, and how you are able to engage them.
+								</p>
+								<textarea class="form-control no-resize-area" id="app_team_in_place" name="app_team_in_place"></textarea>
+							</div>
+						</div> <!-- col -->
+					</div> <!-- row -->
+					<div class='row apply-container'>
+						<h4 class="apply-timeline-header">
+							9. Team Roster
+						</h4>
+						<div class='col-sm-6'>
+							<h5>
+								a. Government/Economic Development Representative
+							</h5>
+							<p>
+								Typical profile: Currently part of an economic development team promoting entrepreneurship and innovation and is able to make or significantly influence policy and strategic programs. Regional and national governments should be represented as appropriate. Note: This person is usually the team champion and takes on a strong leadership role.
+							</p>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Name
 								</div>
@@ -209,7 +273,7 @@
 									<input class="form-control no-resize-area" id="app_govt_name" name="app_govt_name" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Organization and Title
 								</div>
@@ -217,7 +281,7 @@
 									<input class="form-control no-resize-area" id="app_govt_organization" name="app_govt_organization" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									His/Her Role in Accelerating Your Region's Ecosystem
 								</div>
@@ -225,7 +289,7 @@
 									<input class="form-control no-resize-area" id="app_govt_role" name="app_govt_role" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Email Address
 								</div>
@@ -233,7 +297,7 @@
 									<input class="form-control no-resize-area" id="app_govt_email" name="app_govt_email" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Other Information
 								</div>
@@ -241,9 +305,11 @@
 									<input class="form-control no-resize-area" id="app_govt_other" name="app_govt_other" type="text" />
 								</div>
 							</div>
+						
+							<br />
 							<h5>b. Entrepreneur</h5>
 							<p>Typical profile: Current or former founder of a technology-based company who is a respected leader in the Entrepreneurial community and is able to work collaboratively with other key stakeholders.  The entrepreneur should represent the voice of the customer in his/her ecosystem and this perspective will be critical in informing REAP strategy.</p>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Name
 								</div>
@@ -251,7 +317,7 @@
 									<input class="form-control no-resize-area" id="app_entrepreneur_name" name="app_entrepreneur_name" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Organization and Title
 								</div>
@@ -259,7 +325,7 @@
 									<input class="form-control no-resize-area" id="app_entrepreneur_organization" name="app_entrepreneur_organization" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									His/Her Role in Accelerating Your Region's Ecosystem
 								</div>
@@ -267,7 +333,7 @@
 									<input class="form-control no-resize-area" id="app_entrepreneur_role" name="app_entrepreneur_role" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Email Address
 								</div>
@@ -275,7 +341,7 @@
 									<input class="form-control no-resize-area" id="app_entrepreneur_email" name="app_entrepreneur_email" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Other Information
 								</div>
@@ -283,91 +349,11 @@
 									<input class="form-control no-resize-area" id="app_entrepreneur_other" name="app_entrepreneur_other" type="text" />
 								</div>
 							</div>
-							<h5>d. Corporate Representative</h5>
-							<p>Typical profile: Employed by a large, influential corporation in your region and responsible for relationships with startups, regional innovation, or helping entrepreneurs through mentorship, partnerships, or investment.</p></br>
-							<div class='row buffered-form-row'>
-								<div class='col-sm-3'>
-									Name
-								</div>
-								<div class='col-sm-9'>
-									<input class="form-control no-resize-area" id="app_corp_name" name="app_corp_name" type="text" />
-								</div>
-							</div>
-							<div class='row buffered-form-row'>
-								<div class='col-sm-3'>
-									Organization and Title
-								</div>
-								<div class='col-sm-9'>
-									<input class="form-control no-resize-area" id="app_corp_organization" name="app_corp_organization" type="text" />
-								</div>
-							</div>
-							<div class='row buffered-form-row'>
-								<div class='col-sm-3'>
-									His/Her Role in Accelerating Your Region's Ecosystem
-								</div>
-								<div class='col-sm-9'>
-									<input class="form-control no-resize-area" id="app_corp_role" name="app_corp_role" type="text" />
-								</div>
-							</div>
-							<div class='row buffered-form-row'>
-								<div class='col-sm-3'>
-									Email Address
-								</div>
-								<div class='col-sm-9'>
-									<input class="form-control no-resize-area" id="app_corp_email" name="app_corp_email" type="text" />
-								</div>
-							</div>
-							<div class='row buffered-form-row'>
-								<div class='col-sm-3'>
-									Other Information
-								</div>
-								<div class='col-sm-9'>
-									<input class="form-control no-resize-area" id="app_corp_other" name="app_corp_other" type="text" />
-								</div>
-							</div>
-						</div>
-						<div class='col-sm-5 col-sm-offset-1 timeline-container'>
-							<h4 class="apply-timeline-header">Timeline</h4>
-							<p>
-								1 - Submit Application to nominate Champion (rolling admission)
-							</p>
-							<p>
-								2 - Receive Admissions decision by MIT REAP committee
-							</p>
-							<p>
-								3 - Champion Submits Signed Letter of Agreement to reserve a spot in the 2014 Cohort (upon acceptance)
-							</p>
-							<p>
-								4 - Submit Final Team Application (deadline TBD)
-							</p>
-							<p>
-								5 - Submit First Tuition Payment (Following Agreement submission, deadline TBD)
-							</p>
-						</div>
-						<div class='col-sm-5 col-sm-offset-1 timeline-container champion-profile'>
-							<h4 class="apply-timeline-header">REAP Champion profile:</h4>
-							<p>
-								The REAP Champion is the leader of his or her team and is deeply connected to the mission of inspiring innovation-based entrepreneurial ecosystems. This individual works in this capacity on a daily basis, and will understand the local landscape and which key players to engage to create the greatest impact.  This individual will be critical in helping to build regional support for the program, assemble key players to serve on the regional REAP team of 5-7, secure funding for participation, and work closely with the MIT REAP staff team.  
-							</p>
-							<p>
-								Though champions may come from many places and should be determined based on the regional context, our experience shows that successful champions often have the following profile: energetic, once-practicing Entrepreneurs now seated in a business-facing public policy, government, or economic development role, with strong ties to regional and national government and deep connections across stakeholders.  This person should have a current organizational mission aligned with that of MIT REAP and a job role related to accountability for creating or implementing a regional strategy to accelerate regional prosperity and economic growth and development through innovation-driven entrepreneurship. 
-							</p>
-						</div>
-						<div class='col-sm-5 col-sm-offset-1 timeline-container team-profile'>
-							<h4 class="apply-timeline-header">
-								Team Assembly information
-							</h4>
-							<p>
-								Each REAP team consists of 5-7 team members. The acceptance of regions into the MIT REAP Program is evaluated based on the strength and commitment of the champion and ability to engage core team members across the stakeholder groups.
-							</p>
-							<p>
-								These stakeholders should be decision-makers of executive level, and have the ability to influence the creation of policy and programs in their own sector, and they should bring an intimate understanding of the current ecosystem and its challenges from their perspectives.  With participation comes responsibility.  Each team member will take on the responsibility of being a Sector Chief, responsible for representing the interests of their sector, identifying opportunities, and working to build support in their sector to execute on various elements of their regional REAP strategy.
-							</p>
-						</div>
-						<div class='col-sm-6 risk-capital-offset'>
+						
+							<br />
 							<h5>c. Risk Capital Expert</h5>
-							<p>Typical profile: A leader of a local risk capital investment fund, and a representative of the landscape of risk capital in the region and its challenges and opportunities.</p></br>
-							<div class='row buffered-form-row'>
+							<p>Typical profile: A leader of a local risk capital investment fund, and a representative of the landscape of risk capital in the region and its challenges and opportunities.</p>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Name
 								</div>
@@ -375,7 +361,7 @@
 									<input class="form-control no-resize-area" id="app_risk_name" name="app_risk_name" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Organization and Title
 								</div>
@@ -383,7 +369,7 @@
 									<input class="form-control no-resize-area" id="app_risk_organization" name="app_risk_organization" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									His/Her Role in Accelerating Your Region's Ecosystem
 								</div>
@@ -391,7 +377,7 @@
 									<input class="form-control no-resize-area" id="app_risk_role" name="app_risk_role" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Email Address
 								</div>
@@ -399,7 +385,7 @@
 									<input class="form-control no-resize-area" id="app_risk_email" name="app_risk_email" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Other Information
 								</div>
@@ -407,9 +393,55 @@
 									<input class="form-control no-resize-area" id="app_risk_other" name="app_risk_other" type="text" />
 								</div>
 							</div>
+
+							<br />		
+							<h5>d. Corporate Representative</h5>
+							<p>Typical profile: Employed by a large, influential corporation in your region and responsible for relationships with startups, regional innovation, or helping entrepreneurs through mentorship, partnerships, or investment.</p>
+							<div class='row buffered-form-div'>
+								<div class='col-sm-3'>
+									Name
+								</div>
+								<div class='col-sm-9'>
+									<input class="form-control no-resize-area" id="app_corp_name" name="app_corp_name" type="text" />
+								</div>
+							</div>
+							<div class='row buffered-form-div'>
+								<div class='col-sm-3'>
+									Organization and Title
+								</div>
+								<div class='col-sm-9'>
+									<input class="form-control no-resize-area" id="app_corp_organization" name="app_corp_organization" type="text" />
+								</div>
+							</div>
+							<div class='row buffered-form-div'>
+								<div class='col-sm-3'>
+									His/Her Role in Accelerating Your Region's Ecosystem
+								</div>
+								<div class='col-sm-9'>
+									<input class="form-control no-resize-area" id="app_corp_role" name="app_corp_role" type="text" />
+								</div>
+							</div>
+							<div class='row buffered-form-div'>
+								<div class='col-sm-3'>
+									Email Address
+								</div>
+								<div class='col-sm-9'>
+									<input class="form-control no-resize-area" id="app_corp_email" name="app_corp_email" type="text" />
+								</div>
+							</div>
+							<div class='row buffered-form-div'>
+								<div class='col-sm-3'>
+									Other Information
+								</div>
+								<div class='col-sm-9'>
+									<input class="form-control no-resize-area" id="app_corp_other" name="app_corp_other" type="text" />
+								</div>
+							</div>
+						
+							<br />
 							<h5>e. University Representative</h5>
 							<p>Typical profile: An influential administrator or academic who is responsible for interacting with technology transfer, research and innovation, entrepreneurship education, and/or the university's engagement with the entrepreneurial ecosystem and the process of bringing ideas to market.</p>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Name
 								</div>
@@ -417,7 +449,7 @@
 									<input class="form-control no-resize-area" id="app_university_name" name="app_university_name" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Organization and Title
 								</div>
@@ -425,7 +457,7 @@
 									<input class="form-control no-resize-area" id="app_university_organization" name="app_university_organization" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									His/Her Role in Accelerating Your Region's Ecosystem
 								</div>
@@ -433,7 +465,7 @@
 									<input class="form-control no-resize-area" id="app_university_role" name="app_university_role" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Email Address
 								</div>
@@ -441,7 +473,7 @@
 									<input class="form-control no-resize-area" id="app_university_email" name="app_university_email" type="text" />
 								</div>
 							</div>
-							<div class='row buffered-form-row'>
+							<div class='row buffered-form-div'>
 								<div class='col-sm-3'>
 									Other Information
 								</div>
@@ -449,11 +481,13 @@
 									<input class="form-control no-resize-area" id="app_university_other" name="app_university_other" type="text" />
 								</div>
 							</div>
-						</div>
-					</div>
+						</div> <!-- col -->
+					</div> <!-- row -->
 
-					<div class='row col-sm-12 buffered-button-row'>
-						<input class="col-sm-2 col-sm-offset-5 btn" name="commit" type="submit" value="Submit Application" />
+					<div class='row buffered-button-row'>
+						<div class='col-xs-12'>
+							<input class="btn" name="commit" type="submit" value="Submit Application" />
+						</div>
 					</div>
 				</form>
 			</div>
