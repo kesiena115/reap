@@ -12275,7 +12275,7 @@ $(document).ready(function() {
   $('#cohort2show').popover('hide')
   
   // Attaching event to existing element to ensure that the event would work for new elements loaded via AJAX
-  $('#our-team, #reap-initiatives').on('mouseover', '.person-holder', function() {
+  $('#our-team, #reap-initiatives-container').on('mouseover', '.person-holder', function() {
     $(this).find('.overlay-circle').show();
     $(this).find('.name-label').show();
     var pc = $(this).find('.person-circle');
@@ -12284,7 +12284,7 @@ $(document).ready(function() {
   });
   
   // Attaching event to existing element to ensure that the event would work for new elements loaded via AJAX
-  $('#our-team, #reap-initiatives').on('mouseout', '.person-holder', function() {
+  $('#our-team, #reap-initiatives-container').on('mouseout', '.person-holder', function() {
     $(this).find('.overlay-circle').hide();
     $(this).find('.name-label').hide();
     var pc = $(this).find('.person-circle')
