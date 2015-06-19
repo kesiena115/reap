@@ -62,7 +62,7 @@
       <div class="jumbotron about-jumbo" id="resources-jumbo">
 				<h1>Resources</h1>
 			</div>
-      <div class="container" id="resource-main-panel">
+      <div class="container-fluid" id="resource-main-panel">
         <div class="col-md-3 col-sm-5 resource-column">
           <div class="row resource-panel" id="resource-links">
             <ul class="nav nav-pills nav-stacked">
@@ -70,6 +70,7 @@
               <li><a href="#faculty-articles">Faculty Articles and Publications<i class="fa fa-chevron-right pull-right"></i></a></li>
               <li><a href="#reap-news">REAP in the News<i class="fa fa-chevron-right pull-right"></i></a></li>
               <li><a href="#reap-initiatives">REAP-Related Initiatives and Teaching<i class="fa fa-chevron-right pull-right"></i></a></li>
+              <li><a href="#related-articles">Related Articles and Publications<i class="fa fa-chevron-right pull-right"></i></a></li>
             </ul>
           </div>
           <!-- tweets. Will be hidden in extra-small screens e.g. mobile phone -->
@@ -649,15 +650,96 @@
               </div>
             </div> <!-- Panel end -->
           </div> <!-- fluid-row end-->
+
+          <div class="section-anchor" id="related-articles">
+          </div>
+          <div class="row-fluid resource-panel">
+            <!-- Panel -->
+            <div class="row resource-row">
+              <div class="row-fluid col-md-12 resource-header-row">
+                <ul class="nav nav-pills resource-header-nav related-articles-header">
+                  <li><a href="#related-articles"><h2>Related Articles and Publications</h2></a></li>
+                </ul>
+              </div>
+              <div class="row-fluid col-md-12">
+                <div class='col-md-3 article-container'>
+                  <a href='http://fortune.com/2015/06/16/philanthropists-back-energy-startups/'>
+                    <div class='article-inner'>
+                      <div class='article-image-container'>
+                        <img src='../assets/images/willsmith.jpg' class='article-image article-image-width'>
+                      </div>
+                      <div class='article-description'>
+                        <span class='article-title'>How Will and Jada Smith's foundation ended up backing a little known energy startup</span><br/>
+                        <span class='article-author'>Fortune | Katie Fehrenbacher</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class='col-md-3 article-container'>
+                  <a href='http://www.inderscienceonline.com/doi/abs/10.1504/GBER.2010.032318?journalCode=gber'>
+                    <div class='article-inner'>
+                      <div class='article-image-container'>
+                        <img src='../assets/images/inderscience.jpg' class='article-image article-image-width'>
+                      </div>
+                      <div class='article-description'>
+                        <span class='article-title'>Releasing indigenous entrepreneurial capacity: a case study of the Yolngu clan in a remote region of Northern Australia</span><br/>
+                        <span class='article-author'>Cecil A.L. Pearson, Klaus Helms</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class='col-md-3 article-container'>
+                  <a href='http://www.icic.org/connection/blog-entry/blog-a-compass-for-navigating-the-ever-changing-capital-landscape'>
+                    <div class='article-inner'>
+                      <div class='article-image-container'>
+                        <img src='../assets/images/financing-growth.jpg' class='article-image article-image-width'>
+                      </div>
+                      <div class='article-description'>
+                        <span class='article-title'>A Compass For Navigating The Ever-changing Capital Landscape</span><br/>
+                        <span class='article-author'>ICIC | Kim Zeuli, Sathya Vijayakumar and Lena Ferguson</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class='col-md-3 article-container'>
+                  <a href='http://www.icic.org/ee_uploads/pdf/Financing_Growth_FINAL.pdf'>
+                    <div class='article-inner'>
+                      <div class='article-image-container'>
+                        <img src='../assets/images/icic-logo.png' class='article-image article-image-width'>
+                      </div>
+                      <div class='article-description'>
+                        <span class='article-title'>Financing Growth: A Practical Resource Guide for Small Businesses</span><br/>
+                        <span class='article-author'>ICIC</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row-fluid col-md-12 initially-hidden" id="more-related-articles-div">
+                <!-- Ajax would insert html here-->
+              </div>
+              <div class="clearfix"></div>
+              <div class="row-fluid col-md-12 text-center">
+                <ul class="nav nav-pills more-resource-nav" id="more-related-articles-button">
+                  <li><a class="more-link" id="related-articles-toggle" href="#" onclick="return false;">More<span class="caret"></span></a></li>
+                </ul>
+                <ul class="nav nav-pills more-resource-nav pull-right">
+                  <li><a class="more-link" href="#top">Back to top</a></li>
+                </ul>
+              </div>
+              <div class="row col-md-12 text-center initially-hidden" id="more-related-articles-spinner">
+                <i class="fa fa-spinner fa-spin"></i>
+              </div>
+            </div> <!-- Panel end -->
+          </div> <!-- fluid-row end-->
           
           <!-- tweets. Will be displayed only in extra-small screens e.g. mobile phone -->
           <div class="row-fluid resource-panel resource-left-panel visible-xs">
             <a class="twitter-timeline" href="https://twitter.com/hashtag/MITREAP" data-widget-id="593982884370853888">#MITREAP Tweets</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           </div>
-          
+        <div class="buffer-top"></div>          
       </div> <!-- resource-main-panel end-->
-
 		</main>
     
 		<script src="../assets/js/main.js"></script>

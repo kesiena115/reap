@@ -12367,6 +12367,21 @@ $(document).ready(function() {
     }
     return this;
   }
+
+  $.fn.toggleRelatedArticles = function() {
+    if($('#more-related-articles-div').css('display') === 'none') {
+      $('#more-related-articles-spinner').css('display','block');
+      $('#more-related-articles-div').load('./more_related_articles.html', function(){
+        $('#more-related-articles-div').slideDown();
+        $('#more-related-articles-spinner').css('display','none');
+      });
+      $('#related-articles-toggle').html('Less<span class="dropup"><span class="caret"></span></span>')
+    } else {
+      $('#more-related-articles-div').slideUp().empty();
+      $('#related-articles-toggle').html('More<span class="caret"></span>')
+    }
+    return this;
+  }
   
   $('#reap-info-toggle, .reap-info-header').click(function(event) {
     event.preventDefault();
@@ -12386,6 +12401,11 @@ $(document).ready(function() {
   $('#initiatives-toggle, .initiatives-header').click(function(event) {
     event.preventDefault();
     $(this).toggleInitiatives();
+  })
+
+  $('#related-articles-toggle, .related-articles-header').click(function(event) {
+    event.preventDefault();
+    $(this).toggleRelatedArticles();
   })
 
   $("a.navbar-link").not(".dropdown-toggle").click(function() {

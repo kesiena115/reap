@@ -807,7 +807,7 @@ $(document).ready(function() {
         chart: {
             type: 'area',
             height: 300,
-            width: 350,
+            width: 400,
         },
         title: {
             text: '*** Default title',
@@ -850,6 +850,7 @@ $(document).ready(function() {
         },
         series: [{
             data: [],
+            connectNulls: true,
             fillColor : {
               linearGradient : [0, 0, 0, 400],
               stops : [
@@ -924,12 +925,22 @@ $(document).ready(function() {
     var domPatentOptions = getLineChartDefaultOptions();
     domPatentOptions.title.text = 'Domestic Patents/Year';
     domPatentOptions.subtitle.text = region.domesticPatent.range;
-    domPatentOptions.yAxis.title.text = 'No. of patents';
+    domPatentOptions.yAxis.title.text = 'No. of filings';
     domPatentOptions.tooltip.formatter = function() {
-        return 'No. of domestic papents filed in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
+        return 'No. of domestic patents filed in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
     }
-    domPatentOptions.series[0].data = convertToChartArrayFormat(region.domesticPatent.year, region.domesticPatent.value, "Publications");
+    domPatentOptions.series[0].data = convertToChartArrayFormat(region.domesticPatent.year, region.domesticPatent.value, "Domestic Patents");
     addGraph("icap-carousel", "domestic-patents-chart", domPatentOptions); 
+
+    var usPatentOptions = getLineChartDefaultOptions();
+    usPatentOptions.title.text = 'US Patents/Year';
+    usPatentOptions.subtitle.text = region.usPatent.range;
+    usPatentOptions.yAxis.title.text = 'No. of filings';
+    usPatentOptions.tooltip.formatter = function() {
+        return 'No. of US patents filed in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
+    }
+    usPatentOptions.series[0].data = convertToChartArrayFormat(region.usPatent.year, region.usPatent.value, "US Patents");
+    addGraph("icap-carousel", "us-patents-chart", usPatentOptions); 
 
     var publicationsOptions = getLineChartDefaultOptions();
     publicationsOptions.title.text = 'Published Papers/Year';
@@ -941,6 +952,48 @@ $(document).ready(function() {
     publicationsOptions.series[0].data = convertToChartArrayFormat(region.publications.year, region.publications.value, "Publications");
     addGraph("icap-carousel", "publications-chart", publicationsOptions);
 
+    var stemGradsOptions = getLineChartDefaultOptions();
+    stemGradsOptions.title.text = 'STEM Graduates/Year';
+    stemGradsOptions.subtitle.text = region.stemGrads.range;
+    stemGradsOptions.yAxis.title.text = 'No. of Stem Graduates';
+    stemGradsOptions.tooltip.formatter = function() {
+        return 'No. of STEM graduates in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
+    }
+    stemGradsOptions.series[0].data = convertToChartArrayFormat(region.stemGrads.year, region.stemGrads.value, "STEM Graduates");
+    addGraph("icap-carousel", "stem-grads-chart", stemGradsOptions);
+
+    var rAndDOptions = getLineChartDefaultOptions();
+    rAndDOptions.title.text = 'Gross R&D Expenditure';
+    rAndDOptions.subtitle.text = region.researchAndDev.range;
+    rAndDOptions.yAxis.title.text = 'R&D as % of GDP';
+    rAndDOptions.tooltip.formatter = function() {
+        return 'R&D expenditure as % of GDP in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
+    }
+    rAndDOptions.series[0].data = convertToChartArrayFormat(region.researchAndDev.year, region.researchAndDev.value, "R&D");
+    addGraph("icap-carousel", "r-and-d-chart", rAndDOptions);
+
+    var ipRankingOptions = getLineChartDefaultOptions();
+    ipRankingOptions.title.text = 'Intellectual Property Protection Ranking';
+    ipRankingOptions.subtitle.text = region.ipRanking.range;
+    ipRankingOptions.yAxis.title.text = 'Rank';
+    ipRankingOptions.tooltip.formatter = function() {
+        return 'IP protection ranking in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
+    }
+    ipRankingOptions.series[0].data = convertToChartArrayFormat(region.ipRanking.year, region.ipRanking.value, "IP Ranking");
+    addGraph("icap-carousel", "ip-ranking-chart", ipRankingOptions);
+
+    var gdpPerCapOptions = getLineChartDefaultOptions();
+    gdpPerCapOptions.title.text = 'GDP Per Capita';
+    gdpPerCapOptions.subtitle.text = region.gdpPerCap.range;
+    gdpPerCapOptions.yAxis.title.text = 'GDP Per Capita (USD)';
+    gdpPerCapOptions.tooltip.formatter = function() {
+        return 'GDP Per Capita in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
+    }
+    gdpPerCapOptions.series[0].data = convertToChartArrayFormat(region.gdpPerCap.year, region.gdpPerCap.value, "GDP Per Capita");
+    addGraph("icap-carousel", "gdp-chart", gdpPerCapOptions);
+
+
+
     var entOptions = getLineChartDefaultOptions();
     entOptions.title.text = 'Total Early Stage Entrepreneurship';
     entOptions.subtitle.text = region.entrepreneurship.range;
@@ -951,108 +1004,7 @@ $(document).ready(function() {
     entOptions.series[0].data = convertToChartArrayFormat(region.entrepreneurship.year, region.entrepreneurship.value, "Early Stage Entrepreneurship");
     addGraph("ecap-carousel", "total-early-stage-entrepreneurship-chart", entOptions);
 
-    $('#ecap1').highcharts({
-        chart: {
-            type: 'area',
-            height: 300,
-            width: 350,
-        },
-        title: {
-            text: 'Total Early Stage Entrepreneurship',
-            style: {
-                fontSize: '14px'
-            }
-        },
-        subtitle: {
-            text: '2001-2005'
-        },
-        credits: {
-            enabled: false
-        },
-        xAxis: {
-            title: {
-                text: 'Year'
-            },
-            type: 'category',
-            labels: {
-                // autoRotation: false,
-                rotation: -45,
-                style: {
-                    fontSize: '10px',
-                    fontFamily: 'Verdana, sans-serif'
-                },
-                allowDecimals: false
-            }
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: 'Early Stage Entrepreneurship'
-            },
-            gridLineWidth: 0,
-            minorGridLineWidth: 0,
-            lineColor: 'rgb(192, 208, 224)',
-            lineWidth: 1,
-            // tickLength: 20
-        },
-        legend: {
-            enabled: false
-        },
-        tooltip: {
-            formatter: function(){
-                return 'Total early stage entrepreneurship in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
-            }
-        },
-        series: [{
-            name: 'Firms',
-            data: [
-                ['2001', 15.5],
-                ['2002', 14],
-                ['2003', 13.6],
-                ['2004', 14.7],
-                ['2005', 17.6],
-            ],
-            fillColor : {
-              linearGradient : [0, 0, 0, 400],
-              stops : [
-                [0, Highcharts.getOptions().colors[0]],
-                [1, 'rgba(255,255,255,0)']
-              ]
-            },
-            lineColor: '#428bca',
-            lineWidth: 1,
-            marker: {
-                enabled: false,
-                fillColor: '#428bca',
-                lineColor: '#ffffff'
-            },
-            plotOptions: {
-                area: {
-                    pointStart: 1991,
-                    marker: {
-                        enabled: true,
-                        symbol: 'circle',
-                        radius: 2,
-                        lineColor: '#000000',
-                        states: {
-                            hover: {
-                                enabled: true
-                            }
-                        }
-                    }
-                }
-            },
-        }],
-        navigation: {
-            buttonOptions: {
-                theme: {
-                    'stroke-width': 1,
-                    stroke: 'silver',
-                }
-            }
-        }
-    });
-
+    
     $('#cmet0').highcharts({
         chart: {
             type: 'area',
