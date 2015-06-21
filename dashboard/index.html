@@ -18,36 +18,48 @@
 	<body data-spy="scroll">
     <a id="top"></a>
 		<div id="top">
-			<nav class="navbar navbar-default" role="navigation">
-				<!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#reap-navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="../"><img alt="Reaplogo beta" id="reaplogo" src="../assets/images/reaplogo.png" /></a>
-				</div>
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="reap-navbar">
-					<ul class="nav navbar-nav navbar-right reap-nav1">
-						<li><a href="../" class='navbar-link'>Home</a></li>
-						<li><a href="../about/" class='navbar-link'>About</a></li>
-						<li><a class="navbar-link" href="../assets/pdf/advantage.pdf">MIT Advantage</a></li>
-						<li><a class="navbar-link" href="../#partner-regions" id="partner-regions-link">Partner Regions</a></li>
-						<li><a class="navbar-link" href="../#our-team" id="our-team-link">Our Team</a></li>
-						<li><a class="navbar-link" href="../apply/">Next Steps</a></li>
-            <li class="active"><a class="navbar-link" href="#">Resources</a></li>            
-						<li><a class="navbar-link" href="../#bottom-info-div" id="contact-us-link">Contact Us</a></li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-        <div class="pull-right navbar-banner"><a href="../#bottom-info-div" target="_top">Application deadline has passed, but if you are still interested please contact us</a></div>
-			</nav>
+        <!-- Brand and toggle get grouped for better mobile display -->
+
+        <div class="navbar-header">
+          <button type="button" id="reap-navbar-btn" class="navbar-toggle" data-toggle="collapse" data-target="#reap-navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a id="navbar-brand-lg" class="navbar-brand" href="/"><img alt="Reaplogo" id="reaplogo" src="../assets/images/reaplogo.png" /></a>
+          <a id="navbar-brand-sm" class="navbar-brand" href="/"><img alt="Reaplogo" id="reaplogo-small" src="../assets/images/reaplogo-small.png" /></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="reap-navbar">
+          <ul class="nav navbar-nav navbar-right reap-nav1">
+            <li><a href="../#home" class='navbar-link'>Home</a></li>
+            <li><a href="../about/" class='navbar-link'>About</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle navbar-link no-page-scroll" data-toggle="dropdown" role="button" aria-expanded="false">Partner Regions <span class="fa fa-caret-down"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="../#regions-cohort1" class='navbar-link'>Cohort One</a></li>
+                <li><a href="../#regions-cohort2" class='navbar-link'>Cohort Two</a></li>
+              </ul>
+            </li>
+            <li><a class="navbar-link" href="../#our-team" id="our-team-link">Our Team</a></li>
+            <li><a href="../apply/" class='navbar-link'>Next Steps</a></li>
+                  <li class="active"><a class="navbar-link" href="#">Resources</a></li>            
+            <li><a class="navbar-link" href="../#bottom-info-div" id="contact-us-link">Contact Us</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+            <div class="pull-right navbar-banner">
+              <a href="../#bottom-info-div" target="_top">Application deadline has passed, but if you are still interested please contact us</a>
+            </div>
+      </nav>
 		</div>
 
 		<main role="main">
+      <div class="buffer-top"></div>
       <div class="jumbotron about-jumbo" id="dashboard-jumbo">
 				<h1>REAP Dashboard</h1>
         <!-- <h3>New Zealand</h3> -->
@@ -473,6 +485,8 @@
 		</main>
     
 		<script src="../assets/js/main.js"></script>
+    <script src="../assets/js/cbpAnimatedHeader.js"></script>
+    <script src="../assets/js/classie.js"></script>
     <script src="../assets/js/dashboard-data.js"></script>
     <script src="../assets/js/dashboard.js"></script>
     <!--

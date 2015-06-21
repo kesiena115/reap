@@ -424,15 +424,7 @@ input.dashboard-sm-btn:hover, input.dashboard-sm-btn:focus {
   margin-top:85px
 }
 
-#resources-jumbo {
-  margin-bottom: 0px;
-}
-
-#dashboard-jumbo h1 {
-  margin: 5px auto;
-}
-
-#dashboard-jumbo {
+#resources-jumbo, #dashboard-jumbo {
   margin-bottom: 0px;
 }
 
