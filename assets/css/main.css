@@ -387,7 +387,7 @@ input.dashboard-sm-btn:hover, input.dashboard-sm-btn:focus {
 }
 
 .region-selector > button {
-  font-size: 24px;
+  font-size: 22px;
   color: white;
   border-color: white;
   background-color: #585858;
@@ -406,8 +406,15 @@ input.dashboard-sm-btn:hover, input.dashboard-sm-btn:focus {
 }
 
 .btn-group.region-selector li > a:hover {
-  background-color: #585858;
+  background-color: #eeeeee;
+  color: #428bca;
+}
+
+.btn-group.region-selector li.active > a {
+  background-color: #428bca;
   color: white;
+  margin: auto 2px;
+  cursor: default;
 }
 
 .btn-group.region-selector .dropdown-header {

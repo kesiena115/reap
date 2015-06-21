@@ -1,6 +1,6 @@
 
 var london = {
-    name: "London, UK",
+    name: "London, United Kingdom",
     description1: "New Zealand prides itself as a smart, innovative nation. From ground-breaking cancer research, award winning digital content, to world leading dairy nutrition, our products and services are exported around the world.",
     description2: "But much of our potential in this area remains unrealised and fostering a high performing science and innovation sector is key to our future economic well-being. Innovation is the name of the game for New Zealand. Kiwi companies are working hard to be smart, think sharper and get to market faster. New Zealanders are an ingenious people. We have a strong heritage of developing great ideas borne out of practical neccessity, or inspired brilliance, or simply an instinct of what might work. Like other governments around the world, the New Zealand government continues to signal the importance it places on science and innovation as a key driver of our economic wellbeing. The Ministry of Business, Innovation and Employment's (MBIE) Science and Innovation Group has been charged with lifting our economic, environmental and social performance by driving the science and innovation sector. We do this through our strategic leadership and through the networks we build across government, research organisations, business and industry. MBIE is committed to growing the number of driven, successful entrepreneurs who are willing to help grow the innocation ecosystem in New Zealand. We support a number of programmes and initiatives that all contribute to this goal. We are partnering with people and organisations across the ecosystem to drive the growth of highly-skilled entrepreneurs.",
     team: [
@@ -97,7 +97,7 @@ var london = {
     }
 };
 
-var puertoRico = {
+var puertorico = {
     name: "Puerto Rico",
     description1: "",
     description2: "",
@@ -489,8 +489,8 @@ var qatar = {
     }
 };
 
-var spain = {
-    name: "Spain",
+var valencia = {
+    name: "Valencia, Spain",
     description1: "",
     description2: "",
     team: [
@@ -685,6 +685,210 @@ var morocco = {
     }
 };
 
+var moscow = {
+    name: "Moscow, Russia",
+    description1: "",
+    description2: "",
+    team: [
+        {
+            name: "Firstname Lastname",
+            sh: "entrepreneur",
+            desc: "Bio"
+        },
+        {
+            name: "Firstname Lastname",
+            sh: "government",
+            desc: "Bio"
+        }
+   ],
+    countryPopulation: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    regionPopulation: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    giniCoeff: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    humanDevIndex: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    domesticPatent: {
+        range: "2000-2010",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010"],
+        value: [640, 637, 547.3, 596.4, 563, 618.4, 666.2, 698.6, 595.3, 585.1, 581]
+    },
+    usPatent: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    publications: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    stemGrads: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    researchAndDev: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    ipRanking: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    gdpPerCap: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    corporations: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    entrepreneurship: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    vc: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    daysToStartBiz: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    employment: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    }
+};
+
+var rio = {
+    name: "Rio de Janeiro, Brazil",
+    description1: "",
+    description2: "",
+    team: [
+        {
+            name: "Firstname Lastname",
+            sh: "entrepreneur",
+            desc: "Bio"
+        },
+        {
+            name: "Firstname Lastname",
+            sh: "government",
+            desc: "Bio"
+        }
+   ],
+    countryPopulation: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    regionPopulation: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    giniCoeff: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    humanDevIndex: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    domesticPatent: {
+        range: "2000-2010",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010"],
+        value: [640, 637, 547.3, 596.4, 563, 618.4, 666.2, 698.6, 595.3, 585.1, 581]
+    },
+    usPatent: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    publications: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    stemGrads: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    researchAndDev: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    ipRanking: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    gdpPerCap: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    corporations: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    entrepreneurship: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    vc: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    daysToStartBiz: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    },
+    employment: {
+        range: "",
+        year: ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014"],
+        value: []
+    }
+};
+
 var regionData = {
-    'london' : london
+    'london' : london,
+    'puertorico': puertorico,
+    'singapore': singapore,
+    'seoul': seoul,
+    'qatar': qatar,
+    'valencia': valencia,
+    'morocco': morocco,
+    'moscow': moscow,
+    'rio': rio
 };

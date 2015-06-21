@@ -450,17 +450,30 @@ function displayPrompt() {
     $("#dashboard-prompt").show();
 }
 
+function setSelectedRegion(name) {
+    $("#selected-region").html(name);
+    $(".dropdown-menu > li  > a").each(function(){
+        if($(this).text() == name) {
+            $(this).parent().addClass("active");
+        } else {
+            $(this).parent().removeClass("active");
+        }
+    });
+}
+
 $(document).ready(function() {
     var urlParams = parseURLParams(document.URL);
-    if(!urlParams || !urlParams['region']) {
+    if(!urlParams || !urlParams["region"]) {
         displayPrompt();
         return;
     }
-    region = regionData[urlParams['region'][0]];
+    region = regionData[urlParams["region"][0]];
     if(!region) {
         displayPrompt();
         return;   
     }
+
+    setSelectedRegion(region.name);
 
 	$('[data-toggle="popover"]').popover(); // Initialize popover (bootstrap requirement) for team members' bio.
     setupStakeholderImgPosition();
