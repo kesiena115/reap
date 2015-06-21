@@ -1,4 +1,31 @@
-var stakeholderImgPosition = {}
+var stakeholderImgPosition = {};
+var region = {};
+
+function parseURLParams(url) {
+    var queryStart = url.indexOf("?") + 1;
+    var queryEnd   = url.indexOf("#") + 1 || url.length + 1;
+    var query = url.slice(queryStart, queryEnd - 1);
+    var pairs = query.replace(/\+/g, " ").split("&");
+    var parms = {};
+    var n, v, nv;
+
+    if (query === url || query === "") {
+        return parms;
+    }
+
+    for (var i = 0; i < pairs.length; i++) {
+        nv = pairs[i].split("=");
+        n = decodeURIComponent(nv[0]);
+        v = decodeURIComponent(nv[1]);
+
+        if (!parms.hasOwnProperty(n)) {
+            parms[n] = [];
+        }
+
+        parms[n].push(nv.length === 2 ? v : null);
+    }
+    return parms;
+}
 
 function getStakeholderFromClassnames(classnames) {
     var classes = classnames.split(' ');
@@ -102,9 +129,338 @@ function getStakeholderType(left, top){
     return "";
 }
 
+function convertToChartArrayFormat(yearArray, valueArray, seriesName) {
+    var result = [];
+    if(yearArray.length != valueArray.length) {
+        console.log("Error: There are " + yearArray.length + " " + seriesName + " years but " + 
+            valueArray.length + " values");
+        return result;
+    }
+    for(var i = 0; i < yearArray.length; i++) {
+        result.push([yearArray[i], valueArray[i]]);
+    }
+    return result;
+}
+
+function getLineChartDefaultOptions() {
+    return {
+        chart: {
+            type: 'area',
+            height: 300,
+            width: 400,
+            spacingLeft: 30,
+            spacingRight: 30
+        },
+        title: {
+            text: '*** Default title',
+            style: {
+                fontSize: '14px'
+            }
+        },
+        subtitle: {
+            text: '*** Default subtitle'
+        },
+        credits: {
+            enabled: false
+        },
+        xAxis: {
+            title: {
+                text: 'Year'
+            },
+            type: 'category',
+            labels: {
+                rotation: -45,
+                style: {
+                    fontSize: '10px',
+                    fontFamily: 'Verdana, sans-serif'
+                },
+                allowDecimals: false
+            }
+        },
+        yAxis: {
+            title: {
+                text: '*** Default yAxis title'
+            },
+        },
+        legend: {
+            enabled: false
+        },
+        tooltip: {
+            formatter: function(){
+                return '*** Default tooltip formatter';
+            }
+        },
+        series: [{
+            data: [],
+            connectNulls: true,
+            fillColor : {
+              linearGradient : [0, 0, 0, 400],
+              stops : [
+                [0, Highcharts.getOptions().colors[0]],
+                [1, 'rgba(255,255,255,0)']
+              ]
+            },
+            lineColor: '#428bca',
+            lineWidth: 1,
+            marker: {
+                enabled: false,
+                fillColor: '#428bca',
+                lineColor: '#ffffff'
+            },
+            plotOptions: {
+                area: {
+                    marker: {
+                        symbol: 'circle',
+                        radius: 2,
+                        lineColor: '#000000',
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
+            },
+        }],
+        navigation: {
+            buttonOptions: {
+                theme: {
+                    'stroke-width': 1,
+                    stroke: 'silver',
+                }
+            }
+        }
+    };
+}
+
+function addGraph(carouselID, chartId, chartOptions) {
+
+    var count = $("#" + carouselID + " .carousel-dot-control").size();
+    
+    $("#" + carouselID + " > .carousel-inner").append(
+        "<div id='" + chartId + "' class='item'>" +
+        "</div>"
+    );
+
+    $("#" + carouselID + " > .carousel-indicators").append(
+        "<li data-target='#" + carouselID + "' data-slide-to='" + count + "' class='carousel-dot-control'></li>"
+    );
+
+    $("#" + chartId).highcharts(chartOptions);
+
+    $("#" + carouselID + " > .carousel-inner .item").each(function(index) {
+        if(index == 0) {
+            $(this).addClass('active');
+        } else{
+            $(this).removeClass('active');
+        }
+    });
+
+    $("#" + carouselID + " > .carousel-indicators .carousel-dot-control").each(function(index) {
+        if(index == 0) {
+            $(this).addClass('active');
+        } else{
+            $(this).removeClass('active');
+        }
+    });
+}
+
+function plotDomesticPatent() {
+    if(region.domesticPatent.value.length < 1){
+        return;
+    }
+    var domPatentOptions = getLineChartDefaultOptions();
+    domPatentOptions.title.text = 'Domestic Patents/Year';
+    domPatentOptions.subtitle.text = region.domesticPatent.range;
+    domPatentOptions.yAxis.title.text = 'No. of filings';
+    domPatentOptions.tooltip.formatter = function() {
+        return 'No. of domestic patents filed in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
+    }
+    domPatentOptions.series[0].data = convertToChartArrayFormat(region.domesticPatent.year, region.domesticPatent.value, "Domestic Patents");
+    addGraph("icap-carousel", "domestic-patents-chart", domPatentOptions);
+}
+
+function plotUSPatent() {
+    if(region.usPatent.value.length < 1){
+        return;
+    }
+    var usPatentOptions = getLineChartDefaultOptions();
+    usPatentOptions.title.text = 'US Patents/Year';
+    usPatentOptions.subtitle.text = region.usPatent.range;
+    usPatentOptions.yAxis.title.text = 'No. of filings';
+    usPatentOptions.tooltip.formatter = function() {
+        return 'No. of US patents filed in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
+    }
+    usPatentOptions.series[0].data = convertToChartArrayFormat(region.usPatent.year, region.usPatent.value, "US Patents");
+    addGraph("icap-carousel", "us-patents-chart", usPatentOptions); 
+}
+
+function plotPublications() {
+    if(region.publications.value.length < 1){
+        return;
+    }
+    var publicationsOptions = getLineChartDefaultOptions();
+    publicationsOptions.title.text = 'Published Papers/Year';
+    publicationsOptions.subtitle.text = region.publications.range;
+    publicationsOptions.yAxis.title.text = 'Published Papers';
+    publicationsOptions.tooltip.formatter = function() {
+        return 'No. of published papers in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
+    }
+    publicationsOptions.series[0].data = convertToChartArrayFormat(region.publications.year, region.publications.value, "Publications");
+    addGraph("icap-carousel", "publications-chart", publicationsOptions);
+}
+
+function plotStemGrads() {
+    if(region.stemGrads.value.length < 1){
+        return;
+    }    
+    var stemGradsOptions = getLineChartDefaultOptions();
+    stemGradsOptions.title.text = 'STEM Graduates/Year';
+    stemGradsOptions.subtitle.text = region.stemGrads.range;
+    stemGradsOptions.yAxis.title.text = 'No. of Stem Graduates';
+    stemGradsOptions.tooltip.formatter = function() {
+        return 'No. of STEM graduates in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
+    }
+    stemGradsOptions.series[0].data = convertToChartArrayFormat(region.stemGrads.year, region.stemGrads.value, "STEM Graduates");
+    addGraph("icap-carousel", "stem-grads-chart", stemGradsOptions);
+}
+
+function plotResearchAndDev() {
+    if(region.researchAndDev.value.length < 1){
+        return;
+    }
+    var rAndDOptions = getLineChartDefaultOptions();
+    rAndDOptions.title.text = 'Gross R&D Expenditure';
+    rAndDOptions.subtitle.text = region.researchAndDev.range;
+    rAndDOptions.yAxis.title.text = 'R&D as % of GDP';
+    rAndDOptions.tooltip.formatter = function() {
+        return 'R&D expenditure as % of GDP in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
+    }
+    rAndDOptions.series[0].data = convertToChartArrayFormat(region.researchAndDev.year, region.researchAndDev.value, "R&D");
+    addGraph("icap-carousel", "r-and-d-chart", rAndDOptions);
+}
+
+function plotIpRanking() {
+    if(region.ipRanking.value.length < 1){
+        return;
+    }
+    var ipRankingOptions = getLineChartDefaultOptions();
+    ipRankingOptions.title.text = 'Intellectual Property Protection Ranking';
+    ipRankingOptions.subtitle.text = region.ipRanking.range;
+    ipRankingOptions.yAxis.title.text = 'Rank';
+    ipRankingOptions.tooltip.formatter = function() {
+        return 'IP protection ranking in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
+    }
+    ipRankingOptions.series[0].data = convertToChartArrayFormat(region.ipRanking.year, region.ipRanking.value, "IP Ranking");
+    addGraph("icap-carousel", "ip-ranking-chart", ipRankingOptions);
+}
+
+function plotGdpPerCapitaForICap() {
+    if(region.gdpPerCap.value.length < 1){
+        return;
+    }
+    var gdpPerCapOptions = getLineChartDefaultOptions();
+    gdpPerCapOptions.title.text = 'GDP Per Capita';
+    gdpPerCapOptions.subtitle.text = region.gdpPerCap.range;
+    gdpPerCapOptions.yAxis.title.text = 'GDP Per Capita (USD)';
+    gdpPerCapOptions.tooltip.formatter = function() {
+        return 'GDP Per Capita in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
+    }
+    gdpPerCapOptions.series[0].data = convertToChartArrayFormat(region.gdpPerCap.year, region.gdpPerCap.value, "GDP Per Capita");
+    addGraph("icap-carousel", "gdp-icap-chart", gdpPerCapOptions);
+}
+
+function plotTotalEarlyEntrepreneurship() {
+    if(region.entrepreneurship.value.length < 1){
+        return;
+    }
+    var entOptions = getLineChartDefaultOptions();
+    entOptions.title.text = 'Total Early Stage Entrepreneurship';
+    entOptions.subtitle.text = region.entrepreneurship.range;
+    entOptions.yAxis.title.text = 'Early Stage Entrepreneurship';
+    entOptions.tooltip.formatter = function() {
+        return 'Total early stage entrepreneurship in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
+    }
+    entOptions.series[0].data = convertToChartArrayFormat(region.entrepreneurship.year, region.entrepreneurship.value, "Early Stage Entrepreneurship");
+    addGraph("ecap-carousel", "total-early-stage-entrepreneurship-chart", entOptions);
+}
+
+function plotVcInvestments() {
+    if(region.vc.value.length < 1){
+        return;
+    }
+    var vcOptions = getLineChartDefaultOptions();
+    vcOptions.title.text = 'Venture Capital Investments/year';
+    vcOptions.subtitle.text = region.vc.range;
+    vcOptions.yAxis.title.text = 'VC investments (USD)';
+    vcOptions.tooltip.formatter = function() {
+        return 'VC investments in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
+    }
+    vcOptions.series[0].data = convertToChartArrayFormat(region.vc.year, region.vc.value, "VC investment");
+    addGraph("ecap-carousel", "vc-chart", vcOptions);
+}
+
+function plotDaysToStartBusiness() {
+    if(region.daysToStartBiz.value.length < 1){
+        return;
+    }
+    var bizStartOptions = getLineChartDefaultOptions();
+    bizStartOptions.title.text = 'No. of days to start a business';
+    bizStartOptions.subtitle.text = region.daysToStartBiz.range;
+    bizStartOptions.yAxis.title.text = 'Days';
+    bizStartOptions.tooltip.formatter = function() {
+        return 'No. of days to start a business in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
+    }
+    bizStartOptions.series[0].data = convertToChartArrayFormat(region.daysToStartBiz.year, region.daysToStartBiz.value, "Days to start a business");
+    addGraph("ecap-carousel", "biz-start-chart", bizStartOptions);
+}
+
+function plotGdpPerCapitaForECap() {
+    if(region.gdpPerCap.value.length < 1){
+        return;
+    }
+    var gdpPerCapOptions = getLineChartDefaultOptions();
+    gdpPerCapOptions.title.text = 'GDP Per Capita';
+    gdpPerCapOptions.subtitle.text = region.gdpPerCap.range;
+    gdpPerCapOptions.yAxis.title.text = 'GDP Per Capita (USD)';
+    gdpPerCapOptions.tooltip.formatter = function() {
+        return 'GDP Per Capita in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
+    }
+    gdpPerCapOptions.series[0].data = convertToChartArrayFormat(region.gdpPerCap.year, region.gdpPerCap.value, "GDP Per Capita");
+    addGraph("ecap-carousel", "gdp-ecap-chart", gdpPerCapOptions);
+}
+
+function plotTotalEmployment() {
+    if(region.employment.value.length < 1){
+        return;
+    }
+    var employmentOptions = getLineChartDefaultOptions();
+    employmentOptions.title.text = 'Total Employment/year';
+    employmentOptions.subtitle.text = region.employment.range;
+    employmentOptions.yAxis.title.text = 'Total Employment (millions)';
+    employmentOptions.tooltip.formatter = function() {
+        return 'Total employment in <b>'+ this.point.name + '</b> = <b>' + this.point.y + 'million(s)</b>';
+    }
+    employmentOptions.series[0].data = convertToChartArrayFormat(region.employment.year, region.employment.value, "GDP Per Capita");
+    addGraph("ecap-carousel", "employment-chart", employmentOptions);
+}
+
+function displayPrompt() {
+    $("#dashboard-main-panel").hide();
+    $("#dashboard-prompt").show();
+}
 
 $(document).ready(function() {
-    var region = london;
+    var urlParams = parseURLParams(document.URL);
+    if(!urlParams || !urlParams['region']) {
+        displayPrompt();
+        return;
+    }
+    region = regionData[urlParams['region'][0]];
+    if(!region) {
+        displayPrompt();
+        return;   
+    }
 
 	$('[data-toggle="popover"]').popover(); // Initialize popover (bootstrap requirement) for team members' bio.
     setupStakeholderImgPosition();
@@ -131,7 +487,6 @@ $(document).ready(function() {
         }
     });
 
-
     $("#pentacle-highlight").mouseleave(function(){
         hideStakeholderHighlight();
         $(".dashboard-team-member").removeClass("active");
@@ -156,6 +511,19 @@ $(document).ready(function() {
 		$("#more-region-description-btn").show();
 		$("#more-region-description").hide();
 	});
+
+    plotDomesticPatent();
+    plotUSPatent();
+    plotPublications();
+    plotStemGrads();
+    plotResearchAndDev(); 
+    plotIpRanking(); 
+    plotGdpPerCapitaForICap();
+    plotTotalEarlyEntrepreneurship(); 
+    plotVcInvestments(); 
+    plotDaysToStartBusiness(); 
+    plotGdpPerCapitaForECap(); 
+    plotTotalEmployment();
 
 
 	$('#chart1').highcharts({
@@ -784,437 +1152,7 @@ $(document).ready(function() {
                 }
     });
 
-    var domesticPatent = convertToChartArrayFormat(region.domesticPatent.year, region.domesticPatent.value, "domestic patents");
-
-    function convertToChartArrayFormat(yearArray, valueArray, seriesName) {
-        var result = [];
-        if(yearArray.length != valueArray.length) {
-            console.log("Error: There are " + yearArray.length + " " + seriesName + " years but " + 
-                valueArray.length + " values");
-            return result;
-        }
-        for(var i = 0; i < yearArray.length; i++) {
-            result.push([yearArray[i], valueArray[i]]);
-        }
-        return result;
-    }
-
-    function getLineChartDefaultOptions() {
-        return JSON.parse(JSON.stringify(defaultLineGraphOptions));
-    }
-
-    var defaultLineGraphOptions = {
-        chart: {
-            type: 'area',
-            height: 300,
-            width: 400,
-        },
-        title: {
-            text: '*** Default title',
-            style: {
-                fontSize: '14px'
-            }
-        },
-        subtitle: {
-            text: '*** Default subtitle'
-        },
-        credits: {
-            enabled: false
-        },
-        xAxis: {
-            title: {
-                text: 'Year'
-            },
-            type: 'category',
-            labels: {
-                rotation: -45,
-                style: {
-                    fontSize: '10px',
-                    fontFamily: 'Verdana, sans-serif'
-                },
-                allowDecimals: false
-            }
-        },
-        yAxis: {
-            title: {
-                text: '*** Default yAxis title'
-            },
-        },
-        legend: {
-            enabled: false
-        },
-        tooltip: {
-            formatter: function(){
-                return '*** Default tooltip formatter';
-            }
-        },
-        series: [{
-            data: [],
-            connectNulls: true,
-            fillColor : {
-              linearGradient : [0, 0, 0, 400],
-              stops : [
-                [0, Highcharts.getOptions().colors[0]],
-                [1, 'rgba(255,255,255,0)']
-              ]
-            },
-            lineColor: '#428bca',
-            lineWidth: 1,
-            marker: {
-                enabled: false,
-                fillColor: '#428bca',
-                lineColor: '#ffffff'
-            },
-            plotOptions: {
-                area: {
-                    marker: {
-                        symbol: 'circle',
-                        radius: 2,
-                        lineColor: '#000000',
-                        states: {
-                            hover: {
-                                enabled: true
-                            }
-                        }
-                    }
-                }
-            },
-        }],
-        navigation: {
-            buttonOptions: {
-                theme: {
-                    'stroke-width': 1,
-                    stroke: 'silver',
-                }
-            }
-        }
-    };
-
-    function addGraph(carouselID, chartId, chartOptions) {
-
-        var count = $("#" + carouselID + " .carousel-dot-control").size();
-        
-        $("#" + carouselID + " > .carousel-inner").append(
-            "<div id='" + chartId + "' class='item'>" +
-            "</div>"
-        );
-
-        $("#" + carouselID + " > .carousel-indicators").append(
-            "<li data-target='#" + carouselID + "' data-slide-to='" + count + "' class='carousel-dot-control'></li>"
-        );
-
-        $("#" + chartId).highcharts(chartOptions);
-
-        $("#" + carouselID + " > .carousel-inner .item").each(function(index) {
-            if(index == 0) {
-                $(this).addClass('active');
-            } else{
-                $(this).removeClass('active');
-            }
-        });
-
-        $("#" + carouselID + " > .carousel-indicators .carousel-dot-control").each(function(index) {
-            if(index == 0) {
-                $(this).addClass('active');
-            } else{
-                $(this).removeClass('active');
-            }
-        });
-    }
-
-    var domPatentOptions = getLineChartDefaultOptions();
-    domPatentOptions.title.text = 'Domestic Patents/Year';
-    domPatentOptions.subtitle.text = region.domesticPatent.range;
-    domPatentOptions.yAxis.title.text = 'No. of filings';
-    domPatentOptions.tooltip.formatter = function() {
-        return 'No. of domestic patents filed in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
-    }
-    domPatentOptions.series[0].data = convertToChartArrayFormat(region.domesticPatent.year, region.domesticPatent.value, "Domestic Patents");
-    addGraph("icap-carousel", "domestic-patents-chart", domPatentOptions); 
-
-    var usPatentOptions = getLineChartDefaultOptions();
-    usPatentOptions.title.text = 'US Patents/Year';
-    usPatentOptions.subtitle.text = region.usPatent.range;
-    usPatentOptions.yAxis.title.text = 'No. of filings';
-    usPatentOptions.tooltip.formatter = function() {
-        return 'No. of US patents filed in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
-    }
-    usPatentOptions.series[0].data = convertToChartArrayFormat(region.usPatent.year, region.usPatent.value, "US Patents");
-    addGraph("icap-carousel", "us-patents-chart", usPatentOptions); 
-
-    var publicationsOptions = getLineChartDefaultOptions();
-    publicationsOptions.title.text = 'Published Papers/Year';
-    publicationsOptions.subtitle.text = region.publications.range;
-    publicationsOptions.yAxis.title.text = 'Published Papers';
-    publicationsOptions.tooltip.formatter = function() {
-        return 'No. of published papers in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
-    }
-    publicationsOptions.series[0].data = convertToChartArrayFormat(region.publications.year, region.publications.value, "Publications");
-    addGraph("icap-carousel", "publications-chart", publicationsOptions);
-
-    var stemGradsOptions = getLineChartDefaultOptions();
-    stemGradsOptions.title.text = 'STEM Graduates/Year';
-    stemGradsOptions.subtitle.text = region.stemGrads.range;
-    stemGradsOptions.yAxis.title.text = 'No. of Stem Graduates';
-    stemGradsOptions.tooltip.formatter = function() {
-        return 'No. of STEM graduates in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
-    }
-    stemGradsOptions.series[0].data = convertToChartArrayFormat(region.stemGrads.year, region.stemGrads.value, "STEM Graduates");
-    addGraph("icap-carousel", "stem-grads-chart", stemGradsOptions);
-
-    var rAndDOptions = getLineChartDefaultOptions();
-    rAndDOptions.title.text = 'Gross R&D Expenditure';
-    rAndDOptions.subtitle.text = region.researchAndDev.range;
-    rAndDOptions.yAxis.title.text = 'R&D as % of GDP';
-    rAndDOptions.tooltip.formatter = function() {
-        return 'R&D expenditure as % of GDP in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
-    }
-    rAndDOptions.series[0].data = convertToChartArrayFormat(region.researchAndDev.year, region.researchAndDev.value, "R&D");
-    addGraph("icap-carousel", "r-and-d-chart", rAndDOptions);
-
-    var ipRankingOptions = getLineChartDefaultOptions();
-    ipRankingOptions.title.text = 'Intellectual Property Protection Ranking';
-    ipRankingOptions.subtitle.text = region.ipRanking.range;
-    ipRankingOptions.yAxis.title.text = 'Rank';
-    ipRankingOptions.tooltip.formatter = function() {
-        return 'IP protection ranking in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
-    }
-    ipRankingOptions.series[0].data = convertToChartArrayFormat(region.ipRanking.year, region.ipRanking.value, "IP Ranking");
-    addGraph("icap-carousel", "ip-ranking-chart", ipRankingOptions);
-
-    var gdpPerCapOptions = getLineChartDefaultOptions();
-    gdpPerCapOptions.title.text = 'GDP Per Capita';
-    gdpPerCapOptions.subtitle.text = region.gdpPerCap.range;
-    gdpPerCapOptions.yAxis.title.text = 'GDP Per Capita (USD)';
-    gdpPerCapOptions.tooltip.formatter = function() {
-        return 'GDP Per Capita in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
-    }
-    gdpPerCapOptions.series[0].data = convertToChartArrayFormat(region.gdpPerCap.year, region.gdpPerCap.value, "GDP Per Capita");
-    addGraph("icap-carousel", "gdp-chart", gdpPerCapOptions);
-
-
-
-    var entOptions = getLineChartDefaultOptions();
-    entOptions.title.text = 'Total Early Stage Entrepreneurship';
-    entOptions.subtitle.text = region.entrepreneurship.range;
-    entOptions.yAxis.title.text = 'Early Stage Entrepreneurship';
-    entOptions.tooltip.formatter = function() {
-        return 'Total early stage entrepreneurship in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
-    }
-    entOptions.series[0].data = convertToChartArrayFormat(region.entrepreneurship.year, region.entrepreneurship.value, "Early Stage Entrepreneurship");
-    addGraph("ecap-carousel", "total-early-stage-entrepreneurship-chart", entOptions);
-
-    
-    $('#cmet0').highcharts({
-        chart: {
-            type: 'area',
-            height: 300,
-            width: 350,
-        },
-        title: {
-            text: '$ Invested in University Startups (USD)/year',
-            style: {
-                fontSize: '14px'
-            }
-        },
-        subtitle: {
-            text: '2000-2010'
-        },
-        credits: {
-            enabled: false
-        },
-        xAxis: {
-            title: {
-                text: 'Year'
-            },
-            type: 'category',
-            labels: {
-                // autoRotation: false,
-                rotation: -45,
-                style: {
-                    fontSize: '10px',
-                    fontFamily: 'Verdana, sans-serif'
-                },
-                allowDecimals: false
-            }
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: 'US Dollars'
-            },
-            gridLineWidth: 0,
-            minorGridLineWidth: 0,
-            lineColor: 'rgb(192, 208, 224)',
-            lineWidth: 1,
-            // tickLength: 20
-        },
-        legend: {
-            enabled: false
-        },
-        tooltip: {
-            formatter: function(){
-                return 'Investment in university startups in <b>'+ this.point.name + '</b> = <b>$' + this.point.y + '</b>';
-            }
-        },
-        series: [{
-            name: 'Firms',
-            data: [
-                ['2000', 31175],
-                ['2001', 31571],
-                ['2002', 31581],
-                ['2003', 32154],
-                ['2004', 37882],
-                ['2005', 39459],
-                ['2006', 41797],
-                ['2007', 41973],
-                ['2008', 39950],
-                ['2009', 42209],
-                ['2010', 46163],
-            ],
-            fillColor : {
-              linearGradient : [0, 0, 0, 400],
-              stops : [
-                [0, Highcharts.getOptions().colors[0]],
-                [1, 'rgba(255,255,255,0)']
-              ]
-            },
-            lineColor: '#428bca',
-            lineWidth: 1,
-            marker: {
-                enabled: false,
-                fillColor: '#428bca',
-                lineColor: '#ffffff'
-            },
-            plotOptions: {
-                area: {
-                    pointStart: 1991,
-                    marker: {
-                        enabled: true,
-                        symbol: 'circle',
-                        radius: 2,
-                        lineColor: '#000000',
-                        states: {
-                            hover: {
-                                enabled: true
-                            }
-                        }
-                    }
-                }
-            },
-        }],
-        navigation: {
-            buttonOptions: {
-                theme: {
-                    'stroke-width': 1,
-                    stroke: 'silver',
-                }
-            }
-        }
-    });
-
-    $('#cmet1').highcharts({
-        chart: {
-            type: 'area',
-            height: 300,
-            width: 350,
-        },
-        title: {
-            text: 'Total Employment/ year',
-            style: {
-                fontSize: '14px'
-            }
-        },
-        subtitle: {
-            text: '2007-2012'
-        },
-        credits: {
-            enabled: false
-        },
-        xAxis: {
-            title: {
-                text: 'Year'
-            },
-            type: 'category',
-            labels: {
-                // autoRotation: false,
-                rotation: -45,
-                style: {
-                    fontSize: '10px',
-                    fontFamily: 'Verdana, sans-serif'
-                },
-                allowDecimals: false
-            }
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: 'Total Employment'
-            },
-            gridLineWidth: 0,
-            minorGridLineWidth: 0,
-            lineColor: 'rgb(192, 208, 224)',
-            lineWidth: 1,
-            // tickLength: 20
-        },
-        legend: {
-            enabled: false
-        },
-        tooltip: {
-            formatter: function(){
-                return 'Total employment in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
-            }
-        },
-        series: [{
-            name: 'Firms',
-            data: [
-                ['2007', 2.175],
-                ['2008', 2.189],
-                ['2009', 2.165],
-                ['2010', 2.181],
-                ['2011', 2.216],
-                ['2012', 2.217],
-            ],
-            fillColor : {
-              linearGradient : [0, 0, 0, 400],
-              stops : [
-                [0, Highcharts.getOptions().colors[0]],
-                [1, 'rgba(255,255,255,0)']
-              ]
-            },
-            lineColor: '#428bca',
-            lineWidth: 1,
-            marker: {
-                enabled: false,
-                fillColor: '#428bca',
-                lineColor: '#ffffff'
-            },
-            plotOptions: {
-                area: {
-                    pointStart: 1991,
-                    marker: {
-                        enabled: true,
-                        symbol: 'circle',
-                        radius: 2,
-                        lineColor: '#000000',
-                        states: {
-                            hover: {
-                                enabled: true
-                            }
-                        }
-                    }
-                }
-            },
-        }],
-        navigation: {
-            buttonOptions: {
-                theme: {
-                    'stroke-width': 1,
-                    stroke: 'silver',
-                }
-            }
-        }
-    });
+   
 
 // Configure the carousel in the dashboard to slide automatically: http://getbootstrap.com/javascript/#carousel
   $('.carousel').carousel({

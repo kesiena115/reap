@@ -83,9 +83,7 @@ body {
 
 #resource-links {
 	font-size: 18px;
-  border-radius:5px;
-  border: 1px solid #DBDBDB;
-  background-color:white;
+  padding-bottom: 0;
 }
 
 #resource-links li{
@@ -93,6 +91,10 @@ body {
   font: normal normal normal 13px Helvetica Neue,Roboto,Segoe UI,Calibri,sans-serif;
   font-weight: bold;
   padding:2px;
+}
+
+#resource-links li:last-of-type{
+  border-bottom: 0;
 }
 
 #resource-links a{
@@ -120,7 +122,7 @@ body {
   margin-top: 30px;
 }
 
-.resource-column .section-anchor {
+.section-anchor {
   /*Ensures that the navbar does not cover the section headings.*/
   position: relative;
   top: -50px;  
@@ -141,20 +143,15 @@ body {
   text-align: center;
 }
 
-
-.row.reap-dashboard-row {
-  margin:10px 10px 10px 0px;
-  padding-bottom: 15px;
-  border-radius:5px;
-  border:1px solid #DBDBDB;
-  background-color:white;
+.region-description-panel {
+  padding: 10px;
 }
 
-.reap-dashboard-row .heading {
+.dashboard-panel .heading {
   margin-bottom: 15px;
 } 
 
-.reap-dashboard-row h3 {
+.dashboard-panel h3 {
   width: 100%;
   text-align: center;
   font-weight: bolder;
@@ -176,16 +173,16 @@ body {
   position: relative;
 }
 
-.reap-dashboard-row .carousel-dot-control {
+.dashboard-panel .carousel-dot-control {
   border-color: #428bca;
   background-color: white;
 }
 
-.reap-dashboard-row .carousel-dot-control.active, .reap-dashboard-row .carousel-dot-control:hover {
+.dashboard-panel .carousel-dot-control.active, .dashboard-panel .carousel-dot-control:hover {
   background-color: #428bca;
 }
 
-.reap-dashboard-row a.carousel-control {
+.dashboard-panel a.carousel-control {
   margin: 0 10px;
   width: 30px;
   color: white;
@@ -193,7 +190,7 @@ body {
   /*background-color: #eeeeee*/
 }
 
-.reap-dashboard-row .highcharts-container {
+.dashboard-panel .highcharts-container {
   margin: auto;
 }
 
@@ -213,12 +210,12 @@ body {
   margin-right: 0;
 }
 
-.reap-dashboard-row h3 {
+.dashboard-panel h3 {
   font-size: 22px;
   margin-bottom: 5px;
 }
 
-.reap-dashboard-row h4 {
+.dashboard-panel h4 {
   font-size: 16px;
   width: 100%;
   margin: 0 auto;
@@ -6344,6 +6341,44 @@ h2.icap {
 	position:relative;
 	top:20px;
 	padding-bottom:10px;
+}
+
+#dashboard-main-panel {
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.dashboard-panel {
+  margin:10px auto 10px auto;
+  padding-bottom: 15px;
+  border-radius:5px;
+  border:1px solid #DBDBDB;
+  background-color:white;
+}
+
+.dashboard-column {
+  padding: 0 15px;
+}
+
+@media(min-width: 768px) {
+  .dashboard-column:first-of-type {
+    padding-left: 15px;
+    padding-right: 10px
+  }
+
+  .dashboard-column:last-of-type {
+    padding-left: 0;
+    padding-right: 15px
+  }
+}
+
+#dashboard-prompt {
+  display: none;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: gray;
+  margin-top: 30px;
 }
 
 .row.dashboard-row {
