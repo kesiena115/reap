@@ -470,6 +470,14 @@ function setFlag() {
         );
 }
 
+function setDescription() {
+    $("#description-snippet").html(region.description1);
+    $("#more-region-description").html(" " + region.description2);
+    if(region.description1){
+        $("#more-region-description-btn").show();
+    }
+}
+
 $(document).ready(function() {
     var urlParams = parseURLParams(document.URL);
     if(!urlParams || !urlParams["region"]) {
@@ -527,14 +535,17 @@ $(document).ready(function() {
 	$("#more-region-description-btn").click(function(){
 		$("#more-region-description-btn").hide();
 		$("#more-region-description").show();
+        $("#less-region-description-btn").show();
 	});
 
 	$("#less-region-description-btn").click(function(){
+        $("#less-region-description-btn").hide();
 		$("#more-region-description-btn").show();
 		$("#more-region-description").hide();
 	});
 
     setFlag();
+    setDescription();
 
     plotDomesticPatent();
     plotUSPatent();

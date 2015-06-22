@@ -343,6 +343,10 @@ tbody tr:nth-child(even) {
   display: none;
 }
 
+#more-region-description-btn, #less-region-description-btn {
+  display: none;
+}
+
 input.dashboard-sm-btn {
   padding: 0px 5px;
   line-height: 15px;
