@@ -538,6 +538,10 @@ $(document).ready(function() {
     plotGdpPerCapitaForECap(); 
     plotTotalEmployment();
 
+    if($("#custom-metrics-charts").children().length < 1) {
+        $("#custom-metrics-col").hide();
+    }
+
 
 	$('#chart1').highcharts({
         chart: {
