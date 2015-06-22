@@ -6088,7 +6088,7 @@ td.visible-print {
 	z-index:21;
 }
 
-.country-img-scotland {
+.country-img-scotland, .country-img-seoul {
 	top: 20px;
 	height: 71%;
 	left:30%;
@@ -6096,7 +6096,7 @@ td.visible-print {
 	z-index:21;
 }
 
-.country-img-nz {
+.country-img-nz, .country-img-qatar {
 	top: 20px;
 	height: 71%;
 	left:20%;
@@ -6112,7 +6112,7 @@ td.visible-print {
 	z-index:21;
 }
 
-.country-img-turkey {
+.country-img-turkey, .country-img-pr {
 	top: 62px;
 	width: 70%;
 	left: 15%;
@@ -6189,55 +6189,11 @@ td.visible-print {
 }
 
 .country-label-spec {
-	position:absolute;
+	position:relative;
 	color:white;
 	font-size: 20px;
 	top: 134px;
 	z-index:22;
-}
-
-.country-label-nz {
-	left: 30%;
-}
-
-.country-label-scotland {
-	left: 36%;
-}
-
-.country-label-finland {
-	left: 74px;
-}
-
-.country-label-qatar {
-	left: 80px;
-}
-
-.country-label-spain {
-	left: 47px;
-}
-
-.country-label-turkey {
-	left: 24%;
-}
-
-.country-label-3 {
-	left: 45px;
-}
-
-.country-label-china {
-	left: 40px;
-}
-
-.country-label-2 {
-	left: 11%;
-}
-
-.country-label-spain {
-	left:51px;
-}
-
-.country-label-brazil {
-	left:34px;
 }
 
 .team-member-div {

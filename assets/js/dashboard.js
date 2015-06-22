@@ -461,6 +461,15 @@ function setSelectedRegion(name) {
     });
 }
 
+function setFlag() {
+    var regionName = region.name;
+    $("#country-flag-container").append(
+        "<img alt='" + regionName + "' class='" + region.flagCssClass + "' src='../assets/images/" + region.imgFileName + "' />" +
+        "<img alt='Bottomcircle label' class='bottom-circle-label-0' src='../assets/images/bottomcircle_label.png'/>" +
+        "<p class='country-label-spec'>" + regionName + "</p>"
+        );
+}
+
 $(document).ready(function() {
     var urlParams = parseURLParams(document.URL);
     if(!urlParams || !urlParams["region"]) {
@@ -525,6 +534,8 @@ $(document).ready(function() {
 		$("#more-region-description").hide();
 	});
 
+    setFlag();
+
     plotDomesticPatent();
     plotUSPatent();
     plotPublications();
@@ -539,7 +550,7 @@ $(document).ready(function() {
     plotTotalEmployment();
 
     if($("#custom-metrics-charts").children().length < 1) {
-        $("#custom-metrics-col").hide();
+        $("#custom-metrics-col").remove();
     }
 
 
