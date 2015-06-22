@@ -143,6 +143,10 @@ body {
   text-align: center;
 }
 
+#reap-index-row {
+  display: none;
+}
+
 .region-description-panel {
   padding: 10px;
 }
