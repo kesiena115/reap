@@ -477,6 +477,25 @@ function setDescription() {
         $("#more-region-description-btn").show();
     }
 }
+var popOverSettings = {
+        placement: 'bottom',
+        trigger: 'hover',
+    };
+
+function addTeamMembers() {
+    for(var i=0; i< region.team.length; i++) {
+        var teamObj = region.team[i];
+        $("#team-container").append(
+            '<div class="col-sm-3 col-xs-4">' +
+                '<div id="abc" class="dashboard-team-member sh-' + teamObj.sh + ' chart-blue-reap" rel="popover"' + 
+                    'data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="' + teamObj.desc + '">' +
+                  '<p>' + teamObj.name + '</p>' +
+                '</div>' +
+            '</div>'
+        );
+    }
+    $(".dashboard-team-member").popover(popOverSettings);
+}
 
 $(document).ready(function() {
     var urlParams = parseURLParams(document.URL);
@@ -492,15 +511,16 @@ $(document).ready(function() {
 
     setSelectedRegion(region.name);
 
+
 	$('[data-toggle="popover"]').popover(); // Initialize popover (bootstrap requirement) for team members' bio.
     setupStakeholderImgPosition();
 
-	$(".dashboard-team-member").mouseenter(function(){
+	$(".dashboard-team-row").on('mouseenter', '.dashboard-team-member', function(){
 		var stakeholder = getStakeholderFromClassnames($(this).attr('class'));
         highlightStakeholderInPentacle(stakeholder);
 	});
 
-	$(".dashboard-team-member").mouseleave(function(){
+	$(".dashboard-team-row").on('mouseleave', '.dashboard-team-member', function(){
 		hideStakeholderHighlight();
 	});
 
@@ -546,6 +566,7 @@ $(document).ready(function() {
 
     setFlag();
     setDescription();
+    addTeamMembers();
 
     plotDomesticPatent();
     plotUSPatent();

@@ -15,6 +15,26 @@ var london = {
             name: "Lisa Roberts",
             sh: "government",
             desc: "Lisa is a govt. official"
+        },
+        {
+            name: "John Maxwell",
+            sh: "university",
+            desc: "John Maxwell is an academic"
+        },
+        {
+            name: "Michael Jones",
+            sh: "riskcapital",
+            desc: "Michael Jones is a VC"
+        },
+        {
+            name: "Paul Simons",
+            sh: "corporate",
+            desc: "Paul Simons is the CEO of a multinational company"
+        },
+        {
+            name: "Mark Daemon",
+            sh: "entrepreneur",
+            desc: "Mark Daemon is the co-founder of 3 successful startups"
         }
    ],
     countryPopulation: {
