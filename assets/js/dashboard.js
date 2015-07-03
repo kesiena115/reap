@@ -158,7 +158,8 @@ function getLineChartDefaultOptions() {
             }
         },
         subtitle: {
-            text: '*** Default subtitle'
+            useHTML: true,
+            text: null
         },
         credits: {
             enabled: false
@@ -271,7 +272,12 @@ function plotDomesticPatent() {
     }
     var domPatentOptions = getLineChartDefaultOptions();
     domPatentOptions.title.text = 'Domestic Patents/Year';
-    domPatentOptions.subtitle.text = region.domesticPatent.range;
+    // domPatentOptions.subtitle.text = region.domesticPatent.range;
+    var sourceUrl = region.domesticPatent.srcUrl;
+    var sourceName = region.domesticPatent.srcName;
+    if(sourceUrl && sourceName){
+        domPatentOptions.subtitle.text = 'Source: <a href="' + sourceUrl + '">' + sourceName + '</a>';    
+    }
     domPatentOptions.yAxis.title.text = 'No. of filings';
     domPatentOptions.tooltip.formatter = function() {
         return 'No. of domestic patents filed in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
@@ -286,7 +292,12 @@ function plotUSPatent() {
     }
     var usPatentOptions = getLineChartDefaultOptions();
     usPatentOptions.title.text = 'US Patents/Year';
-    usPatentOptions.subtitle.text = region.usPatent.range;
+    // usPatentOptions.subtitle.text = region.usPatent.range;
+    var sourceUrl = region.usPatent.srcUrl;
+    var sourceName = region.usPatent.srcName;
+    if(sourceUrl && sourceName){
+        usPatentOptions.subtitle.text = 'Source: <a href="' + sourceUrl + '">' + sourceName + '</a>';    
+    }
     usPatentOptions.yAxis.title.text = 'No. of filings';
     usPatentOptions.tooltip.formatter = function() {
         return 'No. of US patents filed in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
@@ -301,7 +312,12 @@ function plotPublications() {
     }
     var publicationsOptions = getLineChartDefaultOptions();
     publicationsOptions.title.text = 'Published Papers/Year';
-    publicationsOptions.subtitle.text = region.publications.range;
+    // publicationsOptions.subtitle.text = region.publications.range;
+    var sourceUrl = region.publications.srcUrl;
+    var sourceName = region.publications.srcName;
+    if(sourceUrl && sourceName){
+        publicationsOptions.subtitle.text = 'Source: <a href="' + sourceUrl + '">' + sourceName + '</a>';    
+    }
     publicationsOptions.yAxis.title.text = 'Published Papers';
     publicationsOptions.tooltip.formatter = function() {
         return 'No. of published papers in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
@@ -316,7 +332,12 @@ function plotStemGrads() {
     }    
     var stemGradsOptions = getLineChartDefaultOptions();
     stemGradsOptions.title.text = 'STEM Graduates/Year';
-    stemGradsOptions.subtitle.text = region.stemGrads.range;
+    // stemGradsOptions.subtitle.text = region.stemGrads.range;
+    var sourceUrl = region.stemGrads.srcUrl;
+    var sourceName = region.stemGrads.srcName;
+    if(sourceUrl && sourceName){
+        stemGradsOptions.subtitle.text = 'Source: <a href="' + sourceUrl + '">' + sourceName + '</a>';    
+    }
     stemGradsOptions.yAxis.title.text = 'No. of Stem Graduates';
     stemGradsOptions.tooltip.formatter = function() {
         return 'No. of STEM graduates in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
@@ -331,7 +352,12 @@ function plotResearchAndDev() {
     }
     var rAndDOptions = getLineChartDefaultOptions();
     rAndDOptions.title.text = 'Gross R&D Expenditure';
-    rAndDOptions.subtitle.text = region.researchAndDev.range;
+    // rAndDOptions.subtitle.text = region.researchAndDev.range;
+    var sourceUrl = region.researchAndDev.srcUrl;
+    var sourceName = region.researchAndDev.srcName;
+    if(sourceUrl && sourceName){
+        rAndDOptions.subtitle.text = 'Source: <a href="' + sourceUrl + '">' + sourceName + '</a>';    
+    }
     rAndDOptions.yAxis.title.text = 'R&D as % of GDP';
     rAndDOptions.tooltip.formatter = function() {
         return 'R&D expenditure as % of GDP in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
@@ -346,7 +372,12 @@ function plotIpRanking() {
     }
     var ipRankingOptions = getLineChartDefaultOptions();
     ipRankingOptions.title.text = 'Intellectual Property Protection Ranking';
-    ipRankingOptions.subtitle.text = region.ipRanking.range;
+    // ipRankingOptions.subtitle.text = region.ipRanking.range;
+    var sourceUrl = region.ipRanking.srcUrl;
+    var sourceName = region.ipRanking.srcName;
+    if(sourceUrl && sourceName){
+        ipRankingOptions.subtitle.text = 'Source: <a href="' + sourceUrl + '">' + sourceName + '</a>';    
+    }
     ipRankingOptions.yAxis.title.text = 'Rank';
     ipRankingOptions.tooltip.formatter = function() {
         return 'IP protection ranking in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
@@ -361,7 +392,12 @@ function plotGdpPerCapitaForICap() {
     }
     var gdpPerCapOptions = getLineChartDefaultOptions();
     gdpPerCapOptions.title.text = 'GDP Per Capita';
-    gdpPerCapOptions.subtitle.text = region.gdpPerCap.range;
+    // gdpPerCapOptions.subtitle.text = region.gdpPerCap.range;
+    var sourceUrl = region.gdpPerCap.srcUrl;
+    var sourceName = region.gdpPerCap.srcName;
+    if(sourceUrl && sourceName){
+        gdpPerCapOptions.subtitle.text = 'Source: <a href="' + sourceUrl + '">' + sourceName + '</a>';    
+    }
     gdpPerCapOptions.yAxis.title.text = 'GDP Per Capita (USD)';
     gdpPerCapOptions.tooltip.formatter = function() {
         return 'GDP Per Capita in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
@@ -376,7 +412,12 @@ function plotTotalEarlyEntrepreneurship() {
     }
     var entOptions = getLineChartDefaultOptions();
     entOptions.title.text = 'Total Early Stage Entrepreneurship';
-    entOptions.subtitle.text = region.entrepreneurship.range;
+    // entOptions.subtitle.text = region.entrepreneurship.range;
+    var sourceUrl = region.entrepreneurship.srcUrl;
+    var sourceName = region.entrepreneurship.srcName;
+    if(sourceUrl && sourceName){
+        entOptions.subtitle.text = 'Source: <a href="' + sourceUrl + '">' + sourceName + '</a>';    
+    }
     entOptions.yAxis.title.text = 'Early Stage Entrepreneurship';
     entOptions.tooltip.formatter = function() {
         return 'Total early stage entrepreneurship in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
@@ -391,7 +432,12 @@ function plotVcInvestments() {
     }
     var vcOptions = getLineChartDefaultOptions();
     vcOptions.title.text = 'Venture Capital Investments/year';
-    vcOptions.subtitle.text = region.vc.range;
+    // vcOptions.subtitle.text = region.vc.range;
+    var sourceUrl = region.vc.srcUrl;
+    var sourceName = region.vc.srcName;
+    if(sourceUrl && sourceName){
+        vcOptions.subtitle.text = 'Source: <a href="' + sourceUrl + '">' + sourceName + '</a>';    
+    }
     vcOptions.yAxis.title.text = 'VC investments (USD)';
     vcOptions.tooltip.formatter = function() {
         return 'VC investments in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
@@ -406,7 +452,12 @@ function plotDaysToStartBusiness() {
     }
     var bizStartOptions = getLineChartDefaultOptions();
     bizStartOptions.title.text = 'No. of days to start a business';
-    bizStartOptions.subtitle.text = region.daysToStartBiz.range;
+    // bizStartOptions.subtitle.text = region.daysToStartBiz.range;
+    var sourceUrl = region.daysToStartBiz.srcUrl;
+    var sourceName = region.daysToStartBiz.srcName;
+    if(sourceUrl && sourceName){
+        bizStartOptions.subtitle.text = 'Source: <a href="' + sourceUrl + '">' + sourceName + '</a>';    
+    }
     bizStartOptions.yAxis.title.text = 'Days';
     bizStartOptions.tooltip.formatter = function() {
         return 'No. of days to start a business in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
@@ -421,7 +472,12 @@ function plotGdpPerCapitaForECap() {
     }
     var gdpPerCapOptions = getLineChartDefaultOptions();
     gdpPerCapOptions.title.text = 'GDP Per Capita';
-    gdpPerCapOptions.subtitle.text = region.gdpPerCap.range;
+    // gdpPerCapOptions.subtitle.text = region.gdpPerCap.range;
+    var sourceUrl = region.gdpPerCap.srcUrl;
+    var sourceName = region.gdpPerCap.srcName;
+    if(sourceUrl && sourceName){
+        gdpPerCapOptions.subtitle.text = 'Source: <a href="' + sourceUrl + '">' + sourceName + '</a>';    
+    }
     gdpPerCapOptions.yAxis.title.text = 'GDP Per Capita (USD)';
     gdpPerCapOptions.tooltip.formatter = function() {
         return 'GDP Per Capita in <b>'+ this.point.name + '</b> = <b>' + this.point.y + '</b>';
@@ -436,7 +492,12 @@ function plotTotalEmployment() {
     }
     var employmentOptions = getLineChartDefaultOptions();
     employmentOptions.title.text = 'Total Employment/year';
-    employmentOptions.subtitle.text = region.employment.range;
+    // employmentOptions.subtitle.text = region.employment.range;
+    var sourceUrl = region.employment.srcUrl;
+    var sourceName = region.employment.srcName;
+    if(sourceUrl && sourceName){
+        employmentOptions.subtitle.text = 'Source: <a href="' + sourceUrl + '">' + sourceName + '</a>';    
+    }
     employmentOptions.yAxis.title.text = 'Total Employment (millions)';
     employmentOptions.tooltip.formatter = function() {
         return 'Total employment in <b>'+ this.point.name + '</b> = <b>' + this.point.y + 'million(s)</b>';
@@ -477,14 +538,13 @@ function setDescription() {
         $("#more-region-description-btn").show();
     }
 }
-var popOverSettings = {
-        placement: 'bottom',
-        trigger: 'hover',
-    };
 
 function addTeamMembers() {
     for(var i=0; i< region.team.length; i++) {
         var teamObj = region.team[i];
+        if(!teamObj.name) {
+            continue;
+        }
         $("#team-container").append(
             '<div class="col-sm-3 col-xs-4">' +
                 '<div id="abc" class="dashboard-team-member sh-' + teamObj.sh + ' chart-blue-reap" rel="popover"' + 
@@ -494,7 +554,10 @@ function addTeamMembers() {
             '</div>'
         );
     }
-    $(".dashboard-team-member").popover(popOverSettings);
+    $(".dashboard-team-member").popover({
+        placement: 'bottom',
+        trigger: 'hover',
+    });
 }
 
 $(document).ready(function() {
