@@ -554,8 +554,8 @@ var regionData =
   }, 
   "morocco": {
     "name": "Morocco", 
-    "description1": "Introductory snippet about Morocco", 
-    "description2": "Additional details about Morocco.", 
+    "description1": "", 
+    "description2": "", 
     "imgFileName": "morocco.png", 
     "flagCssClass": "country-img-wide", 
     "team": [
@@ -977,8 +977,8 @@ var regionData =
   }, 
   "moscow": {
     "name": "Moscow, Russia", 
-    "description1": "Introductory snippet about Moscow", 
-    "description2": "Additional details about Moscow.", 
+    "description1": "", 
+    "description2": "", 
     "imgFileName": "russia.png", 
     "flagCssClass": "country-img-wide", 
     "team": [
