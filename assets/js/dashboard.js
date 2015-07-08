@@ -276,7 +276,23 @@ function addGraph(carouselID, chartId, chartOptions) {
     });
 }
 
+function  showOrHideTeamMembers() {
+    if($('#team-container').children().length < 1) {
+        $('#team-col').remove();
+        $('#pentacle-column').addClass('col-md-offset-3');
+    }
+}
+
+function showOrHideOtherPrimaryMetrics() {
+    if($('#other-metrics-container').children().length < 1) {
+        $('#other-primary-metrics-col').remove();
+    }
+}
+
 function addList(carouselID, listId, listTitle, list) {
+    if(!list || list.length < 1) {
+        return;
+    }
     var count = $("#" + carouselID + " .carousel-dot-control").size();
 
     var htmlList = '<ul>';
@@ -629,7 +645,7 @@ function addTeamMembers() {
 
 function addRegionalEntrepreneurs() {
     if(!region.regionalEntrepreneurs) {
-        console.log('Regional entrepreneurs not found for ' + region.name);
+        $('#regional-entrepreneurs-col').remove();
         return;
     }
     var entrepreneursCount = region.regionalEntrepreneurs.length;
@@ -733,7 +749,7 @@ $(document).ready(function() {
     setFlag();
     setDescription();
     addTeamMembers();
-
+    showOrHideTeamMembers();
     plotDomesticPatent();
     plotUSPatent();
     plotPublications();
@@ -756,6 +772,7 @@ $(document).ready(function() {
     addTopBusinessParks();
     addICapPPI();
     addECapPPI();
+    showOrHideOtherPrimaryMetrics();
     addReapIndexCharts();
    
 
