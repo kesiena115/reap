@@ -159,7 +159,10 @@ function getLineChartDefaultOptions() {
         },
         subtitle: {
             useHTML: true,
-            text: null
+            text: null,
+            style: {
+                fontSize: '10px'
+            }
         },
         credits: {
             enabled: false

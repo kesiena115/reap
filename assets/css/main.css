@@ -6403,6 +6403,11 @@ h2.icap {
   margin-right:10px;
 }
 
+#dashboard-main-panel hr {
+  margin: 5px auto;
+  border-top: 1px solid #aaa;
+}
+
 .dashboard-panel {
   margin:10px auto 10px auto;
   padding-bottom: 15px;
