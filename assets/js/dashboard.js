@@ -709,18 +709,22 @@ $(document).ready(function() {
 		hideStakeholderHighlight();
 	});
 
-    $("#pentacle").mousemove(function(e){
-        var stakeholder = getStakeholderType(e.pageX - stakeholderImgPosition.offset.left, 
-            e.pageY - stakeholderImgPosition.offset.top);
-        if(stakeholder){
-            highlightStakeholderInPentacle(stakeholder);
-            $(".dashboard-team-member").removeClass("active");
-            $(".sh-" + stakeholder).addClass("active");
-        } else {
-            hideStakeholderHighlight();
-            $(".dashboard-team-member").removeClass("active");
-        }
-    });
+    if($(window).width() >= 992) {
+        /* When the user hovers over the pentacle icons, it should be highlighted only if the dashboard 
+        is viewed on a computer as opposed to a table or mobile phone */
+        $("#pentacle").mousemove(function(e){
+            var stakeholder = getStakeholderType(e.pageX - stakeholderImgPosition.offset.left, 
+                e.pageY - stakeholderImgPosition.offset.top);
+            if(stakeholder){
+                highlightStakeholderInPentacle(stakeholder);
+                $(".dashboard-team-member").removeClass("active");
+                $(".sh-" + stakeholder).addClass("active");
+            } else {
+                hideStakeholderHighlight();
+                $(".dashboard-team-member").removeClass("active");
+            }
+        });
+    }
 
     $("#pentacle-highlight").mouseleave(function(){
         hideStakeholderHighlight();
