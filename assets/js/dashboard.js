@@ -152,7 +152,7 @@ function getLineChartDefaultOptions() {
             spacingRight: 30
         },
         title: {
-            text: '*** Default title',
+            text: '',
             style: {
                 fontSize: '14px'
             }
@@ -180,7 +180,7 @@ function getLineChartDefaultOptions() {
         },
         yAxis: {
             title: {
-                text: '*** Default yAxis title'
+                text: ''
             },
         },
         legend: {
@@ -224,11 +224,21 @@ function getLineChartDefaultOptions() {
             },
         }],
         navigation: {
-            buttonOptions: {
-                theme: {
-                    'stroke-width': 1,
-                    stroke: 'silver',
-                }
+            // buttonOptions: {
+            //     theme: {
+            //         'stroke-width': 1,
+            //         stroke: 'silver',
+            //     }
+            // },
+            menuItemStyle: {
+                fontWeight: 'normal',
+                background: 'none',
+                fontSize: '14px'
+            },
+            menuItemHoverStyle: {
+                // fontWeight: 'bold',
+                // background: 'none',
+                // color: 'black'
             }
         }
     };
@@ -264,6 +274,63 @@ function addGraph(carouselID, chartId, chartOptions) {
             $(this).removeClass('active');
         }
     });
+}
+
+function addList(carouselID, listId, listTitle, list) {
+    var count = $("#" + carouselID + " .carousel-dot-control").size();
+
+    var htmlList = '<ul>';
+    for(var i = 0; i < list.length; i++) {
+        htmlList += '<li>' + list[i] + '</li>'
+    }
+    htmlList += '</ul>';
+    
+    $("#" + carouselID + " > .carousel-inner").append(
+        "<div id='" + listId + "' class='item'>" +
+            "<p class='list-title'>" + listTitle + "</p>" +
+            htmlList +
+        "</div>"
+    );
+
+    $("#" + carouselID + " > .carousel-indicators").append(
+        "<li data-target='#" + carouselID + "' data-slide-to='" + count + "' class='carousel-dot-control'></li>"
+    );
+
+    $("#" + carouselID + " > .carousel-inner .item").each(function(index) {
+        if(index == 0) {
+            $(this).addClass('active');
+        } else{
+            $(this).removeClass('active');
+        }
+    });
+
+    $("#" + carouselID + " > .carousel-indicators .carousel-dot-control").each(function(index) {
+        if(index == 0) {
+            $(this).addClass('active');
+        } else{
+            $(this).removeClass('active');
+        }
+    });
+}
+
+function addTop3Clusters() {
+    addList("other-metrics-carousel", "top3Clusters", "Top 3 Industry Clusters", region.top3Clusters);
+}
+
+function addTop3ResearchInstitutions() {
+    addList("other-metrics-carousel", "top3ResearchInstitutions", "Top 3 Research Institutions", region.top3ResearchInstitutions);   
+}
+
+function addTopBusinessParks() {
+    addList("other-metrics-carousel", "top3BusinessParks", "Top 3 Business Parks, Innovation Hubs, or Accelerators", region.businessParks);      
+}
+
+function addICapPPI() {
+    addList("other-metrics-carousel", "icap-ppi", "Innovation Capacity Programmatic and Policy Interventions", region.icapPPI);      
+}
+
+function addECapPPI() {
+    addList("other-metrics-carousel", "ecap-ppi", "Entrepreneurship Capacity Programmatic and Policy Interventions", region.ecapPPI);      
 }
 
 function plotDomesticPatent() {
@@ -534,7 +601,7 @@ function setFlag() {
 function setDescription() {
     $("#description-snippet").html(region.description1);
     $("#more-region-description").html(" " + region.description2);
-    if(region.description1){
+    if(region.description2){
         $("#more-region-description-btn").show();
     }
 }
@@ -558,6 +625,42 @@ function addTeamMembers() {
         placement: 'bottom',
         trigger: 'hover',
     });
+}
+
+function addRegionalEntrepreneurs() {
+    if(!region.regionalEntrepreneurs) {
+        console.log('Regional entrepreneurs not found for ' + region.name);
+        return;
+    }
+    var entrepreneursCount = region.regionalEntrepreneurs.length;
+    if(entrepreneursCount != 3) {
+        console.log('expected 3 regional entrepreneurs but found ' + entrepreneursCount + '. region = ' + region.name);
+        return;
+    }
+    for(var i=0; i< entrepreneursCount; i++) {
+        var entrepreneur = region.regionalEntrepreneurs[i];
+        var offset = '';
+        switch(i) {
+            case 0:
+                offset = ' col-xs-offset-4';
+                break;
+            case 1:
+                offset = ' col-xs-offset-2';
+                break;
+            default:
+                offset = '';
+        }
+
+        $("#regional-entrepreneurs").append(
+            // TODO: start here. convert to string and add dynamic objects. Also set offset based on count
+            '<div class="col-xs-4' + offset + '">' +
+              '<div class="entrepreneur-div">' +
+                '<img alt="' + entrepreneur.name + '" class="entrepreneur-img" src="../assets/images/' + entrepreneur.img + '" />' +
+              '</div>' +
+              '<p>' + entrepreneur.name +  '</p>' +
+            '</div>'
+        );
+    }
 }
 
 $(document).ready(function() {
@@ -647,9 +750,24 @@ $(document).ready(function() {
     if($("#custom-metrics-charts").children().length < 1) {
         $("#custom-metrics-col").remove();
     }
+    addRegionalEntrepreneurs();
+    addTop3Clusters();
+    addTop3ResearchInstitutions();
+    addTopBusinessParks();
+    addICapPPI();
+    addECapPPI();
+    addReapIndexCharts();
+   
 
+// Configure the carousel in the dashboard to slide automatically: http://getbootstrap.com/javascript/#carousel
+  $('.carousel').carousel({
+      interval: 3000
+  })
+    
+});
 
-	$('#chart1').highcharts({
+function addReapIndexCharts() {
+    $('#chart1').highcharts({
         chart: {
             type: 'column',
             height: 300,
@@ -658,16 +776,16 @@ $(document).ready(function() {
         title: {
             text: 'Broad Industry Indicators',
    //          style: {
-			//     fontSize: '24px',
-			//     fontWeight: 'bold',
-			//     fontFamily: 'whitney_htflight_condensed, sans-serif'
-			// }
-		},
+            //     fontSize: '24px',
+            //     fontWeight: 'bold',
+            //     fontFamily: 'whitney_htflight_condensed, sans-serif'
+            // }
+        },
         subtitle: {
             text: '1991-2014'
         },
         credits: {
-        	enabled: false
+            enabled: false
         },
         xAxis: {
             type: 'category',
@@ -675,8 +793,8 @@ $(document).ready(function() {
                 // autoRotation: false,
                 rotation: -45,
                 formatter: function (){
-					return this.value.replace(/ /g, '<br />');
-				},
+                    return this.value.replace(/ /g, '<br />');
+                },
                 style: {
                     fontSize: '10px',
                     fontFamily: 'Verdana, sans-serif'
@@ -689,10 +807,10 @@ $(document).ready(function() {
                 text: 'Percentage (%)'
             },
             gridLineWidth: 0,
-        	minorGridLineWidth: 0,
-        	lineColor: 'rgb(192, 208, 224)',
-        	lineWidth: 1,
-        	tickLength: 20
+            minorGridLineWidth: 0,
+            lineColor: 'rgb(192, 208, 224)',
+            lineWidth: 1,
+            tickLength: 20
         },
         legend: {
             enabled: false
@@ -755,7 +873,7 @@ $(document).ready(function() {
             text: '1991-2014'
         },
         credits: {
-        	enabled: false
+            enabled: false
         },
         xAxis: {
             type: 'category',
@@ -763,8 +881,8 @@ $(document).ready(function() {
                 // autoRotation: false,
                 rotation: -45,
                 formatter: function (){
-					return this.value.replace(/ /g, '<br />');
-				},
+                    return this.value.replace(/ /g, '<br />');
+                },
                 style: {
                     fontSize: '10px',
                     fontFamily: 'Verdana, sans-serif'
@@ -777,10 +895,10 @@ $(document).ready(function() {
                 text: 'Percentage (%)'
             },
             gridLineWidth: 0,
-        	minorGridLineWidth: 0,
-        	lineColor: 'rgb(192, 208, 224)',
-        	lineWidth: 1,
-        	tickLength: 20
+            minorGridLineWidth: 0,
+            lineColor: 'rgb(192, 208, 224)',
+            lineWidth: 1,
+            tickLength: 20
         },
         legend: {
             enabled: false
@@ -844,12 +962,12 @@ $(document).ready(function() {
             text: '1991-2014'
         },
         credits: {
-        	enabled: false
+            enabled: false
         },
         xAxis: {
-        	title: {
-        		text: 'Cohort Year'
-        	},
+            title: {
+                text: 'Cohort Year'
+            },
             type: 'category',
             labels: {
                 // autoRotation: false,
@@ -867,10 +985,10 @@ $(document).ready(function() {
                 text: 'Number of Firms'
             },
             gridLineWidth: 0,
-        	minorGridLineWidth: 0,
-        	lineColor: 'rgb(192, 208, 224)',
-        	lineWidth: 1,
-        	// tickLength: 20
+            minorGridLineWidth: 0,
+            lineColor: 'rgb(192, 208, 224)',
+            lineWidth: 1,
+            // tickLength: 20
         },
         legend: {
             enabled: false
@@ -917,25 +1035,25 @@ $(document).ready(function() {
             lineColor: '#428bca',
             lineWidth: 1,
             marker: {
-            	enabled: false,
-            	fillColor: '#428bca',
-            	lineColor: '#ffffff'
+                enabled: false,
+                fillColor: '#428bca',
+                lineColor: '#ffffff'
             },
             plotOptions: {
-            	area: {
-            		pointStart: 1991,
-            		marker: {
-            			enabled: true,
-            			symbol: 'circle',
-            			radius: 2,
-            			lineColor: '#000000',
-            			states: {
-            				hover: {
-            					enabled: true
-            				}
-            			}
-            		}
-            	}
+                area: {
+                    pointStart: 1991,
+                    marker: {
+                        enabled: true,
+                        symbol: 'circle',
+                        radius: 2,
+                        lineColor: '#000000',
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
             },
         }],
         navigation: {
@@ -948,7 +1066,7 @@ $(document).ready(function() {
         }
     });
 
-	$('#chart4').highcharts({
+    $('#chart4').highcharts({
         chart: {
             type: 'area',
             height: 300,
@@ -961,12 +1079,12 @@ $(document).ready(function() {
             text: '1991-2014'
         },
         credits: {
-        	enabled: false
+            enabled: false
         },
         xAxis: {
-        	title: {
-        		text: 'Cohort Year'
-        	},
+            title: {
+                text: 'Cohort Year'
+            },
             type: 'category',
             labels: {
                 // autoRotation: false,
@@ -984,10 +1102,10 @@ $(document).ready(function() {
                 text: 'Average Quality of Firms (x1000)'
             },
             gridLineWidth: 0,
-        	minorGridLineWidth: 0,
-        	lineColor: 'rgb(192, 208, 224)',
-        	lineWidth: 1,
-        	// tickLength: 20
+            minorGridLineWidth: 0,
+            lineColor: 'rgb(192, 208, 224)',
+            lineWidth: 1,
+            // tickLength: 20
         },
         legend: {
             enabled: false
@@ -1034,25 +1152,25 @@ $(document).ready(function() {
             lineColor: '#428bca',
             lineWidth: 1,
             marker: {
-            	enabled: false,
-            	fillColor: '#428bca',
-            	lineColor: '#ffffff'
+                enabled: false,
+                fillColor: '#428bca',
+                lineColor: '#ffffff'
             },
             plotOptions: {
-            	area: {
-            		pointStart: 1991,
-            		marker: {
-            			enabled: true,
-            			symbol: 'circle',
-            			radius: 2,
-            			lineColor: '#000000',
-            			states: {
-            				hover: {
-            					enabled: true
-            				}
-            			}
-            		}
-            	}
+                area: {
+                    pointStart: 1991,
+                    marker: {
+                        enabled: true,
+                        symbol: 'circle',
+                        radius: 2,
+                        lineColor: '#000000',
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
             },
         }],
         navigation: {
@@ -1078,12 +1196,12 @@ $(document).ready(function() {
             text: '1991-2014'
         },
         credits: {
-        	enabled: false
+            enabled: false
         },
         xAxis: {
-        	title: {
-        		text: 'Cohort Year'
-        	},
+            title: {
+                text: 'Cohort Year'
+            },
             type: 'category',
             labels: {
                 // autoRotation: false,
@@ -1101,10 +1219,10 @@ $(document).ready(function() {
                 text: 'Potential of Firms (x1000)'
             },
             gridLineWidth: 0,
-        	minorGridLineWidth: 0,
-        	lineColor: 'rgb(192, 208, 224)',
-        	lineWidth: 1,
-        	// tickLength: 20
+            minorGridLineWidth: 0,
+            lineColor: 'rgb(192, 208, 224)',
+            lineWidth: 1,
+            // tickLength: 20
         },
         legend: {
             enabled: false
@@ -1151,25 +1269,25 @@ $(document).ready(function() {
             lineColor: '#428bca',
             lineWidth: 1,
             marker: {
-            	enabled: false,
-            	fillColor: '#428bca',
-            	lineColor: '#ffffff'
+                enabled: false,
+                fillColor: '#428bca',
+                lineColor: '#ffffff'
             },
             plotOptions: {
-            	area: {
-            		pointStart: 1991,
-            		marker: {
-            			enabled: true,
-            			symbol: 'circle',
-            			radius: 2,
-            			lineColor: '#000000',
-            			states: {
-            				hover: {
-            					enabled: true
-            				}
-            			}
-            		}
-            	}
+                area: {
+                    pointStart: 1991,
+                    marker: {
+                        enabled: true,
+                        symbol: 'circle',
+                        radius: 2,
+                        lineColor: '#000000',
+                        states: {
+                            hover: {
+                                enabled: true
+                            }
+                        }
+                    }
+                }
             },
         }],
         navigation: {
@@ -1274,12 +1392,4 @@ $(document).ready(function() {
                     // pointFormat: '<b>{point.name}</b><br/>Quality ranking: <b>{point.x}</b><br/>Size ranking: <b>{point.y}</b>'
                 }
     });
-
-   
-
-// Configure the carousel in the dashboard to slide automatically: http://getbootstrap.com/javascript/#carousel
-  $('.carousel').carousel({
-      interval: 3000
-  })
-    
-});
+}

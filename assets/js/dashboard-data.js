@@ -2,42 +2,63 @@ var regionData =
 {
   "london": {
     "name": "London, United Kingdom", 
-    "description1": "London is a leading global city, with strengths in the arts, commerce, education, entertainment, fashion, finance, healthcare, media, professional services, research and development, tourism, and transport all contributing to its prominence.", 
-    "description2": "It is one of the world's leading financial centres and has the fifth-or sixth-largest metropolitan area GDP in the world depending on measurement. London is a world cultural capital. It is the world's most-visited city as measured by international arrivals and has the world's largest city airport system measured by passenger traffic. London's 43 universities form the largest concentration of higher education institutes in Europe. In 2012, London became the first city to host the modern Summer Olympic Games three times.", 
+    "description1": "London has a large number of start-up businesses and fantastic entrepreneurial ecosystem supporting theses businesses including incubators and accelerators, investors and talented graduates.", 
+    "description2": "Where the support for businesses could be strengthened is when businesses are looking to rapidly scale.", 
     "imgFileName": "uk.png", 
     "flagCssClass": "country-img", 
     "team": [
       {
         "sh": "entrepreneur", 
-        "name": "", 
-        "desc": ""
+        "name": "Ben Fletcher", 
+        "desc": "Having run his own business for 14 years, Ben took a 5 year sabbatical in 2009 to work with startups as an investor, advisor and mentor. Noticing that most businesses struggle with the same issues as they attempt to scale rapidly, he founded the execution focused event Fast Growth Forum in 2013 so that successful founders could help entrepreneurs in growing businesses make that transition more smoothly."
       }, 
       {
         "sh": "university", 
-        "name": "", 
-        "desc": ""
+        "name": "Prof Mike Caine", 
+        "desc": "Mike is Professor of Sports Technology and Innovation. He has secured circa £15M of research and innovation grants and received several national and international enterprise awards. He was the inaugural Editor-in-Chief of the Journal of Sports Engineering and Technology, published by the Institution of Mechanical Engineers. Mike is currently leading Loughborough University’s development of a second campus on the Queen Elizabeth Olympic Park, London (www.lborolondon.ac.uk). Mike has been a company Director for 19 years having founded two spinout companies. He has researched, patented, developed and licensed multiple healthcare and sport related technologies, generating £25M+ in revenues. Mike’s research and innovation activities have been featured in over five hundred substantial broadcast and print media outputs."
       }, 
       {
         "sh": "corporate", 
-        "name": "", 
-        "desc": ""
+        "name": "Marina Wegorek", 
+        "desc": "Marina currently heads up Entrepreneur Strategy team for Business & Commercial division of the Royal Bank of Scotland Group. Having qualified as Chartered Certified Accountant (ACCA) and Chartered Management Accountant (CIMA) at the age of 22 she started her Accountancy practice career in PWC. In 2002 she joined RBS as Regulatory and Financial Accountant but two years later, recognising her passion to get involved in creative and customer centric roles she moved to RBS retail banking division to join the newly created Innovations & Customer Propositions team. Since then Marina has taken on various roles within the Bank where she has gained vast amount of experience in Strategy, Marketing, Insurance and Customer Propositions working for RBS Retail, RBS Insurance and RBS Business & Commercial and Corporate. Her experience also extends to entrepreneurial roles of running her own businesses. Sitting on the GLG Council Marina uses her combined business experience gained at RBS, Accountancy Practice and running own businesses in clothing and property investment to mentor small businesses. Marina is a mother to 3 year old Ava and lives in scenic and quite village in Surrey, England with her husband. She enjoys her spin classes, listening to music, entertaining and socialising."
       }, 
       {
         "sh": "government", 
-        "name": "", 
-        "desc": ""
+        "name": "Susie Kitchens", 
+        "desc": "Susie Kitchens arrived in Boston to become Britain’s Consul General in August 2012. She is here with her US-born husband, Michael, and their two children, living on historic Beacon Hill. Prior to this assignment, Susie was the Deputy High Commissioner at the British High Commission in Tanzania. Susie’s diplomatic career has also included postings in the Foreign and Commonwealth Office in London (on bilateral relations with Latin America, Consular policy and on the United Nations Security Council) and also as Political Officer at the British Embassy in Guatemala. Susie’s academic record includes an MA in Human Sciences from Oxford University (Lady Margaret Hall), and an MSc in Public Health from the London School of Hygiene and Tropical Medicine. Before becoming a diplomat, Susie worked in international development promoting children’s health via school improvement through the Aga Khan Foundation in Pakistan and then with CARE International in El Salvador. Susie and her dual nationality family are delighted to have this opportunity to live in the United States, particularly in New England with its historical and contemporary links to the UK. Susie’s paternal grandfather served as vice-consul in both New York and San Francisco during World War II, initiating the family’s diplomatic ties with the USA."
       }, 
       {
         "sh": "riskcapital", 
-        "name": "", 
-        "desc": ""
+        "name": "Jenny Tooth", 
+        "desc": "Jenny Tooth has been CEO of the UK Business Angels Association since 2012. UKBAA is the trade body for angel and early stage investing, supporting over 15,000 investors and which superseded the British Business Angels Association. Jenny has been providing strategic support to BBAA since its establishment in 2004, supporting both policy and interfacing with Government, as well as developing the trade body’s major annual events. Jenny has over 20 years’ experience of facilitating SMEs access to investment, both in the UK and internationally. After a background in marketing and publishing, she ran her own consultancy business, focusing on business growth, innovation and access to finance working with public and private organisations,  including spending nine years based in Brussels, working closely with the EC and related institutions on access to finance. She has operated a wide range of investment readiness programmes, including projects supported by national and EU funding. She has also participated in a number of expert groups on access to finance and chaired the EC Knowledge Intensive Services group under DG Enterprise. In 2006 she took on the role of Business Development Director at GLE Growth Capital running their access to finance projects. In 2009 Jenny co-founded Angel Capital Group incorporating London Business Angels, one of the most established angel networks in in the UK, where she has been Director  focusing on demand side issues and angel investment, operating projects on technology, mobile services and creative industries. On an international level, she is a Board member of Business Angels Europe and one of the co-founders of World Business Angels Association. Jenny is an experienced speaker, both in the UK and internationally. She has an MSc in Economics from London School of Economics and Political Science."
       }, 
       {
         "sh": "champion", 
-        "name": "", 
-        "desc": ""
+        "name": "Paula Cuneo", 
+        "desc": "Paola is passionate about entrepreneurship and innovation. She has spent over 10 years working for British Telecom in various senior positions in both marketing, sales and operations. Between 2009 and 2011, Paola was seconded at London and Partners as Head of EMEA and also covered the position of Head of Asia Pacific for almost a year. Paola is currently running the Sirius programme for UKTI, attracting talented graduate entrepreneurs to the UK. Paola also mentors start-ups, advising on all aspects of business growth and raising capital."
       }
     ], 
+    "regionalEntrepreneurs" : [
+      {
+        "name": "Richard Branson",
+        "img": "richardbranson.jpg"
+      },
+      {
+        "name": "Alan Sugar",
+        "img": "alansugar.jpg"
+      },
+      {
+        "name": "Anita Roddick",
+        "img": "anitaroddick.jpg"
+      }
+    ],
+    "top3Clusters" : ["Digital", "Fintech", "Fashion"],
+    "top3ResearchInstitutions" : ["University College London", "Imperial University", "Oxford and Cambridge"],
+    "celebratedRegionalInnovations" : ["ATM", "The Internet", "The Dyson Vacuum Cleaner"],
+    "top3Clusters" : ["Digital", "Fintech", "Fashion"],
+    "businessParks" : ["Network of Catapult Centres", "Tech City UK", "  Several accelerators including Microsoft Ventures, Mass Challenge and Tech hub"],
+    "icapPPI" : ["R&D Tax Credits", "Patent Box", "Network of Catapults"],
+    "ecapPPI" : ["Enterprise Visa", "Numerous Accelerators and Incubators", "Tech City UK"],
     "countryPopulation": {
       "srcName": "World Bank - WDI", 
       "range": "2000-2013", 
@@ -540,33 +561,33 @@ var regionData =
     "team": [
       {
         "sh": "entrepreneur", 
-        "name": "John Smith", 
-        "desc": "John Smith is an entrepreneur"
+        "name": "", 
+        "desc": ""
       }, 
       {
         "sh": "university", 
-        "name": "Michael Jane", 
-        "desc": "Micael Jane is a university professor"
+        "name": "", 
+        "desc": ""
       }, 
       {
         "sh": "corporate", 
-        "name": "Andrew Simon", 
-        "desc": "Andrew Simon is a corporate executive"
+        "name": "", 
+        "desc": ""
       }, 
       {
         "sh": "government", 
-        "name": "Lisa Jones", 
-        "desc": "Lisa Jones is a government official"
+        "name": "", 
+        "desc": ""
       }, 
       {
         "sh": "riskcapital", 
-        "name": "Sandra Monica", 
-        "desc": "Sandra Monica is a risk capital provider"
+        "name": "", 
+        "desc": ""
       }, 
       {
         "sh": "champion", 
-        "name": "Mario Johnson", 
-        "desc": "Mario Johnson is a team champion"
+        "name": "", 
+        "desc": ""
       }
     ], 
     "countryPopulation": {

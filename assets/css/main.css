@@ -187,11 +187,27 @@ body {
 }
 
 .dashboard-panel a.carousel-control {
-  margin: 0 10px;
+  /*margin: 0 10px;*/
   width: 30px;
   color: white;
   background-image: none;
-  /*background-color: #eeeeee*/
+  /*background-color: #eeeeee;
+  border: 1px solid #ddd;*/
+}
+
+.carousel {
+  /*border: 1px solid #ccc;*/
+  border-radius: 10px;
+  border: 1px solid #428bca;
+}
+
+.carousel-row {
+  padding: 0px 20px;
+}
+
+.carousel-dot-control {
+  position: relative;
+  top: 25px;
 }
 
 .dashboard-panel .highcharts-container {
@@ -199,7 +215,7 @@ body {
 }
 
 .reap-index-col .item {
-  min-height: 300px;
+  /*min-height: 300px;*/
 }
 
 .reap-index-col .text-container {
@@ -214,6 +230,30 @@ body {
   margin-right: 0;
 }
 
+.carousel-indicators {
+  width: 100%;
+  left: 26%;
+}
+
+.dashboard-carousel-control {
+  width: 40px;
+  height: 310px;
+  top: -40px;
+}
+
+.dashboard-carousel-control.left {
+  left: 0px;
+}
+
+.dashboard-carousel-control.right {
+  right: 0px;
+}
+
+.dashboard-chevron {
+  position: relative;
+  top: 130px;
+}
+
 .dashboard-panel h3 {
   font-size: 22px;
   margin-bottom: 5px;
@@ -224,6 +264,63 @@ body {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+
+#regional-entrepreneurs {
+  padding-top: 10px;
+}
+
+.entrepreneur-div {
+  background-color: #428bca;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #428bca;
+  margin: auto;
+}
+
+.entrepreneur-img {
+  width: 96%;
+  height: 96%;
+  position: relative;
+  top: 2%;
+  left: 2%;
+  border-radius: 50%;
+  border: 1px solid #428bca;
+}
+
+#regional-entrepreneurs p {
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#other-metrics-carousel {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#other-metrics-carousel .item {
+  height: 220px;
+}
+
+#other-metrics-carousel ul {
+  padding-left: 25px;
+}
+
+#other-metrics-carousel li {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+#other-metrics-carousel .list-title {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #333333;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+  width: 100%;
+  /*text-align: center;*/
 }
 
 .row.cities-table{
@@ -254,7 +351,7 @@ tbody tr:nth-child(even) {
 
 .primary-metrics-table {
   width: 70%;
-  margin: auto auto 40px auto;
+  margin: 20px auto 40px auto;
   font-size: 1.1em;
 }
 
@@ -6295,11 +6392,6 @@ h6 {
 	height:270px !important;
 }
 
-.carousel-dot-control {
-	position: relative;
-	top: 25px;
-}
-
 h2.icap {
 	position:relative;
 	top:20px;
@@ -6410,30 +6502,6 @@ h2.icap {
 
 .graph-title {
 	width:300px;
-}
-
-.carousel-indicators {
-	width: 100%;
-	left: 26%;
-}
-
-.dashboard-carousel-control {
-  width: 40px;
-  height: 310px;
-  top: -40px;
-}
-
-.dashboard-carousel-control.left {
-  left: 0px;
-}
-
-.dashboard-carousel-control.right {
-  right: 0px;
-}
-
-.dashboard-chevron {
-  position: relative;
-  top: 15px;
 }
 
 h3.cap-title {
