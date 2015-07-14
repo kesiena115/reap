@@ -270,6 +270,12 @@ body {
   padding-top: 10px;
 }
 
+#regional-entrepreneurs p {
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
 .entrepreneur-div {
   background-color: #428bca;
   width: 100px;
@@ -277,6 +283,12 @@ body {
   border-radius: 50%;
   border: 1px solid #428bca;
   margin: auto;
+}
+
+.entrepreneur-div p {
+  color: white;
+  padding-top: 30px;
+  font-size: 16px;
 }
 
 .entrepreneur-img {
@@ -289,19 +301,13 @@ body {
   border: 1px solid #428bca;
 }
 
-#regional-entrepreneurs p {
-  margin-bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-
 #other-metrics-carousel {
   padding-left: 30px;
   padding-right: 30px;
 }
 
 #other-metrics-carousel .item {
-  height: 220px;
+  min-height: 250px;
 }
 
 #other-metrics-carousel ul {
@@ -320,7 +326,31 @@ body {
   color: #333333;
   font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
   width: 100%;
+  max-height: 100%;
   /*text-align: center;*/
+}
+
+#other-metrics-carousel .img-div {
+  position: relative;
+  width: 90%;
+  height: 80px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #999;
+}
+
+#other-metrics-carousel img {
+  position: relative;
+  width: 100%;  
+}
+
+#other-metrics-carousel p.img-label {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .row.cities-table{

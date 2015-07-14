@@ -1,8 +1,9 @@
 __author__ = 'kesiena'
-import csv, sys
+import csv, sys, cgi
 from decimal import *
 import json
 from collections import OrderedDict
+import re
 
 '''
 Steps
@@ -17,68 +18,69 @@ Steps
 
 # The following names should correspond to the file names. Also, the json objects will have these names
 regions = ['london', 'morocco', 'moscow', 'puertorico', 'qatar', 'seoul', 'singapore', 'valencia']
-# regions = ['morocco']
+# regions = ['london']
 
 regionData = {
     'london': {
         'imgFileName':'uk.png',
-        'flagCssClass':'country-img',
-        'description1':'London has a large number of start-up businesses and fantastic entrepreneurial ecosystem supporting theses businesses including incubators and accelerators, investors and talented graduates.',
-        'description2':'Where the support for businesses could be strengthened is when businesses are looking to rapidly scale.'
+        'flagCssClass':'country-img'
     },
     'morocco': {
         'imgFileName':'morocco.png',
-        'flagCssClass':'country-img-wide',
-        'description1':'Introductory snippet about Morocco',
-        'description2':'Additional details about Morocco.'
+        'flagCssClass':'country-img-wide'
     },
     'moscow': {
         'imgFileName':'russia.png',
-        'flagCssClass':'country-img-wide',
-        'description1':'Introductory snippet about Moscow',
-        'description2':'Additional details about Moscow.'
+        'flagCssClass':'country-img-wide'
     },
     'puertorico': {
         'imgFileName':'puertorico.png',
-        'flagCssClass':'country-img-pr',
-        'description1':'',
-        'description2':''
+        'flagCssClass':'country-img-pr'
     },
     'qatar': {
         'imgFileName':'qatar.png',
-        'flagCssClass':'country-img-qatar',
-        'description1':'',
-        'description2':''
+        'flagCssClass':'country-img-qatar'
     },
     'seoul': {
         'imgFileName':'korea.png',
-        'flagCssClass':'country-img-seoul',
-        'description1':'',
-        'description2':''
+        'flagCssClass':'country-img-seoul'
     },
     'singapore': {
         'imgFileName':'singapore.png',
-        'flagCssClass':'country-img-wide',
-        'description1':'',
-        'description2':''
+        'flagCssClass':'country-img-wide'
     },
     'valencia': {
         'imgFileName':'spain.png',
-        'flagCssClass':'country-img-spain',
-        'description1':'',
-        'description2':''
+        'flagCssClass':'country-img-spain'
     }
 }
 inputFolder = '/Users/kesiena/Dropbox (MIT)/MIT/MartinTrustCenterRA/REAP Dashboard/csv/'
-output = ''
+# outputFile = inputFolder + 'dashboard-data.js'
+outputFile = '/Users/kesiena/Dropbox (MIT)/Sites/reap/assets/js/dashboard-data.js'
 outputData = OrderedDict({})
 regionName = ''
+
+def encodestring(str):
+    return str.encode('utf-8', '')
 
 def createRegionDataSection():
     outputData[regionName] = OrderedDict({})
 
 def addKeyValuePair(key, value):
     outputData[regionName][key] = value
+
+def addList(key, list):
+    outputData[regionName][key] = list
+
+def addRegionDescription(desc):
+    space_count = desc.count(' ')
+    if space_count > 20:
+        words = desc.split(' ')
+        parts = ' '.join(words[:20]), ' '.join(words[20:])
+        addKeyValuePair('description1', parts[0])
+        addKeyValuePair('description2', parts[1])
+    else:
+        addKeyValuePair('description1', desc)
 
 stakeholdermap = {
     'Team member - entrepreneur': 'entrepreneur',
@@ -87,18 +89,75 @@ stakeholdermap = {
     'Team member - government': 'government',
     'Team member - risk capital': 'riskcapital',
     'Team member - champion': 'champion',
+    'Team member': ''
 }
 
-def addTeam(all_rows):
+def addTeam(all_rows, rowStart, rowEnd):
     label = ''
     team_count = 0
     team_list = []
-    for i in range(57,77):
+    for i in range(rowStart, rowEnd):
         label = all_rows[i][0]
-        if label.startswith('Team member -'):
+        if label.startswith('Team member -') or 'Team member' == label:
             role = stakeholdermap[label]
             team_list.append({'name': all_rows[i][3], 'sh': role, 'desc': all_rows[i][4]})
     outputData[regionName]['team'] = team_list
+
+def addTopClusters(all_rows, rowStart, rowEnd):
+    result = []
+    for i in range(rowStart, rowEnd):
+        label = all_rows[i][0]
+        if 'Industry cluster' == label:
+            result.append(all_rows[i][3])
+    addList('topClusters', result)
+
+def add_top_research_institutions(all_rows, rowStart, rowEnd):
+    result = []
+    for i in range(rowStart, rowEnd):
+        label = all_rows[i][0]
+        if 'Research institute' == label:
+            result.append({'name': all_rows[i][3], 'img': all_rows[i][4]})
+    addList('topResearchInstitutions', result)
+
+def add_regional_innovations(all_rows, rowStart, rowEnd):
+    result = []
+    for i in range(rowStart, rowEnd):
+        label = all_rows[i][0]
+        if 'Regional innovation' == label:
+            result.append(all_rows[i][3])
+    addList('regionalInnovations', result)
+
+def add_business_parks(all_rows, rowStart, rowEnd):
+    result = []
+    for i in range(rowStart, rowEnd):
+        label = all_rows[i][0]
+        if 'Business park, innovation hub or accelerator' == label:
+            result.append(all_rows[i][3])
+    addList('businessParks', result)
+
+def add_regional_entrepreneurs(all_rows, rowStart, rowEnd):
+    result = []
+    for i in range(rowStart, rowEnd):
+        label = all_rows[i][0]
+        if 'Regional Entreprenur' == label:
+            result.append({'name': all_rows[i][3], 'img': all_rows[i][4]})
+    addList('regionalEntrepreneurs', result)
+
+def add_icap_ppi(all_rows, rowStart, rowEnd):
+    result = []
+    for i in range(rowStart, rowEnd):
+        label = all_rows[i][0]
+        if 'Name of existing icap PPI in region' == label:
+            result.append(all_rows[i][3])
+    addList('icapPPI', result)
+
+def add_ecap_ppi(all_rows, rowStart, rowEnd):
+    result = []
+    for i in range(rowStart, rowEnd):
+        label = all_rows[i][0]
+        if 'Name of existing ecap PPI in region' == label:
+            result.append(all_rows[i][3])
+    addList('ecapPPI', result)
 
 def addChartData(dates, cols, name, src_name='', src_url=''):
     year_list = []
@@ -164,11 +223,21 @@ def addRegionData(region):
     dates = rows[1][colStart:colEnd]
     createRegionDataSection()
     addKeyValuePair('name', rows[29][3])
+    addRegionDescription(rows[30][3])
     if regionData.has_key(regionName):
         additionalKeyValuePairs = regionData[regionName]
         for key in additionalKeyValuePairs:
             addKeyValuePair(key, additionalKeyValuePairs[key])
-    addTeam(rows)
+    section2_row_start = 30
+    section2_row_end = 95
+    addTeam(rows, section2_row_start, section2_row_end)
+    addTopClusters(rows, section2_row_start, section2_row_end)
+    add_top_research_institutions(rows, section2_row_start, section2_row_end)
+    add_regional_innovations(rows, section2_row_start, section2_row_end)
+    add_business_parks(rows, section2_row_start, section2_row_end)
+    add_regional_entrepreneurs(rows, section2_row_start, section2_row_end)
+    add_icap_ppi(rows, section2_row_start, section2_row_end)
+    add_ecap_ppi(rows, section2_row_start, section2_row_end)
 
     addChartData(dates, rows[2][colStart:colEnd], 'countryPopulation', rows[2][19], rows[2][20])
     addChartData(dates, rows[3][colStart:colEnd], 'regionPopulation', rows[3][19], rows[3][20])
@@ -190,4 +259,8 @@ def addRegionData(region):
 if __name__ == "__main__":
     for r in regions:
         addRegionData(r)
-    print json.dumps(outputData, indent=2)
+    print json.dumps(outputData, indent=2, ensure_ascii=False)
+    with open(outputFile, "w") as text_file:
+        text_file.write("var regionData = ")
+        text_file.write(json.dumps(outputData, indent=2, ensure_ascii=False))
+    print "Done"

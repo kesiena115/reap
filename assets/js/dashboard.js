@@ -293,7 +293,7 @@ function showOrHideOtherPrimaryMetrics() {
 }
 
 function addList(carouselID, listId, listTitle, list) {
-    if(!list || list.length < 1) {
+    if(!list || list.length < 1 || "" == list[0]) {
         return;
     }
     var count = $("#" + carouselID + " .carousel-dot-control").size();
@@ -332,16 +332,90 @@ function addList(carouselID, listId, listTitle, list) {
     });
 }
 
-function addTop3Clusters() {
-    addList("other-metrics-carousel", "top3Clusters", "Top 3 Industry Clusters", region.top3Clusters);
+function addListof3or4Imgs(carouselID, listId, listTitle, list) {
+    if(!list || list.length < 1 || "" == list[0]) {
+        return;
+    }
+    var count = $("#" + carouselID + " .carousel-dot-control").size();
+
+    var html = '<div class="item">' + 
+                '<p class="list-title">' + listTitle + '</p>' +
+                '<div class="row">';
+
+    var name = '';
+    var img = '';
+    var offset = '';
+    for(var i=0; i< list.length; i++) {
+        name = list[i].name;
+        img = list[i].img;
+        if(i == 0 && list.length == 3) {
+            offset = ' col-xs-offset-3';
+        } else {
+            offset = '';
+        }
+        var content = 
+            '<div class="col-xs-6' + offset + '">' + 
+                '<div class="img-div">' +
+                  '<img alt="' + name + '" src="../assets/images/' + img + '" />' +
+                '</div>' +
+                '<p class="img-label">' + name + '</p>' +
+            '</div>';
+        html += content;
+
+    }
+    html += '</div></div>';
+    
+    $("#" + carouselID + " > .carousel-inner").append(
+        html
+    );
+
+    $("#" + carouselID + " > .carousel-indicators").append(
+        "<li data-target='#" + carouselID + "' data-slide-to='" + count + "' class='carousel-dot-control'></li>"
+    );
+
+    $("#" + carouselID + " > .carousel-inner .item").each(function(index) {
+        if(index == 0) {
+            $(this).addClass('active');
+        } else{
+            $(this).removeClass('active');
+        }
+    });
+
+    $("#" + carouselID + " > .carousel-indicators .carousel-dot-control").each(function(index) {
+        if(index == 0) {
+            $(this).addClass('active');
+        } else{
+            $(this).removeClass('active');
+        }
+    });
 }
 
-function addTop3ResearchInstitutions() {
-    addList("other-metrics-carousel", "top3ResearchInstitutions", "Top 3 Research Institutions", region.top3ResearchInstitutions);   
+function addTopClusters() {
+    addList("other-metrics-carousel", "topClusters", "Top Industry Clusters", region.topClusters);
+}
+
+function addTopResearchInstitutions() {
+    institutions = region.topResearchInstitutions;
+    if(!institutions || institutions.length < 1){
+        return;
+    }
+    if ("" == institutions[0]['img']) {
+        nameList = []
+        for(var i = 0; i < institutions.length; i++) {
+            nameList.push(institutions[i]['name'])
+        }
+        addList("other-metrics-carousel", "topResearchInstitutions", "Top Research Institutions", nameList);   
+    } else {
+        addListof3or4Imgs("other-metrics-carousel", "topResearchInstitutions", "Top Research Institutions", institutions);    
+    }    
 }
 
 function addTopBusinessParks() {
-    addList("other-metrics-carousel", "top3BusinessParks", "Top 3 Business Parks, Innovation Hubs, or Accelerators", region.businessParks);      
+    addList("other-metrics-carousel", "topBusinessParks", "Top Business Parks, Innovation Hubs, or Accelerators", region.businessParks);      
+}
+
+function addRegionalInnovations() {
+    addList("other-metrics-carousel", "regionalInnovations", "Celebrated Regional Innovations", region.regionalInnovations);      
 }
 
 function addICapPPI() {
@@ -647,7 +721,7 @@ function addTeamMembers() {
 }
 
 function addRegionalEntrepreneurs() {
-    if(!region.regionalEntrepreneurs) {
+    if(!region.regionalEntrepreneurs || "" == region.regionalEntrepreneurs[0].name) {
         $('#regional-entrepreneurs-col').remove();
         return;
     }
@@ -670,13 +744,20 @@ function addRegionalEntrepreneurs() {
                 offset = '';
         }
 
+        var content = '<img alt="' + entrepreneur.name + '" class="entrepreneur-img" src="../assets/images/' + entrepreneur.img + '" />';
+        var bottomLabel = '<p>' + entrepreneur.name +  '</p>'; 
+        if(""  == entrepreneur.img) {
+            content = '<p>' + entrepreneur.name +  '</p>';
+            bottomLabel = "";
+        }
+
         $("#regional-entrepreneurs").append(
             // TODO: start here. convert to string and add dynamic objects. Also set offset based on count
             '<div class="col-xs-4' + offset + '">' +
               '<div class="entrepreneur-div">' +
-                '<img alt="' + entrepreneur.name + '" class="entrepreneur-img" src="../assets/images/' + entrepreneur.img + '" />' +
+                content +
               '</div>' +
-              '<p>' + entrepreneur.name +  '</p>' +
+              bottomLabel +
             '</div>'
         );
     }
@@ -774,8 +855,9 @@ $(document).ready(function() {
         $("#custom-metrics-col").remove();
     }
     addRegionalEntrepreneurs();
-    addTop3Clusters();
-    addTop3ResearchInstitutions();
+    addTopResearchInstitutions();
+    addRegionalInnovations();
+    addTopClusters();
     addTopBusinessParks();
     addICapPPI();
     addECapPPI();

@@ -1,8 +1,9 @@
-var regionData = {
+var regionData = 
+{
   "london": {
     "name": "London, United Kingdom", 
-    "description1": "London has a large number of start-up businesses and fantastic entrepreneurial ecosystem supporting theses businesses including incubators and accelerators, investors", 
-    "description2": "and talented graduates. Where the support for businesses could be strengthened is when businesses are looking to rapidly scale.", 
+    "description1": "London has a large number of start-up businesses and fantastic entrepreneurial ecosystem supporting theses businesses including incubators and accelerators, investors and talented graduates.", 
+    "description2": "Where the support for businesses could be strengthened is when businesses are looking to rapidly scale.", 
     "imgFileName": "uk.png", 
     "flagCssClass": "country-img", 
     "team": [
@@ -13,122 +14,51 @@ var regionData = {
       }, 
       {
         "sh": "university", 
-        "name": "Tim Barnes", 
-        "desc": ""
+        "name": "Prof Mike Caine", 
+        "desc": "Mike is Professor of Sports Technology and Innovation. He has secured circa Â£15M of research and innovation grants and received several national and international enterprise awards. He was the inaugural Editor-in-Chief of the Journal of Sports Engineering and Technology, published by the Institution of Mechanical Engineers. Mike is currently leading Loughborough Universityâ€™s development of a second campus on the Queen Elizabeth Olympic Park, London (www.lborolondon.ac.uk). Mike has been a company Director for 19 years having founded two spinout companies. He has researched, patented, developed and licensed multiple healthcare and sport related technologies, generating Â£25M+ in revenues. Mikeâ€™s research and innovation activities have been featured in over five hundred substantial broadcast and print media outputs."
       }, 
       {
         "sh": "corporate", 
-        "name": "Matthew Smith", 
-        "desc": ""
+        "name": "Marina Wegorek", 
+        "desc": "Marina currently heads up Entrepreneur Strategy team for Business & Commercial division of the Royal Bank of Scotland Group. Having qualified as Chartered Certified Accountant (ACCA) and Chartered Management Accountant (CIMA) at the age of 22 she started her Accountancy practice career in PWC. In 2002 she joined RBS as Regulatory and Financial Accountant but two years later, recognising her passion to get involved in creative and customer centric roles she moved to RBS retail banking division to join the newly created Innovations & Customer Propositions team. Since then Marina has taken on various roles within the Bank where she has gained vast amount of experience in Strategy, Marketing, Insurance and Customer Propositions working for RBS Retail, RBS Insurance and RBS Business & Commercial and Corporate. Her experience also extends to entrepreneurial roles of running her own businesses. Sitting on the GLG Council Marina uses her combined business experience gained at RBS, Accountancy Practice and running own businesses in clothing and property investment to mentor small businesses. Marina is a mother to 3 year old Ava and lives in scenic and quite village in Surrey, England with her husband. She enjoys her spin classes, listening to music, entertaining and socialising."
       }, 
       {
         "sh": "government", 
         "name": "Susie Kitchens", 
-        "desc": "Susie Kitchens arrived in Boston to become Britain's Consul General in August 2012. She is here with her US-born husband, Michael, and their two children, living on historic Beacon Hill.\rPrior to this assignment, Susie was the Deputy High Commissioner at the British High Commission in Tanzania. Susie's diplomatic career has also included postings in the Foreign and Commonwealth Office in London (on bilateral relations with Latin America, Consular policy and on the United Nations Security Council) and also as Political Officer at the British Embassy in Guatemala.\rSusie's academic record includes an MA in Human Sciences from Oxford University (Lady Margaret Hall), and an MSc in Public Health from the London School of Hygiene and Tropical Medicine. Before becoming a diplomat, Susie worked in international development promoting children's health via school improvement through the Aga Khan Foundation in Pakistan and then with CARE International in El Salvador. \rSusie and her dual nationality family are delighted to have this opportunity to live in the United States, particularly in New England with its historical and contemporary links to the UK. Susie's paternal grandfather served as vice-consul in both New York and San Francisco during World War II, initiating the family's diplomatic ties with the USA."
+        "desc": "Susie Kitchens arrived in Boston to become Britainâ€™s Consul General in August 2012. She is here with her US-born husband, Michael, and their two children, living on historic Beacon Hill. Prior to this assignment, Susie was the Deputy High Commissioner at the British High Commission in Tanzania. Susieâ€™s diplomatic career has also included postings in the Foreign and Commonwealth Office in London (on bilateral relations with Latin America, Consular policy and on the United Nations Security Council) and also as Political Officer at the British Embassy in Guatemala. Susieâ€™s academic record includes an MA in Human Sciences from Oxford University (Lady Margaret Hall), and an MSc in Public Health from the London School of Hygiene and Tropical Medicine. Before becoming a diplomat, Susie worked in international development promoting childrenâ€™s health via school improvement through the Aga Khan Foundation in Pakistan and then with CARE International in El Salvador. Susie and her dual nationality family are delighted to have this opportunity to live in the United States, particularly in New England with its historical and contemporary links to the UK. Susieâ€™s paternal grandfather served as vice-consul in both New York and San Francisco during World War II, initiating the familyâ€™s diplomatic ties with the USA."
       }, 
       {
         "sh": "riskcapital", 
         "name": "Jenny Tooth", 
-        "desc": "Jenny Tooth has been CEO of the UK Business Angels Association since 2012. UKBAA is the trade body for angel and early stage investing, supporting over 15,000 investors and which superseded the British Business Angels Association. Jenny has been providing strategic support to BBAA since its establishment in 2004, supporting both policy and interfacing with Government, as well as developing the trade body's major annual events. \r\rJenny has over 20 years' experience of facilitating SMEs access to investment, both in the UK and internationally. After a background in marketing and publishing, she ran her own consultancy business, focusing on business growth, innovation and access to finance working with public and private organisations,  including spending nine years based in Brussels, working closely with the EC and related institutions on access to finance. She has operated a wide range of investment readiness programmes, including projects supported by national and EU funding. She has also participated in a number of expert groups on access to finance and chaired the EC Knowledge Intensive Services group under DG Enterprise. \r\rIn 2006 she took on the role of Business Development Director at GLE Growth Capital running their access to finance projects. In 2009 Jenny co-founded Angel Capital Group incorporating London Business Angels, one of the most established angel networks in in the UK, where she has been Director  focusing on demand side issues and angel investment, operating projects on technology, mobile services and creative industries. On an international level, she is a Board member of Business Angels Europe and one of the co-founders of World Business Angels Association. Jenny is an experienced speaker, both in the UK and internationally. She has an MSc in Economics from London School of Economics and Political Science."
+        "desc": "Jenny Tooth has been CEO of the UK Business Angels Association since 2012. UKBAA is the trade body for angel and early stage investing, supporting over 15,000 investors and which superseded the British Business Angels Association. Jenny has been providing strategic support to BBAA since its establishment in 2004, supporting both policy and interfacing with Government, as well as developing the trade bodyâ€™s major annual events. Jenny has over 20 yearsâ€™ experience of facilitating SMEs access to investment, both in the UK and internationally. After a background in marketing and publishing, she ran her own consultancy business, focusing on business growth, innovation and access to finance working with public and private organisations,  including spending nine years based in Brussels, working closely with the EC and related institutions on access to finance. She has operated a wide range of investment readiness programmes, including projects supported by national and EU funding. She has also participated in a number of expert groups on access to finance and chaired the EC Knowledge Intensive Services group under DG Enterprise. In 2006 she took on the role of Business Development Director at GLE Growth Capital running their access to finance projects. In 2009 Jenny co-founded Angel Capital Group incorporating London Business Angels, one of the most established angel networks in in the UK, where she has been Director  focusing on demand side issues and angel investment, operating projects on technology, mobile services and creative industries. On an international level, she is a Board member of Business Angels Europe and one of the co-founders of World Business Angels Association. Jenny is an experienced speaker, both in the UK and internationally. She has an MSc in Economics from London School of Economics and Political Science."
       }, 
       {
         "sh": "champion", 
-        "name": "", 
-        "desc": ""
-      }, 
-      {
-        "sh": "corporate", 
-        "name": "Laura Parker", 
-        "desc": "Having graduated with a first class degree in Economics,  Laura joined RBS on the Business and Commercial Graduate Scheme in Edinburgh. Here she gained knowledge on managing businesses up to &pound;25m turnover and spent the last year of the programme specialising in entrepreneurship. Upon leaving the Graduate Scheme Laura joined the Entrepreneur Strategy team focusing on entrepreneurship and high growth businesses across the UK. Laura enjoys networking with entrepreneurs outside of her role in RBS and is part of  the Start up Grind London team who organise talks from successful entrepreneurs.  \rIn her spare time Laura enjoys skiing, travelling and regularly tweets about entrepreneurship and innovation\r"
-      }, 
-      {
-        "sh": "corporate", 
-        "name": "Will Pryke", 
-        "desc": ""
-      }, 
-      {
-        "sh": "corporate", 
-        "name": "Paola Cuneo", 
-        "desc": "Paola is passionate about entrepreneurship and innovation. She has spent over 10 years working for British Telecom in various senior positions in both marketing, sales and operations.\r\rBetween 2009 and 2011, Paola was seconded at London and Partners as Head of EMEA and also covered the position of Head of Asia Pacific for almost a year. Paola is currently running the Sirius programme for UKTI, attracting talented graduate entrepreneurs to the UK. \rPaola also mentors start-ups, advising on all aspects of business growth and raising capital.\r"
-      }, 
-      {
-        "sh": "university", 
-        "name": "Mike Caine", 
-        "desc": "Mike is Professor of Sports Technology and Innovation. He has secured circa &pound;15M of research and innovation grants and received several national and international enterprise awards. He was the inaugural Editor-in-Chief of the Journal of Sports Engineering and Technology, published by the Institution of Mechanical Engineers. Mike is currently leading Loughborough University's development of a second campus on the Queen Elizabeth Olympic Park, London (www.lborolondon.ac.uk).\r \rMike has been a company Director for 19 years having founded two spinout companies. He has researched, patented, developed and licensed multiple healthcare and sport related technologies, generating &pound;25M+ in revenues. Mike's research and innovation activities have been featured in over five hundred substantial broadcast and print media outputs.\r"
-      }, 
-      {
-        "sh": "entrepreneur", 
-        "name": "Freddie Talberg", 
-        "desc": "Freddie Talberg is CEO of PIE Mapping and a serial entrepreneur.  He is a Bachelor of Electrical Engineering and has more than 15 years technical experience within the telecom sector and ten years working in the mapping and navigation industry. His current business, PIE Mapping was founded in 2002 following the sale of a software engineering company to a competitor.  PIE Mapping began as a traditional printed map publisher but under Freddie's guidance has moved into the location based (GPS) mapping industry and is an innovator in terms of both data capture and distribution processes for online and in-vehicle navigation and routing products. Freddie was born in the Middle East but now resides with his family in London.  He served part time in the British Army Territorial Division for more than 8 years. "
-      }, 
-      {
-        "sh": "university", 
-        "name": "Sam Vanderslott", 
-        "desc": "Samantha is designing and managing the research project 'INTER-CEP', providing international comparisons of entrepreneurship policy and intervention. INTER-CEP stands for UCL's International Centre for Entrepreneurship and Enterprise Policy and was established in 2012 alongside www.intercep-com, a database of case studies of entrepreneurship projects ranging from tax and immigration policy to finance, competitions, networks and mentoring.  It is the first such source of information on entrepreneurship collecting examples from government, the private sector and philanthropic organisations, with the intention of provoking policy debate, sharing expertise and informing future interventions.\r \rSamantha is a PhD candidate at the Department for Science and Technology Studies at UCL.  Her research focuses on innovation, policy problems and global public health.  She has a background is in economics, having studied Economics and International Development at the University of Bath followed by an MSc in Global Governance and Diplomacy at the University of Oxford.  After this she also spent three years in the public sector working at the UK Department for Business Innovation and Skills, specialising in entrepreneurship and venture capital policy.  Samantha will be a visiting fellow at the Harvard Program on Science, Technology and Society in 2015.\r"
-      }, 
-      {
-        "sh": "", 
-        "name": "Owen Lawrence", 
-        "desc": ""
+        "name": "Paula Cuneo", 
+        "desc": "Paola is passionate about entrepreneurship and innovation. She has spent over 10 years working for British Telecom in various senior positions in both marketing, sales and operations. Between 2009 and 2011, Paola was seconded at London and Partners as Head of EMEA and also covered the position of Head of Asia Pacific for almost a year. Paola is currently running the Sirius programme for UKTI, attracting talented graduate entrepreneurs to the UK. Paola also mentors start-ups, advising on all aspects of business growth and raising capital."
       }
     ], 
-    "topClusters": [
-      "Digital", 
-      "Fintech", 
-      "Fashion"
-    ], 
-    "topResearchInstitutions": [
+    "regionalEntrepreneurs" : [
       {
-        "name": "University College London", 
-        "img": "ucl-logo.jpg"
-      }, 
-      {
-        "name": "Imperial College London", 
-        "img": "imperial-logo.jpg"
-      }, 
-      {
-        "name": "University of Oxford", 
-        "img": "oxford-logo.jpg"
-      }, 
-      {
-        "name": "University of Cambridge", 
-        "img": "cambridge-logo.jpg"
-      }
-    ], 
-    "regionalInnovations": [
-      "ATM", 
-      "The Internet", 
-      "The Dyson Vacuum Cleaner"
-    ], 
-    "businessParks": [
-      "Network of Catapult Centres", 
-      "Tech City UK", 
-      "Several accelerators including Microsoft Ventures, Mass Challenge and Tech hub"
-    ], 
-    "regionalEntrepreneurs": [
-      {
-        "name": "Richard Branson", 
+        "name": "Richard Branson",
         "img": "richardbranson.jpg"
-      }, 
+      },
       {
-        "name": "Alan Sugar", 
+        "name": "Alan Sugar",
         "img": "alansugar.jpg"
-      }, 
+      },
       {
-        "name": "Anita Roddick", 
+        "name": "Anita Roddick",
         "img": "anitaroddick.jpg"
       }
-    ], 
-    "icapPPI": [
-      "R&D Tax Credits", 
-      "Patent Box", 
-      "Network of Catapults"
-    ], 
-    "ecapPPI": [
-      "Enterprise Visa", 
-      "Numerous Accelerators and Incubators", 
-      "Tech City UK"
-    ], 
+    ],
+    "top3Clusters" : ["Digital", "Fintech", "Fashion"],
+    "top3ResearchInstitutions" : ["University College London", "Imperial University", "Oxford and Cambridge"],
+    "celebratedRegionalInnovations" : ["ATM", "The Internet", "The Dyson Vacuum Cleaner"],
+    "top3Clusters" : ["Digital", "Fintech", "Fashion"],
+    "businessParks" : ["Network of Catapult Centres", "Tech City UK", "  Several accelerators including Microsoft Ventures, Mass Challenge and Tech hub"],
+    "icapPPI" : ["R&D Tax Credits", "Patent Box", "Network of Catapults"],
+    "ecapPPI" : ["Enterprise Visa", "Numerous Accelerators and Incubators", "Tech City UK"],
     "countryPopulation": {
       "srcName": "World Bank - WDI", 
       "range": "2000-2013", 
@@ -625,6 +555,7 @@ var regionData = {
   "morocco": {
     "name": "Morocco", 
     "description1": "", 
+    "description2": "", 
     "imgFileName": "morocco.png", 
     "flagCssClass": "country-img-wide", 
     "team": [
@@ -658,59 +589,6 @@ var regionData = {
         "name": "", 
         "desc": ""
       }
-    ], 
-    "topClusters": [
-      "", 
-      "", 
-      ""
-    ], 
-    "topResearchInstitutions": [
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }
-    ], 
-    "regionalInnovations": [
-      "", 
-      "", 
-      ""
-    ], 
-    "businessParks": [
-      "", 
-      "", 
-      ""
-    ], 
-    "regionalEntrepreneurs": [
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }
-    ], 
-    "icapPPI": [
-      "", 
-      "", 
-      ""
-    ], 
-    "ecapPPI": [
-      "", 
-      "", 
-      ""
     ], 
     "countryPopulation": {
       "srcName": "World Bank - WDI", 
@@ -1100,6 +978,7 @@ var regionData = {
   "moscow": {
     "name": "Moscow, Russia", 
     "description1": "", 
+    "description2": "", 
     "imgFileName": "russia.png", 
     "flagCssClass": "country-img-wide", 
     "team": [
@@ -1133,59 +1012,6 @@ var regionData = {
         "name": "", 
         "desc": ""
       }
-    ], 
-    "topClusters": [
-      "", 
-      "", 
-      ""
-    ], 
-    "topResearchInstitutions": [
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }
-    ], 
-    "regionalInnovations": [
-      "", 
-      "", 
-      ""
-    ], 
-    "businessParks": [
-      "", 
-      "", 
-      ""
-    ], 
-    "regionalEntrepreneurs": [
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }
-    ], 
-    "icapPPI": [
-      "", 
-      "", 
-      ""
-    ], 
-    "ecapPPI": [
-      "", 
-      "", 
-      ""
     ], 
     "countryPopulation": {
       "srcName": "World Bank - WDI", 
@@ -1653,6 +1479,7 @@ var regionData = {
   "puertorico": {
     "name": "Puerto Rico", 
     "description1": "", 
+    "description2": "", 
     "imgFileName": "puertorico.png", 
     "flagCssClass": "country-img-pr", 
     "team": [
@@ -1686,59 +1513,6 @@ var regionData = {
         "name": "", 
         "desc": ""
       }
-    ], 
-    "topClusters": [
-      "", 
-      "", 
-      ""
-    ], 
-    "topResearchInstitutions": [
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }
-    ], 
-    "regionalInnovations": [
-      "", 
-      "", 
-      ""
-    ], 
-    "businessParks": [
-      "", 
-      "", 
-      ""
-    ], 
-    "regionalEntrepreneurs": [
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }
-    ], 
-    "icapPPI": [
-      "", 
-      "", 
-      ""
-    ], 
-    "ecapPPI": [
-      "", 
-      "", 
-      ""
     ], 
     "countryPopulation": {
       "srcName": "World Bank - WDI", 
@@ -2043,8 +1817,8 @@ var regionData = {
   }, 
   "qatar": {
     "name": "Qatar", 
-    "description1": "Qatar has a long tradition of entrepreneurship based on its trading roots. The present day environment is characterized by a", 
-    "description2": "booming economy fueled by a hydrocarbon production and ambitious infrastructural projects, resulting in plenty opportunities for the entrepreneurs.", 
+    "description1": "", 
+    "description2": "", 
     "imgFileName": "qatar.png", 
     "flagCssClass": "country-img-qatar", 
     "team": [
@@ -2078,59 +1852,6 @@ var regionData = {
         "name": "", 
         "desc": ""
       }
-    ], 
-    "topClusters": [
-      "Oil, gas and petrochemicals", 
-      "Construction", 
-      "Finance and Banking"
-    ], 
-    "topResearchInstitutions": [
-      {
-        "name": "Qatar University", 
-        "img": ""
-      }, 
-      {
-        "name": "HBKU - Hamad Bin Kalifa University", 
-        "img": ""
-      }, 
-      {
-        "name": "National Research Institutes under Qatar Foundation", 
-        "img": ""
-      }
-    ], 
-    "regionalInnovations": [
-      "Al-Shaheen horizontal drilling technology", 
-      "QatarMAX LNG ship design", 
-      "Gas-to-liquids Technology"
-    ], 
-    "businessParks": [
-      "QSTP - Qatar Science & Tecnology Park", 
-      "QBIC - Qatar Business Incubation Center", 
-      "Digital Incubation Center"
-    ], 
-    "regionalEntrepreneurs": [
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }
-    ], 
-    "icapPPI": [
-      "2.8% of GDP devoted to R&D", 
-      "Research Expansion at Qatar University", 
-      "Establishment of National Reseach Institutes and Sidra Medical and Research"
-    ], 
-    "ecapPPI": [
-      "Incubation and Accelerator Expansion (QBIC, QSTP, Digital Incubation Center)", 
-      "Public procurement preference for local SME", 
-      "Qatarization- Program to support and increased participation of Qataris in the private sector"
     ], 
     "countryPopulation": {
       "srcName": "World Bank - WDI", 
@@ -2454,6 +2175,7 @@ var regionData = {
   "seoul": {
     "name": "Seoul, South Korea", 
     "description1": "", 
+    "description2": "", 
     "imgFileName": "korea.png", 
     "flagCssClass": "country-img-seoul", 
     "team": [
@@ -2487,59 +2209,6 @@ var regionData = {
         "name": "", 
         "desc": ""
       }
-    ], 
-    "topClusters": [
-      "", 
-      "", 
-      ""
-    ], 
-    "topResearchInstitutions": [
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }
-    ], 
-    "regionalInnovations": [
-      "", 
-      "", 
-      ""
-    ], 
-    "businessParks": [
-      "", 
-      "", 
-      ""
-    ], 
-    "regionalEntrepreneurs": [
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }
-    ], 
-    "icapPPI": [
-      "", 
-      "", 
-      ""
-    ], 
-    "ecapPPI": [
-      "", 
-      "", 
-      ""
     ], 
     "countryPopulation": {
       "srcName": "World Bank - WDI", 
@@ -2998,109 +2667,41 @@ var regionData = {
   }, 
   "singapore": {
     "name": "Singapore", 
-    "description1": "The Singapore entrepreneurship ecosystem receives strong government support in terms of grants and policies, and is reflected by the density", 
-    "description2": "of venture capitals and accelerators in Singapore. Positioned as a financial hub for Asia, many fintech startups view Singapore as a good springboard. The Singapore government is also receptive towards new technologies and is willing to assist startups with various funding schemes. Strong institutions and a favourable tax regime are also strong attractors for entrepreneurs. In recent years, the increasing cost of living in Singapore, coupled by policies to tighten foreign labour founders. \rAs part of the government's initiative to create a vibrant and nurturing environment for start-ups, JTC LaunchPad @ one-north, a 5-hectare site comprising of 3 blocks, was launched. The new facilities include BASH, an initiative driven by Infocomm Investments Pte Ltd (IIPL), which has become Singapore's biggest integrated start-up space with the capability of congregating members and partners of the tech building community across the entire value chain - from accelerators, investors, incubators to entrepreneurs - all under one roof.", 
+    "description1": "", 
+    "description2": "", 
     "imgFileName": "singapore.png", 
     "flagCssClass": "country-img-wide", 
     "team": [
       {
         "sh": "entrepreneur", 
-        "name": "Steve Leonard", 
+        "name": "", 
         "desc": ""
       }, 
       {
         "sh": "university", 
-        "name": "Alex Lin", 
+        "name": "", 
         "desc": ""
       }, 
       {
         "sh": "corporate", 
-        "name": "Tan Kai Hoe", 
+        "name": "", 
         "desc": ""
       }, 
       {
         "sh": "government", 
-        "name": "Ong Peng Tsin", 
+        "name": "", 
         "desc": ""
       }, 
       {
         "sh": "riskcapital", 
-        "name": "Lily Chan", 
+        "name": "", 
         "desc": ""
       }, 
       {
         "sh": "champion", 
-        "name": "Wong Meng Weng", 
-        "desc": ""
-      }, 
-      {
-        "sh": "", 
-        "name": "Teo Lay Lim", 
-        "desc": ""
-      }, 
-      {
-        "sh": "", 
-        "name": "Jeff Paine", 
-        "desc": ""
-      }, 
-      {
-        "sh": "", 
-        "name": "Edgar Hardless", 
+        "name": "", 
         "desc": ""
       }
-    ], 
-    "topClusters": [
-      "Finance and Insurance", 
-      "Manufacturing", 
-      "Business Services"
-    ], 
-    "topResearchInstitutions": [
-      {
-        "name": "NUS (National University of Singapore)", 
-        "img": "nus-logo.jpg"
-      }, 
-      {
-        "name": "NTU (Nanyang Technological University)", 
-        "img": "nanyang-logo.jpg"
-      }, 
-      {
-        "name": "A*STAR", 
-        "img": "astar-logo.jpg"
-      }
-    ], 
-    "regionalInnovations": [
-      "Newater's advanced membrance technology", 
-      "Thumbdrive - Trek Technology", 
-      "Creative Soundblaster sound card"
-    ], 
-    "businessParks": [
-      "JTC LaunchPad @ one-north", 
-      "Changi Business Park", 
-      "CleanTech Park"
-    ], 
-    "regionalEntrepreneurs": [
-      {
-        "name": "Olivia Lum", 
-        "img": "olivia-lum.jpg"
-      }, 
-      {
-        "name": "Ong Peng Tsin", 
-        "img": "ong-peng.jpg"
-      }, 
-      {
-        "name": "Sim Wong Hoo", 
-        "img": "sim-wong.jpg"
-      }
-    ], 
-    "icapPPI": [
-      "Smart Nation Platform, IDA", 
-      "The Intellectual Property Hub Master Plan, Ministry of Law", 
-      "Productivity and Innovation Credit Scheme, IRAS"
-    ], 
-    "ecapPPI": [
-      "Spring Singapore", 
-      "Space@ACE (Action Community for Entrepreneurship)", 
-      "Company Registration Policies, ACRA"
     ], 
     "countryPopulation": {
       "srcName": "World Bank - WDI", 
@@ -3559,124 +3160,41 @@ var regionData = {
   }, 
   "valencia": {
     "name": "Valencia, Spain", 
-    "description1": "Valencia Region is an autonomous community of Spain and is located in the Middle East of the country. It is", 
-    "description2": "the fourth most populated region after Andalusia, Catalonia and Madrid with more than 5.1 million inhabitants.\rAs in all Spain, there was a significant economic growth in the years immediately following 2004, until the Spanish financial crisis. In 2014, the Valencia Country generated 9.39% of the Spanish GDP. \rThe GDP of the Valencia Region in 2014 was 99.345 millions of euros, and the total GDP of Spain was 1.058.469 millions of euros. GDP per capita in the region was 20.073€ and in Spain was 22.780€.\rThe unemployment rate was over 24% in March 2015, and even greater among women. The typical Valencian business is a small-to-medium-sized company, mainly family-owned and operated, although there are some multinationals.\rIn addition to tourism, the Valencia Region has significant exports, and it ranks second in this topic among the Spanish autonomous communities, constituting 12% of the national total. Major exports include agricultural products, ceramic tiles, marble products and cars (Ford has an assembly line in Almussafes), which make the port of València one the busiest in Europe.", 
+    "description1": "", 
+    "description2": "", 
     "imgFileName": "spain.png", 
     "flagCssClass": "country-img-spain", 
     "team": [
       {
         "sh": "entrepreneur", 
-        "name": "Francisco Sanchis & José Mª Gimeno", 
+        "name": "", 
         "desc": ""
       }, 
       {
         "sh": "university", 
-        "name": "Francisco Mora & José Capilla", 
+        "name": "", 
         "desc": ""
       }, 
       {
         "sh": "corporate", 
-        "name": "Ignacio Alberola", 
+        "name": "", 
         "desc": ""
       }, 
       {
         "sh": "government", 
-        "name": "Vicent Marzà / Rafael Climent & Mònica Cucarella", 
+        "name": "", 
         "desc": ""
       }, 
       {
         "sh": "riskcapital", 
-        "name": "Enrique Martínavarro", 
+        "name": "", 
         "desc": ""
       }, 
       {
         "sh": "champion", 
-        "name": "Rafael Climent", 
-        "desc": ""
-      }, 
-      {
-        "sh": "", 
-        "name": "Roberto Parras", 
-        "desc": ""
-      }, 
-      {
-        "sh": "", 
-        "name": "Juan Vicente Climent", 
-        "desc": ""
-      }, 
-      {
-        "sh": "", 
-        "name": "Javier Mínguez", 
-        "desc": ""
-      }, 
-      {
-        "sh": "", 
-        "name": "Israel Griol", 
-        "desc": ""
-      }, 
-      {
-        "sh": "", 
-        "name": "Alicia Martínez", 
+        "name": "", 
         "desc": ""
       }
-    ], 
-    "topClusters": [
-      "Tourism", 
-      "Agro-food", 
-      "Automotive and transport"
-    ], 
-    "topResearchInstitutions": [
-      {
-        "name": "Universitat Politècnica de València", 
-        "img": ""
-      }, 
-      {
-        "name": "Universitat de València", 
-        "img": ""
-      }, 
-      {
-        "name": "Centro de Investigación Principe Felipe", 
-        "img": ""
-      }, 
-      {
-        "name": "AINIA – Instituto Tecnológico Agroalimentario", 
-        "img": ""
-      }
-    ], 
-    "regionalInnovations": [
-      "", 
-      "", 
-      ""
-    ], 
-    "businessParks": [
-      "Ciudad Politécnica de la Innovación", 
-      "Lanzadera", 
-      "Parc Científic Universitat de València"
-    ], 
-    "regionalEntrepreneurs": [
-      {
-        "name": "Juan Roig", 
-        "img": ""
-      }, 
-      {
-        "name": "Iñaki Berenguer", 
-        "img": ""
-      }, 
-      {
-        "name": "Eduardo Manchón", 
-        "img": ""
-      }
-    ], 
-    "icapPPI": [
-      "Research and Innovation Smart, Specialisation Strategy of the Comunitat Valenciana", 
-      "Industrial Policy Strategy", 
-      "Enterprise Europe Network Node", 
-      "Regional Operational Programme of ERDF (European Development Fund) (Draft)"
-    ], 
-    "ecapPPI": [
-      "Entrepreneur´s Day - Dia de la Persona Emprendedora", 
-      "StartUPV", 
-      "HackForGood"
     ], 
     "countryPopulation": {
       "srcName": "World Bank - WDI", 
