@@ -196,9 +196,9 @@ body {
 }
 
 .carousel {
-  /*border: 1px solid #ccc;*/
   border-radius: 10px;
   border: 1px solid #428bca;
+  overflow: hidden;
 }
 
 .carousel-row {
@@ -233,12 +233,6 @@ body {
 .carousel-indicators {
   width: 100%;
   left: 26%;
-}
-
-.dashboard-carousel-control {
-  width: 40px;
-  height: 310px;
-  top: -40px;
 }
 
 .dashboard-carousel-control.left {
@@ -6482,6 +6476,12 @@ h2.icap {
 
 #dashboard-team-heading {
   margin-bottom: 10px;
+}
+
+.dashboard-carousel-control {
+  width: 40px;
+  height: 310px;
+  top: -40px;
 }
 
 @media (min-width: 992px) {

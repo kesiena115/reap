@@ -7,18 +7,19 @@ import re
 
 '''
 Steps
+* Open the spreadsheet with Excel
 * Highlight the numbers in the spreasheet and convert them to excel "General" type. This will remove all commas from
     large numbers
-* Save the spreadsheets with the right names (see regions array below) and the right csv format (Windows Comma
-    Separated)
-* Save all the csv files in the same folder and then update the 'inputFolder' variable. Also update the 'outputFolder'
+* Save the sheets with the right names e.g. london.csv, singapore.csv, etc. See the regions array below for
+    all the names. Also ensure you save the spreadsheet as "Windows Comma Separated" csv. Some other csv formats
+    won't work well with this script.
+* Save all the csv files in the same folder and then update the 'inputFolder' variable. Also update the 'outputFile'
 * update the regions array by removing the name of any missing file
 * run this script
 '''
 
 # The following names should correspond to the file names. Also, the json objects will have these names
 regions = ['london', 'morocco', 'moscow', 'puertorico', 'qatar', 'seoul', 'singapore', 'valencia']
-# regions = ['london']
 
 regionData = {
     'london': {
@@ -55,7 +56,6 @@ regionData = {
     }
 }
 inputFolder = '/Users/kesiena/Dropbox (MIT)/MIT/MartinTrustCenterRA/REAP Dashboard/csv/'
-# outputFile = inputFolder + 'dashboard-data.js'
 outputFile = '/Users/kesiena/Dropbox (MIT)/Sites/reap/assets/js/dashboard-data.js'
 outputData = OrderedDict({})
 regionName = ''

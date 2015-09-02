@@ -3560,18 +3560,28 @@ var regionData = {
   "valencia": {
     "name": "Valencia, Spain", 
     "description1": "Valencia Region is an autonomous community of Spain and is located in the Middle East of the country. It is", 
-    "description2": "the fourth most populated region after Andalusia, Catalonia and Madrid with more than 5.1 million inhabitants.\rAs in all Spain, there was a significant economic growth in the years immediately following 2004, until the Spanish financial crisis. In 2014, the Valencia Country generated 9.39% of the Spanish GDP. \rThe GDP of the Valencia Region in 2014 was 99.345 millions of euros, and the total GDP of Spain was 1.058.469 millions of euros. GDP per capita in the region was 20.073€ and in Spain was 22.780€.\rThe unemployment rate was over 24% in March 2015, and even greater among women. The typical Valencian business is a small-to-medium-sized company, mainly family-owned and operated, although there are some multinationals.\rIn addition to tourism, the Valencia Region has significant exports, and it ranks second in this topic among the Spanish autonomous communities, constituting 12% of the national total. Major exports include agricultural products, ceramic tiles, marble products and cars (Ford has an assembly line in Almussafes), which make the port of València one the busiest in Europe.", 
+    "description2": "the fourth most populated region after Andalusia, Catalonia and Madrid with more than 5.1 million inhabitants.\rAs in all Spain, there was a significant economic growth in the years immediately following 2004, until the Spanish financial crisis. In 2014, the Valencia Country generated 9.39% of the Spanish GDP. \rThe GDP of the Valencia Region in 2014 was 99.345 millions of euros, and the total GDP of Spain was 1.058.469 millions of euros. GDP per capita in the region was &euro;20.073 and in Spain was &euro;22.780.\rThe unemployment rate was over 24% in March 2015, and even greater among women. The typical Valencian business is a small-to-medium-sized company, mainly family-owned and operated, although there are some multinationals.\rIn addition to tourism, the Valencia Region has significant exports, and it ranks second in this topic among the Spanish autonomous communities, constituting 12% of the national total. Major exports include agricultural products, ceramic tiles, marble products and cars (Ford has an assembly line in Almussafes), which make the port of Valencia one the busiest in Europe.", 
     "imgFileName": "spain.png", 
     "flagCssClass": "country-img-spain", 
     "team": [
       {
         "sh": "entrepreneur", 
-        "name": "Francisco Sanchis & José Mª Gimeno", 
+        "name": "Francisco Sanchis", 
+        "desc": ""
+      }, 
+      {
+        "sh": "entrepreneur", 
+        "name": "Jose Ma Gimeno", 
         "desc": ""
       }, 
       {
         "sh": "university", 
-        "name": "Francisco Mora & José Capilla", 
+        "name": "Francisco Mora", 
+        "desc": ""
+      }, 
+      {
+        "sh": "university", 
+        "name": "Jose Capilla", 
         "desc": ""
       }, 
       {
@@ -3581,17 +3591,27 @@ var regionData = {
       }, 
       {
         "sh": "government", 
-        "name": "Vicent Marzà / Rafael Climent & Mònica Cucarella", 
+        "name": "Vicent Marza", 
         "desc": ""
       }, 
       {
         "sh": "riskcapital", 
-        "name": "Enrique Martínavarro", 
+        "name": "Enrique Martinavarro", 
+        "desc": ""
+      }, 
+      {
+        "sh": "government", 
+        "name": "Monica Cucarella", 
+        "desc": ""
+      }, 
+      {
+        "sh": "government", 
+        "name": "Rafael Climent", 
         "desc": ""
       }, 
       {
         "sh": "champion", 
-        "name": "Rafael Climent", 
+        "name": "", 
         "desc": ""
       }, 
       {
@@ -3606,7 +3626,7 @@ var regionData = {
       }, 
       {
         "sh": "", 
-        "name": "Javier Mínguez", 
+        "name": "Javier Minguez", 
         "desc": ""
       }, 
       {
@@ -3616,7 +3636,7 @@ var regionData = {
       }, 
       {
         "sh": "", 
-        "name": "Alicia Martínez", 
+        "name": "Alicia Martinez", 
         "desc": ""
       }
     ], 
@@ -3627,20 +3647,20 @@ var regionData = {
     ], 
     "topResearchInstitutions": [
       {
-        "name": "Universitat Politècnica de València", 
-        "img": ""
+        "name": "Universitat Politecnica de Valencia", 
+        "img": "valencia-politec1.jpg"
       }, 
       {
-        "name": "Universitat de València", 
-        "img": ""
+        "name": "Universitat de Valencia", 
+        "img": "valencia-uni2.jpg"
       }, 
       {
-        "name": "Centro de Investigación Principe Felipe", 
-        "img": ""
+        "name": "Centro de Investigacion Principe Felipe", 
+        "img": "felipe-logo.jpg"
       }, 
       {
-        "name": "AINIA – Instituto Tecnológico Agroalimentario", 
-        "img": ""
+        "name": "AINIA - Instituto Tecnologico Agroalimentario", 
+        "img": "ainia.jpg"
       }
     ], 
     "regionalInnovations": [
@@ -3649,22 +3669,22 @@ var regionData = {
       ""
     ], 
     "businessParks": [
-      "Ciudad Politécnica de la Innovación", 
+      "Ciudad Politecnica de la Innovacion", 
       "Lanzadera", 
-      "Parc Científic Universitat de València"
+      "Parc Cientific Universitat de Valencia"
     ], 
     "regionalEntrepreneurs": [
       {
         "name": "Juan Roig", 
-        "img": ""
+        "img": "juan-roig.jpg"
       }, 
       {
-        "name": "Iñaki Berenguer", 
-        "img": ""
+        "name": "Inaki Berenguer", 
+        "img": "inaki.jpg"
       }, 
       {
-        "name": "Eduardo Manchón", 
-        "img": ""
+        "name": "Francisco Pon", 
+        "img": "francisco-pon.jpg"
       }
     ], 
     "icapPPI": [
@@ -3674,7 +3694,7 @@ var regionData = {
       "Regional Operational Programme of ERDF (European Development Fund) (Draft)"
     ], 
     "ecapPPI": [
-      "Entrepreneur´s Day - Dia de la Persona Emprendedora", 
+      "Entrepreneur's Day - Dia de la Persona Emprendedora", 
       "StartUPV", 
       "HackForGood"
     ], 
