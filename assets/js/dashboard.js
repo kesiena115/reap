@@ -769,6 +769,7 @@ $(document).ready(function() {
         displayPrompt();
         return;
     }
+    $("#dashboard-main-panel").show();
     region = regionData[urlParams["region"][0]];
     if(!region) {
         displayPrompt();
