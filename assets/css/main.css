@@ -6018,6 +6018,11 @@ td.visible-print {
   background: url('../images/secondsubpic.jpg') no-repeat center center fixed; 
 }
 
+#third-sub-pic {
+  height:600px;
+  background: url('../images/secondsubpic.jpg') no-repeat center center fixed; 
+}
+
 #third-pic {
 	height:600px;
 	background: url('../images/thirdpic.png') no-repeat center center fixed; 
@@ -6028,7 +6033,7 @@ td.visible-print {
 	background: url('../images/fourthpic.jpg') no-repeat center center fixed; 
 }
 
-#mainpic, #second-pic, #second-sub-pic, #third-pic, #fourth-pic {
+#mainpic, #second-pic, #second-sub-pic, #third-sub-pic, #third-pic, #fourth-pic {
   width:100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -6041,7 +6046,7 @@ td.visible-print {
 @media (max-width: 1024px) { /* Phones and tablets */
   /* This changes the behavior of the images from "fixed" to "scroll". This ensures consistency
   across all mobile devices because iphone and ipad don't allow fixed background images */
-  #mainpic, #second-pic, #second-sub-pic, #third-pic, #fourth-pic {
+  #mainpic, #second-pic, #second-sub-pic, #third-sub-pic, #third-pic, #fourth-pic {
     background-attachment: scroll;
   }
 }
@@ -6099,7 +6104,7 @@ td.visible-print {
   float: right;
   top:335px;
   right:20px;
-  text-align: right;
+  text-align: left;
 }
 
 @media (max-width: 768px) { /* mobile phone */
@@ -6219,6 +6224,54 @@ td.visible-print {
 	left:30%;
 	position:absolute;
 	z-index:21;
+}
+
+.country-img-saudi {
+  top: 15%;
+  height: 60%;
+  left: 15%;
+  position:absolute;
+  z-index:21;
+}
+
+.country-img-israel {
+  top: 10%;
+  height: 60%;
+  left: 40%;
+  position:absolute;
+  z-index:21;
+}
+
+.country-img-thailand {
+  top: 10%;
+  height: 70%;
+  left: 40%;
+  position:absolute;
+  z-index:21;
+}
+
+.country-img-chile {
+  top: 10%;
+  height: 80%;
+  left: 36%;
+  position:absolute;
+  z-index:21;
+}
+
+.country-img-norway {
+  top: 18%;
+  height: 70%;
+  left: 25%;
+  position:absolute;
+  z-index:21;
+}
+
+.country-img-japan {
+  top: 18%;
+  height: 70%;
+  left: 20%;
+  position:absolute;
+  z-index:21;
 }
 
 .country-img-nz, .country-img-qatar {
