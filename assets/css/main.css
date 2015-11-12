@@ -6563,6 +6563,18 @@ h2.icap {
   margin-top: 30px;
 }
 
+#dashboard-prompt .partner-country-index-2 {
+  background-color: #999;
+}
+
+#dashboard-prompt .partner-country-index-2:hover {
+  background-color: rgb(37,132,184);
+}
+
+#dashboard-prompt a {
+  text-decoration: none;
+}
+
 #dashboard-loading-div {
   height: 100%;
   width: 100%;
