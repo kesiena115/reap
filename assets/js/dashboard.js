@@ -685,7 +685,7 @@ function plotTotalEmployment() {
 
 function displayPrompt() {
     $("#dashboard-main-panel").hide();
-    $("#dashboard-prompt").show();
+    $("#dashboard-home").show();
     $('#dashboard-loading-div').hide();
 }
 
