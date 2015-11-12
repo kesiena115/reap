@@ -3,73 +3,87 @@ var regionData = {
     "name": "London, United Kingdom", 
     "description1": "London has a large number of start-up businesses and fantastic entrepreneurial ecosystem supporting theses businesses including incubators and accelerators, investors", 
     "description2": "and talented graduates. Where the support for businesses could be strengthened is when businesses are looking to rapidly scale.", 
+    "dataURL": "../assets/docs/MIT_REAP_cohort_2_dashboard_data.xlsx", 
     "imgFileName": "uk.png", 
-    "flagCssClass": "country-img", 
+    "mapCssClass": "country-img", 
     "team": [
       {
         "sh": "entrepreneur", 
         "name": "Ben Fletcher", 
-        "desc": "Having run his own business for 14 years, Ben took a 5 year sabbatical in 2009 to work with startups as an investor, advisor and mentor. Noticing that most businesses struggle with the same issues as they attempt to scale rapidly, he founded the execution focused event Fast Growth Forum in 2013 so that successful founders could help entrepreneurs in growing businesses make that transition more smoothly."
+        "img": "ben-f.jpg", 
+        "desc": "<p>Having run his own business for 14 years, Ben took a 5 year sabbatical in 2009 to work with startups as an investor, advisor and mentor. Noticing that most businesses struggle with the same issues as they attempt to scale rapidly, he founded the execution focused event Fast Growth Forum in 2013 so that successful founders could help entrepreneurs in growing businesses make that transition more smoothly.</p>"
       }, 
       {
         "sh": "university", 
-        "name": "Tim Barnes", 
-        "desc": ""
+        "name": "Timothy Barnes", 
+        "img": "timothy-b.jpg", 
+        "desc": "<p>Director of UCL Enterprise Operations and UCL Advances.</p><p>Tim likes starting things. He has been involved in starting companies, charities, political campaigns and a variety of other activities. At present, he is the Director of Enterprise Operations at UCL and also the Director of UCL Advances, the centre for entrepreneurship at University College London.</p><p>As head of Enterprise Operations since 2011, Tim oversees the resources allocated by the university to business engagement.  He became director of UCL Advances in 2007 when the centre was first launched and has built it into one of the largest such activities in Europe, offering thousands of places to UCL students each year to undertake entrepreneurial activities and offering direct support to hundreds of businesses with their routes outside of UCL.</p><p>Prior to 2007, Tim spent six years running his own business, which helped universities and large corporations to spin-out high technology companies.  Tim has also worked as an investment manager at a pan-European investment firm that specialised in early-stage technology ventures and as a management consultant at one of the largest professional services firms in the world.</p><p>In 2010, Tim started Citrus Saturday, a non-profit enterprise teaching entrepreneurship in schools that now runs in four countries. He is currently a director of UCL Consultants Ltd, the National Consortium of University Entrepreneurs Ltd (NACUE) and Capital Enterprise Ltd. He graduated from UCL in 1997, is a Fellow of the Royal Society of Arts and in 2014 was awarded the Queen’s Award for Enterprise Promotion for life.</p>"
       }, 
       {
         "sh": "corporate", 
         "name": "Matthew Smith", 
+        "img": "", 
         "desc": ""
       }, 
       {
         "sh": "government", 
         "name": "Susie Kitchens", 
-        "desc": "Susie Kitchens arrived in Boston to become Britain's Consul General in August 2012. She is here with her US-born husband, Michael, and their two children, living on historic Beacon Hill.\rPrior to this assignment, Susie was the Deputy High Commissioner at the British High Commission in Tanzania. Susie's diplomatic career has also included postings in the Foreign and Commonwealth Office in London (on bilateral relations with Latin America, Consular policy and on the United Nations Security Council) and also as Political Officer at the British Embassy in Guatemala.\rSusie's academic record includes an MA in Human Sciences from Oxford University (Lady Margaret Hall), and an MSc in Public Health from the London School of Hygiene and Tropical Medicine. Before becoming a diplomat, Susie worked in international development promoting children's health via school improvement through the Aga Khan Foundation in Pakistan and then with CARE International in El Salvador. \rSusie and her dual nationality family are delighted to have this opportunity to live in the United States, particularly in New England with its historical and contemporary links to the UK. Susie's paternal grandfather served as vice-consul in both New York and San Francisco during World War II, initiating the family's diplomatic ties with the USA."
+        "img": "susie-k.jpg", 
+        "desc": "<p>Susie Kitchens arrived in Boston to become Britain's Consul General in August 2012. She is here with her US-born husband, Michael, and their two children, living on historic Beacon Hill.</p><p>Prior to this assignment, Susie was the Deputy High Commissioner at the British High Commission in Tanzania. Susie's diplomatic career has also included postings in the Foreign and Commonwealth Office in London (on bilateral relations with Latin America, Consular policy and on the United Nations Security Council) and also as Political Officer at the British Embassy in Guatemala.</p><p>Susie's academic record includes an MA in Human Sciences from Oxford University (Lady Margaret Hall), and an MSc in Public Health from the London School of Hygiene and Tropical Medicine. Before becoming a diplomat, Susie worked in international development promoting children's health via school improvement through the Aga Khan Foundation in Pakistan and then with CARE International in El Salvador. </p><p>Susie and her dual nationality family are delighted to have this opportunity to live in the United States, particularly in New England with its historical and contemporary links to the UK. Susie's paternal grandfather served as vice-consul in both New York and San Francisco during World War II, initiating the family's diplomatic ties with the USA.</p>"
       }, 
       {
         "sh": "riskcapital", 
         "name": "Jenny Tooth", 
-        "desc": "Jenny Tooth has been CEO of the UK Business Angels Association since 2012. UKBAA is the trade body for angel and early stage investing, supporting over 15,000 investors and which superseded the British Business Angels Association. Jenny has been providing strategic support to BBAA since its establishment in 2004, supporting both policy and interfacing with Government, as well as developing the trade body's major annual events. \r\rJenny has over 20 years' experience of facilitating SMEs access to investment, both in the UK and internationally. After a background in marketing and publishing, she ran her own consultancy business, focusing on business growth, innovation and access to finance working with public and private organisations,  including spending nine years based in Brussels, working closely with the EC and related institutions on access to finance. She has operated a wide range of investment readiness programmes, including projects supported by national and EU funding. She has also participated in a number of expert groups on access to finance and chaired the EC Knowledge Intensive Services group under DG Enterprise. \r\rIn 2006 she took on the role of Business Development Director at GLE Growth Capital running their access to finance projects. In 2009 Jenny co-founded Angel Capital Group incorporating London Business Angels, one of the most established angel networks in in the UK, where she has been Director  focusing on demand side issues and angel investment, operating projects on technology, mobile services and creative industries. On an international level, she is a Board member of Business Angels Europe and one of the co-founders of World Business Angels Association. Jenny is an experienced speaker, both in the UK and internationally. She has an MSc in Economics from London School of Economics and Political Science."
+        "img": "jenny-t.jpg", 
+        "desc": "<p>Jenny Tooth has been CEO of the UK Business Angels Association since 2012. UKBAA is the trade body for angel and early stage investing, supporting over 15,000 investors and which superseded the British Business Angels Association. Jenny has been providing strategic support to BBAA since its establishment in 2004, supporting both policy and interfacing with Government, as well as developing the trade body's major annual events. </p><p></p><p>Jenny has over 20 years' experience of facilitating SMEs access to investment, both in the UK and internationally. After a background in marketing and publishing, she ran her own consultancy business, focusing on business growth, innovation and access to finance working with public and private organisations,  including spending nine years based in Brussels, working closely with the EC and related institutions on access to finance. She has operated a wide range of investment readiness programmes, including projects supported by national and EU funding. She has also participated in a number of expert groups on access to finance and chaired the EC Knowledge Intensive Services group under DG Enterprise. </p><p></p><p>In 2006 she took on the role of Business Development Director at GLE Growth Capital running their access to finance projects. In 2009 Jenny co-founded Angel Capital Group incorporating London Business Angels, one of the most established angel networks in in the UK, where she has been Director  focusing on demand side issues and angel investment, operating projects on technology, mobile services and creative industries. On an international level, she is a Board member of Business Angels Europe and one of the co-founders of World Business Angels Association. Jenny is an experienced speaker, both in the UK and internationally. She has an MSc in Economics from London School of Economics and Political Science.</p>"
       }, 
       {
         "sh": "champion", 
         "name": "", 
+        "img": "", 
         "desc": ""
       }, 
       {
         "sh": "corporate", 
         "name": "Laura Parker", 
-        "desc": "Having graduated with a first class degree in Economics,  Laura joined RBS on the Business and Commercial Graduate Scheme in Edinburgh. Here she gained knowledge on managing businesses up to &pound;25m turnover and spent the last year of the programme specialising in entrepreneurship. Upon leaving the Graduate Scheme Laura joined the Entrepreneur Strategy team focusing on entrepreneurship and high growth businesses across the UK. Laura enjoys networking with entrepreneurs outside of her role in RBS and is part of  the Start up Grind London team who organise talks from successful entrepreneurs.  \rIn her spare time Laura enjoys skiing, travelling and regularly tweets about entrepreneurship and innovation\r"
+        "img": "laura-p.jpg", 
+        "desc": "<p>Having graduated with a first class degree in Economics,  Laura joined RBS on the Business and Commercial Graduate Scheme in Edinburgh. Here she gained knowledge on managing businesses up to &amp;pound;25m turnover and spent the last year of the programme specialising in entrepreneurship. Upon leaving the Graduate Scheme Laura joined the Entrepreneur Strategy team focusing on entrepreneurship and high growth businesses across the UK. Laura enjoys networking with entrepreneurs outside of her role in RBS and is part of  the Start up Grind London team who organise talks from successful entrepreneurs.  </p><p>In her spare time Laura enjoys skiing, travelling and regularly tweets about entrepreneurship and innovation</p>"
       }, 
       {
         "sh": "corporate", 
         "name": "Will Pryke", 
+        "img": "", 
         "desc": ""
       }, 
       {
         "sh": "corporate", 
         "name": "Paola Cuneo", 
-        "desc": "Paola is passionate about entrepreneurship and innovation. She has spent over 10 years working for British Telecom in various senior positions in both marketing, sales and operations.\r\rBetween 2009 and 2011, Paola was seconded at London and Partners as Head of EMEA and also covered the position of Head of Asia Pacific for almost a year. Paola is currently running the Sirius programme for UKTI, attracting talented graduate entrepreneurs to the UK. \rPaola also mentors start-ups, advising on all aspects of business growth and raising capital.\r"
+        "img": "paula-c.jpg", 
+        "desc": "<p>Paola is passionate about entrepreneurship and innovation. She has spent over 10 years working for British Telecom in various senior positions in both marketing, sales and operations.</p><p></p><p>Between 2009 and 2011, Paola was seconded at London and Partners as Head of EMEA and also covered the position of Head of Asia Pacific for almost a year. Paola is currently running the Sirius programme for UKTI, attracting talented graduate entrepreneurs to the UK. </p><p>Paola also mentors start-ups, advising on all aspects of business growth and raising capital.</p>"
       }, 
       {
         "sh": "university", 
         "name": "Mike Caine", 
-        "desc": "Mike is Professor of Sports Technology and Innovation. He has secured circa &pound;15M of research and innovation grants and received several national and international enterprise awards. He was the inaugural Editor-in-Chief of the Journal of Sports Engineering and Technology, published by the Institution of Mechanical Engineers. Mike is currently leading Loughborough University's development of a second campus on the Queen Elizabeth Olympic Park, London (www.lborolondon.ac.uk).\r \rMike has been a company Director for 19 years having founded two spinout companies. He has researched, patented, developed and licensed multiple healthcare and sport related technologies, generating &pound;25M+ in revenues. Mike's research and innovation activities have been featured in over five hundred substantial broadcast and print media outputs.\r"
+        "img": "mike-c.jpg", 
+        "desc": "<p>Mike is Professor of Sports Technology and Innovation. He has secured circa &amp;pound;15M of research and innovation grants and received several national and international enterprise awards. He was the inaugural Editor-in-Chief of the Journal of Sports Engineering and Technology, published by the Institution of Mechanical Engineers. Mike is currently leading Loughborough University's development of a second campus on the Queen Elizabeth Olympic Park, London (www.lborolondon.ac.uk).</p><p> </p><p>Mike has been a company Director for 19 years having founded two spinout companies. He has researched, patented, developed and licensed multiple healthcare and sport related technologies, generating &amp;pound;25M+ in revenues. Mike's research and innovation activities have been featured in over five hundred substantial broadcast and print media outputs.</p>"
       }, 
       {
         "sh": "entrepreneur", 
         "name": "Freddie Talberg", 
-        "desc": "Freddie Talberg is CEO of PIE Mapping and a serial entrepreneur.  He is a Bachelor of Electrical Engineering and has more than 15 years technical experience within the telecom sector and ten years working in the mapping and navigation industry. His current business, PIE Mapping was founded in 2002 following the sale of a software engineering company to a competitor.  PIE Mapping began as a traditional printed map publisher but under Freddie's guidance has moved into the location based (GPS) mapping industry and is an innovator in terms of both data capture and distribution processes for online and in-vehicle navigation and routing products. Freddie was born in the Middle East but now resides with his family in London.  He served part time in the British Army Territorial Division for more than 8 years. "
+        "img": "freddie-t.jpg", 
+        "desc": "<p>Freddie Talberg is CEO of PIE Mapping and a serial entrepreneur.  He is a Bachelor of Electrical Engineering and has more than 15 years technical experience within the telecom sector and ten years working in the mapping and navigation industry. His current business, PIE Mapping was founded in 2002 following the sale of a software engineering company to a competitor.  PIE Mapping began as a traditional printed map publisher but under Freddie's guidance has moved into the location based (GPS) mapping industry and is an innovator in terms of both data capture and distribution processes for online and in-vehicle navigation and routing products. Freddie was born in the Middle East but now resides with his family in London.  He served part time in the British Army Territorial Division for more than 8 years. </p>"
       }, 
       {
         "sh": "university", 
         "name": "Sam Vanderslott", 
-        "desc": "Samantha is designing and managing the research project 'INTER-CEP', providing international comparisons of entrepreneurship policy and intervention. INTER-CEP stands for UCL's International Centre for Entrepreneurship and Enterprise Policy and was established in 2012 alongside www.intercep-com, a database of case studies of entrepreneurship projects ranging from tax and immigration policy to finance, competitions, networks and mentoring.  It is the first such source of information on entrepreneurship collecting examples from government, the private sector and philanthropic organisations, with the intention of provoking policy debate, sharing expertise and informing future interventions.\r \rSamantha is a PhD candidate at the Department for Science and Technology Studies at UCL.  Her research focuses on innovation, policy problems and global public health.  She has a background is in economics, having studied Economics and International Development at the University of Bath followed by an MSc in Global Governance and Diplomacy at the University of Oxford.  After this she also spent three years in the public sector working at the UK Department for Business Innovation and Skills, specialising in entrepreneurship and venture capital policy.  Samantha will be a visiting fellow at the Harvard Program on Science, Technology and Society in 2015.\r"
+        "img": "sam-v.jpg", 
+        "desc": "<p>Samantha is designing and managing the research project 'INTER-CEP', providing international comparisons of entrepreneurship policy and intervention. INTER-CEP stands for UCL's International Centre for Entrepreneurship and Enterprise Policy and was established in 2012 alongside www.intercep-com, a database of case studies of entrepreneurship projects ranging from tax and immigration policy to finance, competitions, networks and mentoring.  It is the first such source of information on entrepreneurship collecting examples from government, the private sector and philanthropic organisations, with the intention of provoking policy debate, sharing expertise and informing future interventions.</p><p> </p><p>Samantha is a PhD candidate at the Department for Science and Technology Studies at UCL.  Her research focuses on innovation, policy problems and global public health.  She has a background is in economics, having studied Economics and International Development at the University of Bath followed by an MSc in Global Governance and Diplomacy at the University of Oxford.  After this she also spent three years in the public sector working at the UK Department for Business Innovation and Skills, specialising in entrepreneurship and venture capital policy.  Samantha will be a visiting fellow at the Harvard Program on Science, Technology and Society in 2015.</p>"
       }, 
       {
-        "sh": "", 
+        "sh": "corporate", 
         "name": "Owen Lawrence", 
-        "desc": ""
+        "img": "owen-lawrence.jpg", 
+        "desc": "<p>Regional Managing Director, Business Banking, London and South East, RBS</p><p>Owen qualified with a law degree and then studied separately for a BSc in Finance and has a background of 18 years in Banking with HSBC and then RBS Group, with the majority spent in the SME and Corporate banking arena. Having gained experience in both relationship management, project management and leadership roles within the Bank, Owen now leads the 400 strong Business Banking team within NatWest for London and the South East of England. Owen is passionate about the SME sector, and supporting owner managed businesses as both an engine room of innovation and UK growth. Outside work, Owen lives in Surrey with his wife and two young children and enjoys travel, as well as being an avid supporter of Liverpool Football Club!</p>"
       }
     ], 
     "topClusters": [
@@ -625,37 +639,86 @@ var regionData = {
   "morocco": {
     "name": "Morocco", 
     "description1": "", 
+    "dataURL": "../assets/docs/MIT_REAP_cohort_2_dashboard_data.xlsx", 
     "imgFileName": "morocco.png", 
-    "flagCssClass": "country-img-wide", 
+    "mapCssClass": "country-img-wide", 
     "team": [
       {
-        "sh": "entrepreneur", 
-        "name": "", 
-        "desc": ""
+        "sh": "corporate", 
+        "name": "Outmane El Hassani", 
+        "img": "outmane.jpg", 
+        "desc": "<p>REAP co-champion and Interim Director of OCP Entrepreneurship Network.</p><p>Outmane is the Director in charge of the OCP Entrepreneurship Network, hosted by the OCP Foundation.</p><p>He Graduated from HEC Business School in Belgium in 2003 as a Business Engineer and then from the University of Liege, Belgium where he completed a Master Degree in Entrepreneurship.</p><p>After a first experience in Procurement, Outmane EL HASSANI worked about 10 years in various senior positions within the Belgian entrepreneurial Ecosystem. He managed 2 incubators in 6 different locations in Wallonia, the French speaking region in Belgium. He joined the OCP Foundation late 2013 to launch of the OCP Entrepreneurship Network.</p>"
       }, 
       {
         "sh": "university", 
-        "name": "", 
-        "desc": ""
+        "name": "Janah Saadi", 
+        "img": "janah-saadi.jpg", 
+        "desc": "<p>Academic Director of University Mohamed VI Polytechnic</p><p>Born in 1954, He get a Ph.D in Science &quot;Automatic control&quot; from  (EMI) Rabat and ENSIEG Grenoble (France) in 1994, a 3rd cycle Doctorate degree in Automatic control from Nancy I University in 1980, He was a full Professor at The school of engineering ENSEM- University Hassan II Casablanca (UH2C) from 1986 to 2014. He was responsible for UFR DESA and Doctorate in Automatic control and Production. He Founded on 2006 the Laboratory of IT Systems and Renewable Energy at ENSEM (LISER) (Casablanca) and conducts research subjects on the topics of modeling, simulation, optimization and control of hybrid dynamical systems with applications to associations converters-machines, production systems and health care systems. He has also several works in the field of automatic failure diagnosis. He is interested in the fields of renewable energy, particularly solar, wind and fuel cell. He supervised a joined research project with industry associating Wind, Solar and Fuel Cell generators giving 3 patents in wind field. He has participated in the organization of several national and international scientific events. He is member of the scientific committee for several journals and national and international conferences. He had also coordinated 2 European Tempus projects in the fields of entrepreneurship (STIMU 2005-2008) and (OSMOSE 2010-2014) and participate to conception of many others.</p><p>He was Director of ENSEM from November 2006 to July 2011 and Vice president of research and cooperation at University Cadi Ayyad- Marrakech from November 2011 to September 2013. He was in the same period Director of the incubator of Marrakech and supervised the project of innovation city at Cadi Ayyad University- Marrakech.</p><p>He is actually the Academic Director of University Mohammed VI polytechnic since september 2014.</p>"
       }, 
       {
         "sh": "corporate", 
-        "name": "", 
-        "desc": ""
+        "name": "El Moutaoikkil El Baraka", 
+        "img": "el-baraka.jpg", 
+        "desc": "<p>Executive Director, Northern Region</p><p>El Moutaoikkil El Baraka joined the Group in 1988. Mr. El Baraka held various positions during his 26 years with the Group, including manager of maintenance and responsible for processing at the Khouribga mining site, logistics and improvement projects director and industry development director. He [was] also head of the task force in charge of the Group's Industrial Development Programme in 2007. Mr. El Baraka obtained a [degree] from the Ecole Mohammedia d'Ingenieurs in 1988.</p>"
       }, 
       {
         "sh": "government", 
-        "name": "", 
-        "desc": ""
+        "name": "Youssef El Bari", 
+        "img": "youssef-el-bari.jpg", 
+        "desc": "<p>Advisor to the Minister of Industry, trade, investment and the Digital Economy</p><p>Youssef El Bari joined the Ministry of Industry, Morocco in April 2014. He acts as adviser to the minister and works on the industrial acceleration program 2014-2020. He worked for the OCP group between 2009 and 2014 where he spent 3 years as head of strategy, and 2 years as head of industrial innovation. Before Joining the OCP Group, He spent 5 years within the Air Liquide Group where he held several positions in the operations.</p>"
       }, 
       {
         "sh": "riskcapital", 
         "name": "", 
+        "img": "", 
         "desc": ""
+      }, 
+      {
+        "sh": "entrepreneur", 
+        "name": "Redouane Agoudal", 
+        "img": "redouane-a.jpg", 
+        "desc": "<p>CEO, Green Engineering</p><p>Mr. Redouane Agoudal is a graduate of the Mohammedia School of Engineering, 2004. He holds a Master degree in creation, buyout, acquisition and business development from the Higher School of Trade, TOULOUSE, 2011. He also holds several International management certificates. He is among the first in Morocco to be certified ISO 50001 auditor for the implementation of energy management systems, a certification that is becoming increasingly important in a strategic context in which Morocco has been engaged</p><p>Mr. Redouane Agoudal is a serial entrepreneur and engineer expert in technical engineering and business management solutions. He worked as a representative of a French company in Morocco and Senegal, marketing and technical advisor for other foreign companies wishing to invest in Morocco. He is currently director and manager of the following companies: GREEN ENGINEERING (www.greenengineering.ma ), Open System Service (www.oss.ma ) ALLOBRICOLE (www.allobricole.ma ), Smart Business Service (www.sbsmaroc.ma) , GREEN CONTRACTORS, these companies are located in Rabat, Casablanca and Khouribga. Mr Redouane Agoudal is acting in the field of entrepreneurship since 2007. He currently leads a team of experts, engineers and technicians, which provide consulting and installation of technical engineering solutions to customers.</p><p>The turnover expected in the year 2015 for these companies is about $ 3 million (an increase of over 500% from 2014) with over 70 employees.</p><p>Mr Redouane Agoudal is also active in community life, he is a member of the club of Mohammedia School of Engineers entrepreneurs, treasurer of the Youth Association for Citizenship and sustainable development and vice treasurer of the Moroccan League for the defense of human Rights (Rabat region).</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Hasnaa Boutzil", 
+        "img": "hasnaa-b.jpg", 
+        "desc": "<p>Chief of Procurement Office, OCP Group</p><p>Hasnaa BOUTZIL is a chief of procurement office of OCP Group is. Prior to her current position, Ms. BOUTZIL was the Manager of Corporate Coordination and the Project Management Office at OCP Group. Before that, she was part of the CEO's cabinet, in charge of technical studies, and before that she was the.</p><p>Hasnaa BOUTZIL has held a number of management positions in a OCP group since her integration in 1991 including, Environment Department Head, Chief of the Central Laboratory at CERPHOS (Casablanca), Head of the Planning and Programming Department at Safi, Head of the Quality Control Department at Safi, and Engineer responsible for production of sulfuric acid as her first position at OCP Group.</p><p>She holds a degree in Engineering from the Mohammadia School of Engineers- Rabat and an MBA from Hassania School of Engineers - Casablanca</p>"
+      }, 
+      {
+        "sh": "entrepreneur", 
+        "name": "Youssef Chaqor", 
+        "img": "youssef-c.jpg", 
+        "desc": "<p>CEO, Kilimanjaro</p><p>Youssef Chaqor is the founder and general manager of Kilimanjaro Environment, a regional leader in environmental innovation, operating in the collection and recycling of used cooking into biodiesel.</p><p>Youssef studied industrial engineering at top Moroccan engineering university Ecole Mohammadia d'Ingenieurs. Upon graduating in 1998, he joined Unilever and held several positions there. After Unilever, he worked at Savola, a large Saudi Arabian edible oil company, first as a Sales Director and later as Deputy General Manager. During his time at both companies, Youssef deepened his knowledge of fast-moving consumer goods (FMCG) distribution channels and honed his logistics and sales skills.</p><p>Youssef left Savola in 2008 to become a social entrepreneur. Concerned by the triple financial, food, and oil crises, he was drawn to second generation biofuel made from waste, rather than food products, which encouraged sustainable waste disposal and reduced pressure on food production. In early 2008, Youssef climbed Mt. Kilimanjaro and relished the triumph of persevering through doubt and difficulties. He soon founded Kilimanjaro Environment, hoping the name would carry over similar notions of commitment and drive. He immediately began collecting UCO for biodiesel producers, which he financed through freelance consulting on FMCG distribution, marketing, and sales. After several months, Youssef sold his first shipment of UCO to Italian company Projet Energy and struck up a strategic partnership early the next year with petrochemical aggregator AOT trading, a Swiss subsidiary of Astra Transcor Energy. This relationship quickly evolved and helped the company triple revenue in the first year alone.</p><p>Kilimanjaro Environment is at the forefront of the green energy movement in Morocco. The company collects used cooking oil from restaurants and hotels, which it filters, treats, and resells to biodiesel manufacturers. It also resells fatty acid products to both biodiesel and feedstock production plants. Having recently launched a pilot biodiesel production plant, Kilimanjaro now also produces biodiesel in house. The company's process not only eliminates and treats waste, but also helps reduce CO2 emissions and find new ways to create clean energy.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Fatiha Charradi", 
+        "img": "fatiha-c.jpg", 
+        "desc": "<p>CEO, OCP Innovation Fund For Agriculture</p><p>After a first experience in the banking sector at Wafabank, Fatiha Charradi joined Alcatel in 2001 to promote Voice&amp; Data solutions locally in Morocco and elsewhere. Then in 2005, she joined Altadis Group to develop and implement a diversification strategy based on Telecom capabilities and a wide distribution network through e-business services.</p><p>In 2008, Mrs Fatiha Charradi joined OCP Group as responsible of a portfolio of agribusiness projects at the presidency.</p><p>Mrs. Fatiha Charradi holds a Master of Business Administration  from &quot;Ecole Nationale des Ponts et Chaussees&quot;-Paris in 2008,  a Certificate of an Executive Program from MIT 2013, a Certificate of Business Strategy from HEC Paris 2011. She is an engineer graduated from &quot;Ecole Mohammedia des Ingenieurs&quot; -Rabat in Information Technology in 2000.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Ghita Chraibi", 
+        "img": "ghita-c.jpg", 
+        "desc": "<p>REAP co-champion and Head of Strategy and Partnerships of OCP Entrepreneurship Network, OCP Foundation.</p><p>Ghita graduated from HEC Paris in 2004 and majored in Entrepreneurship. She joined OCP Foundation in December 2013 to launch OCP Entrepreneurship Network. Before that, she spent 4 years at Mutandis, an investment company where she held several management positions in various subsidiaries. She spent 11 years in Paris where she worked in two different medium-sized companies as right-arm to the CEOs. Ghita has always been passionate about entrepreneurship, and made it a key direction in her academic and professional choices.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Nada Elmjadoub", 
+        "img": "nada-e.jpg", 
+        "desc": "<p>Industrial Development, OCP Group.</p><p>Nada is currently in charge of the capex program for the central axis at OCP, before that she was working at the office of the Chairman and CEO till July 2014, and she's part of the OCP group since 2009. Prior to joining OCP, Nada was Deputy Project Manager at Alliance Wood Group Engineering where she provided guidance and support for all aspects of execution of multimillion dollars offshore engineering projects in the oil and gas sector. </p><p>Before joining Alliance, she worked as a Mechanical Engineer at one of the world's premier engineering, procurement and construction management companies (JE). Nada holds a Master of Science in Mechanical Engineering from LSU and a Master of Science in Aeronautical Engineering from l'Ecole Nationale Superieure d'Ingenieurs en Constructions Aeronautiques (ENSICA) in Toulouse, France.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Saad Mikou", 
+        "img": "saad-mikou.jpg", 
+        "desc": "<p>Manager of Industrial Ecosystem Development, OCP Group</p><p>Saad Mikou received BS and MS degrees in electrical and Industrial engineering respectively in 1999 and 2002 from the University of &quot;Politecnica de Valencia - Spain&quot;. He also did postgraduate studies and received an Executive MBA in 2005 at ESIC Business &amp; Marketing School in Spain.</p><p>Mr. Mikou has held, since 1999, multiples positions of increasing responsibility in Steel &amp; Chemical companies in Spain in both Maintenance &amp; Production Management and Technical Management. He joined OCP Group in 2008 in Procurement Department as Project Manager.  In 2010 he was transferred to Jacobs Engineering SA as Procurement Manager where he was in charge of supplying the whole CAPEX Program of Industrial North Axis but also different CAPEX Programs of Real Estate (OCP Social projects &amp; M6 Polytechnic University). He is currently Manager of Industrial Ecosystem development at OCP Group and aims to support the development of strategic industrial sectors around the OCP Sites which constitute a sustainable and competitiveness lever of value creation for the local and national ecosystem.</p>"
       }, 
       {
         "sh": "champion", 
         "name": "", 
+        "img": "", 
         "desc": ""
       }
     ], 
@@ -1100,37 +1163,68 @@ var regionData = {
   "moscow": {
     "name": "Moscow, Russia", 
     "description1": "", 
+    "dataURL": "../assets/docs/MIT_REAP_cohort_2_dashboard_data.xlsx", 
     "imgFileName": "russia.png", 
-    "flagCssClass": "country-img-wide", 
+    "mapCssClass": "country-img-wide", 
     "team": [
       {
-        "sh": "entrepreneur", 
-        "name": "", 
-        "desc": ""
-      }, 
-      {
         "sh": "university", 
-        "name": "", 
-        "desc": ""
+        "name": "Dmitry Peskov", 
+        "img": "dmitry.jpg", 
+        "desc": "<p>Director, Agency for Strategic Initiatives.</p><p>For 8 years, Dmitry was the Director of the Centre for Internet Policy in the MGIMO University in Moscow and the Director of the Innovation Program at the university. In 2008, he created the project group &quot;Metaver&quot;, focusing on combining education and venture economy. Since 2011, he has been the Director of the Agency for Strategic Initiatives, which is aimed at the development of the Russian higher education system.</p>"
       }, 
       {
         "sh": "corporate", 
-        "name": "", 
-        "desc": ""
-      }, 
-      {
-        "sh": "government", 
-        "name": "", 
-        "desc": ""
+        "name": "Anna Belomestnova", 
+        "img": "anna-b.jpg", 
+        "desc": "<p>Strategy Director, Moscow Innovation Development Centre.</p><p>Anna is Strategy Director of Moscow Innovation Development Centre (MIDC), subordinated to Moscow City Government (inno.msk.ru). She has joined MIDC team following her aspiration to execute ambitious projects with significant social effect. Anna has over 12 years successful track record in management consulting in Big 4 in Russia, Ukraine and Kazakhstan. Progressed to Associate Director, led management consulting arm of KPMG in Ukraine. Unique blend of experience in complex restructuring and strategic development projects in a broad range of industries. Anna holds BA in Economics from Moscow State University and MA from New Economic School, completed a number of executive education programs, including INSEAD Strategy. Her hobbies include extreme water sports - kiteboarding, wakesurfing, yachting she also enjoys vocals and travelling.</p>"
       }, 
       {
         "sh": "riskcapital", 
-        "name": "", 
-        "desc": ""
+        "name": "Alexey Kostrov", 
+        "img": "alexey-kostrov.jpg", 
+        "desc": "<p>Executive Director, Moscow Seed Fund.</p><p>Alexey has a broad experience of working in the Moscow city government where he supported the development of SMEs in the region. From 2006 to 2010 he worked as the Director of the noncommercial partnership &quot;Agency for the Development of Innovative Entrepreneurship,&quot; focusing on creating infrastructure for supporting innovative SMEs. The Moscow Seed Fund stimulates private venture investors' activities and forms favorable venture capital environment for innovative start-up development.</p>"
+      }, 
+      {
+        "sh": "riskcapital", 
+        "name": "Alexander Galitsky", 
+        "img": "alexander-g.jpg", 
+        "desc": "<p>Managing Partner, Almaz Capital Partners.</p><p>Prior to his investment career, he created and led as CEO five successful companies in the field of software development, information security, internet services, telecommunications and microelectronics. Alexander is a holder of more than 30 patents. During the Economic Forum in Davos in 2000, Alexander Galitsky was named &quot;A pioneer in the technology field.&quot; In 2012, he was nominated for best venture investor of the decade in Europe.</p>"
+      }, 
+      {
+        "sh": "entrepreneur", 
+        "name": "Alexander Smbatyan ", 
+        "img": "alexander-smbatyan.jpg", 
+        "desc": "<p>Head of supervisory council of the Centre for Innovation Development, Moscow Government, Advisor to the Moscow deputy Mayor.</p><p>Alexander is a serial entrepreneur,  founder and CEO of Genome Ventures, a venture building company with portfolio companies in e-Health, e-Commerce, career guidance, social networking and fintech. Alexander advises the Deputy Mayor on the issues of Moscow's innovation policy, as well as develops frameworks for public-private partnership.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Yury Alasheev", 
+        "img": "yury-a.jpg", 
+        "desc": "<p>CEO of Phyztech union.</p><p>CEO of Phyztech union, organization founded by MIPT Alumni to support strategic development of MIPT. Director of MIPT strategic development center. Owner, Chairman of the Board of Agama, food industry holding.</p>"
+      }, 
+      {
+        "sh": "entrepreneur", 
+        "name": "Sergey Beshev", 
+        "img": "sergey-b.jpg", 
+        "desc": "<p>Founder, Co-owner and CEO of the Medical clinics chain in Moscow, including projects in the cooperation with Moscow city government www.drclinics.ru Joint medical projects with Rosnano. Several consulting projects for retail (Healthy People pharmacy chain) and telecom (Virgin Connect, Good Line) industries. YPO Russian Chapter Executive Committee Member (http://www.ypo.org/). Previously JSC &lt;Rosinter&gt;, Restaurants Chain, CEO, President; Dircetor in a number of Telecom businesses - MTS, Acado, Megafon</p>"
+      }, 
+      {
+        "sh": "riskcapital", 
+        "name": "Eugeny Kuznetsov", 
+        "img": "eugeny-k.jpg", 
+        "desc": "<p>Deputy CEO, Executive Board Member of Russian Venture Company.</p><p>RVC is a governmental fund of funds; this development institute is one of Russia's key tools in building its own national innovation system.</p><p>The social development instruments range from education programs to shaping the mindset for the development of innovations in Russia. Previously - Foundation for promotion of science, education and medicine development, Imageland Edelman, Imageland PR.</p>"
+      }, 
+      {
+        "sh": "government", 
+        "name": "Alexey Parabuchev", 
+        "img": "alexey-parabuchev.jpg", 
+        "desc": "<p>Acting CEO of Moscow Innovation Development Centre, Moscow Government.</p><p>Alexey has more than 15 years of experience in consulting projects related to strategy and organization development, territorial development and stakeholders' negotiation, business-trainings, corporate culture change, innovation management. Consulting projects were implemented for Russian regional government agencies and major Russian/international companies.</p>"
       }, 
       {
         "sh": "champion", 
         "name": "", 
+        "img": "", 
         "desc": ""
       }
     ], 
@@ -1653,38 +1747,75 @@ var regionData = {
   "puertorico": {
     "name": "Puerto Rico", 
     "description1": "", 
+    "dataURL": "../assets/docs/MIT_REAP_cohort_2_dashboard_data.xlsx", 
     "imgFileName": "puertorico.png", 
-    "flagCssClass": "country-img-pr", 
+    "mapCssClass": "country-img-pr", 
     "team": [
       {
         "sh": "entrepreneur", 
-        "name": "", 
-        "desc": ""
+        "name": "Francisco Uriarte", 
+        "img": "francisco-u.jpg", 
+        "desc": "<p>President, Aireko Capital &amp; Chairman, Grupo Guayacan</p><p>Francisco is Chairman of the Board of Grupo Guayacan, a non-profit dedicated to building entrepreneurial capacity in Puerto Rico.  He is also President of Aireko Capital, the Capital Group within the local company Aireko Construction, where he supports organic and inorganic growth initiatives for all Aireko related businesses in Puerto Rico, Philadelphia and the Caribbean region. Francisco has practiced in several business arenas and has over 24 years of combined experience in the areas of Corporate and Entrepreneurial Finance, Strategy, Marketing, Operations and Mergers &amp; Acquisitions. He has been involved in more than two entrepreneurial start-ups that he has grown and eventually sold, has structured and fundraised two Private Equity Fund of Funds and has actively participated in over 20 transactions involving either raising equity, debt, valuing the selling interest or the acquiring interest, doing due diligence and structuring the deal terms, always as part of a transaction decision process. He is a registered professional engineer, a certified mergers and acquisition advisor and a certified valuation analyst.</p>"
       }, 
       {
         "sh": "university", 
         "name": "", 
+        "img": "", 
         "desc": ""
       }, 
       {
         "sh": "corporate", 
-        "name": "", 
-        "desc": ""
+        "name": "Laura Cantero", 
+        "img": "laura-cantero.jpg", 
+        "desc": "<p>Executive Director, Grupo Guayacan</p><p>Laura is the Executive Director of Grupo Guayacan, a non-for-profit organization whose vision is to lead in building an entrepreneurial ecosystem that develops global entrepreneurs and global ventures to be an engine of economic and social value creation in Puerto Rico. Laura has a B.S. in Economics from the University of Pennsylvania's Wharton School of Business, and an International MBA from the Instituto de Empresa in Spain.</p>"
       }, 
       {
         "sh": "government", 
         "name": "", 
+        "img": "", 
         "desc": ""
       }, 
       {
         "sh": "riskcapital", 
-        "name": "", 
-        "desc": ""
+        "name": "Angel Perez", 
+        "img": "angel-perez.jpg", 
+        "desc": "<p>Champion and Vice President, Rock Solid Technologies</p><p>Mr. Angel Perez earned a Master's degree in Business Administration with honors from the University of Harvard and a Magna Cum Laude bachelor's degree in Computer Engineering from the University of Puerto Rico- Mayaguez. He is a partner and Vice President in Rock Solid Technologies, a software company, in San Juan Puerto Rico. Angel is also a founding partner of Ausubo Ventures, one the new emerging angel investment groups on the island.</p>"
       }, 
       {
         "sh": "champion", 
         "name": "", 
+        "img": "", 
         "desc": ""
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Yamille A. Morales Matos", 
+        "img": "yamille-m.jpg", 
+        "desc": "<p>New Technology and Solution Sales Director, Microsoft Puerto Rico</p><p>Mr. Morales is a New Technology and Solutions Sales Director at Microsoft Puerto Rico. He started his professional career in 2001 and is currently based in Puerto Rico. Mr. Morales has more than 14 years of experience in the Information Technology Industry.</p><p>As New Technology and Solution Sales Director at Microsoft Puerto Rico manages a group of professionals focused on delivering the value proposition of New Technology Solutions for a series of audiences (Academia, Developers, IT Professionals and Customers). As part of Microsoft Puerto Rico's Leadership Team he engages in planning and implementing strategies to effectively transform the subsidiary into a Cloud First, Mobile First focus. </p><p>In recent years he has played a more active role in working closely with the Government of Puerto Rico to support the development of a local knowledge-based industry as part of an MOU called the Cloud Island initative. This MOU's focus is to transform the Island's Economy by augmenting the impact of the Information Technology Sector. </p><p>Prior to his current role Mr. Morales he worked as part of a sales task force for Oracle Latin America where he sold solutions to Government Entities.</p><p>He earned his Bachelor of Science degree in Engineering - Electrical with a minor in Communications from the University of Puerto Rico - Mayaguez Campus at Mayaguez, Puerto Rico.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Francisco Pericas ", 
+        "img": "francisco-pericas.jpg", 
+        "desc": "<p>Senior Vice-President Corporate Banking, Banco Popular de Puerto Rico</p><p>Mr. Francisco J. Pericas earned a Bachelor in Business Administration from the University of Notre Dame, a Master in Business Administration from Washington University in St. Louis and Juris Doctor from the University of Puerto Rico Law School. He is currently Senior Vice President and Director of the Corporate Banking Division at Banco Popular de Puerto Rico, where he has held other leadership positions within the bank's legal and commercial workout units. Before joining Banco Popular, he worked in Citibank's retail banking operation in Puerto Rico. Francisco is also involved in Echar Pa'Lante, a corporate initiative from Banco Popular that aims to promote early stage entrepreneurship in Puerto Rico.</p>"
+      }, 
+      {
+        "sh": "riskcapital", 
+        "name": "Rodolfo Sanchez", 
+        "img": "rodolfo-s.jpg", 
+        "desc": "<p>Managing Partner, Parliament Capital Management</p><p>Rodolfo is a Managing Partner in Parliament Capital Management (PCM), an alternative investment management firm based in San Juan, Puerto Rico seeking value-oriented opportunities in private equity, credit and real estate. Its primary investment focus is: origination and acquisition of high-yield loans and other debt instruments. He was formerly the President and CEO of Operating Partners, Puerto Rico's largest distressed asset servicer, with $3B in assets under management and over 550,000 accounts in PR and the Eastern Caribbean. Rodolfo is an entrepreneur with a background in banking, and an ample experience in lending, collections, risk management, real estate, investment banking and private equity.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Gabriela Alvarez", 
+        "img": "gabriela-alvarez.jpg", 
+        "desc": "<p>Strategic Development Manager, Grupo Guayacan</p><p>Gabriela Alvarez is a Strategic Development Manager at Grupo Guayacan, Inc. Prior to joining Guayacan, she was Program Associate at Foundation for Puerto Rico, where she supported entrepreneurship and economic development activities and led the internship program. Previously, she was Associate Consultant at Impactivo, specializing in federal grant writing and strategic consulting for healthcare and non-profit clients. As an undergraduate she held internship positions, including: the Jose M. Berrocal Summer Internship at the Government Development Bank, an Assurance Internship at PwC, and a Finance &amp; Accounting Co-Op at Procter &amp; Gamble. In 2012, Gabriela graduated with a BBA, majoring in Finance and Accounting, from the University of Puerto Rico - Rio Piedras Campus.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Francisco J. Rivera", 
+        "img": "francisco-rivera.jpg", 
+        "desc": "<p>Program Associate, Foundation for Puerto Rico </p><p>Francisco Rivera is a Program Associate at Foundation for Puerto Rico (FPR), a non-profit organization whose vision is to catalyze the economic transformation of Puerto Rico. Francisco started his career as an Intern at FPR, before being promoted as Program Associate, where he supports diverse economic development and entrepreneurship efforts, such as the REAP program, Juntos por Puerto Rico and the Visitor Experience Initiative. Francisco completed a Master in International Business from the Hult International Business School in 2013, and a BBA majoring in Finance, from the University of Puerto Rico- Rio Piedras Campus in 2012. </p><p>He is passionate about Puerto Rico and its potential to become a competitive player in the global economy. Entrepreneurship, export, innovation are only an example of Francisco's areas of focus. He believes in Puerto Rico, its people and their role in Puerto Rico's social and economical transformation.</p>"
       }
     ], 
     "topClusters": [
@@ -1706,30 +1837,9 @@ var regionData = {
         "img": ""
       }
     ], 
-    "regionalInnovations": [
-      "", 
-      "", 
-      ""
-    ], 
-    "businessParks": [
-      "", 
-      "", 
-      ""
-    ], 
-    "regionalEntrepreneurs": [
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }, 
-      {
-        "name": "", 
-        "img": ""
-      }
-    ], 
+    "regionalInnovations": [], 
+    "businessParks": [], 
+    "regionalEntrepreneurs": [], 
     "icapPPI": [
       "", 
       "", 
@@ -2045,37 +2155,68 @@ var regionData = {
     "name": "Qatar", 
     "description1": "Qatar has a long tradition of entrepreneurship based on its trading roots. The present day environment is characterized by a", 
     "description2": "booming economy fueled by a hydrocarbon production and ambitious infrastructural projects, resulting in plenty opportunities for the entrepreneurs.", 
+    "dataURL": "../assets/docs/MIT_REAP_cohort_2_dashboard_data.xlsx", 
     "imgFileName": "qatar.png", 
-    "flagCssClass": "country-img-qatar", 
+    "mapCssClass": "country-img-qatar", 
     "team": [
       {
         "sh": "entrepreneur", 
-        "name": "", 
-        "desc": ""
+        "name": "Najat Abdulraheem", 
+        "img": "najat-a.jpg", 
+        "desc": "<p>Director of Business Development &amp; Innovation at Ooredoo, Founder and CEO of Shoura Business Group </p><p>Najat Abdulraheem is the Director of Business Development &amp; Innovation at Ooredoo. She is responsible of deploying organization's strategic vision &amp; innovation framework, developing business alliances as well as identifying new development opportunities beyond core business. Currently managing development projects of innovation strategy to define Ooredoo's future focus areas with non-traditional services. </p><p>She is also the Founder and CEO of Shoura Business Group. As a new entrepreneur, she started out in the business world by setting up Shoura Business Group, which is a Qatari working group that is aligned with Qatar National vision 2030 to build a diverse economy and local businesses that contribute to the prosperity of Qatar's community through entrepreneurship and enterprise development.  The company has delivered more than forty training programs and a one of a kind national event with a team of international experts from UNITAR &amp; Diwan Al Emiri. The result was the first Business Etiquette &amp; International Protocol Seminar on 20th May 2012 which was well attended by top dignitaries turning it into a success.  Shoura Business Group is currently working on delivering programs and online solutions to assist small and medium businesses in Qatar excel and compete.  </p><p>Najat graduated from Qatar University in 1996 with a Bachelor's degree in Computer Science and then continued her education in 2001 when she attended Long Island University, C.W. Post Campus to receive a Master's degree in Computer/Information Technology Administration and Management.</p>"
       }, 
       {
         "sh": "university", 
-        "name": "", 
-        "desc": ""
+        "name": "Dr. Nitham Hindi", 
+        "img": "nitham-hindi.jpg", 
+        "desc": "<p>CMA, Dean of the College of Business and Economics, Qatar University - Qatar</p><p>Nitham M. Hindi is a Professor of Accounting and Dean of the College of Business and Economics at Qatar University.  He received his Bachelor degree in accounting from the University of Jordan, Masters in accounting from The University of Alabama, and Doctorate in accounting from Mississippi State University. </p><p>As a certified management accountant, Nitham is an active member of the Institute of Management Accountant and serves on the editorial advisory board of Strategic Finance and Management Accounting Quarterly.  Additionally, he serves on the editorial advisory of many journals, including New Accountant, Studies in Business and Economics, Private Sector, The Arab Journal of Accounting, and the International Journal of Accounting and Finance.  </p><p>Nitham received many prestigious awards including Emporia State University (Kansas) Presidential Award for Distinguished Service to Diversity and Qatar University Faculty Merit Award for excellence in teaching, research, and service.  Nitham published research can be found in many journals including Strategic Finance, Management Accounting Quarterly, Journal of Accounting and Finance Research, Journal of Computer Information Systems, Journal of Education for Business, and Global Business and Finance Review.  He is a member of the American Accounting Association and the Institute of Management Accountants.</p>"
       }, 
       {
         "sh": "corporate", 
-        "name": "", 
-        "desc": ""
+        "name": "Hamad Al Kuwari", 
+        "img": "hamad-kuwari.jpg", 
+        "desc": "<p>Managing Director, Qatar Science &amp; Technology Park</p><p>Hamad Al Kuwari is the Managing Director of Qatar Science and Technology Park (QSTP), a member of Qatar Foundation. Mr. Al Kuwari is responsible for driving the growth of technology development within the four pillars of the Qatar National Research Strategy (QNRS); Energy, Environment, Information Communication Technologies and Health Sciences. Additionally, he takes a lead role in identifying opportunities for synergy between the various members of Qatar Science &amp; Technology Park, which is increasingly engaging in QNRS-driven activities; as well as liaising with governmental agencies on areas of research collaboration. </p><p>Prior to joining QSTP, Mr. Al Kuwari was responsible for the reliability of the ORYX GTL plant in Qatar, with a remit that included oversight of the maintenance support section of the plant. His professional background also includes a key role at Qatar Petroleum, where his project management skills were honed from a rich experience in both offshore projects, and the major projects department.</p><p>Hamad holds a Bachelor's degree in Mechanical Engineering from McNeese State University in Louisiana, USA, and a Master's degree in Business Administration (MBA) from Qatar University.  Al Kuwari is  on the Joint Advisory Board (JAB) of Texas A&amp;M Qatar and Qatar Foundation, which was established in May 2003.</p><p>Hamad is an accomplished public speaker, and is fluent in both Arabic and English.</p>"
       }, 
       {
         "sh": "government", 
-        "name": "", 
-        "desc": ""
+        "name": "Oscar Barranco Liebana", 
+        "img": "oscar-barranco.jpg", 
+        "desc": "<p>Projects Advisor, Office of the Secretary General in the Supreme Committee for Delivery and Legacy in Qatar</p><p>Oscar Barranco is Projects Advisor in the Office of the Secretary General in the Supreme Committee for Delivery and Legacy in Qatar. His main mission in the Supreme Committee is to develop and enhance strong innovation capabilities and solutions to deliver an amazing FIFA World Cup in 2022, as well as a strong legacy towards the national vision plan for 2030.</p><p>During the last 15 years, he has developed different roles:</p><p>* As engineer, he worked in Germany in the automotive, aerospace and semiconductor industry for companies as Airbus Group or Daimler AG in micro- and nanotechnology.</p><p>* As policy maker, he developed an innovation plan in order to build a Regional Innovation System in Spain, with a budget of 4.500M euros, in the areas of industry, R&amp;D, University, Entrepreneurship, Energy, Environment and Information Society.</p><p>* As entrepreneur, he founded 2 companies and mentored different social and technological start-ups and entrepreneurs.</p><p>* As innovation management consultant, he delivered innovation projects related to business model innovation, business differentiation, industrial clusters, Science and Technology Parks, non-profit organizations, EU R&amp;D Framework Programme or National Innovation Systems in diverse European countries, among others. </p><p>He holds a BSc in Mechanical Engineering, an MSc in Microsystems Engineering and a Global Executive MBA from IE Business School with honors. He speaks English, German and Spanish.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Pontus All", 
+        "img": "pontus-all.jpg", 
+        "desc": "<p>Entrepreneurship Manager - Qatar Science &amp; Technology Park</p><p>Pontus is working as the Entrepreneurship Manager at Qatar Science &amp; Technology Park (QSTP), where he focuses on supporting new innovation-based startups and aspiring entrepreneurs. Pontus holds a M.Sc in Computer Science &amp; Computer Engineering from Chalmers University of Technology as well as a B.Sc in BA from University West. Prior to joining QSTP, Pontus has worked with business development and innovation within the automotive industry as well as for a management consultancy company. Outside of work, he is a passionate floorball player and home renovator.</p>"
       }, 
       {
         "sh": "riskcapital", 
-        "name": "", 
-        "desc": ""
+        "name": "Haya Al Ghanim", 
+        "img": "haya-al-ghanim.jpg", 
+        "desc": "<p>Haya's career has been focused on enabling entrepreneurs to achieve their potential. She is 2014 MIT Sloan MBA graduate with a B.A. in Molecular, Cellular and Developmental Biology from the University of Colorado - Boulder. She's currently the Innovation Director at the Qatar Science &amp; Technology Park (QSTP) where she focuses on creating an environment supportive of technology ventures. Haya is also an amateur athlete, angel investor and former co-Managing Director of the MIT $100K Entrepreneurship Competition.</p>"
+      }, 
+      {
+        "sh": "entrepreneur", 
+        "name": "Zeyad Al Jaidah", 
+        "img": "zeyad-j.jpg", 
+        "desc": "<p>Co-Founder &amp; Managing Director, TechnoQ</p><p>Zeyad Mohammed Al Jaidah is the co-founder and Managing Director of Techno Q and CEO of Build-A-Bear Workshop overseeing operations for the Gulf States. </p><p>Zeyad Al Jaidah graduated from Lamar University, Texas, USA, with a B.Sc. degree in mechanical engineering and began his career as a maintenance engineer with Qatar Petrochemical Co. in 1995. The same year he joined his partner Abdullah Al Ansari in founding Techno Q, a company specialising in low current systems integration and solutions. In 1998 he moved to the Ministry of Municipal Affairs and Agriculture as design engineer for the drainage department. In 2003 Zeyad Al Jaidah decided to fully concentrate on Techno Q as the company was carving out a niche for itself in the Qatar market. This move took the company into overdrive and Techno Q was soon winning projects for prestigious corporate clients.</p><p>Techno Q is today a leading provider of integrated systems solutions in the region, specialising in audiovisual, building controls, fire &amp; security systems, lighting, information technology, broadcast, and hospitality management solutions. Employing the latest technology and system components, Techno Q works with clients in every sector, creating facilities for educational and governmental institutions, banking, healthcare, sporting venues and stadia, corporate offices, hotels, and international retailers. The company's fast climb to occupy a position as one of the market leaders within the industry is a testament to the foresight and ambition of its founders.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Hamad Khamis Al Kubaisi", 
+        "img": "hamad-k.jpg", 
+        "desc": "<p>Executive Director of Strategy &amp; Business Development, QDB</p><p>Mr. Hamad Khamis Al Kubaisi was appointed Executive Director of Strategy and Business Development at QDB in February of 2014. Mr. Al Kubaisi's has nearly fifteen years of project and business management experience, spanning the telecommunications, and information technology. </p><p>He is also actively involved in several local and international initiatives including the UK Foreign Commonwealth Office's Future International Leaders Program. Mr. Al Kubaisi holds a bachelor's degree in Electrical Engineering from Qatar University and an Executive MBA in Entrepreneurship and Innovation from HEC Paris, in addition to many industrial certificates.</p><p>In addition to his role he is also board member of Bedaya center1, which focuses on career development and accelerate entrepreneurial spirit within Qatar.</p><p>http://www.bedaya.qa</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Aysha Al Mudehki", 
+        "img": "aysha-mudehki.jpg", 
+        "desc": "<p>Chief Executive Officer, Qatar Business Incubation Center</p><p>Aysha Al Mudahka is the CEO of Qatar Business Incubation Center since July 2014. Before that Aysha was the Executive Director of INJAZ Qatar in March 2011. She began her career with INJAZ in 2007 as a volunteer. </p><p>Prior to that, Al Mudehka worked at the Qatar Financial Centre (QFC) and the Qatar Finance and Business Academy (QFBA). In addition to her commitment to her professional career, Al Mudahka dedicates time pursuing personal interests. She is a founding member of the Roudha Centre, a woman's Entrepreneurship and Innovation center. She is member of the Global Shapers Community (part of World Economic Forum) and a board member of Injaz Qatar. </p><p>A Qatari national, born and raised in the State of Qatar, Al Mudahka has completed postgraduate programs at Wharton School of Business at the University of Pennsylvania and Carnegie Mellon University Qatar and is a graduate of Qatar University. Aysha is currently doing her Executive MBA in HEC Paris.</p>"
       }, 
       {
         "sh": "champion", 
         "name": "", 
+        "img": "", 
         "desc": ""
       }
     ], 
@@ -2454,37 +2595,62 @@ var regionData = {
   "seoul": {
     "name": "Seoul, South Korea", 
     "description1": "", 
+    "dataURL": "../assets/docs/MIT_REAP_cohort_2_dashboard_data.xlsx", 
     "imgFileName": "korea.png", 
-    "flagCssClass": "country-img-seoul", 
+    "mapCssClass": "country-img-seoul", 
     "team": [
       {
         "sh": "entrepreneur", 
-        "name": "", 
-        "desc": ""
+        "name": "Kidon Yu", 
+        "img": "kidon-yu.jpg", 
+        "desc": "<p>Research Fellow, Consulting strategy of several businesses in LG Group and open innovation, LG Economic Research Institute, Korea</p><p>Kidon works for LG Group and his main job is related to setting up the strategy of several businesses in LG. Before he joined LG Economic Research Institute he was in oil refinery company, GS-Caltex, previously one of companies in LG. In 2000 when the internet business boomed, he created new business of car dealing through internet and set up the organization and system of in-house venture company, Yalge.com. He also got the first investment in Korea from Yahoo.com in 2001. As the cofounder of Yalge.com, he issued Primary Collateralized Bond Obligation and established several other businesses such as mobile game, credit card for people on the move. Now he especially researches open innovation area. He graduated with a Bachelor in Chemical Engineering and a Master of Science from Seoul National University, and earned a Master of Business Administration from University of Southern California.</p>"
       }, 
       {
         "sh": "university", 
-        "name": "", 
-        "desc": ""
-      }, 
-      {
-        "sh": "corporate", 
-        "name": "", 
-        "desc": ""
+        "name": "Seongwuk Moon", 
+        "img": "seongwuk-m.jpg", 
+        "desc": "<p>Associate Professor of Graduate School of Management of Technology, Sogang University</p><p>Professor Seongwuk Moon works on technology strategy; science, technology and innovation; entrepreneurial strategy and policy; economics of organization and strategy. He is currently an Expert Council Member of the Presidential Advisory Council of Science and Technology of Korea. He also worked for the Ministry of Finance and Strategy as a Deputy Director before he started his Ph.D. study in 2001. Professor Seongwuk Moon received his Ph.D. in Managerial Economics and Strategy from the Kellogg School of Management, Northwestern University.</p>"
       }, 
       {
         "sh": "government", 
-        "name": "", 
-        "desc": ""
+        "name": "Sumin Park", 
+        "img": "sumin-park.jpg", 
+        "desc": "<p>Director General, Ministry of Strategy and Finance (Visiting research fellow, Korea Development Institute)</p><p>Before joining KDI for the last two years, while taking the role of Director General of Strategy Planning &amp; Management Bureau in the Presidential Council for Future and Vision, he was responsible for future analysis and national agenda development in areas like new growth engines, national economy model, energy and social integration. And also in his position at the council, his role was extended to strategic cooperation-ship building between UAE and Korea. Earlier in his 18 year career serving Korea government, he worked at the Presidential Office, Ministry of Budget and Planning, Ministry of strategy and finance, etc. Over those years, he formulated strategies for privatization, M&amp;A and restructuring of approximately 100 government companies and developed mid-term national fiscal planning, reform strategy for national budgeting and fiscal performance analysis system.  When he worked at the Tax office, he designed tax system for new growth engine.  Also 15 years ago during the Asian financial crisis, he devised fiscal plans for the financial market restructuring. Mr. Park holds a B.A. and M.A. in Business Administration from Seoul National University.</p>"
       }, 
       {
         "sh": "riskcapital", 
-        "name": "", 
-        "desc": ""
+        "name": "Sanghyun Park", 
+        "img": "sanghyun-p.jpg", 
+        "desc": "<p> Assistant Manager, Office of Growth Ladder Fund, Seoul, Korea</p><p>He is currently dispatched as a fund planning manager to the office of Growth Ladder Fund, which is fund of funds based on the national policy for the development of Korean venture capital market. And also he is a assistant manager of The Korea Development Bank. Before dispatched to the office of Growth Ladder Fund, he worked as a venture capitalist from 2013 to 2014 in Venture Business Department of The Korea Development Bank. He has MBA degree from Korea Advanced Institute of Science and Technology</p>"
+      }, 
+      {
+        "sh": "government", 
+        "name": "Jeongdae Koo", 
+        "img": "jeongdae-k.jpg", 
+        "desc": "<p>Deputy Director, Industrial Policy Division, Policy Coordination Bureau, Ministry of Strategy and Finance, Korea</p><p>He joined the Ministry of Strategy and Finance in 2012, and has been working at the Policy Coordination Bureau. Since Jeongdae Koo/ Mr. Koo joined the Ministry of Strategy and Finance in 2012, he has been working at the Policy Coordination Bureau. Currently he is working on the policies to create innovative entrepreneurship ecosystem in Korea. He obtained his B.A. in Business and Economics at Yonsei University.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Oryung Kwon", 
+        "img": "oryung-k.jpg", 
+        "desc": "<p>Director of Strategic Investment Dept. KT, Korea</p><p>He is working at KT, which is the largest ICT company in KOREA. He is working as a director of strategic investment dept. His main role is managing KT's corporate funds. He has MBA degree from U of Washington.</p>"
+      }, 
+      {
+        "sh": "entrepreneur", 
+        "name": "Jeffrey Lim", 
+        "img": "jeffrey-lim.jpg", 
+        "desc": "<p>The Head of Campus Seoul Google, Korea</p><p>Jeffrey Lim is the Head of Campus Seoul, part of Google's global network to support entrepreneurs. Jeffrey's vision for Campus Seoul is to create an environment for Korean startups to grow and go global. Jeffrey brings a wealth of experience in tech and startup industry and passion for empowering young entrepreneurs. Prior to joining Google, he founded and served as CEO of social gaming company RocketOz, and invested in young companies as a venture capitalist at SoftBank Ventures Korea. Jeffrey has also held senior leadership positions in innovative tech startups in Silicon Valley. Jeffrey holds a M.S in Management Science and Engineering from Stanford University, and a M.S in Industrial Engineering from U.C.Berkeley. He earned his B.S in Industrial Engineering from Korea Advanced Institute of Science and Technology.</p>"
+      }, 
+      {
+        "sh": "university", 
+        "name": "Younsuk Lee", 
+        "img": "younsuk-lee.jpg", 
+        "desc": "<p>Research Professor of Graduate School of Management of Technology, Sogang University.</p><p>Younsuk Lee is a research professor at the Graduate School of Management of Technology at Sogang University. She received her PhD in Business Administration Operations Management from Korea University. Her dissertation focused on how innovative activities such as R&amp;D investments and patents can be converted into firm performance through new products. Currently, Dr. Lee is working on technology spillover, the collaboration between public institutions and industries, and entrepreneurship.</p>"
       }, 
       {
         "sh": "champion", 
         "name": "", 
+        "img": "", 
         "desc": ""
       }
     ], 
@@ -2999,54 +3165,64 @@ var regionData = {
   "singapore": {
     "name": "Singapore", 
     "description1": "The Singapore entrepreneurship ecosystem receives strong government support in terms of grants and policies, and is reflected by the density", 
-    "description2": "of venture capitals and accelerators in Singapore. Positioned as a financial hub for Asia, many fintech startups view Singapore as a good springboard. The Singapore government is also receptive towards new technologies and is willing to assist startups with various funding schemes. Strong institutions and a favourable tax regime are also strong attractors for entrepreneurs. In recent years, the increasing cost of living in Singapore, coupled by policies to tighten foreign labour founders. \rAs part of the government's initiative to create a vibrant and nurturing environment for start-ups, JTC LaunchPad @ one-north, a 5-hectare site comprising of 3 blocks, was launched. The new facilities include BASH, an initiative driven by Infocomm Investments Pte Ltd (IIPL), which has become Singapore's biggest integrated start-up space with the capability of congregating members and partners of the tech building community across the entire value chain - from accelerators, investors, incubators to entrepreneurs - all under one roof.", 
+    "description2": "of venture capitals and accelerators in Singapore. Positioned as a financial hub for Asia, many fintech startups view Singapore as a good springboard. The Singapore government is also receptive towards new technologies and is willing to assist startups with various funding schemes. Strong institutions and a favourable tax regime are also strong attractors for entrepreneurs. In recent years, the increasing cost of living in Singapore, coupled by policies to tighten foreign labour founders. \r\nAs part of the government's initiative to create a vibrant and nurturing environment for start-ups, JTC LaunchPad @ one-north, a 5-hectare site comprising of 3 blocks, was launched. The new facilities include BASH, an initiative driven by Infocomm Investments Pte Ltd (IIPL), which has become Singapore's biggest integrated start-up space with the capability of congregating members and partners of the tech building community across the entire value chain - from accelerators, investors, incubators to entrepreneurs - all under one roof.", 
+    "dataURL": "../assets/docs/MIT_REAP_cohort_2_dashboard_data.xlsx", 
     "imgFileName": "singapore.png", 
-    "flagCssClass": "country-img-wide", 
+    "mapCssClass": "country-img-wide", 
     "team": [
       {
         "sh": "entrepreneur", 
         "name": "Steve Leonard", 
-        "desc": ""
+        "img": "steve-leonard.jpg", 
+        "desc": "<p>Executive Deputy Chairman, Infocomm Development Authority of Singapore (IDA)</p><p>Mr Steve Leonard is an industry veteran with more than 28 years of experience working in leading global technology companies. Prior to joining IDA, Mr Leonard was the President of EMC Asia Pacific and Japan (APJ) where he was  responsible for driving EMC's growth and market share leadership in APJ, enhancing partner and channel relationships and contributing to product-development efforts throughout the region. Before joining EMC, he served as President of the Asia Pacific and Japan business for Symantec and Veritas. Prior to those executive management positions, Mr Leonard spent 18 years with EDS, where he focused on European and Asian operations for 12 years, ultimately rising to the position within EDS of President of Solutions Consulting for Europe, the Middle East, and Africa. Mr. Leonard currently sits on the Boards of IDA Singapore, IDA International and Infocomm Investments Pte Ltd.</p>"
       }, 
       {
         "sh": "university", 
-        "name": "Alex Lin", 
-        "desc": ""
+        "name": "Dr. Alex Lin", 
+        "img": "alex-lin.jpg", 
+        "desc": "<p>Head, Infocomm Investments Pte Ltd</p><p>As Head of Infocomm Investments Pte Ltd, Dr. Alex LIN led the team of investment professionals to develop the infocomm start-ups ecosystem in Singapore, through strategic investments in promising companies. Regionally, Alex has led several technology infrastructure investments in China, such as technology park development, and High Temperature Conversion of Waste installations. Prior to his investment and mentoring roles, Alex was the Chief Technology Officer and Senior Vice President of Operation &amp; Technology in SembCorp Logistics, where he led teams of professionals in sales acquisition and maintenance of technology infrastructures. Before joining SembCorp Logistics Ltd, Alex started Asia first wireless ISP, and successfully expanded regionally to China and Indonesia before merging into larger incumbent telco in the territories.  Alex also started and exited several technology-based companies. Before his entrepreneurial journey, Alex held senior positions in global companies such as FedEx where he created Asian's global sales division and managed the starting up of Subic Bay regional logistics hub.  He was the General Manager of Hewlett Packard Internet Business Unit during the dotcom era where he built the unit by aggressive acquisition of technology companies.</p>"
       }, 
       {
         "sh": "corporate", 
         "name": "Tan Kai Hoe", 
+        "img": "", 
         "desc": ""
       }, 
       {
         "sh": "government", 
         "name": "Ong Peng Tsin", 
-        "desc": ""
+        "img": "ong-peng.jpg", 
+        "desc": "<p>Director, Banean Holdings</p><p>Peng is a director at Banean Holdings and an advisor to GSR Ventures. He is an independent board director of YY Inc. [NASDAQ:YY] and the National Research Foundation of Singapore. He was on the board of SingTel through July 2013, and still chairs SingTel's Group Enterprise's Advisory Committee. Peng is a trustee of the Singapore University of Technology &amp; Design and sits on the Strategic Advisory Board of the Chancellor of the University of Illinois. Peng founded Encentuate in 2002. From 2008 through 2009, he was an executive at IBM, after Encentuate's acquisition. Prior to founding Encentuate, Peng was the founder and chairman of Interwoven, Inc. (now part of HP), the leading provider of content infrastructure. He was the president and CEO of Interwoven through 1997, and its chairman through 2002. Before Interwoven, Peng was co-founder and chief architect of Electric Classifieds, Inc.—the creators of Match.com (now part of IAC). He has also held various engineering and management roles at Sybase, Inc.  (now SAP), Illustra (now IBM Informix), and Gensym Corporation. Peng co-authored numerous patents for technologies developed at his companies.</p>"
       }, 
       {
         "sh": "riskcapital", 
-        "name": "Lily Chan", 
-        "desc": ""
+        "name": "Lily Chan, PhD", 
+        "img": "lily-chan.jpg", 
+        "desc": "<p>Chief Executive Officer, NUS Enterprise</p><p>Dr. Lily Chan leads NUS Enterprise at the National University of Singapore (NUS), with the vision to inject an enterprise dimension to NUS teaching and research involving the University's students, staff and alumni.  As the Chief Executive Officer, Dr. Chan spearheads strategies and initiatives to promote industry collaboration and business ventures for the University. Under her leadership, the unique NUS Overseas Colleges (NOC) programme has expanded to include eight overseas hubs (Silicon Valley, Philadelphia, New York, Stockholm, Israel, Beijing, Shanghai, and India), where promising NUS students gain firsthand entrepreneurial experience through full-time internships and entrepreneurship courses. Closet to home, nearly 300 start-up companies have been launched from NUS Enterprise under the tenure of Dr. Chan.  Prior to joining NUS in 2006, Dr. Chan held the position of Managing Director, Investments, of Bio*One Capital Pte Ltd, an investment arm of the Singapore Economic Development Board with focus on expanding the growth of the biomedical science industry in Singapore.</p>"
       }, 
       {
         "sh": "champion", 
         "name": "Wong Meng Weng", 
-        "desc": ""
+        "img": "wong-meng.jpg", 
+        "desc": "<p>Social Engineer, The Joyful Frog Digital Incubator (JFDI)</p><p>Wong Meng Weng, while in Philadelphia and Silicon Valley, founded two Internet dot-coms, and led the SPF opensource standard (RFC4408 &amp; RFC6652) to successful worldwide rollout. His was also involved in two previous ventures, pobox.com and karmasphere.com.In Singapore, Meng is deeply engaged with the startup ecosystem in several roles: as an angel investor, a board member of the Business Angel Network of South-East Asia, and most recently as founder of JFDI.Asia, Singapore's first seed accelerator. He designed a map of the money for the Media Entrepreneurs Guide to Singapore and maintains a web page for people new to the ecosystem. As a co-founder of Hackerspace.SG, he has organized and participates in Startup Weekend, TEDx, Barcamp, Startup Grind, and similar events. Meng earned a Bachelor's degree in Computer Science at the University of Pennsylvania (SEAS '97) and took MBA classes at the National University of Singapore (2000) while simultaneously working toward a Master of Knowledge Engineering.</p>"
       }, 
       {
-        "sh": "", 
-        "name": "Teo Lay Lim", 
-        "desc": ""
+        "sh": "corporate", 
+        "name": " Lay Lim Teo", 
+        "img": "lay-lim.jpg", 
+        "desc": "<p>Senior Managing Director-ASEAN, Accenture Pte Ltd</p><p>Lay Lim TEO is currently the Managing Director for ASEAN, one of 15 Geographic Units in Accenture's global organization - a role she has held since November 2011.  She concurrently holds the role of Managing Director for Singapore. Lay Lim joined Accenture in 1988. As a leader in Accenture, she has held various roles in starting up and running practice areas for Accenture in the Asia Pacific region - which include: The Customer Relationship Management practice for APAC, from 2000-2008, with 2 years based in Shanghai in 2006 and 2007, Accenture Analytics APAC, from 2008-2010, Accenture Sustainability Services APAC, from 2008-2010.Outside of Accenture, Lay Lim Teo is a board member of the Singapore Land Authority, and the Council for the Third Age. She is also on the Board of Advisors for the School of Information Systems at the Singapore Management University. In 2013 she was also appointed to the National Infocomm &amp; Media Masterplan Steering Committee, and Chair of one of 5 workgroups for this national initiative.</p>"
       }, 
       {
-        "sh": "", 
-        "name": "Jeff Paine", 
-        "desc": ""
+        "sh": "riskcapital", 
+        "name": "Jeffrey Paine", 
+        "img": "jeffrey-paine.jpg", 
+        "desc": "<p>Founding Partner, Golden Gate Ventures</p><p>Jeffrey Paine is the founding partner of Golden Gate Ventures, an early stage technology incubator based in Singapore.  Jeff started and manages the Founder Institute in Singapore where he is currently overseeing its expansion in Southeast Asia. Since 2010 the Founder Institute in Singapore has graduated over 60 companies. Jeff spent the first eight years of his career in early stage venture and private equity in the US, North and South Asia. He co-founded a China market entry advisory firm which was then merged with a China mid-market private equity firm. He is currently an investor and advisor to Redmart, Tradegecko, Coda Payments, AtticTV, and Flutterscape/monoco. He is a Singapore native and graduated with a Bachelors of Business Administration (Information Systems) from the University of Southern California.</p>"
       }, 
       {
-        "sh": "", 
+        "sh": "riskcapital", 
         "name": "Edgar Hardless", 
-        "desc": ""
+        "img": "edgar-hardless.jpg", 
+        "desc": "<p>Chief Executive Officer, SingTel Innov8</p><p>Edgar Hardless was appointed CEO for SingTel Innov8, SingTel's corporate venture fund, on 1 April 2012. SingTel Innov8 has an initial fund size of S$200M and it invests in technologies in the fields of network capabilities, next generation devices, digital content services, and customer service enhancers.</p><p>Edgar has been involved with Innov8 from its inception in November 2010 as Managing Director (Investments). Prior to this, he was Vice President of Strategic Investments responsible for coordinating and executing all mergers &amp; acquisition activities undertaken by SingTel. </p><p>He has been with SingTel for close to 10 years, having joined the company's International Group in June 2001 as a Director of International Finance and Operations. During his tenure, Edgar also set up and headed SingTel's first ever Group Innovations unit which was tasked with identifying new technologies and innovations that had the potential to have an impact on the telco industry and SingTel Group.</p><p>Before SingTel, Edgar spent almost seven years with British Telecommunications (BT), the UK's largest telecommunications service provider, working in a number of strategy and corporate finance roles across the BT Group both in the UK and Asia Pacific.</p><p>Edgar is an associate of the Institute of Chartered Accountants of England and Wales and holds a BSc (Hons) in Business Administration from the University of Bath in the UK.</p>"
       }
     ], 
     "topClusters": [
@@ -3560,84 +3736,100 @@ var regionData = {
   "valencia": {
     "name": "Valencia, Spain", 
     "description1": "Valencia Region is an autonomous community of Spain and is located in the Middle East of the country. It is", 
-    "description2": "the fourth most populated region after Andalusia, Catalonia and Madrid with more than 5.1 million inhabitants.\rAs in all Spain, there was a significant economic growth in the years immediately following 2004, until the Spanish financial crisis. In 2014, the Valencia Country generated 9.39% of the Spanish GDP. \rThe GDP of the Valencia Region in 2014 was 99.345 millions of euros, and the total GDP of Spain was 1.058.469 millions of euros. GDP per capita in the region was &euro;20.073 and in Spain was &euro;22.780.\rThe unemployment rate was over 24% in March 2015, and even greater among women. The typical Valencian business is a small-to-medium-sized company, mainly family-owned and operated, although there are some multinationals.\rIn addition to tourism, the Valencia Region has significant exports, and it ranks second in this topic among the Spanish autonomous communities, constituting 12% of the national total. Major exports include agricultural products, ceramic tiles, marble products and cars (Ford has an assembly line in Almussafes), which make the port of Valencia one the busiest in Europe.", 
+    "description2": "the fourth most populated region after Andalusia, Catalonia and Madrid with more than 5.1 million inhabitants.\r\nAs in all Spain, there was a significant economic growth in the years immediately following 2004, until the Spanish financial crisis. In 2014, the Valencia Country generated 9.39% of the Spanish GDP. \r\nThe GDP of the Valencia Region in 2014 was 99.345 millions of euros, and the total GDP of Spain was 1.058.469 millions of euros. GDP per capita in the region was &euro;20.073 and in Spain was &euro;22.780.\r\nThe unemployment rate was over 24% in March 2015, and even greater among women. The typical Valencian business is a small-to-medium-sized company, mainly family-owned and operated, although there are some multinationals.\r\nIn addition to tourism, the Valencia Region has significant exports, and it ranks second in this topic among the Spanish autonomous communities, constituting 12% of the national total. Major exports include agricultural products, ceramic tiles, marble products and cars (Ford has an assembly line in Almussafes), which make the port of Valencia one the busiest in Europe.", 
+    "dataURL": "../assets/docs/MIT_REAP_cohort_2_dashboard_data.xlsx", 
     "imgFileName": "spain.png", 
-    "flagCssClass": "country-img-spain", 
+    "mapCssClass": "country-img-spain", 
     "team": [
       {
         "sh": "entrepreneur", 
         "name": "Francisco Sanchis", 
+        "img": "", 
         "desc": ""
       }, 
       {
         "sh": "entrepreneur", 
         "name": "Jose Ma Gimeno", 
+        "img": "", 
         "desc": ""
       }, 
       {
         "sh": "university", 
         "name": "Francisco Mora", 
-        "desc": ""
+        "img": "francisco-mora.jpg", 
+        "desc": "<p>Rector, UPV</p><p>Degree of Telecommunication Engineering (MSc) at Universidad Politecnica de Cataluna (Barcelona, Spain). During the years 1993-1997 the European Laboratory for Particle Physics (CERN) grants a scholarship &quot;Doctoral Student&quot; for his PhD in the group of electronics and data acquisition for the experiment ATLAS (Geneva, Switzerland). (1997) PhD in Electronic Engineering at Universitat Politecnica de Valencia (Valencia, Spain). In 2003 obtained the post of Full-Professor of Electronic Engineering at Universitat Politecnica de Valencia (UPV). His research work is developed in the Institute for Molecular Imaging Instrumentation (Joint Center UPV-CSIC-CIEMAT), in the area of  data acquisition systems for high energy physics and electronic instrumentation for medical physics. Professor Mora maintain collaborations with CERN as an associate scientist, by participating in the NEXT and RD51 projects. Since June 2013 Professor Mora is Rector of the UPV.</p>"
       }, 
       {
         "sh": "university", 
-        "name": "Jose Capilla", 
-        "desc": ""
+        "name": "Jose E Capilla Roma, PhD", 
+        "img": "jose-capilla.jpg", 
+        "desc": "<p>Vice-rector for Research, Innovation and Transfer, UPV</p><p>Full-professor of Applied Physics; research interest focused on Water and Environmental Eng. Graduated in Civil Engineering at UPV, and PhD degree in Water Resources Eng. He has occupied different academic and management positions at the School of Civil Eng. (UPV), Vice-rector for Academic Affairs (UPV) and Director of the Research Institute of Water and Environmental Eng. (UPV). Also General Director of Universities and Higher Education in the Valencian Region (2004-07). Visiting Scientist at Stanford University (1995 &amp; 1998) and Visiting Professor at Ralph Parsons Lab (Massachusetts Institute of Technology, 1999-2000). In 1999 he was awarded with Premio de Tecnologia de Residuos (Research Award in Waste Technologies) in the Valencian Region.</p><p>Active researcher with a record of more than fifty research and technological projects (regional, national and international; private and public sectors), more than sixty peer reviewed publications and close to two hundred communications in National/International Meetings.</p>"
       }, 
       {
         "sh": "corporate", 
         "name": "Ignacio Alberola", 
-        "desc": ""
+        "img": "ignacio-alberola.jpg", 
+        "desc": "<p>CEO, La Espanola</p><p>Studied a degree in Economics at Valencia University and an MBA in ESADE (Barcelona) in 1997/1999. He has worked in different positions in LA ESPANOLA Group, a family company founded on 1941, involved in the Food Industry. Today CEO of LA ESPANOLA Group, which is involved the development of new technological products: Biotech concept and  X-ray inspection systems on  Security and Defense Markets. Based in Alcoy, LA ESPANOLA Group is leading a project to develop innovative entrepreneurship called Alcoinnova.</p>"
       }, 
       {
         "sh": "government", 
         "name": "Vicent Marza", 
+        "img": "", 
         "desc": ""
       }, 
       {
         "sh": "riskcapital", 
         "name": "Enrique Martinavarro", 
+        "img": "", 
         "desc": ""
       }, 
       {
         "sh": "government", 
         "name": "Monica Cucarella", 
-        "desc": ""
+        "img": "", 
+        "desc": "<p>General Director for Internationalisation</p><p>Monica Cucarella Perez is graduated in Business Sciencies and Economics from the University of Valencia. She also has a Master in Foreign Trade. </p><p>She has held various responsibilities as financial consultant and private banking managing director in London, in financial entities as Royal Bank of Canada, Barclays Private Banking, Morgan Stanley Dean Witter and Banco Bilbao Vizcaya. </p><p>Currently, Monica Cucarella is General Director of Internationalisation of the Regional Ministry of Economy, Industry, Commerce and Employment in the Valencian Government. </p>"
       }, 
       {
         "sh": "government", 
         "name": "Rafael Climent", 
-        "desc": ""
+        "img": "", 
+        "desc": "<p>Regional Minister for Economy</p><p>Rafael Climent was born in Muro (Valencia) in 1960, graduated in classical philology at the University of Valencia. </p><p>He was a teacher of greek language at Jose Segrelles college.</p><p>He was the major of Muro during sixten years.</p><p>Currently he is the Regional Minister for Economy, Industry, Comerce and Employment at the Valencian Government as well as Merber of Parliament (MPs) for the Valencian Goverment.</p>"
       }, 
       {
         "sh": "champion", 
         "name": "", 
+        "img": "Rafael Climent (but he's already been added in govt section)", 
         "desc": ""
       }, 
       {
         "sh": "", 
         "name": "Roberto Parras", 
+        "img": "", 
         "desc": ""
       }, 
       {
         "sh": "", 
         "name": "Juan Vicente Climent", 
+        "img": "", 
         "desc": ""
       }, 
       {
         "sh": "", 
         "name": "Javier Minguez", 
+        "img": "", 
         "desc": ""
       }, 
       {
         "sh": "", 
         "name": "Israel Griol", 
+        "img": "", 
         "desc": ""
       }, 
       {
         "sh": "", 
         "name": "Alicia Martinez", 
-        "desc": ""
+        "img": "", 
+        "desc": "<p>Description</p>"
       }
     ], 
     "topClusters": [
@@ -4148,6 +4340,3546 @@ var regionData = {
         "2010", 
         "2011", 
         "2012"
+      ]
+    }
+  }, 
+  "al-madinah-saudi": {
+    "name": "Al Madinah, Saudi Arabia", 
+    "description1": "", 
+    "dataURL": "../assets/docs/MIT_REAP_cohort_3_dashboard_data.xlsx", 
+    "imgFileName": "saudi.png", 
+    "mapCssClass": "country-img-saudi", 
+    "team": [
+      {
+        "sh": "entrepreneur", 
+        "name": "Ahmed S. Awadi", 
+        "img": "ahmed-awadi.jpg", 
+        "desc": "<p>VP Innovation, Namaa Almunawara.</p><p>(Corporate) Entrepreneur with expertise in Retail and Property Commercial Management that spans. Brand &amp; Identity Design &amp; Strategy, Sales Management, Training, and Architecture.</p>"
+      }, 
+      {
+        "sh": "entrepreneur", 
+        "name": "Yousef A. Raffa", 
+        "img": "yousef-raffa.jpg", 
+        "desc": "<p>VP Commercial, Namaa Almunawara.</p><p>With over a decade of IT and technical background in one of the top share-holding international corporates in Saudi Arabia, in addition to working also for the biggest data center and data service provider (DSP) in the Middle-East, such experience has crafted and shaped the base and structure of my technicalities.</p><p>Starting my own business gave me a totally new dimension by focusing on branding, marketing, business development, team management, as well as financing.</p><p>I'm now the Vice President of Namaa Al Munawara for Operations focusing on building an entrepreneurial ecosystem in the region.</p>"
+      }, 
+      {
+        "sh": "university", 
+        "name": "Dr. Nabeel Khoshak ", 
+        "img": "nabeel-k.jpg", 
+        "desc": "<p>VP, Business and Innovation.</p><p>Nabeel Koshak is the Vice President for Business &amp; Innovation of Umm Al-Qura University (UQU), Makkah, Saudi Arabia. He is the Vice Chairman of Makkah Techno Valley Company. Koshak is the Director of KACST GIS Technology Innovation Center at UQU. Nabeel is the General Supervisor of Innovation and Entrepreneurship Institute at UQU. He is the Chairman of Board of Directors of Transportation and Crowd Management Center of Research Excellence. Koshak is the former Director of Center of Research Excellence in Hajj &amp; Umrah. He is an Associate Professor and the Founder and former Director of the Design and Planning Support Systems (DPSS) Research Unit, Department of Urban and Engineering Research, Hajj Research Center, UQU, Saudi Arabia. Koshak teaches courses at the College of Engineering and Islamic Architecture, UQU. He joined Umm Al-Qura's faculty in May 2002. </p><p>His research, teaching, innovation and business interests focus on computing in architecture and urban design/planning, including Computer Aided Design (CAD), Building Information Modeling (BIM), Geographic Information Systems (GIS), and Computer Aided Facilities Management (CAFM).</p><p>Koshak received a Bachelor of Architectural Engineering from Umm Al-Qura University in 1993, a Master of Architecture (Computing in Design and Planning) from the University of Colorado in 1997, and a PhD in Computational Design from the School of Architecture, Carnegie Mellon University in 2002. </p><p>As an entrepreneur, Koshak is the Founder and former Chief Executive Officer (CEO) of CAD &amp; GIS Co., Ltd, Digital Models Co., Ltd., and Digital Perspective Co., Ltd. CG, DM, and DP are leading companies in providing solutions, professional services, consulting, and training on CAD, GIS, and CAFM. Partners are ESRI, Autodesk, and ARCHIBUS.</p>"
+      }, 
+      {
+        "sh": "university", 
+        "name": "Dr. Mahmood Alharbe", 
+        "img": "mahmood-a.jpg", 
+        "desc": "<p>Professor, Taibah University.</p><p>Dr. Mahmood is the Head of the Computer Science department at Taibah University.  He earned his PhD in Computer Since from De Montfort University and his master degree from University of Essex.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Jammal Alakkad", 
+        "img": "jammal-a.jpg", 
+        "desc": "<p>Senior Consultant, ARAMCO, </p><p>Entrepreneurship Center. </p><p>After an exciting and challenging decade as an entrepreneur in the mid of 1980’s to mid of 1990_s, Jamal took different paths working on several interesting and challenging assignments. However, Jamal decided to go back to entrepreneurship but in a different flavor! Jamal, currently, participates in the process of promoting a healthier entrepreneurship ecosystem in the Kingdom of Saudi Arabia.</p><p>Jamal studied at the King Fahd University of Petroleum and Minerals (KFUPM) in Dhahran Saudi Arabia where he obtained his BSc. in Industrial Management and at the University of Liverpool in the United Kingdom where he obtained his MBA (1st Hon). Currently, Jamal is pursuing his Doctorate in Business Administration at Durham University Business School in the United Kingdom.</p><p>Jamal also assumes a senior leadership position within the Saudi ARAMCO Company.</p>"
+      }, 
+      {
+        "sh": "riskcapital", 
+        "name": "Abdullah Al-Rakhis", 
+        "img": "abdullah-rakhis.jpg", 
+        "desc": "<p>Abdullah Al-Rakhis is the founder and chairman of the board of trustees of the North Development Program Endowment NDP, a quasi NGO established in 1998 in Saudi Arabia active in the development of leadership, entrepreneurship and mega-developmental initiatives across Saudi Arabia and he is the executive chairman of The Saudi Arabian Alalia Entrepreneurial Ecosystem Program.  Mr. Al-Rakhis is a member of the International Advisory Board of Oxford University, a fellow at Aspen Institute and He was a Fellow at the Harvard Kennedy School Mossavar-Rahmani Center for Business and Government. He is the founder and chairman of RAKISA Holding and AR1 private equity where he was active in mega green field telecom and infrastructure projects and partnerships including the establishment of MTC Zain Africa Telecom which has been acquired by Bharti Airtel for $10.7 billion.  He is a civil engineer and has an MBA from Wharton business school, AMP from Harvard Business School, diploma in organizational development and leadership from Oxford University and master of project management from PMI and MIT and he is a DPhil (PhD) student at Hartford college, Oxford University. Mr Alrakhis is a trustee and board member of several organizations, universities and companies.</p>"
+      }, 
+      {
+        "sh": "government", 
+        "name": "Osama M. Ashri", 
+        "img": "osama-ashri.jpg", 
+        "desc": "<p>VP Strategy, Namaa Almunawara</p><p>Osama M. Ashri serves as Vice President of Strategy at Namaa Almunawara, a quasi-government organization that catalyzes the entrepreneurial ecosystem of Almadina Almunawara province. He also spearheads the Saudi Entrepreneurial Ecosystem Lab (SEE-LAB), which aims at fostering entrepreneurship in Saudi Arabia through collaborative efforts. While pursing his MBA, Osama was immersed in Boston’s vibrant startup scene and worked as a project manager at the I2 Institute for Imagination and Ingenuity, an ecosystem platform for scientists, technologists, and engineers.</p><p>In addition to his passion for stimulating entrepreneurship ecosystems, Osama led many seminars on leading change, lectured on leadership at the Center for Leadership Development at the University of North Carolina and is an adjunct lecturer on systems thinking and practice at a local university. </p><p>Osama has received many awards, including “Total Leader”, “Master Leader” from the University of North Carolina, Employee of the Year from the Saudi Royal Aircraft Division, the Babson Charley Osborn MIS Award and was a finalist for the Babson MBA Entrepreneurship Award. He earned an MBA from Babson College, a BA in Systems Practice (First Class Honors) and an undergraduate degree in Avionics Technology (Summa Cum Laude). In addition, Osama participated in executive education and professional development programs at Harvard Business School, MIT Sloan School of Management and Stanford University.</p>"
+      }, 
+      {
+        "sh": "champion", 
+        "name": "Ahmad A. Mahayri", 
+        "img": "ahmad-mahayri.jpg", 
+        "desc": "<p>CEO, Namaa Almunawara</p><p>Throughout his career, Ahmad has been involved in several SME and Venture Capital engagements, including co-founding, managing, and advising SME firms.</p><p>Ahmad earned his MBA at Oxford University, and attended the Private Equity and Venture Capital program at Harvard Business School.</p><p>Participated in establishing Namaa Al Munawara from the idea phase to the execution and realization. Namma Al Munawara is the economic and social engine &amp; catalyst in Al Madina Al Munawara Province. It established the following projects: (1) Al Munawara Industrail Parks, (2) Al Munawara Retail Oasis, (3) Al Munawra One-Stop-Shop for Gov't services, (4) Inoovation and Design Labs for Female &amp; (5) Madina Made promotion program.</p><p>Previously participated in the establishment of LMC Investments as the Vice President position of its early-stage VC arm for 6 years where he managed a portfolio of 4 start-ups along with a supervisory role on the real estate portfolios. He holds board and EC seats in the various portfolio companies.</p><p>In 2005, Ahmad participated in The IV Leadership Program in USA in 2005, The program is sponsored by US Department of State. The Program has in its alumni [290+ current and former Chiefs of State and Heads of Government, 2,000+ cabinet-level ministers].</p><p>Member of the executive committee of the SME council of JCCI.</p><p>Member of the executive committee of the Saudi Management Association. </p><p>Member of the trustees board of the Al Munawara Endowment.</p>"
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }
+    ], 
+    "topClusters": [
+      "", 
+      "", 
+      ""
+    ], 
+    "topResearchInstitutions": [
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }
+    ], 
+    "regionalInnovations": [
+      "", 
+      "", 
+      ""
+    ], 
+    "businessParks": [
+      "", 
+      "", 
+      ""
+    ], 
+    "regionalEntrepreneurs": [
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }
+    ], 
+    "icapPPI": [
+      "", 
+      "", 
+      "", 
+      ""
+    ], 
+    "ecapPPI": [
+      "", 
+      "", 
+      ""
+    ], 
+    "countryPopulation": {
+      "srcName": "WIPO", 
+      "range": "2003-2014", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        23357887.0, 
+        24055573.0, 
+        24745230.0, 
+        25419994.0, 
+        26083522.0, 
+        26742842.0, 
+        27409491.0, 
+        28090647.0, 
+        28788438.0, 
+        29496047.0, 
+        30201051.0, 
+        30886545.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "regionPopulation": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "giniCoeff": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "humanDevIndex": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "domesticPatent": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "usPatent": {
+      "srcName": "WIPO", 
+      "range": "2000-2013", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        2.0, 
+        2.0, 
+        2.0, 
+        32.0, 
+        37.0, 
+        38.0, 
+        62.0, 
+        64.0, 
+        111.0, 
+        147.0, 
+        317.0, 
+        326.0, 
+        465.0, 
+        649.0
+      ], 
+      "year": [
+        "2000", 
+        "2001", 
+        "2002", 
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
+      ]
+    }, 
+    "publications": {
+      "srcName": "WIPO", 
+      "range": "2003-2011", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        549.3, 
+        550.8, 
+        576.3, 
+        557.6, 
+        589.2, 
+        620.8, 
+        711.4, 
+        1003.2, 
+        1491.2
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011"
+      ]
+    }, 
+    "stemGrads": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "researchAndDev": {
+      "srcName": "WIPO", 
+      "range": "2003-2009", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        0.062689997, 
+        0.053149998, 
+        0.042300001, 
+        0.04245, 
+        0.04521, 
+        0.04902, 
+        0.073380001
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009"
+      ]
+    }, 
+    "ipRanking": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "gdpPerCap": {
+      "srcName": "WIPO", 
+      "range": "2003-2014", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        9186.310388, 
+        10756.01622, 
+        13273.71255, 
+        14826.9167, 
+        15947.40579, 
+        19436.85716, 
+        15655.08337, 
+        18753.98123, 
+        23256.09561, 
+        24883.18971, 
+        24646.02087, 
+        24160.95854
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "corporations": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "entrepreneurship": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "vc": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "daysToStartBiz": {
+      "srcName": "WIPO", 
+      "range": "2003-2014", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        74.0, 
+        74.0, 
+        67.0, 
+        42.0, 
+        19.0, 
+        19.0, 
+        20.0, 
+        20.0, 
+        20.0, 
+        20.0, 
+        20.5, 
+        20.5
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "employment": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }
+  }, 
+  "ashdod-israel": {
+    "name": "Ashdod, Israel", 
+    "description1": "", 
+    "dataURL": "../assets/docs/MIT_REAP_cohort_3_dashboard_data.xlsx", 
+    "imgFileName": "israel.png", 
+    "mapCssClass": "country-img-israel", 
+    "team": [
+      {
+        "sh": "entrepreneur", 
+        "name": "Benjy Singer", 
+        "img": "benjy-singer.jpg", 
+        "desc": "<p>Deputy Head of Community EMEA, WEWORK.</p><p>Benjy Singer spent 25 years in the restaurant business in Israel. Has owned and operated business from fine dining to fast food. Benjy was the GM of a chain of coffee shops that he scaled from 12 to over 60 franchises. Benjy has always had a passion for hospitality and entrepreneurship and in 2010 found the intersection between the two in WeWork. </p><p>In 2013 he convinced Adam Neumann, the founder of WeWork that it was time to expand to Israel and became the GM of WeWork Israel. In Dec 2014 opened the first building and today one of WeWork’s fastest growing markets. </p><p>Today Benjy is still the Director of WeWork Israel but is involved in the expansion through Europe and helping to develop the global community of entrepreneurs. Dividing his time between Tel Aviv and NYC. </p><p>Benjy was born in NY and moved to Israel in 1987. Married with 3 kids, the oldest serving in the Israeli Air Force.</p>"
+      }, 
+      {
+        "sh": "entrepreneur", 
+        "name": "Daniela Kandel", 
+        "img": "daniela-k.jpg", 
+        "desc": "<p>Head of Academic Relations &amp; Strategy, Start-Up Nation Central.</p><p>Start-Up Nation Central; (http://www.startupnationcentral.org/) an Israeli based non-profit dedicated to applying the roots and elements of Israel’s innovation culture to build bridges between Israel and other countries, companies and entrepreneurs. </p><p>Prior to joining Start-Up Nation Central, Kandel was a Milken Institute Fellow; stationed at the Accountant General's Office at the Ministry of Finance. She was involved in developing the first social impact bond for the prevention of diabetes, creating a Social 'Yozma' fund for the investment in social enterprises as well as promoting the inclusion of disadvantaged populations in the workforce. Prior to joining Milken, she worked as an economist in the Market Operations Department at the Bank of Israel. Her work included surveillance and analysis of local and global crises, development of a new tender system, implementation of monetary policy and monitoring its implications. </p><p>For over a decade, Kandel was a competitive athlete in Taekwondo; part of the Israeli national team,   ranked 13th in Europe in 2008. </p><p>Kandel holds a BA in Economics and Statistics (cum laude) and an MA in Financial Economics, both from the Hebrew University.</p>"
+      }, 
+      {
+        "sh": "entrepreneur", 
+        "name": "Inbal Arieli", 
+        "img": "inbal-a.jpg", 
+        "desc": "<p>Vice President, Strategic Partnerships, Start-Up Nation Central.</p><p>Inbal joined Start-Up Nation Central after more than a decade of experience working with start-ups and building companies of her own. </p><p>Prior to that, and during her military service Inbal was a Lieutenant in the IDF elite intelligence 8200 unit. There she led a professional intelligence team in a highly advanced technological environment at the fore of Israel's intelligence effort. She served afterward as Head of Faculty at the Intelligence Officers’ School.</p><p>In her professional career following the military service, Inbal served as General Counsel to several start-ups and leading Israeli hi-tech companies, in which she held executive positions, in various tech verticals such as aerospace and telecommunication.</p><p>Inbal founded a series of programs for innovators, including the 8200 Entrepreneurship and Innovation Support Program, Israel’s first start-up accelerator; and GAMMADO, an incubator to identify and enable Israel’s outstanding young talent to launch meaningful start-ups.</p><p>Inbal lectures widely on the Israeli innovation and start-up ecosystem to business and government leaders in Israel and abroad. Among her most popular lectures is “The Roots of Entrepreneurship,” which analyzes how Israeli culture breeds entrepreneurship at a very young age.</p><p>Inbal holds an LL.B. Law, B.A in Economics and MBA, Entrepreneurship and Strategy, from the Tel Aviv University. She lives in Tel Aviv with her spouse and three sons.</p>"
+      }, 
+      {
+        "sh": "university", 
+        "name": "Zohar Wohlfarth Cohen", 
+        "img": "zohar-w.jpg", 
+        "desc": "<p>Ceo, College of Engineering.</p><p>Zohar joined SCE as in 2006 as CFO (Chief Financial Officer) after eight years at Ben Gurion University of the Negev (BGU), where she served as Head of the Operational Budget Department. </p><p>In 2009, Zohar was appointed Deputy CEO at SCE, quickly becoming responsible for all Financial, Human Resources, Marketing and Publicity matters in the college. Between 2006-2009, Zohar took over management of SCE’s Publishing Department, which included leading and activating SCE’s re-branding process, which ultimately made the college one of the leaders in its field. </p><p>In recent years, Zohar has been instrumental in providing members of Israel’s ultra-Orthodox communities with opportunities to join the county’s work force by establishing academic engineering degree programs in SCE. Likewise, with the situation vis-à-vis French Jewry, Zohar helped establish a successful program for French high school graduates to study engineering in Israel (at SCE) with the intention of eventually integrating into Israeli society. </p><p>Prior to that and during her military service, Zohar was a soldier-teacher in the IDF’s Education Corps, stationed for 2 1/2 years at the Yarkon Field School in Petah Tikva, where she led field tours of historic sites and places of natural interest throughout Israel. </p><p>Zohar’s first employment was at UPS (United Projects Services Ltd.) in Be’er Sheva, where she was responsible for preparing projects and feasibility proposals, mainly with regard to energy, as well as organizing the company’s competitive intelligence.</p><p>Zohar holds an LLM Law from Bar Ilan University, as well as an MBA and BA in Economics from Ben Gurion University of the Negev. </p><p>She is married and has two sons, and lives in the south Israeli town of Metar.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Erez Yaary", 
+        "img": "erez-y.jpg", 
+        "desc": "<p>Senior Director, HP Software Chief Technologist</p><p>Erez Yaary is HP Software’s Chief Technologist, leading the development of new and exciting capabilities across HP Software’s portfolio to support customers on their journey to containers. Erez also leads HP Software’s open source and DevOps strategies.</p><p>During his 20+ years in the technology industry, Erez held multiple development, product management and architecture roles in both consumer and enterprise markets and is credited with several patents.</p>"
+      }, 
+      {
+        "sh": "government", 
+        "name": "Yehuda Frankel", 
+        "img": "yehunda-f.jpg", 
+        "desc": "<p>City Council member In charge of Industry and Education.</p><p>During the past 7 years, Mr. Yehuda Frankel serves as a senior council member in Ashdod Municipality.</p><p>Yehuda is in charge of education and industrial development, while among his municipal positions, he is leading the Innovation and Entrepreneurship field.</p><p>Previous to this position, he was the CEO of one of the top leading high-tech company in the Israeli Defense industry (Elta Systems Ltd) where he worked for 30 years in a variety of roles.</p><p>Yehuda has M.Sc. in Computers from the Technion Institution.</p><p>He also was the CEO of organization named &quot;Clal&quot;- Computers and Technology Company.</p>"
+      }, 
+      {
+        "sh": "riskcapital", 
+        "name": "Yuval Shahar", 
+        "img": "yuval-s.jpg", 
+        "desc": "<p>Partner, MARKER LLC &amp; INNOVATION.</p><p>Yuval is an Entrepreneur and Angle investor currently involved as a co-founder, Chairman or Board member in a variety of companies (including Qwilt, Taykey, Compass-EOS, Panoramic Power, Tufin and others). Until 2009 Yuval served as a GM at Cisco running one of the BU's in Cisco's Service Provider group. Prior to Cisco Yuval co-founded P-Cube and served as its President and CEO, providing both leadership and vision up to its acquisition by Cisco in 2004. Prior to P-Cube, Yuval co-founded Pentacom, a pioneer in Dynamic Packet Transport (DPT) products, as well as previously leading the creation of Infogear, which developed some of the industry's first web appliances (both companies were acquired by Cisco). Previously, Yuval served as Vice President of Research and Development at VocalTec, overseeing the and creation and development of the first set of VoIP architectures and products (VocalTec went public on NASDAQ 1996). Yuval started his career at Motorola and National Semiconductors in a variety of technology and software development and management roles.</p>"
+      }, 
+      {
+        "sh": "champion", 
+        "name": "Dr. Smadar Itzkovich", 
+        "img": "smadar-i.jpg", 
+        "desc": "<p>Head of Industry Development Division.</p><p>Dr. Itzkvoich is broadly educated: from physics to management in the social sciences, through business law and to a PhD in Business with a specialization in Public Sector Management.</p><p>Dr. Itzkovich came to public sector education management 12 years ago, following a senior management position in the high-tech field, with the aim of increasing access to higher education in the city of Ashdod.  While working in education management, she also established one of the first youth centers in Israel, 'Kivunim', a national prototype on the basis of which more than 30 youth centers have been established across the country.  </p><p>Dr. Itzkovich has raised significant funding from funds, government bodies and philanthropic organizations for the purpose of advancing innovative programs in education.  She also established the Division for Industrial Development at the Ashdod Municipality more than 5 years ago, a process which led to accelerated development in encouraging technology-rich industry alongside the establishment of accelerators and financial technology development centers. Her broad municipal experience includes guiding, supporting and providing a unique system of incentives that is both municipal and national for companies that partake in establishing high-tech activity in the city of Ashdod, a city of about 250,000 residents in southern Metropolitan Tel Aviv.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Guy Avrutzky", 
+        "img": "guy-a.jpg", 
+        "desc": "<p>Manager of Strategic R &amp; D, the Institute for Leadership and Governance, JDC Israel</p><p>Civil Society.</p><p>Over the last 4 years, Guy has been responsible for measurement, evaluation and knowledge development at the Institute. This Includes introducing and implementing cutting-edge methodologies and academic knowledge. </p><p>In his previous position, Guy was the CEO of NOVA, an NGO that provides business and strategic counseling services to social organizations. In addition he co-founded and was the Director of &quot;Student Leaders&quot;, an association that gathered hundreds of students across the country to volunteer in various social projects.</p><p>Guy holds an M.A in the Honor's program of Public Policy at the Federmann School of Public Policy and Government and a B.A in the Interdisciplinary Program of Philosophy, Politics and Economics (PPE). Both of them from the Hebrew University in Jerusalem.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Meir Elharar", 
+        "img": "meir-e.jpg", 
+        "desc": "<p>Israel Site Manager, Brooks Automation.</p><p>Meir is an entrepreneur involving as a volunteer in various projects to promote entrepreneurship and Hi-tech in his home city, Ashdod. </p><p>For the last 10 years Meir is working as the Israel Site Manager, End Users Account Manager and Regional Service Manager at Brooks Automation. Previous to this position he was working at the same company for almost 7 years as Service Manager and System Expert/Engineer in charge. </p><p>He has Msc in Management from New York University, BA in HR &amp; Political Science from Bar- Ilan University and certification in the field of Practical Engineering – Electronic and Computer systems.</p><p>Meir's vision is to create an innovative entrepreneurs community @ Ashdod City, through sharing and cooperation at all municipal levels – Education, SMB’s and employment.</p>"
+      }, 
+      {
+        "sh": "government", 
+        "name": "Yael Slavin", 
+        "img": "yael-slavin.jpg", 
+        "desc": "<p>Business Outreach Coordinator, TEVET-JDC Israel.</p><p>Over the last 8 years, Yael has been responsible for business outreach coordination at TEVET-JDC. This Includes developing and creating various projects catering for the business society and for TEVET’s employment programs. These schemes enable varied populations to enter the work force and advance, while employers gain suitable employees, as well as seminars, trainings and workshops for the business sector. Yael also serves as Director in the Board of the Israeli Forum for Diversity Hiring, founded by TEVET-JDC. She is active in developing the Forum’s projects and in recruiting new employers to join as members.</p><p>In her previous positions, Yael was Social Responsibility Manager at PWC, an international accountants firm; her role included developing and managing social projects in the city of Jaffa. In addition she was Manager of Maala CSR Index, working together with the Tel Aviv Stock Exchange; her role included recruiting companies and instructing them upon entering the Index ranking in the field of corporate social responsibility. Yael also facilitated a tri-sector project in the city of Nazareth, aiming to turn Nazareth into a digital city; the project included working together with the Local Authority, the Ministry of Education and leading high-tech companies.</p><p>Yael holds an M.B.A in Human Resources and Organizational Consulting from the Ono Academic College, and a B.A in Special Needs Education and History from the Kibbutzim College of Education. Her additional training includes: Organizational Consulting, Social Responsibility and Tri-Sector Facilitation certificate studies.</p>"
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }
+    ], 
+    "topClusters": [
+      "", 
+      "", 
+      ""
+    ], 
+    "topResearchInstitutions": [
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }
+    ], 
+    "regionalInnovations": [
+      "", 
+      "", 
+      ""
+    ], 
+    "businessParks": [
+      "", 
+      "", 
+      ""
+    ], 
+    "regionalEntrepreneurs": [
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }
+    ], 
+    "icapPPI": [
+      "", 
+      "", 
+      "", 
+      ""
+    ], 
+    "ecapPPI": [
+      "", 
+      "", 
+      ""
+    ], 
+    "countryPopulation": {
+      "srcName": "World Bank - WDI", 
+      "range": "2003-2014", 
+      "srcUrl": "http://databank.worldbank.org/data/", 
+      "value": [
+        6689700.0, 
+        6809000.0, 
+        6930100.0, 
+        7053700.0, 
+        7180100.0, 
+        7308800.0, 
+        7485600.0, 
+        7623600.0, 
+        7765800.0, 
+        7910500.0, 
+        8059500.0, 
+        8215300.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "regionPopulation": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "giniCoeff": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "humanDevIndex": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "domesticPatent": {
+      "srcName": "OECD", 
+      "range": "2003-2011", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        81.4, 
+        103.7, 
+        104.7, 
+        111.7, 
+        109.3, 
+        104.0, 
+        88.8, 
+        89.3, 
+        2.5
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011"
+      ]
+    }, 
+    "usPatent": {
+      "srcName": "WIPO", 
+      "range": "2000-2013", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        2508.0, 
+        2707.0, 
+        2645.0, 
+        2539.0, 
+        2693.0, 
+        3157.0, 
+        3657.0, 
+        4410.0, 
+        4550.0, 
+        4727.0, 
+        5149.0, 
+        5436.0, 
+        6455.0, 
+        7237.0
+      ], 
+      "year": [
+        "2000", 
+        "2001", 
+        "2002", 
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
+      ]
+    }, 
+    "publications": {
+      "srcName": "World Bank - WDI", 
+      "range": "2003-2011", 
+      "srcUrl": "http://databank.worldbank.org/data/", 
+      "value": [
+        6524.7, 
+        6462.0, 
+        6322.0, 
+        6558.5, 
+        6632.2, 
+        6609.4, 
+        6306.2, 
+        6139.2, 
+        6096.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011"
+      ]
+    }, 
+    "stemGrads": {
+      "srcName": "OECD", 
+      "range": "2003-2012", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        10593.0, 
+        11326.0, 
+        12163.0, 
+        11971.0, 
+        11385.0, 
+        11313.0, 
+        11654.0, 
+        12000.0, 
+        12363.0, 
+        13400.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012"
+      ]
+    }, 
+    "researchAndDev": {
+      "srcName": "World Bank - WDI", 
+      "range": "2003-2012", 
+      "srcUrl": "http://databank.worldbank.org/data/", 
+      "value": [
+        4.16508007, 
+        4.145999908, 
+        4.306879997, 
+        4.224589825, 
+        4.523230076, 
+        4.402959824, 
+        4.168010235, 
+        3.965009928, 
+        3.973510027, 
+        3.926270008
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012"
+      ]
+    }, 
+    "ipRanking": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "gdpPerCap": {
+      "srcName": "OECD", 
+      "range": "2003-2013", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        23360.0, 
+        24774.0, 
+        24408.0, 
+        25165.0, 
+        26963.0, 
+        26832.0, 
+        27116.0, 
+        28628.0, 
+        30182.0, 
+        31628.0, 
+        32491.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
+      ]
+    }, 
+    "corporations": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "entrepreneurship": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "vc": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "daysToStartBiz": {
+      "srcName": "World Bank - WDI", 
+      "range": "2003-2014", 
+      "srcUrl": "http://databank.worldbank.org/data/", 
+      "value": [
+        19.0, 
+        19.0, 
+        19.0, 
+        19.0, 
+        19.0, 
+        19.0, 
+        19.0, 
+        19.0, 
+        19.0, 
+        20.0, 
+        13.0, 
+        13.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "employment": {
+      "srcName": "OECD", 
+      "range": "2003-2013", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        351940.0, 
+        371530.0, 
+        367300.0, 
+        375030.0, 
+        378470.0, 
+        392880.0, 
+        403400.0, 
+        422120.0, 
+        427420.0, 
+        472610.0, 
+        499310.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
+      ]
+    }
+  }, 
+  "bangkok-thailand": {
+    "name": "Bangkok, Thailand", 
+    "description1": "", 
+    "dataURL": "../assets/docs/MIT_REAP_cohort_3_dashboard_data.xlsx", 
+    "imgFileName": "thailand.png", 
+    "mapCssClass": "country-img-thailand", 
+    "team": [
+      {
+        "sh": "entrepreneur", 
+        "name": "Mr. Rathapol Bhakdibhumi", 
+        "img": "rathapol-b.jpg", 
+        "desc": "<p>President and CEO, General Electronic Commerce Services Co., Ltd.</p><p>Mr. Rathapol is a President &amp; CEO at General Electronic Commerce Services (GEC), the company that he helped forming as a joint ventured with General Electric Information Services (GEIS), a subsidiary of General Electric, USA (GE later divested GEIS to a Venture Capital company). He is responsible to recommend company's business direction to the Board of Director, motivate employees, drive necessary changes, and coaching talents. The company has been providing Supply Chain Management applications as a service to Retail, Manufacturer, Petro-chemical, and Banking sector. Furthermore, Mr. Rathapol is also serving as a Chairman of a subsidiary of GEC, DX-Innovation Co., Ltd., whose main business is to provide Transport Management Solution (TMS) to Logistics Company and the owner of e-Market place for carriers and shippers to meet online, actively advising overall company's business development. </p><p>In year 2014, Mr. Rathapol was appointed to be a director for State Enterprise at CAT Telecom PCL., Thai Airways International PCL. and Thailand Post Co., Ltd, including a board in subcommittee in Reform Committee, Audit Committee, Corporate governance and Corporate Social Responsibility Committee, Human Resources Committee and Compensation Committee.</p><p>Mr. Rathapol holds a Bachelor of Sciences in Mechanical Engineering from University of Colorado, Boulder, USA in 1989. Then, he received a Master of Business Administration majoring in Marketing and International Business from Sasin Graduate Institute of Business Administration, Thailand in 1992, before obtaining his Executive Master in International Logistics and Supply Chain Strategy from Georgia Institute of Technology, USA in 2012.</p>"
+      }, 
+      {
+        "sh": "university", 
+        "name": "Dr. Rawida  Wiriyakitjar", 
+        "img": "rawida-w.jpg", 
+        "desc": "<p>Acting Dean, College of Entrepreneurship, University of the Thai Chamber of Commerce (UTCC).</p><p>Dr.Rawida is the acting dean of College of Entrepreneurship at university of the Thai Chamber of Commerce (UTCC). She is also the director of Bachelor of Business Administration program in Entrepreneurship at UTCC. </p><p>Dr.Rawida completed her Bachelor of Business Administration in Hotel and Tourism Management (First Class Honor). After that, she obtained a Master degree in International Hotel Management from University of Surrey, the UK before doing her Ph.D. in Entrepreneurship and Family Business at University of Central Lancashire, the UK. </p><p>Dr.Rawida was entrusted to hold many management positions at UTCC such as Assistant to Director of Family Business Study Center, Associate Dean of Graduate School, Secretary of Family Business and SMEs Study Center Research Group and Training &amp; Consultant Center and so on. </p><p>Dr.Rawida is very keen to promote and develop new generation of entrepreneurs to establish innovation-driven business to ensure their long-term success through numerous activities with both business and academic sectors.</p>"
+      }, 
+      {
+        "sh": "university", 
+        "name": "Assistant Professor Dr. Weerachart Kilenthong", 
+        "img": "weerachart-k.jpg", 
+        "desc": "<p>Director of Research Institute for Policy Evaluation and Design, </p><p>University of the Thai Chamber of Commerce (UTCC).</p><p>Assistant Professor Dr. Weerachart is the director of Research Institute for Policy Evaluation and Design, University of the Thai Chamber of Commerce (UTCC). </p><p>Assistant Professor Dr. Weerachart obtained Bachelor of Engineering in Civil Engineering (First Class Honor) from Chulalongkorn University, Thailand.  Then he did his Master of Science in physics from Chulalongkorn University and Master of Arts in Economics from University of Chicago before obtaining his Ph.D. in Economics from University of Chicago. </p><p>Before joining UTCC, he was an assistant professor at University of California Santa Babara for 4 years. After joining UTCC as a faculty member, he was selected to be a consultant to the World Bank for 2 years. </p><p>Assistant Professor Dr. Weerachart enjoys conducting his researches on Macroeconomics as he has a strong intention to help the policy makers in Thailand to implement the right policy to improve the lives of people in the society.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Mrs. Amporn Kanjanakumnerd", 
+        "img": "amporn-k.jpg", 
+        "desc": "<p>Chief Operating Officer (COO), Mitr Phol Sugar Company.</p><p>Mrs. Amporn Kanjanakumnerd currently is Chief Operating Officer (COO) of Mitr Phol Sugar Company. Mitr Phol Sugar Group has been distinguished as one of Thailand’s largest and most progressive producers and exporters of sugar for more than 55 years, during which time it has played a leading role in developing Thailand’s domestic sugar industry. In addition, Mitr Phol has taken significant steps into the international marketplace including investments in China, ASEAN and Australia.</p><p>She earned her Bachelor’s degree in finance and banking from Assumption University, Thailand in 1986 and graduated her Master in Management from Notre Dame de Namur University, USA in 1988. </p><p>Mrs. Kanjankumnerd started her career in 1988 in the Sugar Division of Mitr Phol before she was entrusted by the Group to diversify into Panel business in 1996 where in a space of ten years she set up Panel Plus, producer of Particle Board and Medium density Fiberboard. Today Panel Plus is one of the largest and most reputable manufacturers of Laminates Chipboard in South East Asia. In 2011 she was transferred back to Mitr Phol sugar where she is working towards her vision of making Mitr Sugar the number one brand of Sugar in South East Asia.  Currently, she is responsible for the six Sugar Mills located all across the country, 104 million tons of cane farming plus domestic and international marketing. </p><p>Mrs. Kanjankumnerd is a widely recognized in the business circle in Thailand and she sits on the Boards of numerous other companies. She is also a member of the YPO-Young President Organization, Thailand Chapter.</p>"
+      }, 
+      {
+        "sh": "government", 
+        "name": "Dr. Ekniti Nitithanprapas", 
+        "img": "ekniti-n.jpg", 
+        "desc": "<p>Director-General of State Enterprise Policy Office, Ministry of Finance.</p><p>Chairman of the Executive Board of Director, Exim Bank of Thailand.</p><p>Dr.Ekniti is Deputy Director-General and Spokesman of the Fiscal Policy Office, Ministry of Finance of Thailand. He is also Chairman of the Executive Board of Directors at the Export-Import (EXIM) Bank of Thailand and a member of the Board of Directors at Krungthai Asset Management Public Company Ltd and Thailand Securities Finance Corporation. He was Minister (Economics and Financial Affairs for U.K. and Europe) at the Royal Thai Embassy in London during 2010-2012. Previously, he was Executive Director of the Macroeconomic Policy Bureau and the Spokesman of the Thai Finance Ministry. Aside from his extensive experiences at the Ministry of Finance, he was a Senior Advisor to Executive Director for Southeast Asia at the World Bank, Washington D.C.</p><p>Dr.Ekniti holds a B.A. (honors) in Economics from Thammasat University in Thailand, a M.S. in Policy Economics from University of Illinois at Urbana-Champaign and a Ph.D in Economics from Claremont Graduate University in U.S.A.</p><p>Dr.Ekniti has several publications in academic journals and books, such as ‘the Asian Crises Reexamined’ (2004) published in the MIT Press Journals of Asian Economic Papers and the book on ‘Domino Effects: Solutions for Thailand amid the Global Financial Crises’ (2009). In 2009, He received the “Rising-Star Economist of the Year” Award in Thailand.</p>"
+      }, 
+      {
+        "sh": "riskcapital", 
+        "name": "Mr. Chan Bulakul", 
+        "img": "chan-b.jpg", 
+        "desc": "<p>CEO, the Brooker Group PLC.</p><p>Mr. Chan Bulakul’s father, Mah Bulakul is a well-known reputable tycoon in rice business early 1940 and generous commitment to society (CSR - corporate social responsibility). He was the 12th Chairman of Thai - Chinese Chamber of Commerce which was the most prestigious association during that time. All of family members have inherited this entrepreneurship and CSR philosophy. </p><p> Mr.Chan attended his primary and secondary education in Hong Kong, and graduated from University of Illinois, and became International Associate of AICPA. As a 3rd generation of Overseas Chinese, at the age of 26 years old, Chan as CFO of family business which includes shipping, rice milling, silo, and real estate ( Mah Boonkrong Shopping Center ). He negotiated to borrow USD 15 million syndicate loans for the flagship company (MBK Silo) then the Company was listed in The Stock Exchange of Thailand and raised USD 20 million in IPO to repay loan in 2 years. He was the pioneer in early 70 to promote foreign investment in Thailand stock market. After the 1997 financial meltdown (Baht devaluation) in Thailand, he applied his experiences and knowledge to learn, digest, and applied in the debt restructuring negotiation and fund raising. He managed to restructure over USD 3 billion of debt and save many companies from bankruptcy. His major client included real estate, telecommunication, and heavy industries. He also brought new investors to fund the restructuring, as a result both owner and creditor recovered significant portion of their value. He has assisted owner to use new features in Thai stock market such as warrant, convertible bond and steep discount right issues.</p><p>Forbes Asia has also awarded The Brooker Group “ 200 Best Under A Billion ” in Asia-Pacific in the year 2011 for the success in operating three consecutive years of outstanding financial performance based on earnings growth, sales growth and return on equity (in the past 12 months and over 3 years). There were altogether 15,000 listed companies in Asia for this selection.</p>"
+      }, 
+      {
+        "sh": "champion", 
+        "name": "Associate Professor Dr.Sauwanee Thairungroj", 
+        "img": "sauwanee-t.jpg", 
+        "desc": "<p>President, University of the Thai Chamber of Commerce </p><p>Associate Professor Dr. Sauwanee Thairungroj is the president of university of the Thai Chamber of Commerce (UTCC) , which is one of the leading universities in Thailand. The university is well-developed with a strong focus on business studies, particularly in entrepreneurship area. Moreover, the university have a close relationship with the Thai Chamber of Commerce, which makes it possible to access to a large number of academic and business resources. She is very keen to push new movements and promote innovation to the business community in Thailand in order to develop Thai economy for the new changing business environment after the implementation of ASEAN Economic Community (AEC).</p><p>Dr. Sauwanee received her Ph.D. in Economics from Washington State University. During her Ph.D. study, she was a recipient of Fulbright scholarship. Before doing her Ph.D., she did her Master degree in Economics from National Institute of Development Administration (NIDA) and Bachelor Degree in Economics from Thammasart University.  She also participated in Advance Management Program (AMP) at Harvard Business School and joined Entrepreneur Development Program at Sloan School of Management, MIT.</p><p>Her previous professional experiences include the Governor of Stock Exchange of Thailand (SET), a member of Financial Institutions Policy Committee (FIPC) at the Bank of Thailand, and the director of University of Chicago – University of the Thai Chamber of Commerce Research Center. Her work has won numerous awards such as Business Women of the Year Award in 2012 from the Thai Chamber of Commerce, the most outstanding alumni awards from Washington State University, Thammasart University, and National Institute of Development Administration (NIDA).</p>"
+      }, 
+      {
+        "sh": "university", 
+        "name": "Assistant Professor Dr. Thanavath Phonvichai", 
+        "img": "thanavath-p.jpg", 
+        "desc": "<p>Vice President for Research Affairs and Director of Center for Economic and Business Forecasting</p><p>University of the Thai Chamber of Commerce (UTCC)</p><p>Advisor to Deputy Secretary-General to the Prime Minister for Economic Affairs</p><p>Assistant Professor Dr. Thanavath is the Vice President for Research and Director of Center for Economic and Business Forecasting at university of the Thai Chamber of Commerce (UTCC). Beside his fulltime work at UTCC, he is invited to be a guest speaker for many government offices and national media and news. Recently, he is assigned as Advisor to Deputy Secretary-General to the Prime Minister for Economic Affairs.</p><p>Assistant Professor Dr. Thanavath holds a Ph.D. in Applied Statistics and Research Methods from University of Northern Colorado, USA. Before that, he did his Master Degree in Economic Development (Honor) from National Institute of Development Administration (NIDA) and Bachelor of Economics (Merit) from Ramkhamheang University. </p><p>Before joining UTCC as a faculty member, Assistant Professor Dr. Thanavath was entrusted to be a committee and advisors to many organizations such as Federation of Thai Industries, The Thai Chamber of Commerce and so on.</p><p>Assistant Professor Dr. Thanavath is actively conducting researches to help the business sector in Thailand to adapt themselves for the changing business and social environment.</p>"
+      }, 
+      {
+        "sh": "university", 
+        "name": "Dr. Thitapon Ousawat", 
+        "img": "", 
+        "desc": "<p>University of the Thai Chamber of Commerce.</p><p>2 Years experience in designing and implementing new processes to improve productivity and customer service as well as 1 year as a credit analyst for residential real estate projects. Result-oriented person with positive attitude, high integrity, and resourcefulness. Enjoys analyzing business situations and developing business decision models.</p>"
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }
+    ], 
+    "topClusters": [
+      "", 
+      "", 
+      ""
+    ], 
+    "topResearchInstitutions": [
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }
+    ], 
+    "regionalInnovations": [
+      "", 
+      "", 
+      ""
+    ], 
+    "businessParks": [
+      "", 
+      "", 
+      ""
+    ], 
+    "regionalEntrepreneurs": [
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }
+    ], 
+    "icapPPI": [
+      "", 
+      "", 
+      "", 
+      ""
+    ], 
+    "ecapPPI": [
+      "", 
+      "", 
+      ""
+    ], 
+    "countryPopulation": {
+      "srcName": "WIPO", 
+      "range": "2003-2014", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        64817254.0, 
+        65404522.0, 
+        65863973.0, 
+        66174486.0, 
+        66353572.0, 
+        66453255.0, 
+        66548197.0, 
+        66692024.0, 
+        66902958.0, 
+        67164130.0, 
+        67451422.0, 
+        67725979.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "regionPopulation": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "giniCoeff": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "humanDevIndex": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "domesticPatent": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "usPatent": {
+      "srcName": "WIPO", 
+      "range": "2000-2013", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        1.0, 
+        3.0, 
+        3.0, 
+        60.0, 
+        69.0, 
+        68.0, 
+        71.0, 
+        99.0, 
+        96.0, 
+        94.0, 
+        108.0, 
+        127.0, 
+        134.0, 
+        167.0
+      ], 
+      "year": [
+        "2000", 
+        "2001", 
+        "2002", 
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
+      ]
+    }, 
+    "publications": {
+      "srcName": "WIPO", 
+      "range": "2003-2011", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        1018.6, 
+        1130.5, 
+        1248.9, 
+        1568.0, 
+        1727.7, 
+        1959.5, 
+        2033.4, 
+        2106.4, 
+        2304.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011"
+      ]
+    }, 
+    "stemGrads": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "researchAndDev": {
+      "srcName": "World Bank - WDI", 
+      "range": "2003-2009", 
+      "srcUrl": "http://databank.worldbank.org/data/", 
+      "value": [
+        0.261920005, 
+        0.255349994, 
+        0.234980002, 
+        0.249190003, 
+        0.213780001, 
+        null, 
+        0.250559986
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009"
+      ]
+    }, 
+    "ipRanking": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "gdpPerCap": {
+      "srcName": "World Bank - WDI", 
+      "range": "2003-2014", 
+      "srcUrl": "http://databank.worldbank.org/data/", 
+      "value": [
+        2200.64983, 
+        2466.798711, 
+        2677.515612, 
+        3129.437533, 
+        3722.135849, 
+        4101.797482, 
+        3962.71358, 
+        4781.799391, 
+        5166.764888, 
+        5448.828352, 
+        5741.207122, 
+        5519.361114
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "corporations": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "entrepreneurship": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "vc": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "daysToStartBiz": {
+      "srcName": "WIPO", 
+      "range": "2003-2014", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        33.0, 
+        33.0, 
+        33.0, 
+        33.0, 
+        33.0, 
+        33.0, 
+        32.0, 
+        32.0, 
+        29.0, 
+        29.0, 
+        27.5, 
+        27.5
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "employment": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }
+  }, 
+  "beijing-china": {
+    "name": "Beijing, China", 
+    "description1": "", 
+    "dataURL": "../assets/docs/MIT_REAP_cohort_3_dashboard_data.xlsx", 
+    "imgFileName": "china.png", 
+    "mapCssClass": "country-img-china", 
+    "team": [
+      {
+        "sh": "entrepreneur", 
+        "name": "Gao Linlin", 
+        "img": "gao-l.jpg", 
+        "desc": "<p>Vice Director, Zhuozhou Agricultural Development Park, Zhuozhou City, Hebei Province</p><p>GAO Linlin works as the vice director, Agricultural Development Park, Zhuozhou City, Hebei Province. Zhuozhou Agricultural Development Park is the main research region of Beijing team this time.  She is interested in the investment, technological change and institutional change in industrial development in China.  She holds a Master degree in Statistics.</p>"
+      }, 
+      {
+        "sh": "university", 
+        "name": "Chen Dongmin", 
+        "img": "chen-dongmin.jpg", 
+        "desc": "<p>Dean, School of Innovation and Entrepreneurship, Peking University.</p><p>Director, Office of Science and Technology Development, Peking University.</p><p>Dr. Dongmin Chen is the Dean of School of Innovation and Entrepreneurship, Director of Science and Technology Development Office of Peking University, and a tenured full professor in the Faculty of Academy for Advanced Interdisciplinary Studies.  He is responsible for University Technology Transfer, University-Industry Partnership, and Entrepreneurship Education program. </p><p>Dr. Chen was an adjunct Professor of the Institute of Physics, Chinese Academy of Sciences where he served as the co-director of the Beijing National Laboratory for Condensed Matter Physics from 2004 to 2009.  He was the founding Director of the Technology Incubator – Suzhou Institute of Technology.  He was a Sr. Rowland Fellow and the Head of the Nanoscale Quantum Physics Lab. at Harvard University from 1989 to 2004.  His academic expertise includes nanotechnologies and advanced semiconductor process integrations, nonvolatile material and device physics, MEMS device and process, MEMS-CMOS integration; spin and quantum device physics.  He co-authored more than 70 scientific publications. </p><p>Dr. Chen is a serial entrepreneur.  He is the Chief Scientist and the inventor of the Metal Oxide Heteorjunction RRAM device of 4DS Inc. in the Silicon Valley.   He also co-founded Miradia Inc. where he led the development of a platform technology for MEMS-CMOS 3D integration for applications in digital micro-mirror array and motion sensors.  He is the inventor of more than 100 international.</p><p>Dr. Chen is an Associate Editor and board member of Applied Physics letter and Journal and Applied Physics; a Sr. Associate Editor of Chinese Science Bulletin and an Associate Editor of Chinese Physics Letter.   He is the Honorar Advisor and former Chairman &amp; President of Chinese American Semiconductor Professional Association in US.</p>"
+      }, 
+      {
+        "sh": "university", 
+        "name": "Guo Lei", 
+        "img": "guo-lei.jpg", 
+        "desc": "<p>Vice Dean, School of Innovation and Entrepreneurship, Peking University.</p><p>Deputy Director, Office of Science and Technology Development, Peking University.</p><p>Dr. GUO Lei is the Vice Dean of School of Innovation and Entrepreneurship and the Deputy Director of Office of Science and Technology Development at Peking University, China.  She is an associate research professor at Peking University.  She is responsible for the innovative and entrepreneurial education and research at SIE and OSTD.  Her current work focuses on developing Entrepreneurial Talent Development Programs on- campus and off- campus for the youth over China and helping incubate the star-ups.  She aims to support regional governments to build the innovation-driven economic growth systems and to evaluate the innovation efficiency.  She is the coordinator officer in Global Innovation Index program between Peking University and World Intellectual Property Organization.  She has professional experience in working with the academic institutions, the start-ups, the corporations and the governments.  She holds a Ph.d degree in life science and dual degree of Bachelor of Science and Bachelor of Economics.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Han Xiaoyan", 
+        "img": "han-x.jpg", 
+        "desc": "<p>Deputy Director, Division of Development and Planning, China Agricultural University.</p><p>Dr. HAN Xiaoyan is a Vice Director of Division of Development &amp; Planning, China Agricultural University.  On behave of the President of university, she is the core coordinator of the university to develop the research and technology,  to set up the spin-offs and star- ups at Zhuozhou Agricultural Development Park.  She holds a Ph.D degree of Education.</p>"
+      }, 
+      {
+        "sh": "government", 
+        "name": "Wang Jiping", 
+        "img": "wang-jiping.jpg", 
+        "desc": "<p>Deputy Director, Beijing-Tianjin-Hebei Integration Development Office, Hebei   Province.</p><p>Dr. WANG Jiping is the core leader of the Beijing-Tianjin-Hebei Integration Development Office, Hebei   Province. He has rich experience in coordinating the government resources and making the key policies at the province level.  He holds his Ph.d degree in Sociology.</p>"
+      }, 
+      {
+        "sh": "riskcapital", 
+        "name": "Hu Guoliang", 
+        "img": "hu-g.jpg", 
+        "desc": "<p>CEO, Baoding District, China Fortune Land Development (CFLD). LTD.</p><p>CFLD focuses on becoming the leader of new industrial city in the world, adhere to the concept of“urban prosperity through the industry, industrial development through industrial city, integration of industry and industrial city, urban-rural integration”, and establishing the business model of taking new industrial city as the core product.  HU Guoliang is CEO, Baoding District of CFLD.  He is responsible for the investment and development of Zhuozhou Agricultural Development Park, Hebei Province.</p><p>Hu Guoliang is the Zhuozhou area General Manager of G45 business group in CFLD, who has rich working experience in the regional development.  He is responsible for the business development of the Hebei G45 Scientific and Technological Achievement Transformation Testing District, the evaluation, the investment, the business operation and regional development management of Zhuozhou National Agricultural Hi-tech Industries Zone.</p>"
+      }, 
+      {
+        "sh": "government", 
+        "name": "Yuan Peihong", 
+        "img": "yuan-p.jpg", 
+        "desc": "<p>Division Director, Beijing-Tianjin-Hebei Integration Development Office, Hebei   Province.</p><p>Dr. YUAN Peihong is in charge of one division of Beijing-Tianjin-Hebei Integration Development Office, Hebei   Province.   He is very familiar with the key Development and Reform Programs in Hebei Province.   He holds a Ph.d degree in Economics.</p>"
+      }, 
+      {
+        "sh": "government", 
+        "name": "Liu Yunming", 
+        "img": "liu-y.jpg", 
+        "desc": "<p>Officer, Economic and Technical Cooperation Office, Development and Reform Commission, Hebei Province.</p><p>LIU Yunming is an officer of Economic and Technical Cooperation Office, Development and Reform Commission, Hebei Province.  He is responsible for the cooperation between local government and large corporations.  He holds a Master degree in Engineering.</p>"
+      }, 
+      {
+        "sh": "champion", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Shi Yajun", 
+        "img": "shi-y.jpg", 
+        "desc": "<p>Head, Institute for Urban Agriculture Research, Beijing Agricultural University.</p><p>Professor SHI Yajun is the head of the Institute for Urban Agriculture Research, Beijing Agricultural University and the Deputy Secretary-General of the Urban Agriculture and Leisure Agriculture Branch of China Agronomy Society.  He has rich experiences in rural and agriculture research.  He has completed more than 30 agriculture planning and research programs, including the Guideline for Leisure Agriculture Development during the 12th Five-Year Plan Period, which is the first leisure agriculture development plan on the national level.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Xu Guangcai", 
+        "img": "xu-g.jpg", 
+        "desc": "<p>Lecturer on Urban Agriculture, Beijing University of Agriculture.</p><p>Dr. XU Guangcai is a Lecturer on Urban Agriculture, Beijing University of Agriculture. He has rich experience in agriculture programs planning and holds a Ph.D degree of Land Resources Managementand.</p>"
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }
+    ], 
+    "topClusters": [
+      "", 
+      "", 
+      ""
+    ], 
+    "topResearchInstitutions": [
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }
+    ], 
+    "regionalInnovations": [
+      "", 
+      "", 
+      ""
+    ], 
+    "businessParks": [
+      "", 
+      "", 
+      ""
+    ], 
+    "regionalEntrepreneurs": [
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }
+    ], 
+    "icapPPI": [
+      "", 
+      "", 
+      "", 
+      ""
+    ], 
+    "ecapPPI": [
+      "", 
+      "", 
+      ""
+    ], 
+    "countryPopulation": {
+      "srcName": "WIPO", 
+      "range": "2003-2014", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        1288400000.0, 
+        1296075000.0, 
+        1303720000.0, 
+        1311020000.0, 
+        1317885000.0, 
+        1324655000.0, 
+        1331260000.0, 
+        1337705000.0, 
+        1344130000.0, 
+        1350695000.0, 
+        1357380000.0, 
+        1364270000.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "regionPopulation": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "giniCoeff": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "humanDevIndex": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "domesticPatent": {
+      "srcName": "OECD", 
+      "range": "2003-2011", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        273.6, 
+        353.7, 
+        460.3, 
+        667.7, 
+        836.4, 
+        916.2, 
+        1230.0, 
+        1891.6, 
+        23.1
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011"
+      ]
+    }, 
+    "usPatent": {
+      "srcName": "WIPO", 
+      "range": "2000-2013", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        469.0, 
+        626.0, 
+        888.0, 
+        1034.0, 
+        1655.0, 
+        2127.0, 
+        3768.0, 
+        3903.0, 
+        4455.0, 
+        6879.0, 
+        8162.0, 
+        10545.0, 
+        13273.0, 
+        15093.0
+      ], 
+      "year": [
+        "2000", 
+        "2001", 
+        "2002", 
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
+      ]
+    }, 
+    "publications": {
+      "srcName": "WIPO", 
+      "range": "2003-2011", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        28767.9, 
+        34845.6, 
+        41603.6, 
+        49575.1, 
+        56811.2, 
+        65300.5, 
+        74034.4, 
+        79991.3, 
+        89894.4
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011"
+      ]
+    }, 
+    "stemGrads": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "researchAndDev": {
+      "srcName": "World Bank - WDI", 
+      "range": "2003-2012", 
+      "srcUrl": "http://databank.worldbank.org/data/", 
+      "value": [
+        1.133559942, 
+        1.229889989, 
+        1.32475996, 
+        1.388299942, 
+        1.395820022, 
+        1.469859958, 
+        1.701979995, 
+        1.758990049, 
+        1.836169958, 
+        1.983049989
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012"
+      ]
+    }, 
+    "ipRanking": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "gdpPerCap": {
+      "srcName": "OECD", 
+      "range": "2004-2013", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        14663.0, 
+        16137.0, 
+        17756.0, 
+        20377.0, 
+        20787.0, 
+        21807.0, 
+        22886.0, 
+        23631.0, 
+        25206.0, 
+        27180.0
+      ], 
+      "year": [
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
+      ]
+    }, 
+    "corporations": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "entrepreneurship": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "vc": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "daysToStartBiz": {
+      "srcName": "WIPO", 
+      "range": "2003-2014", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        48.0, 
+        48.0, 
+        48.0, 
+        35.0, 
+        35.0, 
+        41.0, 
+        38.0, 
+        38.0, 
+        38.0, 
+        33.0, 
+        34.4, 
+        31.4
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "employment": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }
+  }, 
+  "santiago-chile": {
+    "name": "Santiago, Chile", 
+    "description1": "", 
+    "dataURL": "../assets/docs/MIT_REAP_cohort_3_dashboard_data.xlsx", 
+    "imgFileName": "chile.png", 
+    "mapCssClass": "country-img-chile", 
+    "team": [
+      {
+        "sh": "entrepreneur", 
+        "name": "Aldo Labra", 
+        "img": "aldo-l.jpg", 
+        "desc": "<p>CEO, Innovaxxion.</p><p>Aldo Labra is Co-Founder and CEO of Innovaxxion, a company dedicated to develop high value-added solutions based on knowledge, technology, innovation and engineering of high complexity for large companies in mining and energy industries in Chile and abroad. </p><p>Aldo has extensive technical and executive expertise, backed by an experience of over 15 years developing various projects and ventures in technology, telecom and innovation of high impact, both in Chile and abroad. In the mining industry, he has worked in various innovation initiatives as a new product, called &quot;Earless&quot;, for process optimization in copper refinery plants. Also, with his team, developed a new platform of software, hardware and intelligent sensors in real time, called &quot;GO platform&quot;, for industrial plants, and a new process for molding copper anode, called &quot;SDS&quot;, in copper smelters, all of them with industrials patent in Chile and abroad. </p><p>Through Innovaxxion, I received several national awards, including; Technology Contribution Award 2013, received recognition with CODELCO from the Industrial Association of II region in Chile. Innovative Company Award 2014, received recognition from the Government of Chile, through the Chilean Economic Development Agency, Corfo. Finalist of the National Award for Innovation, Avonni for 2014 and nominated for 2015, in the category of mining. </p><p>Also, Aldo is director of the association of providers of world class mining in Chile, called Minnovex, and under the national mining program, a public-private instance in which is building the route mining plan to 2035, is a member of the technical committee of smart mining and intelligent industry. </p><p>Aldo is Industrial Engineer, with a minor in mechanics, from the Universidad Tecnica Federico Santa Maria, holds an MBA from Getulio Vargas Foundation in Brazil, and a Master of Innovation at the University Adolfo Ibanez in Chile.</p>"
+      }, 
+      {
+        "sh": "university", 
+        "name": "Felipe Alvarez", 
+        "img": "felipe-a.jpg", 
+        "desc": "<p>Vice Dean, Faculty of Physical and Mathematical Sciences, University of Chile.</p><p>Felipe received a Mathematical Engineering degree from Universidad de Chile (1996) and obtained a joint PhD in Applied Mathematics and Mechanics from U. de Chile and Universite de Montpellier in France (1998). He has published about 30 papers in international journals and he has been the advisor of 4 PhD students. </p><p>Felipe co-founded the Laboratory on Geomechanics of the Center of Mathematical Modeling (CMM) of U. de Chile. This initiative is mainly supported by contracts with CODELCO (Chile's state-owned copper company), to develop new computational tools in order to assist the design for rockmass instability in underground mining operations. This is conducted in collaboration with experts on several disciplines like Physics and Geology as well as Civil, Mechanical and Mining Engineering. </p><p>Felipe served as Chair of the Mathematical Engineering Department of U. de Chile (2006-2008), and He was the Scientific Director of the Millennium Science Institute on Complex Engineering Systems (2007-2010), an interdisciplinary center for applied R&amp;D that gathers about 30 tenured researchers in the areas of Operations Research, Transportation, Energy and Information Technologies. </p><p>Member of the Global Young Academy, since 2010 he is serving as the Vice Dean of the Faculty of Physical and Mathematical Sciences of U. de Chile, host of the first Engineering and Sciences School of Chile. Currently he is the Director of the New Engineering for 2030 project of U. de Chile with the aim of fostering a university-based innovation and entrepreneurship ecosystem.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Pilar Parada", 
+        "img": "pilar-p.jpg", 
+        "desc": "<p>CEO, Biosigma.</p><p>I'm Biochemist from Universidad de Chile, with a Ph.D. in Molecular Biology from the Universidad Autonoma de Madrid. I also have a Diploma in Strategy and Innovation awarded by the Massachusetts Institute of Technology (MIT) and a Diploma in Company Management in Pontificia Universidad Catolica de Chile.</p><p>I have worked for 10 years in a biotechnology company for mining called BioSigma. I'm author of 7 scientific publications and 16 patent applications filed in Chile and abroad, 7 of them already granted. My main motivation has been working and leading multidisciplinary teams of people who contribute to innovative projects that deliver simple solutions to complex problems.</p>"
+      }, 
+      {
+        "sh": "government", 
+        "name": "Gonzalo Rivas", 
+        "img": "gonzalo-r.jpg", 
+        "desc": "<p>President, National Council for Innovation and Development.</p><p>Mr. Gonzalo Rivas (53 years old) is currently the chairman of the Chilean National Innovation Council (www.cnid.cl). He is an economist from Universidad de Chile and holds a Master Degree in economics from Universite Catholique de Louvain-la-Neuve (Belgium).</p><p>He has been CEO of Corfo (Chilean development agency) (1997-2003) and Chief of the Science and Technology division at the Inter American Development Bank (2007-2008). He has also been consultant for governments and multilateral institutions (World Bank, IADB, UNDP, IDRC, ILO, ECLAC) on productive development and innovation public policies and has published numerous articles on those subjects.</p>"
+      }, 
+      {
+        "sh": "riskcapital", 
+        "name": "Nils Galdo", 
+        "img": "nils-g.jpg", 
+        "desc": "<p>General Partner, Inversur Capital.</p><p>Nils is General Partner of InverSur Capital (IS Capital), operator of the Amerigo Chile Early Stage and Growth Fund. He has over a decade of experience in venture capital and entrepreneurship. </p><p>Prior to joining the IS Capital team, he co-founded and led Chile Global Angels, currently the most active angel investor network in the south cone of LATAM, linked to the Fundacion Chile. Nils worked at Endeavor Chile from 2002 to 2007 and currently participates at some entrepreneurial ventures (i.e. CinePapaya) and some institutional initiatives (i.e. Open Beauchef). He also has been Mentor at The Founder Institute, The Development Centre of Lithium and served as a Member of the Executive Council at InnovaChile, Corfo.</p><p>Mr. Galdo holds an MSc in International Business from Göteborgs Universitet, Sweden and a B.A. in Economics from Wittenberg University. He has also obtained diplomas on Innovation Management and Venture capital fund administration from Universidad Adolfo Ibanez in Chile.</p>"
+      }, 
+      {
+        "sh": "champion", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Mauro Valdes", 
+        "img": "mauro-v.jpg", 
+        "desc": "<p>President, National Mining Program.</p><p>Mauro Valdes Raczynski is Chairman of the National Mining Program &quot;Alta Ley&quot;, a public-private platform for open innovation supported by Corfo, the Mining Ministry and Fundacion Chile. The purpose of the program is gathering the mining industry, suppliers, academy and public sector with the aim of contributing to the expansion of a sustainable and inclusive mining activity in Chile while pursuing the transit of Chile to a knowledge based economy. He is also a professor at the Universidad Catolica's master in law and a consultant in various topics.</p><p>He was born in Chile in 1968, he is an Attorney at Law. He studied in Santiago, Chile and in Hamburg, Germany. He studied Law at the Universidad Catolica de Chile, obtained his Master's Degree in the University of Hamburg, Germany. </p><p>He has worked as a lawyer in Germany (Schoen, Nolte, Finkelnburg &amp; Clemm Law Firm), and in Chile (CSAV in 1995, and Larrain y Asociados Law Firm, 1995 – 1999); he was appointed as the first General Manager of the Chilean Mining Council (May 1999 until June 2002) which is the industry association of the large scale mining in Chile; from July 2002 to September 2005 he was VicePresident of Corporate and External Affairs of Minera Escondida Ltda. From October 2005 to August 2010 he was VicePresident of Corporate Affairs and Communications of BHP Billiton Base Metals. From August 2010 until June 2014 he was the Executive Director of Television Nacional de Chile – TVN, the national public broadcaster.</p><p>Also, he has been member of the board of several institutions like Fundacion Minera Escondida, Anatel, Fundacion Chile and Accion RSE, and Chairman of the Fundacion Educacional Escondida – CEIM.</p>"
+      }, 
+      {
+        "sh": "government", 
+        "name": "Claudio Maggi", 
+        "img": "claudio-m.jpg", 
+        "desc": "<p>Head of the Competitiveness Department Division, CORFO.</p><p>Mr. Claudio Maggi (53 years old) is currently the head of the competitiveness department of the Chilean Economic Development Agency (CORFO). </p><p>He is a civil industrial engineer from Universidad de Chile and holds a Master Degree in industrial engineering and economics from the same university. </p><p>Mr. Maggi has extensive experience in the government sector, particularly at CORFO in multiple periods between 1994 and 2015, and as a consultant at the Inter American Development Bank between 2003-2013. He has also been consultant for governments and multilateral institutions (ECLAC, OECD) on productive development and competitiveness.</p>"
+      }, 
+      {
+        "sh": "government", 
+        "name": "Jaime Alvarez", 
+        "img": "jaime-a.jpg", 
+        "desc": "<p>Technology Area Leader, National Council for Innovation and Development.</p><p>Electronics Engineer (Control Systems) from Universidad Tecnica Federico Santa Maria and MBA  from Universidad Adolfo Ibanez. Extensive experience in operations management in the retail and information technology industries, and since 2012, focused on strategy under uncertainty for public policies in science, technology and innovation. </p><p>Wide business insight for designing, implementing and controlling processes and projects aimed at service level improvement, cost reduction and strategic alignment. Team leader and developer, analytic, creative and results-oriented.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Marcos Kulka", 
+        "img": "marcos-k.jpg", 
+        "desc": "<p>CEO, Fundacion Chile.</p><p>CEO of Fundacion Chile, a unique public private partnership fostering innovations that has created more than 80 companies in a variety of technologies. Its partners are the Chilean State and BHP Billiton. A do-tank, pioneering new sectors through a portfolio of capacity building initiatives, demonstrative companies and enabling technology services. Known best for jumpstarting the farmed salmon industry in the 1980s, launching Chile's first venture capital funds in the 1990s, moving into renewable energies in the 2000s, and currently unleashing the high potential of the mining sector. </p><p>Marcos is currently a board member of Micomo (ICT for mining) and Austral Capital (Venture Capital Fund). Member of the investment committee of Inversur (VC Fund of Telefonica). He was also the chairman of Oleotop (food company), a board member of Axon Axis (IT company sold to Equifax), Alimtec (Pharma company sold to Bayer) and Biofrutales (Biotech in fruit). </p><p>Marcos was a board member of The Chilean Innovation Forum, member of the Open Innovation Forum at Berkeley and member of the Institute for Large Scale Innovation. MBA from UC Berkeley and an undergraduate in Business and Economics from the Pontificia Universidad Catolica de Chile.  Awarded from Endeavor and Diario Financiero in 2007 among the 50 most successful youngsters in Chile.</p>"
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }
+    ], 
+    "topClusters": [
+      "", 
+      "", 
+      ""
+    ], 
+    "topResearchInstitutions": [
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }
+    ], 
+    "regionalInnovations": [
+      "", 
+      "", 
+      ""
+    ], 
+    "businessParks": [
+      "", 
+      "", 
+      ""
+    ], 
+    "regionalEntrepreneurs": [
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }
+    ], 
+    "icapPPI": [
+      "", 
+      "", 
+      "", 
+      ""
+    ], 
+    "ecapPPI": [
+      "", 
+      "", 
+      ""
+    ], 
+    "countryPopulation": {
+      "srcName": "World Bank - WDI", 
+      "range": "2003-2014", 
+      "srcUrl": "http://databank.worldbank.org/data/", 
+      "value": [
+        15729268.0, 
+        15913119.0, 
+        16096571.0, 
+        16279728.0, 
+        16462701.0, 
+        16645940.0, 
+        16829957.0, 
+        17015048.0, 
+        17201305.0, 
+        17388437.0, 
+        17575833.0, 
+        17762647.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "regionPopulation": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "giniCoeff": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "humanDevIndex": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "domesticPatent": {
+      "srcName": "OECD", 
+      "range": "2003-2010", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        10.3, 
+        15.8, 
+        22.1, 
+        13.0, 
+        30.7, 
+        36.3, 
+        57.0, 
+        67.8
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010"
+      ]
+    }, 
+    "usPatent": {
+      "srcName": "WIPO", 
+      "range": "2000-2013", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        3.0, 
+        1.0, 
+        3.0, 
+        33.0, 
+        51.0, 
+        55.0, 
+        76.0, 
+        68.0, 
+        75.0, 
+        66.0, 
+        85.0, 
+        111.0, 
+        109.0, 
+        133.0
+      ], 
+      "year": [
+        "2000", 
+        "2001", 
+        "2002", 
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
+      ]
+    }, 
+    "publications": {
+      "srcName": "World Bank - WDI", 
+      "range": "2003-2011", 
+      "srcUrl": "http://databank.worldbank.org/data/", 
+      "value": [
+        1406.4, 
+        1464.1, 
+        1559.3, 
+        1630.4, 
+        1741.2, 
+        1784.7, 
+        1867.8, 
+        1867.2, 
+        1979.2
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011"
+      ]
+    }, 
+    "stemGrads": {
+      "srcName": "OECD", 
+      "range": "2004-2012", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        15922.0, 
+        5690.0, 
+        10221.0, 
+        8852.0, 
+        9669.0, 
+        11881.0, 
+        11353.0, 
+        11111.0, 
+        12354.0
+      ], 
+      "year": [
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012"
+      ]
+    }, 
+    "researchAndDev": {
+      "srcName": "World Bank - WDI", 
+      "range": "2007-2010", 
+      "srcUrl": "http://databank.worldbank.org/data/", 
+      "value": [
+        0.310499996, 
+        0.374989986, 
+        0.409570009, 
+        0.417219996
+      ], 
+      "year": [
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010"
+      ]
+    }, 
+    "ipRanking": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "gdpPerCap": {
+      "srcName": "OECD", 
+      "range": "2003-2013", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        12103.0, 
+        13226.0, 
+        14462.0, 
+        17674.0, 
+        19395.0, 
+        19100.0, 
+        19089.0, 
+        20736.0, 
+        23410.0, 
+        25517.0, 
+        26894.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
+      ]
+    }, 
+    "corporations": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "entrepreneurship": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "vc": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "daysToStartBiz": {
+      "srcName": "World Bank - WDI", 
+      "range": "2003-2014", 
+      "srcUrl": "http://databank.worldbank.org/data/", 
+      "value": [
+        42.0, 
+        42.0, 
+        42.0, 
+        40.0, 
+        40.0, 
+        40.0, 
+        40.0, 
+        34.5, 
+        7.5, 
+        5.5, 
+        5.5, 
+        5.5
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "employment": {
+      "srcName": "OECD", 
+      "range": "2003-2013", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        2745003.0, 
+        2867336.0, 
+        2943966.0, 
+        2885684.0, 
+        2971450.0, 
+        3127244.0, 
+        3166411.0, 
+        3271023.0, 
+        3409579.0, 
+        3387237.0, 
+        3431557.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
+      ]
+    }
+  }, 
+  "southwest-norway": {
+    "name": "Southwest Norway", 
+    "description1": "", 
+    "dataURL": "../assets/docs/MIT_REAP_cohort_3_dashboard_data.xlsx", 
+    "imgFileName": "norway.png", 
+    "mapCssClass": "country-img-norway", 
+    "team": [
+      {
+        "sh": "entrepreneur", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "university", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Kjell O. Johannessen", 
+        "img": "kjell-j.jpg", 
+        "desc": "<p>CEO, CIFO Management</p><p>Kjell O. Johannessen is Founder and CEO of CIFO Management, and has more than thirty years held important posts and positions in the Norwegian society. He is graduated as an engineer from Oslo Technical School, and has worked as a successful entrepreneur, evolving business from a sole proprietorship to a large contracting business - with both national and global projects in various </p><p>industries.</p><p>He has also held positions at many different levels in Norwegian organizations, including the Norwegian Petroleum Society and The Confederation of Norwegian Enterprises (NHO). In the latter, he has been a member of the Executive Board, Nomination Committee, Council of Europe, Education and Development Fund Special Committee - in addition to seven years as both a member and chairman of the Committee for Family Owned Businesses.</p><p>However, it is the role as Manager of the cluster NCE NODE, Johannessen has distinguished himself most strongly in recent years. Under his leadership, the cluster has evolved from an ARENA project, to achieve status as a Norwegian Centre of Expertise (NCE). The cluster also became the first cluster in Norway, and one of three clusters in Europe, to be awarded GOLD Cluster Certification by the European Cluster Excellence Initiative (ECEI) - in competition with 200 other European clusters. Under his leadership, NCE NODE developed from 29 to 57 companies, from 1,800 to 10,000 employees and annual turnover increased from 5 to 40 billion NOK.</p><p>He has also worked actively to develop a close working relationship with the NCE clusters in Ålesund, Kongsberg and Raufoss, and in the development of a new Global Cluster Program. In addition, he played a key role in drafting new national EVU reform, in the development of tomorrow's &quot;Oil Technology Industry&quot; as a concept, and in the creation of Norwegian Industry Cluster.</p><p>Kjell O. Johannessen is known as a skilled strategist, and a clear communicator with a unique network at home and abroad. In his work as a Director and Trustee, he has been a driving force in the creation of new and effective collaborations between Industry, Public sector, NGOs and Academia.</p>"
+      }, 
+      {
+        "sh": "government", 
+        "name": "Kristin Reitan Husebo", 
+        "img": "kristin-r.jpg", 
+        "desc": "<p>CEO, Greater Stavanger Economic Development.</p><p>Kristin Reitan Husebo is CEO of Greater Stavanger Economic Development working with economic development for the Stavanger region, Norways 3rd largest city region and the greatest oil &amp; gas cluster in northern Europe.  She is also Chair of the Board at Siva, a governmentally owned company (Ministry of Trade and Fisheries), investing in real estate to develop innovation centres and facilitating innovation through a national incubator network. </p><p>Kristin has entrepreneurial experience from research based innovation, being the founder and former director of Prekubator Technology Transfer. In her work in Greater Stavanger she is dedicated to stimulating value creation, technology transfer, innovation and entrepreneurship in the region – both related to, and outside, the energy sector.  http://www.greaterstavanger.com/eng As Chair of Sivas Board she is focused on developing an efficient national infrastructure to support entrepreneurship, being flexible to changes in industry and entrepreneurs needs. http://siva.no/?lang=en</p>"
+      }, 
+      {
+        "sh": "riskcapital", 
+        "name": "Peter Klemsdal", 
+        "img": "peter-k.jpg", 
+        "desc": "<p>Director, Sorlandet Knowledge Foundation</p><p>Peter Klemsdal is currently director at the Sorlandet Knowledge Foundation in Kristiansand, Norway. The Foundation is a research financier for local businesses and the University of Agder, with a long term objective to facilitate growth in regional employment and social conditions.  </p><p>Peter has held positions within process and oil&amp;gas engineering at Norsk Hydro in Oslo, and was CFO at Canon Norway in the 1980s. His previous job was at Umoe Mandal, a privately owned defence  shipyard, where he held positions as CFO, Project Manager, and eventually CEO from  2000 until  2010.</p><p>Over the last 20 years he has been involved with several small start-ups as well intrapreneurial spin-offs.        </p><p>Peter Klemsdal holds a Master Degree in Mechanical Engineering from NTNU, Trondheim, Norway (1978) and an MBA from SUNY at Albany, New York (1981). Born in 1954, he lives in Mandal, Norway; is married and has three children.</p>"
+      }, 
+      {
+        "sh": "champion", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Tove Ormevik", 
+        "img": "tove-o.jpg", 
+        "desc": "<p>Offshore Installation Manager, Skarv Field, BP Norway.</p><p>Chairman of the board , Global Center of Experise Subsea (GCE Subsea).</p><p>Tove Ormevik holds a Master degree in Marine Technology from Norwegian University of Science and Technology. She has 20 years of experience from the oil and gas industry in Norway  and extensive experience within drilling, engineering, project management, onshore plant operation, subsea operation, logistic and offshore management.  Currently she holds a position as Offshore Installation Manager at Skarv FPSO after following the same project through shipyard activities, completion, commissioning, operational preparedness and start up. Previously sha has had several offshore- and onshore management positions in Statoil ASA. </p><p>Since 2006 she has been chair of the Board for GCE Subsea, an industry initiative that works to strengthen and internationalise businesses, R&amp;D and education among the subsea industry at the west coast of Norway . Within this cluster of 120 members, its companies and R&amp;D institutions have developed great expertise that enable the cluster to challenge each other and face common issues together and to promote further development by increasing innovation. http://www.ncesubsea.no/</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Tore Medhus", 
+        "img": "tore-m.jpg", 
+        "desc": "<p>Executive Vice president Corporate Sector, SpareBank 1 SR-Bank.</p><p>Tore Medhus is head of corporate sector of SpareBank 1 SR-Bank (www.sr-bank.no) The banks head office is located in Stavanger, and it has activities in most of SouthWest Norway. The bank is market leader in its region, and is the second largest Norwegian owned bank. In total the bank serves more than 15.000 corporate customers.</p><p>Medhus has worked with the corporate sector for more than 20-years. He has been responsible for the corporate sector in the bank for the last 15 years. Ha has also served as member of the banks management group in the same period.</p><p>Medhus is chair of the board in two of the banks subsidiaries, SpareBank 1 SR-Finans and SpareBank 1 Regnskapshuset SR. He is also vice chair in the board of BN Bank.</p>"
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }
+    ], 
+    "topClusters": [
+      "", 
+      "", 
+      ""
+    ], 
+    "topResearchInstitutions": [
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }
+    ], 
+    "regionalInnovations": [
+      "", 
+      "", 
+      ""
+    ], 
+    "businessParks": [
+      "", 
+      "", 
+      ""
+    ], 
+    "regionalEntrepreneurs": [
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }
+    ], 
+    "icapPPI": [
+      "", 
+      "", 
+      "", 
+      ""
+    ], 
+    "ecapPPI": [
+      "", 
+      "", 
+      ""
+    ], 
+    "countryPopulation": {
+      "srcName": "WIPO", 
+      "range": "2003-2014", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        4564855.0, 
+        4591910.0, 
+        4623291.0, 
+        4660677.0, 
+        4709153.0, 
+        4768212.0, 
+        4828726.0, 
+        4889252.0, 
+        4953088.0, 
+        5018573.0, 
+        5079623.0, 
+        5136475.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "regionPopulation": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "giniCoeff": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "humanDevIndex": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "domesticPatent": {
+      "srcName": "OECD", 
+      "range": "2003-2011", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        61.5, 
+        64.0, 
+        86.4, 
+        59.2, 
+        93.1, 
+        102.9, 
+        119.0, 
+        104.0, 
+        4.5
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011"
+      ]
+    }, 
+    "usPatent": {
+      "srcName": "WIPO", 
+      "range": "2000-2013", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        447.0, 
+        475.0, 
+        531.0, 
+        449.0, 
+        525.0, 
+        541.0, 
+        562.0, 
+        693.0, 
+        827.0, 
+        905.0, 
+        936.0, 
+        977.0, 
+        1102.0, 
+        1169.0
+      ], 
+      "year": [
+        "2000", 
+        "2001", 
+        "2002", 
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
+      ]
+    }, 
+    "publications": {
+      "srcName": "WIPO", 
+      "range": "2003-2011", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        3130.5, 
+        3371.3, 
+        3651.2, 
+        3896.2, 
+        4081.9, 
+        4299.9, 
+        4440.1, 
+        4460.9, 
+        4777.1
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011"
+      ]
+    }, 
+    "stemGrads": {
+      "srcName": "OECD", 
+      "range": "2003-2012", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        5017.0, 
+        4933.0, 
+        4937.0, 
+        5198.0, 
+        5246.0, 
+        5348.0, 
+        5380.0, 
+        6052.0, 
+        6796.0, 
+        6856.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012"
+      ]
+    }, 
+    "researchAndDev": {
+      "srcName": "", 
+      "range": "2001-2011", 
+      "srcUrl": "", 
+      "value": [
+        1.59, 
+        1.66, 
+        1.71, 
+        1.57, 
+        1.51, 
+        1.48, 
+        1.59, 
+        1.58, 
+        1.76, 
+        1.68, 
+        1.65
+      ], 
+      "year": [
+        "2001", 
+        "2002", 
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011"
+      ]
+    }, 
+    "ipRanking": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "gdpPerCap": {
+      "srcName": "OECD", 
+      "range": "2003-2013", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        38993.0, 
+        43196.0, 
+        48359.0, 
+        54723.0, 
+        56866.0, 
+        62432.0, 
+        56183.0, 
+        58770.0, 
+        62736.0, 
+        66365.0, 
+        65639.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
+      ]
+    }, 
+    "corporations": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "entrepreneurship": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "vc": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "daysToStartBiz": {
+      "srcName": "WIPO", 
+      "range": "2003-2014", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        18.0, 
+        18.0, 
+        8.0, 
+        7.0, 
+        8.0, 
+        6.0, 
+        6.0, 
+        6.0, 
+        6.0, 
+        6.0, 
+        6.0, 
+        5.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "employment": {
+      "srcName": "OECD", 
+      "range": "2003-2013", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        413100.0, 
+        412500.0, 
+        410700.0, 
+        424700.0, 
+        433300.0, 
+        445600.0, 
+        448500.0, 
+        449800.0, 
+        454400.0, 
+        460300.0, 
+        461000.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
+      ]
+    }
+  }, 
+  "tokyo-japan": {
+    "name": "Tokyo, Japan", 
+    "description1": "", 
+    "dataURL": "../assets/docs/MIT_REAP_cohort_3_dashboard_data.xlsx", 
+    "imgFileName": "japan.png", 
+    "mapCssClass": "country-img-japan", 
+    "team": [
+      {
+        "sh": "entrepreneur", 
+        "name": "Satoshi Ohara", 
+        "img": "satoshi-o.jpg", 
+        "desc": "<p>Managing Director, Sigmaxyz, Inc.</p><p>Satoshi Ohara is a Managing Director at Sigmaxyz, Inc., the consulting firm newly established as a JV of Mitsubishi Corp. and RHJI (private equity).  He has been supervising the strategy service practice and acting as a key member of executive board of Sigmaxyz.</p><p>He has 22 years experience in consulting and has advised clients in a wide range of industries including consumer products, healthcare, chemicals, automotive, ICT, energy and financial services.</p><p>He has recently been focusing on support on growth initiatives of the Japanese companies and interested in a new alliance scheme to co-work with them for incubating businesses beyond providing traditional consulting approach.</p>"
+      }, 
+      {
+        "sh": "university", 
+        "name": "Iris Wieczorek", 
+        "img": "iris-w.jpg", 
+        "desc": "<p>Director, TUS Innovation.</p><p>Iris Wieczorek is the president of IRIS Science Management Inc., a Tokyo-based consulting firm specialized in research management, policy advice, and support for &quot;International Relations In Science&quot;. At the Tokyo University of Science (TUS) she is acting as advisor to the Chairman and holding the position of &quot;Director of TUS Innovation&quot;. </p><p>She studied Japanese and Chinese Studies, and Computer Science and holds a doctoral degree from the University of Hamburg, Germany. She has over 25 years of Japan experience, and a broad knowledge about the academic and scientific systems in Europe and Japan. In 2000, she joined the GIGA Institute of Asian Studies in Hamburg, a member institute of the Leibniz Association, where she has been working on comparative assessment of the Japanese research and innovation system. In 2008, she established the Japan Office of the German Research Foundation (DFG) in Tokyo, and acted as its director until 2012. Subsequently, she founded IRIS Science Management Inc.. She retains a research position with the GIGA and is representing the Leibniz Association in Japan. Moreover, she is member of various committees, e.g. the &quot;National Research and Development Agency Committee&quot; of the Japanese Ministry of Education, Culture, Sports, Science and Technology (MEXT).</p>"
+      }, 
+      {
+        "sh": "university", 
+        "name": "Seiichiro Hangai", 
+        "img": "seiichiro-h.jpg", 
+        "desc": "<p>Director, Professor, Tokyo University of Science.</p><p>Seiichiro Hangai is the director and the professor of Tokyo University of Science (TUS). His role as the director is &quot;Internationalization&quot; of education and management in TUS.</p><p>His interest is to start up entrepreneurship in TUS and making Ecosystem.</p><p>He is a professor of electrical engineering and interested in Biometrics which is one of human centered researches. Signature verification and Voice verification using smart phone are his research subjects. He is a member of ISO/IEC JTC1 SC37 WG3, biometric data format.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Hiroto Tsuge", 
+        "img": "hiroto-t.jpg", 
+        "desc": "<p>Manager, Corporate Planning and Business Development Office, Fujitsu Limited.</p><p>Hiroto Tsuge is a manager of Corporate Planning and Business Development Office, Fujitsu Limited.   His major responsibility in Fujitsu is to manage its corporate venture capital.  Before he joined Fujitsu Limited, he served as an analyst in Japan External Trade Organization and an economist for Asian developing countries in KRI International Corporation. Through MIT REAP, in order to accelerate open innovation activities, He will look for and try to establish a better collaboration scheme of the company with internal and external stakeholders.</p>"
+      }, 
+      {
+        "sh": "riskcapital", 
+        "name": "Jun Tsusaka", 
+        "img": "jun-t.jpg", 
+        "desc": "<p>Managing partner, CEO-CIO, Founding Member, Nippon Sangyo Suishin Kiko Ltd.</p><p>Jun Tsusaka is the Managing Partner, Chief Investment Officer and Founding Member of NSSK.  Prior to the formation of NSSK, He was a global Partner of TPG and a Managing Director and Representative of TPG Capital Japan, K.K.  He was also a member of the Global Investment Review Committee, the Asian Investment Review Committee and member of the Global Partner Selection Committee.   </p><p>He started his career at Merrill Lynch in Tokyo in 1983 and after two years in the Investment Banking Division, he was promoted to the Head of the Interest Rate and Currency Swap Group in Asia.  After attending Harvard Business School, Jun Tsusaka joined Goldman, Sachs &amp; Co. (&quot;Goldman Sachs&quot;) in New York, where he worked in various senior positions in the Mergers &amp; Acquisitions Department.  After seven years at Goldman he left his position as Vice President and Executive Director to establish and head a family office managing over $5 billion worth of investment assets for the Jan Stenbeck family (the &quot;Stenbeck Family&quot;), who were clients of Goldman. He also served in an operations capacity as Senior Executive Vice President and Executive Director of Millicom International Cellular S.A., a NASDAQ-listed global telecommunications company and Chairman and CEO of GAB Robins, a privately-held leading company in global insurance risk management services.  He currently serves on the boards of directors at US Mart Corporation and Joint Corporation and the Harvard Club of Japan.  He is also a member of the Keizai Doyukai.</p><p>He graduated with a Bachelor's Degree from Harvard College where he graduated with Honors and has a Master of Business Administration from Harvard Business School where he graduated with Distinction.</p>"
+      }, 
+      {
+        "sh": "government", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "champion", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Terumi Chikama", 
+        "img": "terumi-c.jpg", 
+        "desc": "<p>Chairman &amp; President, FUJITSU UNIVERSITY._ </p><p>Terumi Chikama is the chairman and President of FUJITSU University.  </p><p>He joind Fujitsu in 1982 as a researcher of  optical communication systems. In 2000 he moved to busienss division , and took the lead in developing cutting-edge products and managing  the  network business  as a corprate senior vice president.  Currently he is engaged in human resource development to nurture leaders for accelerating innovation and globalization of Fujitsu.</p>"
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }
+    ], 
+    "topClusters": [
+      "", 
+      "", 
+      ""
+    ], 
+    "topResearchInstitutions": [
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }
+    ], 
+    "regionalInnovations": [
+      "", 
+      "", 
+      ""
+    ], 
+    "businessParks": [
+      "", 
+      "", 
+      ""
+    ], 
+    "regionalEntrepreneurs": [
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }
+    ], 
+    "icapPPI": [
+      "", 
+      "", 
+      "", 
+      ""
+    ], 
+    "ecapPPI": [
+      "", 
+      "", 
+      ""
+    ], 
+    "countryPopulation": {
+      "srcName": "WIPO", 
+      "range": "2003-2014", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        127718000.0, 
+        127761000.0, 
+        127773000.0, 
+        127854000.0, 
+        128001000.0, 
+        128063000.0, 
+        128047000.0, 
+        128070000.0, 
+        127817277.0, 
+        127561489.0, 
+        127338621.0, 
+        127131800.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "regionPopulation": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "giniCoeff": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "humanDevIndex": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "domesticPatent": {
+      "srcName": "OECD", 
+      "range": "2003-2011", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        1443.3, 
+        1583.3, 
+        1614.3, 
+        1613.6, 
+        1635.1, 
+        1617.4, 
+        1772.8, 
+        2159.0, 
+        56.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011"
+      ]
+    }, 
+    "usPatent": {
+      "srcName": "WIPO", 
+      "range": "2000-2013", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        52883.0, 
+        61226.0, 
+        58738.0, 
+        60350.0, 
+        64812.0, 
+        71994.0, 
+        76839.0, 
+        78794.0, 
+        82396.0, 
+        81982.0, 
+        84017.0, 
+        85184.0, 
+        88686.0, 
+        84967.0
+      ], 
+      "year": [
+        "2000", 
+        "2001", 
+        "2002", 
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
+      ]
+    }, 
+    "publications": {
+      "srcName": "WIPO", 
+      "range": "2003-2011", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        57231.2, 
+        56538.4, 
+        55527.3, 
+        54469.4, 
+        52910.6, 
+        51842.0, 
+        49631.9, 
+        47043.1, 
+        47105.7
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011"
+      ]
+    }, 
+    "stemGrads": {
+      "srcName": "OECD", 
+      "range": "2003-2012", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        163320.0, 
+        161891.0, 
+        162056.0, 
+        162621.0, 
+        162586.0, 
+        160993.0, 
+        159115.0, 
+        153883.0, 
+        155139.0, 
+        157040.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012"
+      ]
+    }, 
+    "researchAndDev": {
+      "srcName": "OECD", 
+      "range": "2000-2010", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        2.93, 
+        2.98, 
+        3.01, 
+        3.03, 
+        3.01, 
+        3.17, 
+        3.24, 
+        3.31, 
+        3.39, 
+        3.21, 
+        3.16
+      ], 
+      "year": [
+        "2000", 
+        "2001", 
+        "2002", 
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010"
+      ]
+    }, 
+    "ipRanking": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "gdpPerCap": {
+      "srcName": "OECD", 
+      "range": "2003-2012", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        29026.0, 
+        30592.0, 
+        31782.0, 
+        33460.0, 
+        34887.0, 
+        34410.0, 
+        33443.0, 
+        34791.0, 
+        36474.0, 
+        37488.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012"
+      ]
+    }, 
+    "corporations": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "entrepreneurship": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "vc": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "daysToStartBiz": {
+      "srcName": "WIPO", 
+      "range": "2003-2014", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        31.0, 
+        31.0, 
+        30.0, 
+        22.0, 
+        22.0, 
+        22.0, 
+        22.0, 
+        22.0, 
+        11.0, 
+        11.0, 
+        10.7, 
+        10.7
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "employment": {
+      "srcName": "OECD", 
+      "range": "2003-2013", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        5400000.0, 
+        5400000.0, 
+        5410000.0, 
+        5450000.0, 
+        5380000.0, 
+        5360000.0, 
+        5310000.0, 
+        5280000.0, 
+        5230000.0, 
+        5150000.0, 
+        5200000.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
+      ]
+    }
+  }, 
+  "wales-uk": {
+    "name": "Wales, United Kingdom", 
+    "description1": "", 
+    "dataURL": "../assets/docs/MIT_REAP_cohort_3_dashboard_data.xlsx", 
+    "imgFileName": "uk.png", 
+    "mapCssClass": "country-img-uk", 
+    "team": [
+      {
+        "sh": "entrepreneur", 
+        "name": "Dr Andrew (Drew) Nelson OBE", 
+        "img": "andrew-n.jpg", 
+        "desc": "<p>President and CEO, IQE.</p><p>Drew Nelson is President and CEO of Cardiff-based IQE, currently the largest global supplier of advanced semiconductor wafers used in devices such as mobile phones and tablets with annual revenues of more than US$ 200m.</p><p>Dr Nelson co-founded the business in 1988 after raising £2m start-up capital from Shell Ventures and has held the role of CEO since 1996 when he led a management buy-out from Shell.  </p><p>IQE has since grown to 11 operations across the UK, US, Taiwan and Singapore.  IQE products can be found in over 90% of all smartphones and in a myriad of other high technology products and systems for consumer, industrial, military and aerospace applications. </p><p>He received an OBE in 2001 for services to the Electronics Industry.</p>"
+      }, 
+      {
+        "sh": "entrepreneur", 
+        "name": "James Taylor", 
+        "img": "james-t.jpg", 
+        "desc": "<p>Superstars.</p><p>After graduating with a degree in Psychology from Cardiff University in 2005, James set up his business with a small personal investment and government support.</p><p>SuperStars are a child development organisation which works with 80,000 children a week, employing more than 250 staff.  James is Chair of the Entrepreneurship Panel for the Welsh Government and UK Director of the Year at the national IOD Awards in 2015.</p><p>He is also a Welsh Government Role Model inspiring future generations of entrepreneurs.</p>"
+      }, 
+      {
+        "sh": "university", 
+        "name": "Professor Hilary Lappin-Scott", 
+        "img": "hilary-l.jpg", 
+        "desc": "<p>Senior Pro-Vice-Chancellor.</p><p>Professor Hilary Lappin-Scott graduated from the University of Warwick (BSc and PhD) and then held Post-doctoral Fellowships in the UK and Canada before her appointment as Lecturer in Microbiology at the University of Exeter in 1990. She was awarded a Personal Chair in Microbiology in 1999. Her research group works on unravelling the complexities within microbial biofilm communities and has resulted in the publication of over 200 scientific papers in Microbial Ecology and the successful training of 50 PhD students to completion, many of whom have senior academic or senior posts in multi-national businesses. During her 20 years at the University of Exeter Prof Lappin-Scott was Head of Biosciences prior to becoming Dean of the Postgraduate Faculty and her duties included improving all aspects of the postgraduate student experience across all three campuses and establishing a prominent research environment within the newly formed Peninsula Medical School.  </p><p>Prof Lappin-Scott joined Swansea University in 2010 and has a cross cutting role on Strategic Development. Responsibilities within Strategic Development include devising the University Fee Plans, the University Strategic Plans (2012-2017); the Swansea University Employability Academy, undertaken reviews of strategy and activities of various Schools/Colleges. External Relations roles include interactions with HEFCW, Welsh Government, UUK as well as other key external stakeholders. </p><p>Professor Lappin-Scott was elected President of the Society for General Microbiology (2009-2012) and was President of the International Society for Microbial Ecology (2006-2010). She is currently a member of the International Board of the American Society of Microbiology and a Founder of the European Academy of Microbiology. She co-founded the &quot;ISME Journal&quot; with the Nature Publishing Group, internationally acknowledged to be the leading journal in Microbial Ecology. Prof Lappin-Scott is a Fellow of the American Academy of Microbiology, the Society of Biology and also of the European Academy of Microbiology.  She acts in a number of roles outside of Swansea including being a member of the REF2014 panel on Earth Systems and Environmental Sciences, a member of the review panel for the European Research Council and as an external reviewer of research for a number of leading European universities. </p><p>Professor Lappin-Scott is currently devising the Research and Innovation Strategy for 2015-2020 and leads all interactions between Swansea University and  Abertawe Bro Morgannwg University (ABMU) Health Board and was elected Vice President of the prestigious Federation of European Microbiological Society (FEMS), a scientific body which promotes microbiology at a European level.</p>"
+      }, 
+      {
+        "sh": "university", 
+        "name": "Professor Dylan Jones-Evans OBE", 
+        "img": "dylan-jones.jpg", 
+        "desc": "<p>Professor, University of the West of England.</p><p>Dylan is Professor of Entrepreneurship and Strategy at the University of the West of England and visiting professor of entrepreneurship at Turku University in Finland. He served as Vice President (UK) for the European Council of Small Business and led the Global Entrepreneurship Monitor (GEM) project in Wales for eight years.</p><p>Founder of the Wales Fast Growth 50, Professor Jones-Evans, has published over 100 academic articles within refereed journals, academic books and conferences. </p><p>He is currently a trustee of Prime Cymru and has been a special adviser to the House Of Commons Select Committee on Welsh Affairs, a member of the boards of Finance Wales, the Institute of Welsh Affairs and the IoD in Wales.  Professor Jones-Evans served as Chair of the Welsh Conservatives' Economic Commission and on the Business Advisory Panel for the Secretary of State for Wales. </p><p>Author of a weekly column in the Western Mail and Daily Post, he was awarded an OBE in 2013.</p>"
+      }, 
+      {
+        "sh": "corporate", 
+        "name": "Dan Mines", 
+        "img": "dan-mines.jpg", 
+        "desc": "<p>Business Development Manager, Admiral Group Plc.</p><p>Daniel is a Business Development Manager at Admiral Group Plc in Cardiff. A Business (BSc) and Computer Science (MSc) graduate from Cardiff University, Daniel started his career with Confused.com in Cardiff shortly after it was founded in 2002 and then went on to work for NHS Wales. He later held UK roles in financial services firms' Man Group, KGB (118.com) and Mattiolli Woods plc.</p><p>Since returning to Wales in 2008, Daniel has worked in various senior business and technology roles, again for Confused.com and Admiral Group plc, supporting their UK and international operations.</p>"
+      }, 
+      {
+        "sh": "government", 
+        "name": "Duncan Hamer", 
+        "img": "duncan-h.jpg", 
+        "desc": "<p>Deputy Director for Entrepreneurship &amp; Delivery at Welsh Government.</p><p>Duncan has been Deputy Director for Entrepreneurship &amp; Delivery at Welsh Government for the last 4 years. </p><p>He started his career as an offshore geologist working on a global portfolio for a US owned company. A year of travelling followed before he returned to work for the General Electric Corp and a SME working in multi-disciplinary roles including Sales, Logistics and Supply, something that has helped to shape his ten year career with the Welsh Development Agency and business department within the Welsh Government. </p><p>Based in Mid Wales, Duncan leads a 100+ team which includes the Entrepreneurship and Delivery function.  Main services include Business Wales (a bilingual multi access business support service encompassing business information, start-up and SME support), youth entrepreneurship activities, the Accelerated Growth Programme, Regional business engagement, digital business support services, Enterprise Zones and support to Anchor Companies.</p>"
+      }, 
+      {
+        "sh": "riskcapital", 
+        "name": "Ashley Cooper", 
+        "img": "ashley-c.jpg", 
+        "desc": "<p>Founding Partner and Director, Catalyst Growth Partners.</p><p>Ashley Cooper is a founding partner and Director of Catalyst Growth Partners (CGP) – a high growth business accelerator based in Cardiff, UK.</p><p>Having founded TES Aviation Group in 1995 he sold his final piece of equity in the business in 2012 and stepped down as CEO in 2014 when the business had achieved revenues in excess of £100m and 150 staff worldwide.</p><p>He founded CGP in 2014 which is directly invested in, and actively involved as Chairman, Director or Advisor in 15 businesses across a wide scope of business sectors including; green power solutions; neuro-communications; social gaming; cell therapy, and health &amp; wellbeing.</p>"
+      }, 
+      {
+        "sh": "champion", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "riskcapital", 
+        "name": "Professor Simon J. Gibson, OBE Dsc", 
+        "img": "simon-g.jpg", 
+        "desc": "<p>Chairman, Alacrity Foundation.</p><p>Chief Executiv, Wesley Clover Corporation.</p><p>Simon is Chairman of the Alacrity Foundation and Chief Executive of Wesley Clover Corporation.  Wesley Clover is an Investment Fund specialising in seeding technology companies.  Before joining Wesley Clover, he was co-founder, President and CEO of Ubiquity Software Corporation.</p><p>Simon is Director of Wesley Clover, IQE plc, The Celtic Manor Resort and Innovation Point.  He is Regent of Harris Manchester College at the University of Oxford and an Honorary Professor at the Swansea University School of Management and the Chair of Cardiff University's Innovation Programme Oversight Board.</p>"
+      }, 
+      {
+        "sh": "entrepreneur", 
+        "name": "Hayley Parsons OBE", 
+        "img": "hayley-p.jpg", 
+        "desc": "<p>Founder, gocompare.com</p><p>Hayley is the Founder and former CEO of Gocompare.com, a leading financial services price comparison website. The business was founded in 2006 and was the first comparison site to display product features rather than purely price listings.</p><p>The business employs around 150 people at its headquarters in Newport.  In December 2012 Gocompare.com was awarded the prestigious Investors in People (IIP) 'Gold' award.  </p><p>Hayley was the winner of the Woman in Business Award 2009 (Chamber of Commerce Business Awards), the Welsh Woman in Innovation Award 2008 and in January 2012 she was awarded an OBE for services to the economy. Hayley is a member of the Welsh Government's Entrepreneurship Panel.</p>"
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }, 
+      {
+        "sh": "", 
+        "name": "", 
+        "img": "", 
+        "desc": ""
+      }
+    ], 
+    "topClusters": [
+      "", 
+      "", 
+      ""
+    ], 
+    "topResearchInstitutions": [
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }
+    ], 
+    "regionalInnovations": [
+      "", 
+      "", 
+      ""
+    ], 
+    "businessParks": [
+      "", 
+      "", 
+      ""
+    ], 
+    "regionalEntrepreneurs": [
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }, 
+      {
+        "name": "", 
+        "img": ""
+      }
+    ], 
+    "icapPPI": [
+      "", 
+      "", 
+      "", 
+      ""
+    ], 
+    "ecapPPI": [
+      "", 
+      "", 
+      ""
+    ], 
+    "countryPopulation": {
+      "srcName": "WIPO", 
+      "range": "2003-2014", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        59647577.0, 
+        59987905.0, 
+        60401206.0, 
+        60846820.0, 
+        61322463.0, 
+        61806995.0, 
+        62276270.0, 
+        62766365.0, 
+        63258918.0, 
+        63700300.0, 
+        64106779.0, 
+        64510376.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "regionPopulation": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "giniCoeff": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "humanDevIndex": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "domesticPatent": {
+      "srcName": "OECD", 
+      "range": "2003-2011", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        147.8, 
+        144.6, 
+        132.9, 
+        163.8, 
+        193.2, 
+        140.3, 
+        157.5, 
+        134.3, 
+        1.5
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011"
+      ]
+    }, 
+    "usPatent": {
+      "srcName": "WIPO", 
+      "range": "2000-2013", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        7520.0, 
+        8359.0, 
+        8391.0, 
+        7700.0, 
+        7792.0, 
+        7962.0, 
+        8342.0, 
+        9164.0, 
+        9771.0, 
+        10568.0, 
+        11038.0, 
+        11279.0, 
+        12457.0, 
+        12807.0
+      ], 
+      "year": [
+        "2000", 
+        "2001", 
+        "2002", 
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
+      ]
+    }, 
+    "publications": {
+      "srcName": "WIPO", 
+      "range": "2003-2011", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        45232.1, 
+        45491.6, 
+        45658.1, 
+        46751.3, 
+        47139.7, 
+        46333.2, 
+        45689.0, 
+        45978.0, 
+        46035.4
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011"
+      ]
+    }, 
+    "stemGrads": {
+      "srcName": "OECD", 
+      "range": "2003-2012", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        126167.0, 
+        null, 
+        118446.0, 
+        119534.0, 
+        118776.0, 
+        121270.0, 
+        122825.0, 
+        133470.0, 
+        144133.0, 
+        147866.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012"
+      ]
+    }, 
+    "researchAndDev": {
+      "srcName": "OECD", 
+      "range": "2000-2011", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        1.79, 
+        1.77, 
+        1.78, 
+        1.73, 
+        1.67, 
+        1.7, 
+        1.72, 
+        1.75, 
+        1.75, 
+        1.82, 
+        1.77, 
+        1.78
+      ], 
+      "year": [
+        "2000", 
+        "2001", 
+        "2002", 
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011"
+      ]
+    }, 
+    "ipRanking": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "gdpPerCap": {
+      "srcName": "OECD", 
+      "range": "2003-2013", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        22138.0, 
+        23936.0, 
+        24940.0, 
+        26703.0, 
+        26915.0, 
+        26233.0, 
+        25725.0, 
+        25084.0, 
+        26008.0, 
+        26373.0, 
+        27134.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
+      ]
+    }, 
+    "corporations": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "entrepreneurship": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "vc": {
+      "srcName": "", 
+      "range": "", 
+      "srcUrl": "", 
+      "value": [], 
+      "year": []
+    }, 
+    "daysToStartBiz": {
+      "srcName": "WIPO", 
+      "range": "2003-2014", 
+      "srcUrl": "http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent", 
+      "value": [
+        13.0, 
+        13.0, 
+        12.0, 
+        10.5, 
+        10.5, 
+        10.5, 
+        10.5, 
+        11.5, 
+        11.5, 
+        11.5, 
+        11.5, 
+        6.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013", 
+        "2014"
+      ]
+    }, 
+    "employment": {
+      "srcName": "OECD", 
+      "range": "2003-2013", 
+      "srcUrl": "http://stats.oecd.org/", 
+      "value": [
+        1367700.0, 
+        1385600.0, 
+        1379800.0, 
+        1401100.0, 
+        1412600.0, 
+        1425300.0, 
+        1423400.0, 
+        1440700.0, 
+        1458800.0, 
+        1464100.0, 
+        1485200.0
+      ], 
+      "year": [
+        "2003", 
+        "2004", 
+        "2005", 
+        "2006", 
+        "2007", 
+        "2008", 
+        "2009", 
+        "2010", 
+        "2011", 
+        "2012", 
+        "2013"
       ]
     }
   }

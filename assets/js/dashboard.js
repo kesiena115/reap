@@ -1,5 +1,6 @@
 var stakeholderImgPosition = {};
 var region = {};
+var timeoutObj;
 
 function parseURLParams(url) {
     var queryStart = url.indexOf("?") + 1;
@@ -38,7 +39,7 @@ function getStakeholderFromClassnames(classnames) {
 }
 
 function highlightStakeholderInPentacle(stakeholderName) {
-    if(!stakeholderName) {
+    if(!stakeholderName || isMobileScreen()) {
         return;
     }
     var highlightPoint = stakeholderImgPosition[stakeholderName];
@@ -55,65 +56,77 @@ function hideStakeholderHighlight() {
 }
 
 function setupStakeholderImgPosition(){
-    var imgOffset = $("#pentacle").offset();
-    stakeholderImgPosition.offset = {
-        left: imgOffset.left,
-        top: imgOffset.top
-    }
-
-    var pentacleImgPostion = $("#pentacle").position();
-    var pleft = pentacleImgPostion.left;
-    var ptop = pentacleImgPostion.top;
+    var pleft = $("#pentacle").position().left;
+    var ptop = $("#pentacle").position().top;
     var pwidth = $("#pentacle").width();
     var pheight = $("#pentacle").height();
-    var horizontalSpan = pwidth/3;
-    var verticalSpan = pheight/3;
-    $("#pentacle-highlight").width(horizontalSpan + 8);
-    $("#pentacle-highlight").height(verticalSpan + 8);
+    var highlightWidth = pwidth/3;
+    var highlightHeight = pheight/3;
+    $("#pentacle-highlight").width(highlightWidth + 8);
+    $("#pentacle-highlight").height(highlightHeight + 8);
 
-    var hTop = ptop - (0.18 * verticalSpan);
+    var hTop = ptop - (0.18 * highlightHeight);
     var hLeft = pleft + (pwidth/2) - (pwidth/5);
     stakeholderImgPosition.entrepreneur = {
         top: hTop,
-        bottom: hTop + verticalSpan,
+        bottom: hTop + highlightHeight,
         left: hLeft,
-        right: hLeft + horizontalSpan
+        right: hLeft + highlightWidth
     }
     
-    hTop = ptop + verticalSpan - (0.12 * verticalSpan);
-    hLeft = pleft - (0.2 * horizontalSpan);
+    hTop = ptop + highlightHeight - (0.12 * highlightHeight);
+    hLeft = pleft - (0.2 * highlightWidth);
     stakeholderImgPosition.university = {
         top: hTop,
-        bottom: hTop + verticalSpan,
+        bottom: hTop + highlightHeight,
         left: hLeft,
-        right: hLeft + horizontalSpan
+        right: hLeft + highlightWidth
     }
 
-    hTop = ptop + verticalSpan - (0.12 * verticalSpan);
-    hLeft = pleft + (2 * horizontalSpan) + (0.05 * horizontalSpan);
+    hTop = ptop + highlightHeight - (0.12 * highlightHeight);
+    hLeft = pleft + (2 * highlightWidth) + (0.05 * highlightWidth);
     stakeholderImgPosition.riskcapital = {
         top: hTop,
-        bottom: hTop + verticalSpan,
+        bottom: hTop + highlightHeight,
         left: hLeft,
-        right: hLeft + horizontalSpan
+        right: hLeft + highlightWidth
     }
 
-    hTop = ptop + (2 * verticalSpan) + (0.05 * verticalSpan);
-    hLeft = pleft + (horizontalSpan / 12) + (0.05 * horizontalSpan);
+    hTop = ptop + (2 * highlightHeight) + (0.05 * highlightHeight);
+    hLeft = pleft + (highlightWidth / 12) + (0.05 * highlightWidth);
     stakeholderImgPosition.government = {
         top: hTop,
-        bottom: hTop + verticalSpan,
+        bottom: hTop + highlightHeight,
         left: hLeft,
-        right: hLeft + horizontalSpan
+        right: hLeft + highlightWidth
     }
 
-    hTop = ptop + (2 * verticalSpan) + (0.05 * verticalSpan);
-    hLeft = pleft + (2 * horizontalSpan) - (0.3 * horizontalSpan);
+    hTop = ptop + (2 * highlightHeight) + (0.05 * highlightHeight);
+    hLeft = pleft + (2 * highlightWidth) - (0.3 * highlightWidth);
     stakeholderImgPosition.corporate = {
         top: hTop,
-        bottom: hTop + verticalSpan,
+        bottom: hTop + highlightHeight,
         left: hLeft,
-        right: hLeft + horizontalSpan
+        right: hLeft + highlightWidth
+    }
+
+
+    if(!isMobileScreen()) {
+        /* When the user hovers over the pentacle icons, it should be highlighted only if the dashboard 
+        is viewed on a computer as opposed to a table or mobile phone */
+        $("#pentacle").mousemove(function(e){
+            var parentOffset = $(this).parent().offset();
+            var stakeholder = getStakeholderType(e.pageX - parentOffset.left, e.pageY - parentOffset.top);
+            if(stakeholder){
+                highlightStakeholderInPentacle(stakeholder); 
+                $(".dashboard-team-member").removeClass("active");
+                $(".sh-" + stakeholder).addClass("active");
+            } else {
+                hideStakeholderHighlight();
+                $(".dashboard-team-member").removeClass("active");
+                $(".team-member-img").removeClass("active");
+            }
+        });
     }
 }
 
@@ -127,6 +140,10 @@ function getStakeholderType(left, top){
         }
     }
     return "";
+}
+
+function isMobileScreen() {
+    return $(window).width() < 992;
 }
 
 function convertToChartArrayFormat(yearArray, valueArray, seriesName) {
@@ -669,6 +686,7 @@ function plotTotalEmployment() {
 function displayPrompt() {
     $("#dashboard-main-panel").hide();
     $("#dashboard-prompt").show();
+    $('#dashboard-loading-div').hide();
 }
 
 function setSelectedRegion(name) {
@@ -685,7 +703,7 @@ function setSelectedRegion(name) {
 function setFlag() {
     var regionName = region.name;
     $("#country-flag-container").append(
-        "<img alt='" + regionName + "' class='" + region.flagCssClass + "' src='../assets/images/" + region.imgFileName + "' />" +
+        "<img alt='" + regionName + "' class='" + region.mapCssClass + "' src='../assets/images/" + region.imgFileName + "' />" +
         "<img alt='Bottomcircle label' class='bottom-circle-label-0' src='../assets/images/bottomcircle_label.png'/>" +
         "<p class='country-label-spec'>" + regionName + "</p>"
         );
@@ -705,18 +723,41 @@ function addTeamMembers() {
         if(!teamObj.name) {
             continue;
         }
+        var content = '';
+        var popoverTitle = teamObj.name
+        var bottomLabel = '<p class="team-member-name">' + teamObj.name +  '</p>'; 
+        if(teamObj.img) {
+            content = '<img alt="' + teamObj.name + '" class="team-member-img sh-' + teamObj.sh + '" src="../assets/images/' + teamObj.img + '" />';
+        } else {
+            content = '<img alt="' + teamObj.name + '" class="team-member-img sh-' + teamObj.sh + '" src="../assets/images/default-profile-pic.jpg" />';
+        }
         $("#team-container").append(
             '<div class="col-sm-3 col-xs-4">' +
-                '<div id="abc" class="dashboard-team-member sh-' + teamObj.sh + ' chart-blue-reap" rel="popover"' + 
-                    'data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="' + teamObj.desc + '">' +
-                  '<p>' + teamObj.name + '</p>' +
+                '<div class="dashboard-team-member sh-' + teamObj.sh + '" rel="popover"' + 
+                    'data-toggle="popover" data-trigger="hover" data-placement="bottom" data-html="true" data-content="' + teamObj.desc + '" title="' + teamObj.name + '">' +
+                    content +
                 '</div>' +
+                bottomLabel +
             '</div>'
         );
     }
+    
+    // Ensure that the popover stays open while you mouse over.
+    // http://stackoverflow.com/a/12274958/978369
     $(".dashboard-team-member").popover({
         placement: 'bottom',
-        trigger: 'hover',
+        // trigger: 'hover',
+        offset: 10,
+        trigger: 'manual',
+        html: true,
+        template: '<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><h3 class="popover-title"></h3><div class="popover-content"><p></p></div></div></div>'
+    }).mouseenter(function(e) {
+        $(this).popover('show');
+    }).mouseleave(function(e) {
+        var ref = $(this);
+        timeoutObj = setTimeout(function(){
+            ref.popover('hide');
+        }, 50);
     });
 }
 
@@ -763,6 +804,19 @@ function addRegionalEntrepreneurs() {
     }
 }
 
+function downloadURI(uri) {
+    // source: http://stackoverflow.com/a/27284736/978369
+  // Construct the <a> element
+  var link = document.createElement("a");
+  // Construct the uri
+  link.href = uri;
+  document.body.appendChild(link);
+  link.click();
+  // Cleanup the DOM
+  document.body.removeChild(link);
+  delete link;
+}
+
 $(document).ready(function() {
     var urlParams = parseURLParams(document.URL);
     if(!urlParams || !urlParams["region"]) {
@@ -777,10 +831,9 @@ $(document).ready(function() {
     }
 
     setSelectedRegion(region.name);
-
+    setupStakeholderImgPosition();
 
 	$('[data-toggle="popover"]').popover(); // Initialize popover (bootstrap requirement) for team members' bio.
-    setupStakeholderImgPosition();
 
 	$(".dashboard-team-row").on('mouseenter', '.dashboard-team-member', function(){
 		var stakeholder = getStakeholderFromClassnames($(this).attr('class'));
@@ -791,26 +844,14 @@ $(document).ready(function() {
 		hideStakeholderHighlight();
 	});
 
-    if($(window).width() >= 992) {
-        /* When the user hovers over the pentacle icons, it should be highlighted only if the dashboard 
-        is viewed on a computer as opposed to a table or mobile phone */
-        $("#pentacle").mousemove(function(e){
-            var stakeholder = getStakeholderType(e.pageX - stakeholderImgPosition.offset.left, 
-                e.pageY - stakeholderImgPosition.offset.top);
-            if(stakeholder){
-                highlightStakeholderInPentacle(stakeholder);
-                $(".dashboard-team-member").removeClass("active");
-                $(".sh-" + stakeholder).addClass("active");
-            } else {
-                hideStakeholderHighlight();
-                $(".dashboard-team-member").removeClass("active");
-            }
-        });
-    }
+    $(window).resize(function() {
+      setupStakeholderImgPosition();
+    });
 
     $("#pentacle-highlight").mouseleave(function(){
         hideStakeholderHighlight();
         $(".dashboard-team-member").removeClass("active");
+        $(".team-member-img").removeClass("active");
     });
 
 	$("#more-reap-index-btn").click(function(){
@@ -870,8 +911,17 @@ $(document).ready(function() {
   $('.carousel').carousel({
       interval: 3000
   })
+
+    Highcharts.getOptions().exporting.buttons.contextButton.menuItems.push({
+        text: 'Download data',
+        onclick: function () {
+            downloadURI(region.dataURL);
+        }
+    });
+
+    $('#dashboard-loading-div').hide();
     
-});
+}); // end of document.ready()
 
 function addReapIndexCharts() {
     $('#chart1').highcharts({
@@ -1499,4 +1549,4 @@ function addReapIndexCharts() {
                     // pointFormat: '<b>{point.name}</b><br/>Quality ranking: <b>{point.x}</b><br/>Size ranking: <b>{point.y}</b>'
                 }
     });
-}
+} // end of addReapIndexCharts()

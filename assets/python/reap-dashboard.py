@@ -16,49 +16,104 @@ Steps
 * Save all the csv files in the same folder and then update the 'inputFolder' variable. Also update the 'outputFile'
 * update the regions array by removing the name of any missing file
 * run this script
+
+** NOTE: You must have at least 95 rows in the CSV file. Otherwise, this program will throw an error:
+ "IndexError: list index out of range". See puertorico.csv to figure out how to add empty comma-separated lines at the
+ bottom of a csv file.
 '''
-
-# The following names should correspond to the file names. Also, the json objects will have these names
-regions = ['london', 'morocco', 'moscow', 'puertorico', 'qatar', 'seoul', 'singapore', 'valencia']
-
-regionData = {
-    'london': {
-        'imgFileName':'uk.png',
-        'flagCssClass':'country-img'
-    },
-    'morocco': {
-        'imgFileName':'morocco.png',
-        'flagCssClass':'country-img-wide'
-    },
-    'moscow': {
-        'imgFileName':'russia.png',
-        'flagCssClass':'country-img-wide'
-    },
-    'puertorico': {
-        'imgFileName':'puertorico.png',
-        'flagCssClass':'country-img-pr'
-    },
-    'qatar': {
-        'imgFileName':'qatar.png',
-        'flagCssClass':'country-img-qatar'
-    },
-    'seoul': {
-        'imgFileName':'korea.png',
-        'flagCssClass':'country-img-seoul'
-    },
-    'singapore': {
-        'imgFileName':'singapore.png',
-        'flagCssClass':'country-img-wide'
-    },
-    'valencia': {
-        'imgFileName':'spain.png',
-        'flagCssClass':'country-img-spain'
-    }
-}
 inputFolder = '/Users/kesiena/Dropbox (MIT)/MIT/MartinTrustCenterRA/REAP Dashboard/csv/'
 outputFile = '/Users/kesiena/Dropbox (MIT)/Sites/reap/assets/js/dashboard-data.js'
 outputData = OrderedDict({})
 regionName = ''
+
+# The following names should correspond to the file names. Also, the json objects will have these names
+regions = ['london', 'morocco', 'moscow', 'puertorico', 'qatar', 'seoul', 'singapore', 'valencia',  # Cohort 1
+           'al-madinah-saudi', 'ashdod-israel', 'bangkok-thailand', 'beijing-china', 'santiago-chile',
+           'southwest-norway', 'tokyo-japan', 'wales-uk']  # Cohort 2
+
+regionData = {
+    'london': {
+        'imgFileName': 'uk.png',
+        'mapCssClass': 'country-img',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_2_dashboard_data.xlsx'
+    },
+    'morocco': {
+        'imgFileName': 'morocco.png',
+        'mapCssClass': 'country-img-wide',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_2_dashboard_data.xlsx'
+    },
+    'moscow': {
+        'imgFileName': 'russia.png',
+        'mapCssClass': 'country-img-wide',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_2_dashboard_data.xlsx'
+    },
+    'puertorico': {
+        'imgFileName': 'puertorico.png',
+        'mapCssClass': 'country-img-pr',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_2_dashboard_data.xlsx'
+    },
+    'qatar': {
+        'imgFileName': 'qatar.png',
+        'mapCssClass': 'country-img-qatar',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_2_dashboard_data.xlsx'
+    },
+    'seoul': {
+        'imgFileName': 'korea.png',
+        'mapCssClass': 'country-img-seoul',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_2_dashboard_data.xlsx'
+    },
+    'singapore': {
+        'imgFileName': 'singapore.png',
+        'mapCssClass': 'country-img-wide',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_2_dashboard_data.xlsx'
+    },
+    'valencia': {
+        'imgFileName': 'spain.png',
+        'mapCssClass': 'country-img-spain',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_2_dashboard_data.xlsx'
+    },
+    # Cohort 3
+    'al-madinah-saudi': {
+        'imgFileName': 'saudi.png',
+        'mapCssClass': 'country-img-saudi',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_3_dashboard_data.xlsx'
+    },
+    'ashdod-israel': {
+        'imgFileName': 'israel.png',
+        'mapCssClass': 'country-img-israel',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_3_dashboard_data.xlsx'
+    },
+    'bangkok-thailand': {
+        'imgFileName': 'thailand.png',
+        'mapCssClass': 'country-img-thailand',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_3_dashboard_data.xlsx'
+    },
+    'beijing-china': {
+        'imgFileName': 'china.png',
+        'mapCssClass': 'country-img-china',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_3_dashboard_data.xlsx'
+    },
+    'santiago-chile': {
+        'imgFileName': 'chile.png',
+        'mapCssClass': 'country-img-chile',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_3_dashboard_data.xlsx'
+    },
+    'southwest-norway': {
+        'imgFileName': 'norway.png',
+        'mapCssClass': 'country-img-norway',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_3_dashboard_data.xlsx'
+    },
+    'tokyo-japan': {
+        'imgFileName': 'japan.png',
+        'mapCssClass': 'country-img-japan',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_3_dashboard_data.xlsx'
+    },
+    'wales-uk': {
+        'imgFileName': 'uk.png',
+        'mapCssClass': 'country-img-uk',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_3_dashboard_data.xlsx'
+    }
+}
 
 def encodestring(str):
     return str.encode('utf-8', '')
@@ -96,12 +151,23 @@ def addTeam(all_rows, rowStart, rowEnd):
     label = ''
     team_count = 0
     team_list = []
+    rowNum = 1
     for i in range(rowStart, rowEnd):
+        print 'processing row:', rowNum
+        rowNum += 1
         label = all_rows[i][0]
         if label.startswith('Team member -') or 'Team member' == label:
             role = stakeholdermap[label]
-            team_list.append({'name': all_rows[i][3], 'sh': role, 'desc': all_rows[i][4]})
+            team_list.append({'name': all_rows[i][3], 'sh': role, 'desc': convertToHtmlParagraphs(all_rows[i][4]),
+                              'img': all_rows[i][5]})
     outputData[regionName]['team'] = team_list
+
+def convertToHtmlParagraphs(text):
+    result = ''
+    tokens = text.splitlines()
+    for p in tokens:
+        result += '<p>' + cgi.escape(p, quote=True) + '</p>'
+    return result
 
 def addTopClusters(all_rows, rowStart, rowEnd):
     result = []
@@ -159,7 +225,7 @@ def add_ecap_ppi(all_rows, rowStart, rowEnd):
             result.append(all_rows[i][3])
     addList('ecapPPI', result)
 
-def addChartData(dates, cols, name, src_name='', src_url=''):
+def addChartData(dates, cols, fieldName, src_name='', src_url=''):
     year_list = []
     values_list = []
     # Add all values to array
@@ -202,7 +268,7 @@ def addChartData(dates, cols, name, src_name='', src_url=''):
         data['srcName'] = src_name
         data['srcUrl'] = src_url
     global outputData
-    outputData[regionName][name] = data
+    outputData[regionName][fieldName] = data
 
 def addRegionData(region):
     global regionName
@@ -211,6 +277,7 @@ def addRegionData(region):
     dates = []
     input_file = inputFolder + regionName + '.csv'
     with open(input_file, 'rb') as f:
+        print 'Reading', input_file
         reader = csv.reader(f)
         try:
             for row in reader:
@@ -218,47 +285,76 @@ def addRegionData(region):
                 # print row
         except csv.Error as e:
             sys.exit('file %s, line %d: %s' % (input_file, reader.line_num, e))
+    print 'Finished reading', input_file
     colStart = 3;
     colEnd = 18;
     dates = rows[1][colStart:colEnd]
     createRegionDataSection()
     addKeyValuePair('name', rows[29][3])
+    print 'Added Region name'
     addRegionDescription(rows[30][3])
+    print 'Added region description'
     if regionData.has_key(regionName):
         additionalKeyValuePairs = regionData[regionName]
         for key in additionalKeyValuePairs:
             addKeyValuePair(key, additionalKeyValuePairs[key])
+        print 'Added key-value pairs'
     section2_row_start = 30
     section2_row_end = 95
     addTeam(rows, section2_row_start, section2_row_end)
+    print 'Added team'
     addTopClusters(rows, section2_row_start, section2_row_end)
+    print 'Added top clusters'
     add_top_research_institutions(rows, section2_row_start, section2_row_end)
+    print 'Added top research institutions'
     add_regional_innovations(rows, section2_row_start, section2_row_end)
+    print 'Added regional innovations'
     add_business_parks(rows, section2_row_start, section2_row_end)
+    print 'Added business parks'
     add_regional_entrepreneurs(rows, section2_row_start, section2_row_end)
+    print 'Added regional entrepreneurs'
     add_icap_ppi(rows, section2_row_start, section2_row_end)
+    print 'Added i-cap PPI'
     add_ecap_ppi(rows, section2_row_start, section2_row_end)
-
+    print 'Added e-cap PPI'
     addChartData(dates, rows[2][colStart:colEnd], 'countryPopulation', rows[2][19], rows[2][20])
+    print 'Added country population'
     addChartData(dates, rows[3][colStart:colEnd], 'regionPopulation', rows[3][19], rows[3][20])
+    print 'Added region population'
     addChartData(dates, rows[5][colStart:colEnd], 'giniCoeff', rows[5][19], rows[5][20])
+    print 'Added Gini coefficient'
     addChartData(dates, rows[4][colStart:colEnd], 'humanDevIndex', rows[4][19], rows[4][20])
+    print 'Added human dev index'
     addChartData(dates, rows[7][colStart:colEnd], 'domesticPatent', rows[7][19], rows[7][20])
+    print 'Added domestic patent'
     addChartData(dates, rows[8][colStart:colEnd], 'usPatent', rows[8][19], rows[8][20])
+    print 'Added US patent'
     addChartData(dates, rows[9][colStart:colEnd], 'publications', rows[9][19], rows[9][20])
+    print 'Added publications'
     addChartData(dates, rows[10][colStart:colEnd], 'stemGrads', rows[10][19], rows[10][20])
+    print 'Added STEM grads'
     addChartData(dates, rows[11][colStart:colEnd], 'researchAndDev', rows[11][19], rows[11][20])
+    print 'Added research and dev'
     addChartData(dates, rows[12][colStart:colEnd], 'ipRanking', rows[12][19], rows[12][20])
+    print 'Added IP ranking'
     addChartData(dates, rows[13][colStart:colEnd], 'gdpPerCap', rows[13][19], rows[13][20])
+    print 'Added GDP per capita'
     addChartData(dates, rows[14][colStart:colEnd], 'corporations', rows[14][19], rows[14][20])
+    print 'Added corporations'
     addChartData(dates, rows[15][colStart:colEnd], 'entrepreneurship', rows[15][19], rows[15][20])
+    print 'Added entrepreneurship'
     addChartData(dates, rows[16][colStart:colEnd], 'vc', rows[16][19], rows[16][20])
+    print 'Added VC data'
     addChartData(dates, rows[17][colStart:colEnd], 'daysToStartBiz', rows[17][19], rows[17][20])
+    print 'Added days to start business'
     addChartData(dates, rows[24][colStart:colEnd], 'employment', rows[24][19], rows[24][20])
+    print 'Added employment stats'
 
 if __name__ == "__main__":
     for r in regions:
+        print ('------ Start of %s ------' % r)
         addRegionData(r)
+        print ('------- End of %s -------' % r)
     print json.dumps(outputData, indent=2, ensure_ascii=False)
     with open(outputFile, "w") as text_file:
         text_file.write("var regionData = ")

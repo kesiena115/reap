@@ -166,6 +166,12 @@ body {
   margin-top: 40px;
 }
 
+@media (min-width: 768px) { /* Desktop & tablets */
+  #team-stakeholders-row .reap-index-col {
+    margin-top: 5px;
+  }
+}
+
 .reap-index-col h3 {
   margin: 0 auto;
 }
@@ -271,12 +277,12 @@ body {
 }
 
 .entrepreneur-div {
-  background-color: #428bca;
+  background-color: #fff;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 1px solid #428bca;
   margin: auto;
+  border: 1px solid #888;
 }
 
 .entrepreneur-div p {
@@ -286,13 +292,13 @@ body {
 }
 
 .entrepreneur-img {
-  width: 96%;
-  height: 96%;
+  width: 94%;
+  height: 94%;
   position: relative;
-  top: 2%;
-  left: 2%;
+  top: 3%;
+  left: 3%;
   border-radius: 50%;
-  border: 1px solid #428bca;
+  border: 1px solid #888;
 }
 
 #other-metrics-carousel {
@@ -420,17 +426,54 @@ tbody tr:nth-child(even) {
 }
 
 .dashboard-team-member {
-  width: 95%;
-  border-radius: 50px;
-  height: 90px;
-  max-width: 90px;
-  padding: 25px 5px 5px 5px;
-  text-align: center;
-  margin-bottom: 10px;
+    border-radius: 50px; 
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    margin: auto;
+    border: 1px solid #428bca;
+    background-color: white;
+}
+
+.team-member-img {
+    width: 68px;
+    height: 68px;
+    margin: 5px;
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid #428bca;
 }
 
 .dashboard-team-member:hover, .dashboard-team-member.active {
   background-color: rgb(183,20,96);
+  border-color: rgb(183,20,96);
+}
+
+.team-member-img:hover, .team-member-img.active {
+  border-color: rgb(183,20,96); 
+}
+
+#team-container p {
+  /* For the team members labels (i.e. their names) */
+  text-align: center;
+}
+
+#team-container .popover-title {
+  background-color: transparent;
+  padding-top: 14px;
+  padding-bottom: 4px;
+  font-size: 16px;
+}
+
+#team-container .popover-content {
+  padding-top: 0;
+  margin-top: 0;
+  max-height: 200px;
+  overflow: auto;
+}
+
+#team-container .popover-content p{
+  text-align: left;
 }
 
 /*.pink-reap {
@@ -445,11 +488,16 @@ tbody tr:nth-child(even) {
   background-color: rgb(183,20,96);
 }*/
 
-.dashboard-team-member p {
-  font-size: 15px;
-  color: white;
-  overflow: hidden;
+p.team-member-name {
   text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  /* Hides anything beyond 2 lines in Firefox because the line-clamp above only works in Chrome & Safari*/
+  overflow: hidden;
+  max-height: 32px;
+  font-size: 14px; 
+  line-height: 16px;
 }
 
 #reap-index-description {
@@ -531,8 +579,32 @@ input.dashboard-sm-btn:hover, input.dashboard-sm-btn:focus {
 
 .btn-group.region-selector li > a {
   color: #428bca;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 14px;
 }
+
+.btn-group.region-selector .dropdown-menu {
+  padding: 0px 0px 10px 0px;
+  max-height: 420px;
+  overflow: auto; /*Add scroll bar*/
+}
+
+/*
+The following two styles help ensure that the scrollbar is visible on mac
+*/
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+    background-color: rgba(0,0,0,.1);
+    border-bottom-right-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.3);
+}
+
+/*** end of scrollbar CSS ***/
 
 .btn-group.region-selector li > a:hover {
   background-color: #eeeeee;
@@ -547,9 +619,17 @@ input.dashboard-sm-btn:hover, input.dashboard-sm-btn:focus {
 }
 
 .btn-group.region-selector .dropdown-header {
-  font-size: 16px;
-  font-weight: bolder;
-  color: #333333;
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+    background-color: #999;
+    margin: 5px auto;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.btn-group.region-selector .dropdown-header:first-child {
+    margin-top: 1px;
 }
 
 .resource-row  .resource-header-row{
@@ -5993,7 +6073,7 @@ td.visible-print {
 	width:96%;
 	text-decoration:none;
 	color:white;
-	background-color:rgba(0,0,0,.5);
+	background-color:rgba(0,0,0,.7);
 }
 
 .article-title {
@@ -6107,41 +6187,6 @@ td.visible-print {
   text-align: left;
 }
 
-@media (max-width: 768px) { /* mobile phone */
-  .mainpic-text {
-    height:35px;
-    font-size: 25px;
-    letter-spacing: 5px;
-    padding-left: 5px;
-    position:relative;
-  }
-
-  #regional-main-text {
-    top:230px;
-    width:130px;
-  }
-
-  #entrepreneurship-main-text {
-    top:245px;
-    width:230px;
-  }
-
-  #acceleration-main-text {
-    top:260px;
-    width:180px;
-  }
-
-  #program-main-text {
-    top:275px;
-    width:120px;
-  }
-
-  #blurb-main-text {
-    font-size: 15px;
-    letter-spacing: 2px;
-  }
-}
-
 #triple-description {
 	height:400px;
 }
@@ -6218,7 +6263,7 @@ td.visible-print {
 	z-index:21;
 }
 
-.country-img-scotland, .country-img-seoul {
+.country-img-scotland, .country-img-seoul, .country-img-uk {
 	top: 20px;
 	height: 71%;
 	left:30%;
@@ -6518,6 +6563,27 @@ h2.icap {
   margin-top: 30px;
 }
 
+#dashboard-loading-div {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  border: 0;
+  padding: 0;
+  z-index: 500;
+  background-color: white;
+}
+
+#dashboard-loading-img {
+  position: relative;
+  top: 250px;
+  margin: auto;
+}
+
 .row.dashboard-row {
   margin: 0px;
   padding: 0px;
@@ -6535,6 +6601,20 @@ h2.icap {
   width: 40px;
   height: 310px;
   top: -40px;
+}
+
+#disclaimer-modal p{
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#disclaimer-modal p:last-child{
+  margin-bottom: 0px;
+}
+
+#disclaimer-modal .modal-title{
+  font-size: 22px;
+  font-weight: bolder;
 }
 
 @media (min-width: 992px) {
@@ -6576,7 +6656,7 @@ h2.icap {
 }
 
 #pentacle-highlight {
-  border: 4px solid rgb(183,20,96);
+  border: 5px solid rgb(183,20,96);
   border-radius: 50%;
   position: absolute;
   z-index: 10;
@@ -6639,6 +6719,8 @@ h3.cap-title {
 	color:white;
   padding-top:10px;
   padding-bottom:10px;
+  position: relative;
+  z-index: 600;
 }
 
 .content-row-about {
@@ -6794,4 +6876,40 @@ h5 {
 .buffered-button-row {
 	margin-bottom: 50px;
 	margin-top: 20px;
+}
+
+@media (max-width: 768px) { /* mobile phone */
+  .mainpic-text {
+    height:35px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    padding-left: 5px;
+    position:relative;
+  }
+
+  #regional-main-text {
+    top:230px;
+    width:130px;
+  }
+
+  #entrepreneurship-main-text {
+    top:245px;
+    width:230px;
+  }
+
+  #acceleration-main-text {
+    top:260px;
+    width:180px;
+  }
+
+  #program-main-text {
+    top:275px;
+    width:120px;
+  }
+
+  #blurb-main-text {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+
 }

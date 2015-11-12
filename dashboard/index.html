@@ -75,7 +75,16 @@
                   Select Region</span> <span class="fa fa-caret-down"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
-                  <!-- <li class="dropdown-header">REAP Cohort 2</li> -->
+                  <!-- <li class="dropdown-header">Cohort One</li>
+                  <li><a class="no-page-scroll" href="./?region=spain">Andalusia, Spain</a></li>
+                  <li><a class="no-page-scroll" href="./?region=finland">Finland</a></li>
+                  <li><a class="no-page-scroll" href="./?region=istanbul">Istanbul, Turkey</a></li>
+                  <li><a class="no-page-scroll" href="./?region=hangzhou">Hangzhou, China</a></li>
+                  <li><a class="no-page-scroll" href="./?region=newzealand">New Zealand</a></li>
+                  <li><a class="no-page-scroll" href="./?region=scotland">Scotland</a></li>
+                  <li><a class="no-page-scroll" href="./?region=veracruz">Veracruz, Mexico</a></li>  -->
+                  <!-- <li class="divider"></li> -->
+                  <li class="dropdown-header">Cohort Two</li>
                   <li><a class="no-page-scroll" href="./?region=london">London, United Kingdom</a></li>
                   <li><a class="no-page-scroll" href="./?region=morocco">Morocco</a></li>
                   <li><a class="no-page-scroll" href="./?region=moscow">Moscow, Russia</a></li>
@@ -85,21 +94,26 @@
                   <li><a class="no-page-scroll" href="./?region=seoul">Seoul, South Korea</a></li>
                   <li><a class="no-page-scroll" href="./?region=singapore">Singapore</a></li>
                   <li><a class="no-page-scroll" href="./?region=valencia">Valencia, Spain</a></li>
-                 <!--  <li class="divider"></li>
-                  <li class="dropdown-header">REAP Cohort 1</li>
-                  <li><a class="no-page-scroll" href="./?region=spain">Andalusia, Spain</a></li>
-                  <li><a class="no-page-scroll" href="./?region=finland">Finland</a></li>
-                  <li><a class="no-page-scroll" href="./?region=istanbul">Istanbul, Turkey</a></li>
-                  <li><a class="no-page-scroll" href="./?region=hangzhou">Hangzhou, China</a></li>
-                  <li><a class="no-page-scroll" href="./?region=newzealand">New Zealand</a></li>
-                  <li><a class="no-page-scroll" href="./?region=scotland">Scotland</a></li>
-                  <li><a class="no-page-scroll" href="./?region=veracruz">Veracruz, Mexico</a></li> -->
+                  <!-- <li class="divider"></li> -->
+                  <li class="dropdown-header">Cohort Three</li>
+                  <li><a class="no-page-scroll" href="./?region=al-madinah-saudi">Al Madinah, Saudi Arabia</a></li>
+                  <li><a class="no-page-scroll" href="./?region=ashdod-israel">Ashdod, Israel</a></li>
+                  <li><a class="no-page-scroll" href="./?region=bangkok-thailand">Bangkok, Thailand</a></li>
+                  <li><a class="no-page-scroll" href="./?region=beijing-china">Beijing, China</a></li>
+                  <li><a class="no-page-scroll" href="./?region=santiago-chile">Santiago, Chile</a></li>
+                  <li><a class="no-page-scroll" href="./?region=southwest-norway">Southwest Norway</a></li>
+                  <li><a class="no-page-scroll" href="./?region=tokyo-japan">Tokyo, Japan</a></li>
+                  <li><a class="no-page-scroll" href="./?region=wales-uk">Wales, United Kingdom</a></li>
                 </ul>
               </div> <!-- btn-group end -->
 			</div>
+      <div class="container-fluid" id="dashboard-loading-div">
+        <img alt="Loading Spinner" id="dashboard-loading-img" src="../assets/images/loading_spinner.gif" />
+      </div>
       <div class="container-fluid" id="dashboard-prompt">
         Please select a region from the menu above
       </div>
+
       <div class="container-fluid" id="dashboard-main-panel" style="display:none">
         <div class="row">
           <div class="col-md-3 col-sm-5 dashboard-column">
@@ -129,7 +143,7 @@
           <div class="col-md-9 col-sm-7 dashboard-column">
             <div class="section-anchor" id="reap-team">
             </div>
-            <div class="row dashboard-panel">
+            <div class="row dashboard-panel" id="team-stakeholders-row">
               <div class = "col-md-12">
                 <div class="row heading">
                   <ul class="nav nav-pills resource-header-nav reap-info-header">
@@ -142,11 +156,6 @@
                       <h3>Team</h3>
                     </div>
                     <div class="row dashboard-team-row" id="team-container">
-                      <!-- <div class="col-sm-3 col-xs-4">
-                        <div class="dashboard-team-member sh-entrepreneur chart-blue-reap" rel="popover" data-toggle="popover" data-trigger="hover" data-placement="bottom" data-content="Regional Manager, Callaghan Innovation.">
-                          <p>Erin Wansbrough</p>
-                        </div>
-                      </div> -->
                     </div>
                   </div>
                   <div class='col-md-6 reap-index-col' id='pentacle-column'>
@@ -172,7 +181,36 @@
                   <ul class="nav nav-pills resource-header-nav reap-info-header">
                     <li><a href="#regional-metrics"><h2>Primary Regional Metrics</h2></a></li>
                   </ul>
+                  <div class="text-center">
+                    <a id="data-disclaimer" href="#" data-toggle="modal" data-target="#disclaimer-modal">Data Disclaimer</a>
+                  </div>
                 </div>
+                <!-- Beginning of Modal block -->
+                <div id="disclaimer-modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-2" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                        <h4 class="modal-title" id="myLargeModalLabel-2">Data Disclaimer</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>
+                          The data provided are designed to help initiate and frame your thinking about data-driven decision making for your regional innovative and entrepreneurial ecosystem.
+                        </p>
+                        <p>
+                          Much of the information provided is at a national level, but represents commonly used measures to evaluate regional innovation and entrepreneurship and to provide comparisons.  The measures are not meant to be exhaustive, but rather informative examples of publicly available information to outside observers.  Where possible, the data is for your specific region.
+                        </p>
+                        <p>
+                          Not all measures will be relevant to every area, so we may emphasize different metrics based on the unique qualities of your individual region.
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal mixer image -->
+                <!-- End of Modal block -->
                 <div class="row">
                   <div class='col-md-6 reap-index-col'>
                     <div class="row carousel-row">
