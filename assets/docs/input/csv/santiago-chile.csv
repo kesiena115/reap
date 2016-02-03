@@ -1,0 +1,102 @@
+LARGE TITLE,METRIC DESCRIPTION,Additional notes e.g. units,,,,,,,,,,,,,,DATA SOURCE,,,,,,
+,,,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,Region/ Country,Name,URL,NOTE,,,,
+Population,Population in country,,15729268,15913119,16096571,16279728,16462701,16645940,16829957,17015048,17201305,17388437,17575833,17762647,Chile,World Bank - WDI,http://databank.worldbank.org/data/,,,,,
+,Population in region,,,,,,,,,,,,,,,,,,,,,
+,Human Development Index,,,,0.785,0.784,0.792,0.805,0.804,0.808,0.815,0.819,0.822,,Chile,UNDP,http://hdr.undp.org/en/content/human-development-index-hdi-table,,,,,
+,Gini Coefficient,,,,,,,,,,,,,,,,,,,,,
+REAP Index*,Work in progress,,,,,,,,,,,,,,,,,,,,,
+I-cap Performance,Number of Patents Filed/ year (domestic),,10.3,15.8,22.1,13,30.7,36.3,57,67.8,,,,,Chile,OECD,http://stats.oecd.org/,CL13: Santiago Metropolitan,,,,
+I-cap Performance,Number of Patents Filed/ year (patents filed in the US),,33,51,55,76,68,75,66,85,111,109,133,,Chile,WIPO,http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent,,,,,
+,Number of Published Papers/ year ,,1406.4,1464.1,1559.3,1630.4,1741.2,1784.7,1867.8,1867.2,1979.2,,,,Chile,World Bank - WDI,http://databank.worldbank.org/data/,,,,,
+iCapacity People,Number of STEM graduates/ year,,,15922,5690,10221,8852,9669,11881,11353,11111,12354,,,Chile,OECD,http://stats.oecd.org/,,,,,
+iCap Funding,Gross R&D Expenditure/ GDP,Gross R&D expenditure as % of GDP,,,,,0.310499996,0.374989986,0.409570009,0.417219996,,,,,Chile,World Bank - WDI,http://databank.worldbank.org/data/,,,,,
+iCapacity Policy,Intellectual Property Protection Ranking (1-7),,,,,,,,,,,,,,,,,,,,,
+iCapacity Demand,GDP/capita,"GDP per capita, US$ current PPP, current prices",12103,13226,14462,17674,19395,19100,19089,20736,23410,25517,26894,,Santiago,OECD,http://stats.oecd.org/,,,,,
+eCapacity Performance,Number of S & C corps incorporated/year,,,,,,,,,,,,,,,,,,,,,
+eCapacity People*,Total Early Stage Entrepreneurship, Percentage of 18-64 population who are either a nascent entrepreneur or owner-manager of a new business,16.87204478,,11.1465167,9.190992662,13.42777544,13.07919216,14.79,16.77,23.68879354,22.58,24.33044655,26.82503294,Chile,GEM,http://www.gemconsortium.org/data/sets,,,,,
+eCap Funding,Venture Capital Investments in Region/year,Million USD,,,,,,,,,,,,,,,,,,,,
+eCapacity Policy,Number of days to start a business,,42,42,42,40,40,40,40,34.5,7.5,5.5,5.5,5.5,Chile,World Bank - WDI,http://databank.worldbank.org/data/,,,,,
+eCapacity Demand,GDP/capita,"GDP per capita, US$ current PPP, current prices",12103,13226,14462,17674,19395,19100,19089,20736,23410,25517,26894,,Santiago,OECD,http://stats.oecd.org/,,,,,
+Custom Metrics,Number of New University Spin Offs/ year,,,,,,,,,,,,,,,,,,,,,
+,Dollars Invested in University Startups (USD)/year,,,,,,,,,,,,,,,,,,,,,
+,Doctoral Graduation Rates/year,"Graduation rates at doctorate level, As a percentage of population in the reference age cohort",,,,,,,,,,,,,,,,,,,,
+,Number of  health-related graduates/year,,,,,,,,,,,,,,,,,,,,,
+,Number of  high-tech jobs created/ year ,,,,,,,,,,,,,,,,,,,,,
+,Total Employment/ year,Person in Millions,2745003,2867336,2943966,2885684,2971450,3127244,3166411,3271023,3409579,3387237,3431557,,Chile,OECD,http://stats.oecd.org/,Region and Cities > Large Regions(TL2) > Labour Statistics > Regional Labour Force,,,,
+,Employment by foreign-owned firms/ year ,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+LARGE TITLE,METRIC DESCRIPTION,Additional Notes e.g. units,Value (e.g. name or figure),Additional Value (e.g. url or description),Additional Value (e.g. url or description),Additional Value (e.g. url or description),,,,,,,,,,,,,DATA SOURCE,,,
+,,,,,,,,,,,,,,,,,,Region/ Country,Name,URL,NOTE,
+Region Name,Name of region,,"Santiago, Chile",,,,,,,,,,,,,,,,,,,
+Region Description,Description of Current Regional Entrepreneurial Ecosystem,,,,,,,,,,,,,,,,,,,,,
+,Land Area,sq km,,,,,,,,,,,,,,,,,,,,
+Must Win Battle,"Regional MIT REAP ""Must Win Battle""",As defined by reap team,,,,,,,,,,,,,,,,,,,,
+Clusters,Top 3 industry clusters,,,,,,,,,,,,,,,,,,,,,
+Industry cluster,,,,,,,,,,,,,,,,,,,,,,
+Industry cluster,,,,,,,,,,,,,,,,,,,,,,
+Industry cluster,,,,,,,,,,,,,,,,,,,,,,
+iCapacity Infrastructure,Top 3 research institutions - include URL of logo/photos and URL of website,,,,,,,,,,,,,,,,,,,,,
+Research institute,,,,,,,,,,,,,,,,,,,,,,
+Research institute,,,,,,,,,,,,,,,,,,,,,,
+Research institute,,,,,,,,,,,,,,,,,,,,,,
+Research institute,,,,,,,,,,,,,,,,,,,,,,
+iCapacity Incentives,Celebrated Regional Innovation - include URL of logo and URL of website,"As defined by reap team- 1 from the past, 1 recent",,,,,,,,,,,,,,,,,,,,
+Regional innovation,,,,,,,,,,,,,,,,,,,,,,
+Regional innovation,,,,,,,,,,,,,,,,,,,,,,
+Regional innovation,,,,,,,,,,,,,,,,,,,,,,
+eCapacity Infrastructure,"Top 3 business parks, innovation hubs or accelerators - include URL of logo and URL of website",,,,,,,,,,,,,,,,,,,,,
+"Business park, innovation hub or accelerator",,,,,,,,,,,,,,,,,,,,,,
+"Business park, innovation hub or accelerator",,,,,,,,,,,,,,,,,,,,,,
+"Business park, innovation hub or accelerator",,,,,,,,,,,,,,,,,,,,,,
+eCapacity Incentives,Celebrated Regional Entrepreneur - include URL of photo,,,,,,,,,,,,,,,,,,,,,
+Regional Entreprenur,,,,,,,,,,,,,,,,,,,,,,
+Regional Entreprenur,,,,,,,,,,,,,,,,,,,,,,
+Regional Entreprenur,,,,,,,,,,,,,,,,,,,,,,
+PPI (Programmatic & policy interventions),,,,,,,,,,,,,,,,,,,,,,
+Name of existing icap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Name of existing icap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Name of existing icap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Name of existing icap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Name of existing ecap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Name of existing ecap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Name of existing ecap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+REAP Initiative,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+REAP Initiative,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+REAP initiative,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Team members basic info,You can add additional rows if required,,,,,,,,,,,,,,,,,,,,,
+Team member - entrepreneur,,,Aldo Labra,"CEO, Innovaxxion.Aldo Labra is Co-Founder and CEO of Innovaxxion, a company dedicated to develop high value-added solutions based on knowledge, technology, innovation and engineering of high complexity for large companies in mining and energy industries in Chile and abroad. Aldo has extensive technical and executive expertise, backed by an experience of over 15 years developing various projects and ventures in technology, telecom and innovation of high impact, both in Chile and abroad. In the mining industry, he has worked in various innovation initiatives as a new product, called ""Earless"", for process optimization in copper refinery plants. Also, with his team, developed a new platform of software, hardware and intelligent sensors in real time, called ""GO platform"", for industrial plants, and a new process for molding copper anode, called ""SDS"", in copper smelters, all of them with industrials patent in Chile and abroad. Through Innovaxxion, I received several national awards, including; Technology Contribution Award 2013, received recognition with CODELCO from the Industrial Association of II region in Chile. Innovative Company Award 2014, received recognition from the Government of Chile, through the Chilean Economic Development Agency, Corfo. Finalist of the National Award for Innovation, Avonni for 2014 and nominated for 2015, in the category of mining. Also, Aldo is director of the association of providers of world class mining in Chile, called Minnovex, and under the national mining program, a public-private instance in which is building the route mining plan to 2035, is a member of the technical committee of smart mining and intelligent industry. Aldo is Industrial Engineer, with a minor in mechanics, from the Universidad Tecnica Federico Santa Maria, holds an MBA from Getulio Vargas Foundation in Brazil, and a Master of Innovation at the University Adolfo Ibanez in Chile.",aldo-l.jpg,,,,,,,,,,,,,,,,,
+Team member - university,,,Felipe Alvarez,"Vice Dean, Faculty of Physical and Mathematical Sciences, University of Chile.Felipe received a Mathematical Engineering degree from Universidad de Chile (1996) and obtained a joint PhD in Applied Mathematics and Mechanics from U. de Chile and Universite de Montpellier in France (1998). He has published about 30 papers in international journals and he has been the advisor of 4 PhD students. Felipe co-founded the Laboratory on Geomechanics of the Center of Mathematical Modeling (CMM) of U. de Chile. This initiative is mainly supported by contracts with CODELCO (Chile's state-owned copper company), to develop new computational tools in order to assist the design for rockmass instability in underground mining operations. This is conducted in collaboration with experts on several disciplines like Physics and Geology as well as Civil, Mechanical and Mining Engineering. Felipe served as Chair of the Mathematical Engineering Department of U. de Chile (2006-2008), and He was the Scientific Director of the Millennium Science Institute on Complex Engineering Systems (2007-2010), an interdisciplinary center for applied R&D that gathers about 30 tenured researchers in the areas of Operations Research, Transportation, Energy and Information Technologies. Member of the Global Young Academy, since 2010 he is serving as the Vice Dean of the Faculty of Physical and Mathematical Sciences of U. de Chile, host of the first Engineering and Sciences School of Chile. Currently he is the Director of the New Engineering for 2030 project of U. de Chile with the aim of fostering a university-based innovation and entrepreneurship ecosystem.",felipe-a.jpg,,Champion,,,,,,,,,,,,,,,
+Team member - corporate,,,Pilar Parada,"CEO, Biosigma.I'm Biochemist from Universidad de Chile, with a Ph.D. in Molecular Biology from the Universidad Autonoma de Madrid. I also have a Diploma in Strategy and Innovation awarded by the Massachusetts Institute of Technology (MIT) and a Diploma in Company Management in Pontificia Universidad Catolica de Chile.I have worked for 10 years in a biotechnology company for mining called BioSigma. I'm author of 7 scientific publications and 16 patent applications filed in Chile and abroad, 7 of them already granted. My main motivation has been working and leading multidisciplinary teams of people who contribute to innovative projects that deliver simple solutions to complex problems.",pilar-p.jpg,,,,,,,,,,,,,,,,,
+Team member - government,,,Gonzalo Rivas,"President, National Council for Innovation and Development.Mr. Gonzalo Rivas (53 years old) is currently the chairman of the Chilean National Innovation Council (www.cnid.cl). He is an economist from Universidad de Chile and holds a Master Degree in economics from Universite Catholique de Louvain-la-Neuve (Belgium).He has been CEO of Corfo (Chilean development agency) (1997-2003) and Chief of the Science and Technology division at the Inter American Development Bank (2007-2008). He has also been consultant for governments and multilateral institutions (World Bank, IADB, UNDP, IDRC, ILO, ECLAC) on productive development and innovation public policies and has published numerous articles on those subjects.",gonzalo-r.jpg,,,,,,,,,,,,,,,,,
+Team member - risk capital,,,Nils Galdo,"General Partner, Inversur Capital.Nils is General Partner of InverSur Capital (IS Capital), operator of the Amerigo Chile Early Stage and Growth Fund. He has over a decade of experience in venture capital and entrepreneurship. Prior to joining the IS Capital team, he co-founded and led Chile Global Angels, currently the most active angel investor network in the south cone of LATAM, linked to the Fundacion Chile. Nils worked at Endeavor Chile from 2002 to 2007 and currently participates at some entrepreneurial ventures (i.e. CinePapaya) and some institutional initiatives (i.e. Open Beauchef). He also has been Mentor at The Founder Institute, The Development Centre of Lithium and served as a Member of the Executive Council at InnovaChile, Corfo.Mr. Galdo holds an MSc in International Business from Göteborgs Universitet, Sweden and a B.A. in Economics from Wittenberg University. He has also obtained diplomas on Innovation Management and Venture capital fund administration from Universidad Adolfo Ibanez in Chile.",nils-g.jpg,,,,,,,,,,,,,,,,,
+Team member - champion,,,,,,,,,,,,,,,,,,,,,,
+Team member - corporate,,,Mauro Valdes,"President, National Mining Program.Mauro Valdes Raczynski is Chairman of the National Mining Program ""Alta Ley"", a public-private platform for open innovation supported by Corfo, the Mining Ministry and Fundacion Chile. The purpose of the program is gathering the mining industry, suppliers, academy and public sector with the aim of contributing to the expansion of a sustainable and inclusive mining activity in Chile while pursuing the transit of Chile to a knowledge based economy. He is also a professor at the Universidad Catolica's master in law and a consultant in various topics.He was born in Chile in 1968, he is an Attorney at Law. He studied in Santiago, Chile and in Hamburg, Germany. He studied Law at the Universidad Catolica de Chile, obtained his Master's Degree in the University of Hamburg, Germany. He has worked as a lawyer in Germany (Schoen, Nolte, Finkelnburg & Clemm Law Firm), and in Chile (CSAV in 1995, and Larrain y Asociados Law Firm, 1995 – 1999); he was appointed as the first General Manager of the Chilean Mining Council (May 1999 until June 2002) which is the industry association of the large scale mining in Chile; from July 2002 to September 2005 he was VicePresident of Corporate and External Affairs of Minera Escondida Ltda. From October 2005 to August 2010 he was VicePresident of Corporate Affairs and Communications of BHP Billiton Base Metals. From August 2010 until June 2014 he was the Executive Director of Television Nacional de Chile – TVN, the national public broadcaster.Also, he has been member of the board of several institutions like Fundacion Minera Escondida, Anatel, Fundacion Chile and Accion RSE, and Chairman of the Fundacion Educacional Escondida – CEIM.",mauro-v.jpg,,,,,,,,,,,,,,,,,
+Team member - government,,,Claudio Maggi,"Head of the Competitiveness Department Division, CORFO.Mr. Claudio Maggi (53 years old) is currently the head of the competitiveness department of the Chilean Economic Development Agency (CORFO). He is a civil industrial engineer from Universidad de Chile and holds a Master Degree in industrial engineering and economics from the same university. Mr. Maggi has extensive experience in the government sector, particularly at CORFO in multiple periods between 1994 and 2015, and as a consultant at the Inter American Development Bank between 2003-2013. He has also been consultant for governments and multilateral institutions (ECLAC, OECD) on productive development and competitiveness.",claudio-m.jpg,,,,,,,,,,,,,,,,,
+Team member - government,,,Jaime Alvarez,"Technology Area Leader, National Council for Innovation and Development.Electronics Engineer (Control Systems) from Universidad Tecnica Federico Santa Maria and MBA  from Universidad Adolfo Ibanez. Extensive experience in operations management in the retail and information technology industries, and since 2012, focused on strategy under uncertainty for public policies in science, technology and innovation. Wide business insight for designing, implementing and controlling processes and projects aimed at service level improvement, cost reduction and strategic alignment. Team leader and developer, analytic, creative and results-oriented.",jaime-a.jpg,,,,,,,,,,,,,,,,,
+Team member - corporate,,,Marcos Kulka,"CEO, Fundacion Chile.CEO of Fundacion Chile, a unique public private partnership fostering innovations that has created more than 80 companies in a variety of technologies. Its partners are the Chilean State and BHP Billiton. A do-tank, pioneering new sectors through a portfolio of capacity building initiatives, demonstrative companies and enabling technology services. Known best for jumpstarting the farmed salmon industry in the 1980s, launching Chile's first venture capital funds in the 1990s, moving into renewable energies in the 2000s, and currently unleashing the high potential of the mining sector. Marcos is currently a board member of Micomo (ICT for mining) and Austral Capital (Venture Capital Fund). Member of the investment committee of Inversur (VC Fund of Telefonica). He was also the chairman of Oleotop (food company), a board member of Axon Axis (IT company sold to Equifax), Alimtec (Pharma company sold to Bayer) and Biofrutales (Biotech in fruit). Marcos was a board member of The Chilean Innovation Forum, member of the Open Innovation Forum at Berkeley and member of the Institute for Large Scale Innovation. MBA from UC Berkeley and an undergraduate in Business and Economics from the Pontificia Universidad Catolica de Chile.  Awarded from Endeavor and Diario Financiero in 2007 among the 50 most successful youngsters in Chile.",marcos-k.jpg,,,,,,,,,,,,,,,,,
+Team member,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+Notes,,,,,,,,,,,,,,,,,,,,,,
+This data will be displayed on the REAP website on your regional dashboard. ,,,,,,,,,,,,,,,,,,,,,,
+"In column U, please indicate whether the data refers to the region or the country",,,,,,,,,,,,,,,,,,,,,,
+Please fil in the missing data to the best of your ability with region-specifc data (not country data) - save as a separate file and save in dropbox folder,,,,,,,,,,,,,,,,,,,,,,
+Please provide data for as many years as possible,,,,,,,,,,,,,,,,,,,,,,
+REAP Index to be calculated by MIT team (data to be collected is outlined in the following tab- REAP Index) ,,,,,,,,,,,,,,,,,,,,,,
+Please include a data source in columns V and W,,,,,,,,,,,,,,,,,,,,,,
+Please add custom metrics that you would like to display on the dashboard to rows 20+,,,,,,,,,,,,,,,,,,,,,,
+Please note that the 2nd section below the red line requires subjective information that should be produced by the REAP team,,,,,,,,,,,,,,,,,,,,,,
+Rename this spreadsheet as your region name,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,

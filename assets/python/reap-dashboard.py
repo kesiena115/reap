@@ -7,31 +7,73 @@ import re
 
 '''
 Steps
-* Open the spreadsheet with Excel
-* Highlight the numbers in the spreasheet and convert them to excel "General" type. This will remove all commas from
+* Open the spreadsheets with Excel
+* Highlight the numbers in the spreadsheet and convert them to excel "General" type. This will remove all commas from
     large numbers
 * Save the sheets with the right names e.g. london.csv, singapore.csv, etc. See the regions array below for
     all the names. Also ensure you save the spreadsheet as "Windows Comma Separated" csv. Some other csv formats
     won't work well with this script.
-* Save all the csv files in the same folder and then update the 'inputFolder' variable. Also update the 'outputFile'
-* update the regions array by removing the name of any missing file
+* Save all the csv files in the same folder and then update the 'inputFolder' and the 'outputFile' variables below
+    if you need to. This script should run correctly if you don't modify those variables and if you have all the 
+    required files.
 * run this script
-
-** NOTE: You must have at least 95 rows in the CSV file. Otherwise, this program will throw an error:
- "IndexError: list index out of range". See puertorico.csv to figure out how to add empty comma-separated lines at the
- bottom of a csv file.
 '''
-inputFolder = '/Users/kesiena/Dropbox (MIT)/MIT/MartinTrustCenterRA/REAP Dashboard/csv/'
-outputFile = '/Users/kesiena/Dropbox (MIT)/Sites/reap/assets/js/dashboard-data.js'
+inputFolder = '../docs/input/csv/'
+outputFile = '../js/dashboard-data.js'
 outputData = OrderedDict({})
 regionName = ''
 
 # The following names should correspond to the file names. Also, the json objects will have these names
-regions = ['london', 'morocco', 'moscow', 'puertorico', 'qatar', 'seoul', 'singapore', 'valencia',  # Cohort 1
-           'al-madinah-saudi', 'ashdod-israel', 'bangkok-thailand', 'beijing-china', 'santiago-chile',
-           'southwest-norway', 'tokyo-japan', 'wales-uk']  # Cohort 2
+regions = [
+    # Cohort 1
+    'andalusia-spain', 'finland', 'hangzhou-china', 'istanbul-turkey', 'new-zealand', 'scotland', 'veracruz-mexico',
+    # Cohort 2
+    'london', 'morocco', 'moscow', 'puertorico', 'qatar', 'seoul', 'singapore', 'valencia',
+    # Cohort 3
+    'al-madinah-saudi', 'ashdod-israel', 'bangkok-thailand', 'beijing-china', 'santiago-chile',
+    'southwest-norway', 'tokyo-japan', 'wales-uk']
+
+cohort1 = ['andalusia-spain', 'finland', 'hangzhou-china', 'istanbul-turkey', 'new-zealand', 'scotland',
+           'veracruz-mexico']
 
 regionData = {
+    # Cohort 1
+    'andalusia-spain': {
+        'imgFileName': 'spain.png',
+        'mapCssClass': 'country-img-spain',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_1_dashboard_data.xlsx'
+    },
+    'finland': {
+        'imgFileName': 'finland.png',
+        'mapCssClass': 'country-img',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_1_dashboard_data.xlsx'
+    },
+    'hangzhou-china': {
+        'imgFileName': 'china.png',
+        'mapCssClass': 'country-img-china',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_1_dashboard_data.xlsx'
+    },
+    'istanbul-turkey': {
+        'imgFileName': 'turkey.png',
+        'mapCssClass': 'country-img-turkey',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_1_dashboard_data.xlsx'
+    },
+    'new-zealand': {
+        'imgFileName': 'newzealand.png',
+        'mapCssClass': 'country-img-nz',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_1_dashboard_data.xlsx'
+    },
+    'scotland': {
+        'imgFileName': 'scotland.png',
+        'mapCssClass': 'country-img-scotland',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_1_dashboard_data.xlsx'
+    },
+    'veracruz-mexico': {
+        'imgFileName': 'mexico.png',
+        'mapCssClass': 'country-img-wide',
+        'dataURL': '../assets/docs/MIT_REAP_cohort_1_dashboard_data.xlsx'
+    },
+    # Cohort 2
     'london': {
         'imgFileName': 'uk.png',
         'mapCssClass': 'country-img',
@@ -147,7 +189,7 @@ stakeholdermap = {
     'Team member': ''
 }
 
-def addTeam(all_rows, rowStart, rowEnd):
+def addTeam(all_rows, rowStart, rowEnd, escape_html=True):
     label = ''
     team_count = 0
     team_list = []
@@ -158,15 +200,17 @@ def addTeam(all_rows, rowStart, rowEnd):
         label = all_rows[i][0]
         if label.startswith('Team member -') or 'Team member' == label:
             role = stakeholdermap[label]
-            team_list.append({'name': all_rows[i][3], 'sh': role, 'desc': convertToHtmlParagraphs(all_rows[i][4]),
+            team_list.append({'name': all_rows[i][3],
+                              'sh': role,
+                              'desc': convertToHtmlParagraphs(all_rows[i][4], escape_html),
                               'img': all_rows[i][5]})
     outputData[regionName]['team'] = team_list
 
-def convertToHtmlParagraphs(text):
+def convertToHtmlParagraphs(text, escape_html=True):
     result = ''
     tokens = text.splitlines()
     for p in tokens:
-        result += '<p>' + cgi.escape(p, quote=True) + '</p>'
+        result += '<p>' + cgi.escape(p, quote=escape_html) + '</p>'
     return result
 
 def addTopClusters(all_rows, rowStart, rowEnd):
@@ -286,8 +330,16 @@ def addRegionData(region):
         except csv.Error as e:
             sys.exit('file %s, line %d: %s' % (input_file, reader.line_num, e))
     print 'Finished reading', input_file
-    colStart = 3;
-    colEnd = 18;
+    colStart = -1;
+    colEnd = -1;
+    date_row_headings = rows[1]
+    for i in range(len(date_row_headings)):
+        if date_row_headings[i].startswith('20') and colStart == -1:
+            colStart = i
+        if colStart != -1 and not date_row_headings[i].startswith('20'):
+            colEnd = i -1
+            break
+
     dates = rows[1][colStart:colEnd]
     createRegionDataSection()
     addKeyValuePair('name', rows[29][3])
@@ -300,8 +352,11 @@ def addRegionData(region):
             addKeyValuePair(key, additionalKeyValuePairs[key])
         print 'Added key-value pairs'
     section2_row_start = 30
-    section2_row_end = 95
-    addTeam(rows, section2_row_start, section2_row_end)
+    section2_row_end = len(rows) - 1
+    escape_html = True
+    if region in cohort1:
+        escape_html = False
+    addTeam(rows, section2_row_start, section2_row_end, escape_html)
     print 'Added team'
     addTopClusters(rows, section2_row_start, section2_row_end)
     print 'Added top clusters'
@@ -317,37 +372,37 @@ def addRegionData(region):
     print 'Added i-cap PPI'
     add_ecap_ppi(rows, section2_row_start, section2_row_end)
     print 'Added e-cap PPI'
-    addChartData(dates, rows[2][colStart:colEnd], 'countryPopulation', rows[2][19], rows[2][20])
+    addChartData(dates, rows[2][colStart:colEnd], 'countryPopulation', rows[2][colEnd + 2], rows[2][colEnd + 3])
     print 'Added country population'
-    addChartData(dates, rows[3][colStart:colEnd], 'regionPopulation', rows[3][19], rows[3][20])
+    addChartData(dates, rows[3][colStart:colEnd], 'regionPopulation', rows[3][colEnd + 2], rows[3][colEnd + 3])
     print 'Added region population'
-    addChartData(dates, rows[5][colStart:colEnd], 'giniCoeff', rows[5][19], rows[5][20])
+    addChartData(dates, rows[5][colStart:colEnd], 'giniCoeff', rows[5][colEnd + 2], rows[5][colEnd + 3])
     print 'Added Gini coefficient'
-    addChartData(dates, rows[4][colStart:colEnd], 'humanDevIndex', rows[4][19], rows[4][20])
+    addChartData(dates, rows[4][colStart:colEnd], 'humanDevIndex', rows[4][colEnd + 2], rows[4][colEnd + 3])
     print 'Added human dev index'
-    addChartData(dates, rows[7][colStart:colEnd], 'domesticPatent', rows[7][19], rows[7][20])
+    addChartData(dates, rows[7][colStart:colEnd], 'domesticPatent', rows[7][colEnd + 2], rows[7][colEnd + 3])
     print 'Added domestic patent'
-    addChartData(dates, rows[8][colStart:colEnd], 'usPatent', rows[8][19], rows[8][20])
+    addChartData(dates, rows[8][colStart:colEnd], 'usPatent', rows[8][colEnd + 2], rows[8][colEnd + 3])
     print 'Added US patent'
-    addChartData(dates, rows[9][colStart:colEnd], 'publications', rows[9][19], rows[9][20])
+    addChartData(dates, rows[9][colStart:colEnd], 'publications', rows[9][colEnd + 2], rows[9][colEnd + 3])
     print 'Added publications'
-    addChartData(dates, rows[10][colStart:colEnd], 'stemGrads', rows[10][19], rows[10][20])
+    addChartData(dates, rows[10][colStart:colEnd], 'stemGrads', rows[10][colEnd + 2], rows[10][colEnd + 3])
     print 'Added STEM grads'
-    addChartData(dates, rows[11][colStart:colEnd], 'researchAndDev', rows[11][19], rows[11][20])
+    addChartData(dates, rows[11][colStart:colEnd], 'researchAndDev', rows[11][colEnd + 2], rows[11][colEnd + 3])
     print 'Added research and dev'
-    addChartData(dates, rows[12][colStart:colEnd], 'ipRanking', rows[12][19], rows[12][20])
+    addChartData(dates, rows[12][colStart:colEnd], 'ipRanking', rows[12][colEnd + 2], rows[12][colEnd + 3])
     print 'Added IP ranking'
-    addChartData(dates, rows[13][colStart:colEnd], 'gdpPerCap', rows[13][19], rows[13][20])
+    addChartData(dates, rows[13][colStart:colEnd], 'gdpPerCap', rows[13][colEnd + 2], rows[13][colEnd + 3])
     print 'Added GDP per capita'
-    addChartData(dates, rows[14][colStart:colEnd], 'corporations', rows[14][19], rows[14][20])
+    addChartData(dates, rows[14][colStart:colEnd], 'corporations', rows[14][colEnd + 2], rows[14][colEnd + 3])
     print 'Added corporations'
-    addChartData(dates, rows[15][colStart:colEnd], 'entrepreneurship', rows[15][19], rows[15][20])
+    addChartData(dates, rows[15][colStart:colEnd], 'entrepreneurship', rows[15][colEnd + 2], rows[15][colEnd + 3])
     print 'Added entrepreneurship'
-    addChartData(dates, rows[16][colStart:colEnd], 'vc', rows[16][19], rows[16][20])
+    addChartData(dates, rows[16][colStart:colEnd], 'vc', rows[16][colEnd + 2], rows[16][colEnd + 3])
     print 'Added VC data'
-    addChartData(dates, rows[17][colStart:colEnd], 'daysToStartBiz', rows[17][19], rows[17][20])
+    addChartData(dates, rows[17][colStart:colEnd], 'daysToStartBiz', rows[17][colEnd + 2], rows[17][colEnd + 3])
     print 'Added days to start business'
-    addChartData(dates, rows[24][colStart:colEnd], 'employment', rows[24][19], rows[24][20])
+    addChartData(dates, rows[24][colStart:colEnd], 'employment', rows[24][colEnd + 2], rows[24][colEnd + 3])
     print 'Added employment stats'
 
 if __name__ == "__main__":

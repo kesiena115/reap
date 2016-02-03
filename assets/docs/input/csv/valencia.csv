@@ -1,0 +1,112 @@
+LARGE TITLE,METRIC DESCRIPTION,Additional notes e.g. units,,,,,,,,,,,,,,,,,DATA SOURCE,,,
+,,,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,Region/ Country,Name,URL,NOTE,
+Population,Population in country,,40263216,40756001,41431558,42187645,42921895,43653155,44397319,45226803,45954106,46362946,46576897,46742697,46773055,46617825,,Spain,World Bank - WDI,http://databank.worldbank.org/data/,"Select Databases > World Development Indicators > then for the ""Series"", select ""Population, total""",
+,Population in region,,,,,,,,,,,,,,,,, Valencia ,,,,
+,Human Development Index,,0.847,,,,,0.865,0.87,0.874,0.878,0.88,0.884,0.885,0.885,,,Spain,UNDP,http://hdr.undp.org/en/content/human-development-index-hdi-table,,
+,Gini Coefficient,,,,,,0.331,0.323,0.315,0.306,0.315,0.329,0.334,0.344,,,,Spain,OECD,http://stats.oecd.org/,"stats.oecd.org > country statistical profiles > Gini (at disposable income, post taxes and transfers)",
+REAP Index*,Work in progress,,,,,,,,,,,,,,,,,,,,,
+I-cap Performance,Number of Patents Filed/ year (domestic),,77.7,90.4,111,102.2,130.2,138.9,115.8,152.8,156.2,171.8,186.8,,,,,Valencia,OECD,http://stats.oecd.org/,stats.oecd.org > Regions and Cities > Large Regions (TL2) > Innovation Indicators > Patents applications in regions > (then configure table filters),PCT Patent Applications by Valencia applicants
+I-cap Performance,Number of Patents Filed/ year (patents filed in the US),,549,601,564,606,696,701,844,966,1216,1162,1422,1501,1641,1707,,Spain,WIPO,http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent,"Indicator = ""Total patent applications"", Report type = ""Count by filing office and applicant's origin"" > select results with office = USA",
+,Number of Published Papers/ year ,,14796.2,15324,16062.3,16100.8,17027,18345.7,19526.8,20993.3,21509.1,21547.5,22019.9,22910.3,,,,Spain,World Bank - WDI,http://databank.worldbank.org/data/,"Select Databases > World Development Indicators > then for the ""Series"", select ""Scientific and technical journal articles""",
+iCapacity People,Number of STEM graduates/ year,,49268,53585,53097,54296,52441,49890,49674,48677,51309,54698,58973,71742,69085,,,Spain,OECD,http://stats.oecd.org/,"stats.oecd.org > Education and Training > Education and Skills > Graduates by field of education > (add up ""Science"" and ""Engineering, manufacturing and construction"")",
+iCap Funding,Gross R&D Expenditure/ GDP,Gross R&D expenditure as % of GDP,0.71,0.67,0.77,0.82,0.89,0.97,0.94,0.94,1.04,1.11,1.08,1.05,,,,,OECD,http://stats.oecd.org/,stats.oecd.org > Large Regions (TL2) > Innovation Indicators > R&D expenditure by sector,
+iCapacity Policy,Intellectual Property Protection Ranking (1-7),,,5.32392,4.48528,4.72727,4.54317,4.37495,4.85122,5.03478,4.49861,4.15158,4.32492,3.88928,,,,Spain,GCI,http://reports.weforum.org/global-competitiveness-report-2014-2015/rankings/,,
+iCapacity Demand,GDP/capita,"GDP per capita, US$ current PPP, current prices",23980.34,24664.22,24994.94,25109.27,25340.01,25411.59,26122.79,26920.77,27582.47,25654.75,25134.92,,,,,Valencia,OECD,http://stats.oecd.org/,stats.oecd.org > Regions and Cities > Metropolitan areas > GDP from cities,
+eCapacity Performance,Number of S & C corps incorporated/year,,,,,,,,,,,,,,,,,,,,,
+eCapacity People*,Total Early Stage Entrepreneurship, Percentage of 18-64 population who are either a nascent entrepreneur or owner-manager of a new business,,6.3,4.6,6.6,5.1,5.7,7.3,7.6,7,5.1,4.3,5.8,5.7,5.2,,Spain,GEM,http://www.gemconsortium.org/data,,
+eCap Funding,Venture Capital Investments in Region/year,Million USD,,,,459.7,843.41,229.47,1580.26,136.94,455.75,23.24,585.63,88.38,74.9,,,Spain,VentureXpert,www.venturexpert.com/,,
+eCapacity Policy,Number of days to start a business,,,,,138,137,70,60,60,61,61,52,29,29,23,13,Spain,World Bank - WDI,http://databank.worldbank.org/data/,"Select Databases > World Development Indicators > then for the ""Series"", select ""Time required to start a business days)""",
+eCapacity Demand,GDP/capita,"GDP per capita, US$ current PPP, current prices",23980.34,24664.22,24994.94,25109.27,25340.01,25411.59,26122.79,26920.77,27582.47,25654.75,25134.92,,,,,Valencia,OECD,http://stats.oecd.org/,stats.oecd.org > Regions and Cities > Metropolitan areas > GDP from cities,
+Custom Metrics,Number of New University Spin Offs/ year,,,,,,,,,,,,,,,,,,,,,
+,Dollars Invested in University Startups (USD)/year,,,,,,,,,,,,,,,,,,,,,
+,Doctoral Graduation Rates/year,"Graduation rates at doctorate level, As a percentage of population in the reference age cohort",,,,,,,,,,,,,,,,,,,,
+,Number of  health-related graduates/year,,,,,,,,,,,,,,,,,,,,,
+,Number of  high-tech jobs created/ year ,,,,,,,,,,,,,,,,,,,,,
+,Total Employment/ year,Person in Millions,0.613,0.625,0.653,0.681,0.708,0.736,0.765,0.789,0.817,0.824,0.806,0.796,0.778,,,Valencia,OECD,http://stats.oecd.org/,stats.oecd.org > Region and Cities > Metropolitan areas > Labour market > Labour force,
+,Employment by foreign-owned firms/ year ,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+LARGE TITLE,METRIC DESCRIPTION,Additional Notes e.g. units,Value (e.g. name or figure),Additional Value (e.g. url or description),Additional Value (e.g. url or description),Additional Value (e.g. url or description),,,,,,,,,,,,,DATA SOURCE,,,
+,,,,,,,,,,,,,,,,,,Region/ Country,Name,URL,NOTE,
+Region Name,Name of region,,"Valencia, Spain",,,,,,,,,,,,,,,,,,,
+Region Description,Description of Current Regional Entrepreneurial Ecosystem,,"Valencia Region is an autonomous community of Spain and is located in the Middle East of the country. It is the fourth most populated region after Andalusia, Catalonia and Madrid with more than 5.1 million inhabitants.As in all Spain, there was a significant economic growth in the years immediately following 2004, until the Spanish financial crisis. In 2014, the Valencia Country generated 9.39% of the Spanish GDP. The GDP of the Valencia Region in 2014 was 99.345 millions of euros, and the total GDP of Spain was 1.058.469 millions of euros. GDP per capita in the region was &euro;20.073 and in Spain was &euro;22.780.The unemployment rate was over 24% in March 2015, and even greater among women. The typical Valencian business is a small-to-medium-sized company, mainly family-owned and operated, although there are some multinationals.In addition to tourism, the Valencia Region has significant exports, and it ranks second in this topic among the Spanish autonomous communities, constituting 12% of the national total. Major exports include agricultural products, ceramic tiles, marble products and cars (Ford has an assembly line in Almussafes), which make the port of Valencia one the busiest in Europe.",,,,,,,,,,,,,,,,,,,
+,Land Area,sq km,,,,,,,,,,,,,,,,,,,,
+Must Win Battle,"Regional MIT REAP ""Must Win Battle""",As defined by reap team,,,,,,,,,,,,,,,,,,,,
+Clusters,Top 3 industry clusters,,,,,,,,,,,,,,,,,,,,,
+Industry cluster,,,Tourism,,,,,,,,,,,,,,,,,,,
+Industry cluster,,,Agro-food,,,,,,,,,,,,,,,,,,,
+Industry cluster,,,Automotive and transport,,,,,,,,,,,,,,,,,,,
+iCapacity Infrastructure,Top 3 research institutions - include URL of logo/photos and URL of website,,,,,,,,,,,,,,,,,,,,,
+Research institute,,,Universitat Politecnica de Valencia,valencia-politec1.jpg,,,,,,,,,,,,,,,,,,
+Research institute,,,Universitat de Valencia,valencia-uni2.jpg,,,,,,,,,,,,,,,,,,
+Research institute,,,Centro de Investigacion Principe Felipe,felipe-logo.jpg,,,,,,,,,,,,,,,,,,
+Research institute,,,AINIA - Instituto Tecnologico Agroalimentario,ainia.jpg,,,,,,,,,,,,,,,,,,
+iCapacity Incentives,Celebrated Regional Innovation - include URL of logo and URL of website,"As defined by reap team- 1 from the past, 1 recent",,,,,,,,,,,,,,,,,,,,
+Regional innovation,,,,,,,,,,,,,,,,,,,,,,
+Regional innovation,,,,,,,,,,,,,,,,,,,,,,
+Regional innovation,,,,,,,,,,,,,,,,,,,,,,
+eCapacity Infrastructure,"Top 3 business parks, innovation hubs or accelerators - include URL of logo and URL of website",,,,,,,,,,,,,,,,,,,,,
+"Business park, innovation hub or accelerator",,,Ciudad Politecnica de la Innovacion,,,,,,,,,,,,,,,,,,,
+"Business park, innovation hub or accelerator",,,Lanzadera,,,,,,,,,,,,,,,,,,,
+"Business park, innovation hub or accelerator",,,Parc Cientific Universitat de Valencia,,,,,,,,,,,,,,,,,,,
+eCapacity Incentives,Celebrated Regional Entrepreneur - include URL of photo,,,,,,,,,,,,,,,,,,,,,
+Regional Entreprenur,,,Juan Roig,juan-roig.jpg,,,,,,,,,,,,,,,,,,
+Regional Entreprenur,,,Inaki Berenguer,inaki.jpg,,,,,,,,,,,,,,,,,,
+Regional Entreprenur,,,Francisco Pon,francisco-pon.jpg,,,,,,,,,,,,,,,,,,
+PPI (Programmatic & policy interventions),,,,,,,,,,,,,,,,,,,,,,
+Name of existing icap PPI in region,,"Name of initative, description/success story  + website link ","Research and Innovation Smart, Specialisation Strategy of the Comunitat Valenciana",,,,,,,,,,,,,,,,,,,
+Name of existing icap PPI in region,,"Name of initative, description/success story  + website link ",Industrial Policy Strategy,,,,,,,,,,,,,,,,,,,
+Name of existing icap PPI in region,,,Enterprise Europe Network Node,,,,,,,,,,,,,,,,,,,
+Name of existing icap PPI in region,,,Regional Operational Programme of ERDF (European Development Fund) (Draft),,,,,,,,,,,,,,,,,,,
+Name of existing ecap PPI in region,,"Name of initative, description/success story  + website link ",Entrepreneur's Day - Dia de la Persona Emprendedora,,,,,,,,,,,,,,,,,,,
+Name of existing ecap PPI in region,,"Name of initative, description/success story  + website link ",StartUPV,,,,,,,,,,,,,,,,,,,
+Name of existing ecap PPI in region,,"Name of initative, description/success story  + website link ",HackForGood,,,,,,,,,,,,,,,,,,,
+REAP Initiative,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+REAP Initiative,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+REAP initiative,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Team members basic info,You can add additional rows if required,,,,,,,,,,,,,,,,,,,,,
+Team member - entrepreneur,,,Francisco Sanchis,,,,,,,,,,,,,,,,,,,
+Team member - entrepreneur,,,Jose Ma Gimeno,,,,,,,,,,,,,,,,,,,
+Team member - university,,,Francisco Mora,"Rector, UPVDegree of Telecommunication Engineering (MSc) at Universidad Politecnica de Cataluna (Barcelona, Spain). During the years 1993-1997 the European Laboratory for Particle Physics (CERN) grants a scholarship ""Doctoral Student"" for his PhD in the group of electronics and data acquisition for the experiment ATLAS (Geneva, Switzerland). (1997) PhD in Electronic Engineering at Universitat Politecnica de Valencia (Valencia, Spain). In 2003 obtained the post of Full-Professor of Electronic Engineering at Universitat Politecnica de Valencia (UPV). His research work is developed in the Institute for Molecular Imaging Instrumentation (Joint Center UPV-CSIC-CIEMAT), in the area of  data acquisition systems for high energy physics and electronic instrumentation for medical physics. Professor Mora maintain collaborations with CERN as an associate scientist, by participating in the NEXT and RD51 projects. Since June 2013 Professor Mora is Rector of the UPV.",francisco-mora.jpg,,,,,,,,,,,,,,,,,
+Team member - university,,,"Jose E Capilla Roma, PhD","Vice-rector for Research, Innovation and Transfer, UPVFull-professor of Applied Physics; research interest focused on Water and Environmental Eng. Graduated in Civil Engineering at UPV, and PhD degree in Water Resources Eng. He has occupied different academic and management positions at the School of Civil Eng. (UPV), Vice-rector for Academic Affairs (UPV) and Director of the Research Institute of Water and Environmental Eng. (UPV). Also General Director of Universities and Higher Education in the Valencian Region (2004-07). Visiting Scientist at Stanford University (1995 & 1998) and Visiting Professor at Ralph Parsons Lab (Massachusetts Institute of Technology, 1999-2000). In 1999 he was awarded with Premio de Tecnologia de Residuos (Research Award in Waste Technologies) in the Valencian Region.Active researcher with a record of more than fifty research and technological projects (regional, national and international; private and public sectors), more than sixty peer reviewed publications and close to two hundred communications in National/International Meetings.",jose-capilla.jpg,,,,,,,,,,,,,,,,,
+Team member - corporate,,,Ignacio Alberola,"CEO, La EspanolaStudied a degree in Economics at Valencia University and an MBA in ESADE (Barcelona) in 1997/1999. He has worked in different positions in LA ESPANOLA Group, a family company founded on 1941, involved in the Food Industry. Today CEO of LA ESPANOLA Group, which is involved the development of new technological products: Biotech concept and  X-ray inspection systems on  Security and Defense Markets. Based in Alcoy, LA ESPANOLA Group is leading a project to develop innovative entrepreneurship called Alcoinnova.",ignacio-alberola.jpg,,,,,,,,,,,,,,,,,
+Team member - government,,,Vicent Marza,,,,,,,,,,,,,,,,,,,
+Team member - risk capital,,,Enrique Martinavarro,,,,,,,,,,,,,,,,,,,
+Team member - government,,,Monica Cucarella,"General Director for InternationalisationMonica Cucarella Perez is graduated in Business Sciencies and Economics from the University of Valencia. She also has a Master in Foreign Trade. She has held various responsibilities as financial consultant and private banking managing director in London, in financial entities as Royal Bank of Canada, Barclays Private Banking, Morgan Stanley Dean Witter and Banco Bilbao Vizcaya. Currently, Monica Cucarella is General Director of Internationalisation of the Regional Ministry of Economy, Industry, Commerce and Employment in the Valencian Government. ",,,,,,,,,,,,,,,,,,
+Team member - government,,,Rafael Climent,"Regional Minister for EconomyRafael Climent was born in Muro (Valencia) in 1960, graduated in classical philology at the University of Valencia. He was a teacher of greek language at Jose Segrelles college.He was the major of Muro during sixten years.Currently he is the Regional Minister for Economy, Industry, Comerce and Employment at the Valencian Government as well as Merber of Parliament (MPs) for the Valencian Goverment.",,,,,,,,,,,,,,,,,,
+Team member - champion,,,,,Rafael Climent (but he's already been added in govt section),,,,,,,,,,,,,,,,,
+Team member,,,Roberto Parras,,,,,,,,,,,,,,,,,,,
+Team member,,,Juan Vicente Climent,,,,,,,,,,,,,,,,,,,
+Team member,,,Javier Minguez,,,,,,,,,,,,,,,,,,,
+Team member,,,Israel Griol,,,,,,,,,,,,,,,,,,,
+Team member,,,Alicia Martinez,Description,,,,,,,,,,,,,,,,,,
+Team member,,,Alicia Martinez,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+Legend,,,,,,,,,,,,,,,,,,,,,,
+1,To be completed by REAP team (mostly publicly available data),,,,,,,,,,,,,,,,,,,,,
+3,May not be public,,,,,,,,,,,,,,,,,,,,,
+*,Public data,,,,,,,,,,,,,,,,,,,,,
+To be completed at workshop 3,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+Notes,,,,,,,,,,,,,,,,,,,,,,
+This data will be displayed on the REAP website on your regional dashboard. ,,,,,,,,,,,,,,,,,,,,,,
+"In column U, please indicate whether the data refers to the region or the country",,,,,,,,,,,,,,,,,,,,,,
+Please fil in the missing data to the best of your ability with region-specifc data (not country data) - save as a separate file and save in dropbox folder,,,,,,,,,,,,,,,,,,,,,,
+Please provide data for as many years as possible,,,,,,,,,,,,,,,,,,,,,,
+REAP Index to be calculated by MIT team (data to be collected is outlined in the following tab- REAP Index) ,,,,,,,,,,,,,,,,,,,,,,
+Please include a data source in columns V and W,,,,,,,,,,,,,,,,,,,,,,
+Please add custom metrics that you would like to display on the dashboard to rows 20+,,,,,,,,,,,,,,,,,,,,,,
+Please note that the 2nd section below the red line requires subjective information that should be produced by the REAP team,,,,,,,,,,,,,,,,,,,,,,
+Rename this spreadsheet as your region name,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,

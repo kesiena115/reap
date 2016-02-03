@@ -1,0 +1,104 @@
+LARGE TITLE,METRIC DESCRIPTION,Additional notes e.g. units,,,,,,,,,,,,,,DATA SOURCE,,,,,,
+,,,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,Region/ Country,Name,URL,NOTE,,,,
+Population,Population in country,,59647577,59987905,60401206,60846820,61322463,61806995,62276270,62766365,63258918,63700300,64106779,64510376,UK,World Bank - WDI,http://databank.worldbank.org/data/,,,,,
+,Population in region,,,,,,,,,,,,,,,,,,,,,
+,Human Development Index,,,,0.888,0.885,0.887,0.89,0.89,0.895,0.891,0.89,0.892,,UK,UNDP,http://hdr.undp.org/en/content/human-development-index-hdi-table,,,,,
+,Gini Coefficient,,,,,,,,,,,,,,,,,,,,,
+REAP Index*,Work in progress,,,,,,,,,,,,,,,,,,,,,
+I-cap Performance,Number of Patents Filed/ year (domestic),,147.8,144.6,132.9,163.8,193.2,140.3,157.5,134.3,1.5,,,,Wales,OECD,http://stats.oecd.org/,UKL: Wales,,,,
+I-cap Performance,Number of Patents Filed/ year (patents filed in the US),,7700,7792,7962,8342,9164,9771,10568,11038,11279,12457,12807,,UK,WIPO,http://ipstats.wipo.int/ipstatv2/index.htm?tab=patent,,,,,
+,Number of Published Papers/ year ,,45232.1,45491.6,45658.1,46751.3,47139.7,46333.2,45689,45978,46035.4,,,,UK,World Bank - WDI,http://databank.worldbank.org/data/,,,,,
+iCapacity People,Number of STEM graduates/ year,,126167,,118446,119534,118776,121270,122825,133470,144133,147866,,,UK,OECD,http://stats.oecd.org/,,,,,
+iCap Funding,Gross R&D Expenditure/ GDP,Gross R&D expenditure as % of GDP,1.73,1.67,1.7,1.72,1.75,1.75,1.82,1.77,1.78,,,,UK,OECD,http://stats.oecd.org/,,,,,
+iCapacity Policy,Intellectual Property Protection Ranking (1-7),,,,,,,,,,,,,,,,,,,,,
+iCapacity Demand,GDP/capita,"GDP per capita, US$ current PPP, current prices",22138,23936,24940,26703,26915,26233,25725,25084,26008,26373,27134,,Wales,OECD,http://stats.oecd.org/,,,,,
+eCapacity Performance,Number of S & C corps incorporated/year,,,,,,,,,,,,,,,,,,,,,
+eCapacity People*,Total Early Stage Entrepreneurship, Percentage of 18-64 population who are either a nascent entrepreneur or owner-manager of a new business,6.4,6.2,6.2,5.8,5.5,5.9,5.7,6.4,7.3,9,7.1,,UK,GEM,http://www.gemconsortium.org/data/sets,,,,,
+eCap Funding,Venture Capital Investments in Region/year,Million USD,1384.58,4847.31,2971.36,8729.1,5194.05,12383.89,3814.76,6975.08,1560.63,4284.89,322.92,415.83,UK,VentureXpert,www.venturexpert.com/,,,,,
+eCapacity Policy,Number of days to start a business,,13,13,12,10.5,10.5,10.5,10.5,11.5,11.5,11.5,11.5,6,UK,World Bank - WDI,http://databank.worldbank.org/data/,,,,,
+eCapacity Demand,GDP/capita,"GDP per capita, US$ current PPP, current prices",22138,23936,24940,26703,26915,26233,25725,25084,26008,26373,27134,,Wales,OECD,http://stats.oecd.org/,,,,,
+Custom Metrics,Number of New University Spin Offs/ year,,,,,,,,,,,,,,,,,,,,,
+,Dollars Invested in University Startups (USD)/year,,,,,,,,,,,,,,,,,,,,,
+,Doctoral Graduation Rates/year,"Graduation rates at doctorate level, As a percentage of population in the reference age cohort",,,,,,,,,,,,,,,,,,,,
+,Number of  health-related graduates/year,,,,,,,,,,,,,,,,,,,,,
+,Number of  high-tech jobs created/ year ,,,,,,,,,,,,,,,,,,,,,
+,Total Employment/ year,Person in Millions,1367700,1385600,1379800,1401100,1412600,1425300,1423400,1440700,1458800,1464100,1485200,,Wales,OECD,http://stats.oecd.org/,Region and Cities > Large Regions(TL2) > Labour Statistics > Regional Labour Force,,,,
+,Employment by foreign-owned firms/ year ,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+LARGE TITLE,METRIC DESCRIPTION,Additional Notes e.g. units,Value (e.g. name or figure),Additional Value (e.g. url or description),Additional Value (e.g. url or description),Additional Value (e.g. url or description),,,,,,,,,,,,,DATA SOURCE,,,
+,,,,,,,,,,,,,,,,,,Region/ Country,Name,URL,NOTE,
+Region Name,Name of region,,"Wales, United Kingdom",,,,,,,,,,,,,,,,,,,
+Region Description,Description of Current Regional Entrepreneurial Ecosystem,,,,,,,,,,,,,,,,,,,,,
+,Land Area,sq km,,,,,,,,,,,,,,,,,,,,
+Must Win Battle,"Regional MIT REAP ""Must Win Battle""",As defined by reap team,,,,,,,,,,,,,,,,,,,,
+Clusters,Top 3 industry clusters,,,,,,,,,,,,,,,,,,,,,
+Industry cluster,,,,,,,,,,,,,,,,,,,,,,
+Industry cluster,,,,,,,,,,,,,,,,,,,,,,
+Industry cluster,,,,,,,,,,,,,,,,,,,,,,
+iCapacity Infrastructure,Top 3 research institutions - include URL of logo/photos and URL of website,,,,,,,,,,,,,,,,,,,,,
+Research institute,,,,,,,,,,,,,,,,,,,,,,
+Research institute,,,,,,,,,,,,,,,,,,,,,,
+Research institute,,,,,,,,,,,,,,,,,,,,,,
+Research institute,,,,,,,,,,,,,,,,,,,,,,
+iCapacity Incentives,Celebrated Regional Innovation - include URL of logo and URL of website,"As defined by reap team- 1 from the past, 1 recent",,,,,,,,,,,,,,,,,,,,
+Regional innovation,,,,,,,,,,,,,,,,,,,,,,
+Regional innovation,,,,,,,,,,,,,,,,,,,,,,
+Regional innovation,,,,,,,,,,,,,,,,,,,,,,
+eCapacity Infrastructure,"Top 3 business parks, innovation hubs or accelerators - include URL of logo and URL of website",,,,,,,,,,,,,,,,,,,,,
+"Business park, innovation hub or accelerator",,,,,,,,,,,,,,,,,,,,,,
+"Business park, innovation hub or accelerator",,,,,,,,,,,,,,,,,,,,,,
+"Business park, innovation hub or accelerator",,,,,,,,,,,,,,,,,,,,,,
+eCapacity Incentives,Celebrated Regional Entrepreneur - include URL of photo,,,,,,,,,,,,,,,,,,,,,
+Regional Entreprenur,,,,,,,,,,,,,,,,,,,,,,
+Regional Entreprenur,,,,,,,,,,,,,,,,,,,,,,
+Regional Entreprenur,,,,,,,,,,,,,,,,,,,,,,
+PPI (Programmatic & policy interventions),,,,,,,,,,,,,,,,,,,,,,
+Name of existing icap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Name of existing icap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Name of existing icap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Name of existing icap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Name of existing ecap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Name of existing ecap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Name of existing ecap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+REAP Initiative,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+REAP Initiative,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+REAP initiative,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Team members basic info,You can add additional rows if required,,,,,,,,,,,,,,,,,,,,,
+Team member - entrepreneur,,,Dr Andrew (Drew) Nelson OBE,"President and CEO, IQE.Drew Nelson is President and CEO of Cardiff-based IQE, currently the largest global supplier of advanced semiconductor wafers used in devices such as mobile phones and tablets with annual revenues of more than US$ 200m.Dr Nelson co-founded the business in 1988 after raising £2m start-up capital from Shell Ventures and has held the role of CEO since 1996 when he led a management buy-out from Shell.  IQE has since grown to 11 operations across the UK, US, Taiwan and Singapore.  IQE products can be found in over 90% of all smartphones and in a myriad of other high technology products and systems for consumer, industrial, military and aerospace applications. He received an OBE in 2001 for services to the Electronics Industry.",andrew-n.jpg,,,,,,,,,,,,,,,,,
+Team member - entrepreneur,,,James Taylor,"Superstars.After graduating with a degree in Psychology from Cardiff University in 2005, James set up his business with a small personal investment and government support.SuperStars are a child development organisation which works with 80,000 children a week, employing more than 250 staff.  James is Chair of the Entrepreneurship Panel for the Welsh Government and UK Director of the Year at the national IOD Awards in 2015.He is also a Welsh Government Role Model inspiring future generations of entrepreneurs.",james-t.jpg,,,,,,,,,,,,,,,,,
+Team member - university,,,Professor Hilary Lappin-Scott,"Senior Pro-Vice-Chancellor.Professor Hilary Lappin-Scott graduated from the University of Warwick (BSc and PhD) and then held Post-doctoral Fellowships in the UK and Canada before her appointment as Lecturer in Microbiology at the University of Exeter in 1990. She was awarded a Personal Chair in Microbiology in 1999. Her research group works on unravelling the complexities within microbial biofilm communities and has resulted in the publication of over 200 scientific papers in Microbial Ecology and the successful training of 50 PhD students to completion, many of whom have senior academic or senior posts in multi-national businesses. During her 20 years at the University of Exeter Prof Lappin-Scott was Head of Biosciences prior to becoming Dean of the Postgraduate Faculty and her duties included improving all aspects of the postgraduate student experience across all three campuses and establishing a prominent research environment within the newly formed Peninsula Medical School.  Prof Lappin-Scott joined Swansea University in 2010 and has a cross cutting role on Strategic Development. Responsibilities within Strategic Development include devising the University Fee Plans, the University Strategic Plans (2012-2017); the Swansea University Employability Academy, undertaken reviews of strategy and activities of various Schools/Colleges. External Relations roles include interactions with HEFCW, Welsh Government, UUK as well as other key external stakeholders. Professor Lappin-Scott was elected President of the Society for General Microbiology (2009-2012) and was President of the International Society for Microbial Ecology (2006-2010). She is currently a member of the International Board of the American Society of Microbiology and a Founder of the European Academy of Microbiology. She co-founded the ""ISME Journal"" with the Nature Publishing Group, internationally acknowledged to be the leading journal in Microbial Ecology. Prof Lappin-Scott is a Fellow of the American Academy of Microbiology, the Society of Biology and also of the European Academy of Microbiology.  She acts in a number of roles outside of Swansea including being a member of the REF2014 panel on Earth Systems and Environmental Sciences, a member of the review panel for the European Research Council and as an external reviewer of research for a number of leading European universities. Professor Lappin-Scott is currently devising the Research and Innovation Strategy for 2015-2020 and leads all interactions between Swansea University and  Abertawe Bro Morgannwg University (ABMU) Health Board and was elected Vice President of the prestigious Federation of European Microbiological Society (FEMS), a scientific body which promotes microbiology at a European level.",hilary-l.jpg,,,,,,,,,,,,,,,,,
+Team member - university,,,Professor Dylan Jones-Evans OBE,"Professor, University of the West of England.Dylan is Professor of Entrepreneurship and Strategy at the University of the West of England and visiting professor of entrepreneurship at Turku University in Finland. He served as Vice President (UK) for the European Council of Small Business and led the Global Entrepreneurship Monitor (GEM) project in Wales for eight years.Founder of the Wales Fast Growth 50, Professor Jones-Evans, has published over 100 academic articles within refereed journals, academic books and conferences. He is currently a trustee of Prime Cymru and has been a special adviser to the House Of Commons Select Committee on Welsh Affairs, a member of the boards of Finance Wales, the Institute of Welsh Affairs and the IoD in Wales.  Professor Jones-Evans served as Chair of the Welsh Conservatives' Economic Commission and on the Business Advisory Panel for the Secretary of State for Wales. Author of a weekly column in the Western Mail and Daily Post, he was awarded an OBE in 2013.",dylan-jones.jpg,,,,,,,,,,,,,,,,,
+Team member - corporate,,,Dan Mines,"Business Development Manager, Admiral Group Plc.Daniel is a Business Development Manager at Admiral Group Plc in Cardiff. A Business (BSc) and Computer Science (MSc) graduate from Cardiff University, Daniel started his career with Confused.com in Cardiff shortly after it was founded in 2002 and then went on to work for NHS Wales. He later held UK roles in financial services firms' Man Group, KGB (118.com) and Mattiolli Woods plc.Since returning to Wales in 2008, Daniel has worked in various senior business and technology roles, again for Confused.com and Admiral Group plc, supporting their UK and international operations.",dan-mines.jpg,,,,,,,,,,,,,,,,,
+Team member - government,,,Duncan Hamer,"Deputy Director for Entrepreneurship & Delivery at Welsh Government.Duncan has been Deputy Director for Entrepreneurship & Delivery at Welsh Government for the last 4 years. He started his career as an offshore geologist working on a global portfolio for a US owned company. A year of travelling followed before he returned to work for the General Electric Corp and a SME working in multi-disciplinary roles including Sales, Logistics and Supply, something that has helped to shape his ten year career with the Welsh Development Agency and business department within the Welsh Government. Based in Mid Wales, Duncan leads a 100+ team which includes the Entrepreneurship and Delivery function.  Main services include Business Wales (a bilingual multi access business support service encompassing business information, start-up and SME support), youth entrepreneurship activities, the Accelerated Growth Programme, Regional business engagement, digital business support services, Enterprise Zones and support to Anchor Companies.",duncan-h.jpg,,,,,,,,,,,,,,,,,
+Team member - risk capital,,,Ashley Cooper,"Founding Partner and Director, Catalyst Growth Partners.Ashley Cooper is a founding partner and Director of Catalyst Growth Partners (CGP) – a high growth business accelerator based in Cardiff, UK.Having founded TES Aviation Group in 1995 he sold his final piece of equity in the business in 2012 and stepped down as CEO in 2014 when the business had achieved revenues in excess of £100m and 150 staff worldwide.He founded CGP in 2014 which is directly invested in, and actively involved as Chairman, Director or Advisor in 15 businesses across a wide scope of business sectors including; green power solutions; neuro-communications; social gaming; cell therapy, and health & wellbeing.",ashley-c.jpg,,,,,,,,,,,,,,,,,
+Team member - champion,,,,,,,,,,,,,,,,,,,,,,
+Team member - risk capital,,,"Professor Simon J. Gibson, OBE Dsc","Chairman, Alacrity Foundation.Chief Executiv, Wesley Clover Corporation.Simon is Chairman of the Alacrity Foundation and Chief Executive of Wesley Clover Corporation.  Wesley Clover is an Investment Fund specialising in seeding technology companies.  Before joining Wesley Clover, he was co-founder, President and CEO of Ubiquity Software Corporation.Simon is Director of Wesley Clover, IQE plc, The Celtic Manor Resort and Innovation Point.  He is Regent of Harris Manchester College at the University of Oxford and an Honorary Professor at the Swansea University School of Management and the Chair of Cardiff University's Innovation Programme Oversight Board.",simon-g.jpg,,,,,,,,,,,,,,,,,
+Team member - entrepreneur,,,Hayley Parsons OBE,"Founder, gocompare.comHayley is the Founder and former CEO of Gocompare.com, a leading financial services price comparison website. The business was founded in 2006 and was the first comparison site to display product features rather than purely price listings.The business employs around 150 people at its headquarters in Newport.  In December 2012 Gocompare.com was awarded the prestigious Investors in People (IIP) 'Gold' award.  Hayley was the winner of the Woman in Business Award 2009 (Chamber of Commerce Business Awards), the Welsh Woman in Innovation Award 2008 and in January 2012 she was awarded an OBE for services to the economy. Hayley is a member of the Welsh Government's Entrepreneurship Panel.",hayley-p.jpg,,,,,,,,,,,,,,,,,
+Team member,,,,,,,,,,,,,,,,,,,,,,
+Team member,,,,,,,,,,,,,,,,,,,,,,
+Team member,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+Notes,,,,,,,,,,,,,,,,,,,,,,
+This data will be displayed on the REAP website on your regional dashboard. ,,,,,,,,,,,,,,,,,,,,,,
+"In column U, please indicate whether the data refers to the region or the country",,,,,,,,,,,,,,,,,,,,,,
+Please fil in the missing data to the best of your ability with region-specifc data (not country data) - save as a separate file and save in dropbox folder,,,,,,,,,,,,,,,,,,,,,,
+Please provide data for as many years as possible,,,,,,,,,,,,,,,,,,,,,,
+REAP Index to be calculated by MIT team (data to be collected is outlined in the following tab- REAP Index) ,,,,,,,,,,,,,,,,,,,,,,
+Please include a data source in columns V and W,,,,,,,,,,,,,,,,,,,,,,
+Please add custom metrics that you would like to display on the dashboard to rows 20+,,,,,,,,,,,,,,,,,,,,,,
+Please note that the 2nd section below the red line requires subjective information that should be produced by the REAP team,,,,,,,,,,,,,,,,,,,,,,
+Rename this spreadsheet as your region name,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,

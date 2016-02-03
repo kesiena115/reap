@@ -415,6 +415,7 @@ tbody tr:nth-child(even) {
 
 .dashboard-team-row > div {
   padding: 0;
+  height: 120px;
 }
 
 .dashboard-team-row .popover {
@@ -621,15 +622,19 @@ The following two styles help ensure that the scrollbar is visible on mac
 .btn-group.region-selector .dropdown-header {
     font-size: 16px;
     font-weight: bolder;
-    color: white;
-    background-color: #999;
-    margin: 5px auto;
+    color: #555;
+    background-color: white;
+    margin: 10px auto 5px auto;
     padding-top: 2px;
     padding-bottom: 2px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    cursor: default;
 }
 
 .btn-group.region-selector .dropdown-header:first-child {
     margin-top: 1px;
+    border-top: none;
 }
 
 .resource-row  .resource-header-row{
@@ -693,6 +698,7 @@ The following two styles help ensure that the scrollbar is visible on mac
   top:10px;
   z-index: 10;
   left:10px;
+  border-radius: 100%;
 }
 
 .name-label {
@@ -6564,16 +6570,21 @@ h2.icap {
 }
 
 #dashboard-home .partner-country-index-2 {
-  background-color: #999;
+  background-color: rgb(37,132,184);
 }
 
 #dashboard-home .partner-country-index-2:hover {
-  background-color: rgb(37,132,184);
+  background-color: rgb(183,20,96);
 }
 
 #dashboard-home a {
   text-decoration: none;
 }
+
+ #dashboard-home h2 {
+  color: rgb(47,43,40);
+  font-weight: bold;
+ }
 
 #dashboard-loading-div {
   height: 100%;

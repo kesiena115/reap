@@ -1,0 +1,103 @@
+LARGE TITLE,METRIC DESCRIPTION,Additional notes e.g. units,,,,,,,,,,,,,,,,,DATA SOURCE,,,
+,,,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,Region/ Country,Name,URL,NOTE,
+Population,Population in country,,3810605,3818774,3823701,3826095,3826878,3821362,3805214,3782995,3760866,3740410,3721208,3686580,3651545,3615086,,Puerto Rico,World Bank - WDI,http://databank.worldbank.org/data/,"Select Databases > World Development Indicators > then for the ""Series"", select ""Population, total""",
+,Population in region,,3810605,3818774,3823701,3826095,3826878,3821362,3805214,3782995,3760866,3740410,3721208,3686580,3651545,3615086,,Puerto Rico,World Bank - WDI,http://databank.worldbank.org/data/,"Select Databases > World Development Indicators > then for the ""Series"", select ""Population, total""",
+,Human Development Index,,,,,,,,,,,,,,,,,Puerto Rico,UNDP,http://hdr.undp.org/en/content/human-development-index-hdi-table,,
+,Gini Coefficient,,,,,,,,,,,,,,,,,Puerto Rico,,,,
+REAP Index*,Work in progress,,,,,,,,,,,,,,,,,,,,,
+I-cap Performance,Number of Patents Filed/ year (domestic),,,11,16,27,19,26,25,28,14,14,24,27,34,19,38,Puerto Rico,USPTO,http://www.uspto.gov/web/offices/ac/ido/oeip/taf/cst_utl.htm,,
+I-cap Performance,Number of Patents Filed/ year (patents filed in the US),,,11,16,27,19,26,25,28,14,14,24,27,34,19,38,Puerto Rico,USPTO,http://www.uspto.gov/web/offices/ac/ido/oeip/taf/cst_utl.htm,,
+,Number of Published Papers/ year ,,,,,,,,,,,,,,,,,Puerto Rico,World Bank - WDI,http://databank.worldbank.org/data/,"Select Databases > World Development Indicators > then for the ""Series"", select ""Scientific and technical journal articles""",
+iCapacity People,Number of STEM graduates/ year,,,,,,,,,,,,,,,,,Puerto Rico,,,,
+iCap Funding,Gross R&D Expenditure/ GDP,Gross R&D expenditure as % of GDP,,,,,,,,,,,,,,,,Puerto Rico,,,,
+iCapacity Policy,Intellectual Property Protection Ranking (1-7),,,,,,,,,5.51939,5.71615,5.87961,5.76124,5.15544,,,,Puerto Rico,GCI,http://reports.weforum.org/global-competitiveness-report-2014-2015/rankings/,,
+iCapacity Demand,GDP/capita,"GDP per capita, US$ current PPP, current prices",16192.1296,18243.71775,18972.76853,19820.20729,20988.99233,21959.32271,22935.94115,23664.88235,24898.33884,25768.73605,26437.99218,27220.80356,27681.63558,28528.9971,,Puerto Rico,World Bank - WDI,http://databank.worldbank.org/data/,"Select Databases > World Development Indicators > then for the ""Series"", select ""GDP per capita (current US$)""",
+eCapacity Performance,Number of S & C corps incorporated/year,,,,,,,,,,,,,,,,,,,,,
+eCapacity People*,Total Early Stage Entrepreneurship, Percentage of 18-64 population who are either a nascent entrepreneur or owner-manager of a new business,,,,,,,,,,,,,,,,,,,,
+eCap Funding,Venture Capital Investments in Region/year,Million USD,,,,7441.5,12729.27,18240.25,56670.18,94781.17,26129.98,31275,26257.77,24499.08,11922.9,40646.56,1580.32,USA,VentureXpert,www.venturexpert.com/,,
+eCapacity Policy,Number of days to start a business,,,,,7,7,7,7,7,7,7,7,6,6,6,6,Puerto Rico,World Bank - WDI,http://databank.worldbank.org/data/,"Select Databases > World Development Indicators > then for the ""Series"", select ""Time required to start a business days)""",
+eCapacity Demand,GDP/capita,"GDP per capita, US$ current PPP, current prices",16192.1296,18243.71775,18972.76853,19820.20729,20988.99233,21959.32271,22935.94115,23664.88235,24898.33884,25768.73605,26437.99218,27220.80356,27681.63558,28528.9971,,Puerto Rico,World Bank - WDI,http://databank.worldbank.org/data/,"Select Databases > World Development Indicators > then for the ""Series"", select ""GDP per capita (current US$)""",
+Custom Metrics,Number of New University Spin Offs/ year,,,,,,,,,,,,,,,,,,,,,
+,Dollars Invested in University Startups (USD)/year,,,,,,,,,,,,,,,,,,,,,
+,Doctoral Graduation Rates/year,"Graduation rates at doctorate level, As a percentage of population in the reference age cohort",,,,,,,,,,,,,,,,,,,,
+,Number of  health-related graduates/year,,,,,,,,,,,,,,,,,,,,,
+,Number of  high-tech jobs created/ year ,,,,,,,,,,,,,,,,,,,,,
+,Total Employment/ year,Person in Millions,,,,,,,,,,,,,,,,Puerto Rico,,,,
+,Employment by foreign-owned firms/ year ,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+LARGE TITLE,METRIC DESCRIPTION,Additional Notes e.g. units,Value (e.g. name or figure),Additional Value (e.g. url or description),Additional Value (e.g. url or description),Additional Value (e.g. url or description),,,,,,,,,,,,,DATA SOURCE,,,
+,,,,,,,,,,,,,,,,,,Region/ Country,Name,URL,NOTE,
+Region Name,Name of region,,Puerto Rico,,,,,,,,,,,,,,,,,,,
+Region Description,Description of Current Regional Entrepreneurial Ecosystem,,,,,,,,,,,,,,,,,,,,,
+,Land Area,sq km,8870,,,,,,,,,,,,,,,Puerto Rico,World Bank - WDI,http://databank.worldbank.org/data/,"Select Databases > World Development Indicators > then for the ""Series"", select ""Land area""",
+Must Win Battle,"Regional MIT REAP ""Must Win Battle""",As defined by reap team,,,,,,,,,,,,,,,,,,,,
+Clusters,Top 3 industry clusters,,,,,,,,,,,,,,,,,,,,,
+Industry cluster,,,,,,,,,,,,,,,,,,,,,,
+Industry cluster,,,,,,,,,,,,,,,,,,,,,,
+Industry cluster,,,,,,,,,,,,,,,,,,,,,,
+iCapacity Infrastructure,Top 3 research institutions - include URL of logo/photos and URL of website,,,,,,,,,,,,,,,,,,,,,
+Research institute,,,,,,,,,,,,,,,,,,,,,,
+Research institute,,,,,,,,,,,,,,,,,,,,,,
+Research institute,,,,,,,,,,,,,,,,,,,,,,
+iCapacity Incentives,Celebrated Regional Innovation - include URL of logo and URL of website,"As defined by reap team- 1 from the past, 1 recent",,,,,,,,,,,,,,,,,,,,
+Regional innovation,,,,,,,,,,,,,,,,,,,,,,
+Regional innovation,,,,,,,,,,,,,,,,,,,,,,
+Regional innovation,,,,,,,,,,,,,,,,,,,,,,
+eCapacity Infrastructure,"Top 3 business parks, innovation hubs or accelerators - include URL of logo and URL of website",,,,,,,,,,,,,,,,,,,,,
+"Business park, innovation hub or accelerator",,,,,,,,,,,,,,,,,,,,,,
+"Business park, innovation hub or accelerator",,,,,,,,,,,,,,,,,,,,,,
+"Business park, innovation hub or accelerator",,,,,,,,,,,,,,,,,,,,,,
+eCapacity Incentives,Celebrated Regional Entrepreneur - include URL of photo,,,,,,,,,,,,,,,,,,,,,
+Regional Entreprenur,,,,,,,,,,,,,,,,,,,,,,
+Regional Entreprenur,,,,,,,,,,,,,,,,,,,,,,
+Regional Entreprenur,,,,,,,,,,,,,,,,,,,,,,
+PPI (Programmatic & policy interventions),,,,,,,,,,,,,,,,,,,,,,
+Name of existing icap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Name of existing icap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Name of existing icap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Name of existing ecap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Name of existing ecap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Name of existing ecap PPI in region,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+REAP Initiative,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+REAP Initiative,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+REAP initiative,,"Name of initative, description/success story  + website link ",,,,,,,,,,,,,,,,,,,,
+Team members basic info,You can add additional rows if required,,,,,,,,,,,,,,,,,,,,,
+Team member - entrepreneur,,,Francisco Uriarte,"President, Aireko Capital & Chairman, Grupo GuayacanFrancisco is Chairman of the Board of Grupo Guayacan, a non-profit dedicated to building entrepreneurial capacity in Puerto Rico.  He is also President of Aireko Capital, the Capital Group within the local company Aireko Construction, where he supports organic and inorganic growth initiatives for all Aireko related businesses in Puerto Rico, Philadelphia and the Caribbean region. Francisco has practiced in several business arenas and has over 24 years of combined experience in the areas of Corporate and Entrepreneurial Finance, Strategy, Marketing, Operations and Mergers & Acquisitions. He has been involved in more than two entrepreneurial start-ups that he has grown and eventually sold, has structured and fundraised two Private Equity Fund of Funds and has actively participated in over 20 transactions involving either raising equity, debt, valuing the selling interest or the acquiring interest, doing due diligence and structuring the deal terms, always as part of a transaction decision process. He is a registered professional engineer, a certified mergers and acquisition advisor and a certified valuation analyst.",francisco-u.jpg,,,,,,,,,,,,,,,,,
+Team member - university,,,,,,,,,,,,,,,,,,,,,,
+Team member - corporate,,,Laura Cantero,"Executive Director, Grupo GuayacanLaura is the Executive Director of Grupo Guayacan, a non-for-profit organization whose vision is to lead in building an entrepreneurial ecosystem that develops global entrepreneurs and global ventures to be an engine of economic and social value creation in Puerto Rico. Laura has a B.S. in Economics from the University of Pennsylvania's Wharton School of Business, and an International MBA from the Instituto de Empresa in Spain.",laura-cantero.jpg,,,,,,,,,,,,,,,,,
+Team member - government,,,,,,,,,,,,,,,,,,,,,,
+Team member - risk capital,,,Angel Perez,"Champion and Vice President, Rock Solid TechnologiesMr. Angel Perez earned a Master's degree in Business Administration with honors from the University of Harvard and a Magna Cum Laude bachelor's degree in Computer Engineering from the University of Puerto Rico- Mayaguez. He is a partner and Vice President in Rock Solid Technologies, a software company, in San Juan Puerto Rico. Angel is also a founding partner of Ausubo Ventures, one the new emerging angel investment groups on the island.",angel-perez.jpg,,,,,,,,,,,,,,,,,
+Team member - champion,,,,,,,,,,,,,,,,,,,,,,
+Team member - corporate,,,Yamille A. Morales Matos,"New Technology and Solution Sales Director, Microsoft Puerto RicoMr. Morales is a New Technology and Solutions Sales Director at Microsoft Puerto Rico. He started his professional career in 2001 and is currently based in Puerto Rico. Mr. Morales has more than 14 years of experience in the Information Technology Industry.As New Technology and Solution Sales Director at Microsoft Puerto Rico manages a group of professionals focused on delivering the value proposition of New Technology Solutions for a series of audiences (Academia, Developers, IT Professionals and Customers). As part of Microsoft Puerto Rico's Leadership Team he engages in planning and implementing strategies to effectively transform the subsidiary into a Cloud First, Mobile First focus. In recent years he has played a more active role in working closely with the Government of Puerto Rico to support the development of a local knowledge-based industry as part of an MOU called the Cloud Island initative. This MOU's focus is to transform the Island's Economy by augmenting the impact of the Information Technology Sector. Prior to his current role Mr. Morales he worked as part of a sales task force for Oracle Latin America where he sold solutions to Government Entities.He earned his Bachelor of Science degree in Engineering - Electrical with a minor in Communications from the University of Puerto Rico - Mayaguez Campus at Mayaguez, Puerto Rico.",yamille-m.jpg,,,,,,,,,,,,,,,,,
+Team member - corporate,,,Francisco Pericas ,"Senior Vice-President Corporate Banking, Banco Popular de Puerto RicoMr. Francisco J. Pericas earned a Bachelor in Business Administration from the University of Notre Dame, a Master in Business Administration from Washington University in St. Louis and Juris Doctor from the University of Puerto Rico Law School. He is currently Senior Vice President and Director of the Corporate Banking Division at Banco Popular de Puerto Rico, where he has held other leadership positions within the bank's legal and commercial workout units. Before joining Banco Popular, he worked in Citibank's retail banking operation in Puerto Rico. Francisco is also involved in Echar Pa'Lante, a corporate initiative from Banco Popular that aims to promote early stage entrepreneurship in Puerto Rico.",francisco-pericas.jpg,,,,,,,,,,,,,,,,,
+Team member - risk capital,,,Rodolfo Sanchez,"Managing Partner, Parliament Capital ManagementRodolfo is a Managing Partner in Parliament Capital Management (PCM), an alternative investment management firm based in San Juan, Puerto Rico seeking value-oriented opportunities in private equity, credit and real estate. Its primary investment focus is: origination and acquisition of high-yield loans and other debt instruments. He was formerly the President and CEO of Operating Partners, Puerto Rico's largest distressed asset servicer, with $3B in assets under management and over 550,000 accounts in PR and the Eastern Caribbean. Rodolfo is an entrepreneur with a background in banking, and an ample experience in lending, collections, risk management, real estate, investment banking and private equity.",rodolfo-s.jpg,,,,,,,,,,,,,,,,,
+Team member - corporate,,,Gabriela Alvarez,"Strategic Development Manager, Grupo GuayacanGabriela Alvarez is a Strategic Development Manager at Grupo Guayacan, Inc. Prior to joining Guayacan, she was Program Associate at Foundation for Puerto Rico, where she supported entrepreneurship and economic development activities and led the internship program. Previously, she was Associate Consultant at Impactivo, specializing in federal grant writing and strategic consulting for healthcare and non-profit clients. As an undergraduate she held internship positions, including: the Jose M. Berrocal Summer Internship at the Government Development Bank, an Assurance Internship at PwC, and a Finance & Accounting Co-Op at Procter & Gamble. In 2012, Gabriela graduated with a BBA, majoring in Finance and Accounting, from the University of Puerto Rico - Rio Piedras Campus.",gabriela-alvarez.jpg,,,,,,,,,,,,,,,,,
+Team member - corporate,,,Francisco J. Rivera,"Program Associate, Foundation for Puerto Rico Francisco Rivera is a Program Associate at Foundation for Puerto Rico (FPR), a non-profit organization whose vision is to catalyze the economic transformation of Puerto Rico. Francisco started his career as an Intern at FPR, before being promoted as Program Associate, where he supports diverse economic development and entrepreneurship efforts, such as the REAP program, Juntos por Puerto Rico and the Visitor Experience Initiative. Francisco completed a Master in International Business from the Hult International Business School in 2013, and a BBA majoring in Finance, from the University of Puerto Rico- Rio Piedras Campus in 2012. He is passionate about Puerto Rico and its potential to become a competitive player in the global economy. Entrepreneurship, export, innovation are only an example of Francisco's areas of focus. He believes in Puerto Rico, its people and their role in Puerto Rico's social and economical transformation.",francisco-rivera.jpg,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+Legend,,,,,,,,,,,,,,,,,,,,,,
+1,To be completed by REAP team (mostly publicly available data),,,,,,,,,,,,,,,,,,,,,
+3,May not be public,,,,,,,,,,,,,,,,,,,,,
+*,Public data,,,,,,,,,,,,,,,,,,,,,
+To be completed at workshop 3,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+Notes,,,,,,,,,,,,,,,,,,,,,,
+This data will be displayed on the REAP website on your regional dashboard. ,,,,,,,,,,,,,,,,,,,,,,
+"In column U, please indicate whether the data refers to the region or the country",,,,,,,,,,,,,,,,,,,,,,
+Please fil in the missing data to the best of your ability with region-specifc data (not country data) - save as a separate file and save in dropbox folder,,,,,,,,,,,,,,,,,,,,,,
+Please provide data for as many years as possible,,,,,,,,,,,,,,,,,,,,,,
+REAP Index to be calculated by MIT team (data to be collected is outlined in the following tab- REAP Index) ,,,,,,,,,,,,,,,,,,,,,,
+Please include a data source in columns V and W,,,,,,,,,,,,,,,,,,,,,,
+Please add custom metrics that you would like to display on the dashboard to rows 20+,,,,,,,,,,,,,,,,,,,,,,
+Please note that the 2nd section below the red line requires subjective information that should be produced by the REAP team,,,,,,,,,,,,,,,,,,,,,,
+Rename this spreadsheet as your region name,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,

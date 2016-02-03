@@ -11,6 +11,7 @@
 
 		<meta content="authenticity_token" name="csrf-param" />
 		<meta content="getTOUjZHyv1qibpj4PGLjurrgEOnLnQxzz2IC+UHTc=" name="csrf-token" />
+		<meta charset="UTF-8">
 	</head>
 
 	<body data-spy="scroll">
@@ -40,9 +41,9 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle navbar-link no-page-scroll" data-toggle="dropdown" role="button" aria-expanded="false">Partner Regions <span class="fa fa-caret-down"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="#regions-cohort1" class='navbar-link'>Cohort One</a></li>
-								<li><a href="#regions-cohort2" class='navbar-link'>Cohort Two</a></li>
 								<li><a href="#regions-cohort3" class='navbar-link'>Cohort Three</a></li>
+								<li><a href="#regions-cohort2" class='navbar-link'>Cohort Two</a></li>
+								<li><a href="#regions-cohort1" class='navbar-link'>Cohort One</a></li>
 							</ul>
 						</li>
 						<li><a class="navbar-link" href="#our-team" id="our-team-link">Our Team</a></li>
@@ -114,80 +115,93 @@
 			</div>
 
 			<!-- Panel -->
-			<div class="container" id="regions-cohort1">
+			<div class="container" id="regions-cohort3">
 				<div class="content">
 					<div class="row col-md-12 country-header-row">
-						<h2 class="padded-header">Cohort One Partner Regions</h2>
+						<h2 class="padded-header">Cohort Three Partner Regions</h2>
 					</div>
 
 					<div class="row country-row">
 						<div class='col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0'>
-							<a href="./places/?location=andalusia-spain">
+							<a href="./dashboard/?region=al-madinah-saudi" >
 								<div class='col-sm-4 partner-country-index'>
 									<div class="circle dark-blue-reap partner-country-index-2">
-										<img alt="Spain" class="country-img-spain" src="./assets/images/spain.png" />
+										<img alt="Saudi Arabia" class="country-img-saudi" src="./assets/images/saudi.png" />
 										<img alt="Bottomcircle label" class="bottom-circle-label-0" src="./assets/images/bottomcircle_label.png" text="hello" />
-										<p class="country-label-spain country-label-spec">Andalusia, Spain</p>
+										<p class="country-label-spec">Al Madinah, Saudi Arabia</p>
 									</div>
 								</div>
 							</a>
-
-							<a href="./places/?location=finland" >
+							<a href="./dashboard/?region=ashdod-israel" >
 								<div class='col-sm-4 partner-country-index'>
 									<div class="circle dark-blue-reap partner-country-index-2">
-										<img alt="Finland" class="country-img" src="./assets/images/finland.png" />
-										<img alt="Bottomcircle label" class="bottom-circle-label" src="./assets/images/bottomcircle_label.png" text="hello" />
-										<p class="country-label-finland country-label-spec">Finland</p>
+										<img alt="Israel" class="country-img-israel" src="./assets/images/israel.png" />
+										<img alt="Bottomcircle label" class="bottom-circle-label-0" src="./assets/images/bottomcircle_label.png" text="hello" />
+										<p class="country-label-spec">Ashdod, Israel</p>
 									</div>
 								</div>
 							</a>
+							<a href="./dashboard/?region=bangkok-thailand" >
+								<div class='col-sm-4 partner-country-index'>
+									<div class="circle dark-blue-reap partner-country-index-2">
+										<img alt="Thailand" class="country-img-thailand" src="./assets/images/thailand.png" />
+										<img alt="Bottomcircle label" class="bottom-circle-label-0" src="./assets/images/bottomcircle_label.png" text="hello" />
+										<p class="country-label-spec">Bangkok, Thailand</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
 
-							<a href="./places/?location=hangzhou-china" data-no-turbolink>
+					<div class="row country-row">
+						<div class='col-md-10 col-md-offset-1'>
+							<a href="./dashboard/?region=beijing-china" data-no-turbolink>
 								<div class='col-sm-4 partner-country-index'>
 									<div class="circle dark-blue-reap partner-country-index-2">
 										<img alt="China" class="country-img-china" src="./assets/images/china.png" />
 										<img alt="Bottomcircle label" class="bottom-circle-label-0" src="./assets/images/bottomcircle_label.png" text="hello" />
-										<p class="country-label-china country-label-spec">Hangzhou, China</p>
+										<p class="country-label-spec">Beijing, China</p>
 									</div>
 								</div>
 							</a>
-
-							<a href="./places/?location=new-zealand" data-no-turbolink>
+							<a href="./dashboard/?region=santiago-chile" >
 								<div class='col-sm-4 partner-country-index'>
 									<div class="circle dark-blue-reap partner-country-index-2">
-										<img alt="Newzealand" class="country-img-nz" src="./assets/images/newzealand.png" />
-										<img alt="Bottomcircle label" class="bottom-circle-label" src="./assets/images/bottomcircle_label.png" text="hello" />
-										<p class="country-label-nz country-label-spec">New Zealand</p>
-									</div>
-								</div>
-							</a>
-							
-							<a href="./places/?location=scotland" data-no-turbolink>
-								<div class='col-sm-4 partner-country-index'>
-									<div class="circle dark-blue-reap partner-country-index-2">
-											<img alt="Scotland" class="country-img-scotland" src="./assets/images/scotland.png" />
-											<img alt="Bottomcircle label" class="bottom-circle-label" src="./assets/images/bottomcircle_label.png" text="hello" />
-											<p class="country-label-scotland country-label-spec">Scotland</p>
-									</div>
-								</div>
-							</a>
-
-							<a href="./places/?location=istanbul-turkey" data-no-turbolink>
-								<div class='col-sm-4 partner-country-index'>
-									<div class="circle dark-blue-reap  partner-country-index-2">
-										<img alt="Turkey" class="country-img-turkey" src="./assets/images/turkey.png" />
+										<img alt="Chile" class="country-img-chile" src="./assets/images/chile.png" />
 										<img alt="Bottomcircle label" class="bottom-circle-label-0" src="./assets/images/bottomcircle_label.png" text="hello" />
-										<p class="country-label-turkey country-label-spec">Istanbul, Turkey</p>
+										<p class="country-label-3 country-label-spec">Santiago, Chile</p>
 									</div>
 								</div>
 							</a>
-
-							<a href="./places/?location=veracruz-mexico" >
+							<a href="./dashboard/?region=southwest-norway" >
 								<div class='col-sm-4 partner-country-index'>
 									<div class="circle dark-blue-reap partner-country-index-2">
-										<img alt="Mexico" class="country-img-wide" src="./assets/images/mexico.png" />
+										<img alt="Norway" class="country-img-norway" src="./assets/images/norway.png" />
 										<img alt="Bottomcircle label" class="bottom-circle-label-0" src="./assets/images/bottomcircle_label.png" text="hello" />
-										<p class="country-label-3 country-label-spec">Veracruz, Mexico</p>
+										<p class="country-label-spec">Southwest Norway</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="row country-row">
+						<div class='col-md-10 col-md-offset-1'>
+							<a href="./dashboard/?region=tokyo-japan" >
+								<div class='col-sm-4 partner-country-index'>
+									<div class="circle dark-blue-reap partner-country-index-2">
+										<img alt="Japan" class="country-img-japan" src="./assets/images/japan.png" />
+										<img alt="Bottomcircle label" class="bottom-circle-label-0" src="./assets/images/bottomcircle_label.png" text="hello" />
+										<p class="country-label-spec">Tokyo, Japan</p>
+									</div>
+								</div>
+							</a>
+							<a href="./dashboard/?region=wales-uk" >
+								<div class='col-sm-4 partner-country-index'>
+									<div class="circle dark-blue-reap partner-country-index-2">
+										<img alt="Uk" class="country-img-uk" src="./assets/images/uk.png" />
+										<img alt="Bottomcircle label" class="bottom-circle-label-0" src="./assets/images/bottomcircle_label.png" text="hello" />
+										<p class="country-label-spec">Wales, United Kingdom</p>
 									</div>
 								</div>
 							</a>
@@ -310,93 +324,74 @@
 			</div>
 
 			<!-- Panel -->
-			<div class="container" id="regions-cohort3">
+			<div class="container" id="regions-cohort1">
 				<div class="content">
 					<div class="row col-md-12 country-header-row">
-						<h2 class="padded-header">Cohort Three Partner Regions</h2>
+						<h2 class="padded-header">Cohort One Partner Regions</h2>
 					</div>
 
 					<div class="row country-row">
 						<div class='col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0'>
-							<a href="#" >
+							<a href="./dashboard/?region=andalusia-spain">
 								<div class='col-sm-4 partner-country-index'>
 									<div class="circle dark-blue-reap partner-country-index-2">
-										<img alt="Saudi Arabia" class="country-img-saudi" src="./assets/images/saudi.png" />
+										<img alt="Spain" class="country-img-spain" src="./assets/images/spain.png" />
 										<img alt="Bottomcircle label" class="bottom-circle-label-0" src="./assets/images/bottomcircle_label.png" text="hello" />
-										<p class="country-label-spec">Al Madinah, Saudi Arabia</p>
+										<p class="country-label-spain country-label-spec">Andalusia, Spain</p>
 									</div>
 								</div>
 							</a>
-							<a href="#" >
+							<a href="./dashboard/?region=finland" >
 								<div class='col-sm-4 partner-country-index'>
 									<div class="circle dark-blue-reap partner-country-index-2">
-										<img alt="Israel" class="country-img-israel" src="./assets/images/israel.png" />
-										<img alt="Bottomcircle label" class="bottom-circle-label-0" src="./assets/images/bottomcircle_label.png" text="hello" />
-										<p class="country-label-spec">Ashdod, Israel</p>
+										<img alt="Finland" class="country-img" src="./assets/images/finland.png" />
+										<img alt="Bottomcircle label" class="bottom-circle-label" src="./assets/images/bottomcircle_label.png" text="hello" />
+										<p class="country-label-finland country-label-spec">Finland</p>
 									</div>
 								</div>
 							</a>
-							<a href="#" >
-								<div class='col-sm-4 partner-country-index'>
-									<div class="circle dark-blue-reap partner-country-index-2">
-										<img alt="Thailand" class="country-img-thailand" src="./assets/images/thailand.png" />
-										<img alt="Bottomcircle label" class="bottom-circle-label-0" src="./assets/images/bottomcircle_label.png" text="hello" />
-										<p class="country-label-spec">Bangkok, Thailand</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-
-					<div class="row country-row">
-						<div class='col-md-10 col-md-offset-1'>
-							<a href="#" data-no-turbolink>
+							<a href="./dashboard/?region=hangzhou-china" data-no-turbolink>
 								<div class='col-sm-4 partner-country-index'>
 									<div class="circle dark-blue-reap partner-country-index-2">
 										<img alt="China" class="country-img-china" src="./assets/images/china.png" />
 										<img alt="Bottomcircle label" class="bottom-circle-label-0" src="./assets/images/bottomcircle_label.png" text="hello" />
-										<p class="country-label-spec">Beijing, China</p>
+										<p class="country-label-china country-label-spec">Hangzhou, China</p>
 									</div>
 								</div>
 							</a>
-							<a href="#" >
+							<a href="./dashboard/?region=istanbul-turkey" data-no-turbolink>
 								<div class='col-sm-4 partner-country-index'>
-									<div class="circle dark-blue-reap partner-country-index-2">
-										<img alt="Chile" class="country-img-chile" src="./assets/images/chile.png" />
+									<div class="circle dark-blue-reap  partner-country-index-2">
+										<img alt="Turkey" class="country-img-turkey" src="./assets/images/turkey.png" />
 										<img alt="Bottomcircle label" class="bottom-circle-label-0" src="./assets/images/bottomcircle_label.png" text="hello" />
-										<p class="country-label-3 country-label-spec">Santiago, Chile</p>
+										<p class="country-label-turkey country-label-spec">Istanbul, Turkey</p>
 									</div>
 								</div>
 							</a>
-							<a href="#" >
+							<a href="./dashboard/?region=new-zealand" data-no-turbolink>
 								<div class='col-sm-4 partner-country-index'>
 									<div class="circle dark-blue-reap partner-country-index-2">
-										<img alt="Norway" class="country-img-norway" src="./assets/images/norway.png" />
-										<img alt="Bottomcircle label" class="bottom-circle-label-0" src="./assets/images/bottomcircle_label.png" text="hello" />
-										<p class="country-label-spec">Southwest Norway</p>
+										<img alt="Newzealand" class="country-img-nz" src="./assets/images/newzealand.png" />
+										<img alt="Bottomcircle label" class="bottom-circle-label" src="./assets/images/bottomcircle_label.png" text="hello" />
+										<p class="country-label-nz country-label-spec">New Zealand</p>
 									</div>
 								</div>
 							</a>
-						</div>
-					</div>
-
-					<div class="row country-row">
-						<div class='col-md-10 col-md-offset-1'>
-							<a href="#" >
+							<a href="./dashboard/?region=scotland" data-no-turbolink>
 								<div class='col-sm-4 partner-country-index'>
 									<div class="circle dark-blue-reap partner-country-index-2">
-										<img alt="Japan" class="country-img-japan" src="./assets/images/japan.png" />
-										<img alt="Bottomcircle label" class="bottom-circle-label-0" src="./assets/images/bottomcircle_label.png" text="hello" />
-										<p class="country-label-spec">Tokyo, Japan</p>
+											<img alt="Scotland" class="country-img-scotland" src="./assets/images/scotland.png" />
+											<img alt="Bottomcircle label" class="bottom-circle-label" src="./assets/images/bottomcircle_label.png" text="hello" />
+											<p class="country-label-scotland country-label-spec">Scotland</p>
 									</div>
 								</div>
 							</a>
-							<a href="#" >
+							<a href="./dashboard/?region=veracruz-mexico" >
 								<div class='col-sm-4 partner-country-index'>
 									<div class="circle dark-blue-reap partner-country-index-2">
-										<img alt="Uk" class="country-img-uk" src="./assets/images/uk.png" />
+										<img alt="Mexico" class="country-img-wide" src="./assets/images/mexico.png" />
 										<img alt="Bottomcircle label" class="bottom-circle-label-0" src="./assets/images/bottomcircle_label.png" text="hello" />
-										<p class="country-label-spec">Wales, United Kingdom</p>
+										<p class="country-label-3 country-label-spec">Veracruz, Mexico</p>
 									</div>
 								</div>
 							</a>
@@ -547,32 +542,48 @@
 
 						<div class='col-md-3 col-sm-4'>
 		                  <div class="person-holder">
-		                    <a href="https://mitsloan.mit.edu/about/detail.php?in_spseqno=52595 ">
+		                    <a href="https://www.linkedin.com/in/lyndi-m-milton-02673221">
 		                      <div class="circle red-reap person-circle">
-		                        <img alt="Christine" class="person-img" src="./assets/images/christine.png" />
+		                        <img alt="Lyndi Milton" class="person-img" src="./assets/images/lyndi-m.jpg" />
 		                        <div class="circle gray-reap overlay-circle"></div>
 		                        <p class="name-label white-text">
-		                          Christine Mansella</br>
+		                          Lyndi Milton</br>
 		                          MIT Sloan Executive Education Program Manager
 		                        </p>
 		                      </div>
-		                      <p class="person-caption">Christine Mansella</p>
+		                      <p class="person-caption">Lyndi Milton</p>
 		                    </a>
 		                  </div>
 		                </div>
 
 						<div class='col-md-3 col-sm-4'>
 		                  <div class="person-holder">
-		                    <a href="http://mitsloan.mit.edu/about/detail.php?in_spseqno=41455">
+		                    <a href="https://www.linkedin.com/in/jennifer-skorinko-7232a829">
 		                      <div class="circle red-reap person-circle">
-		                        <img alt="Jessica" class="person-img" src="./assets/images/jessica.png" />
+		                        <img alt="Jen Skorinko" class="person-img" src="./assets/images/jennifer-s.jpg" />
 		                        <div class="circle gray-reap overlay-circle"></div>
 		                        <p class="name-label white-text">
-		                          Jessica McCutcheon-Schour</br>
+		                          Jen Skorinko</br>
 		                          MIT Sloan Executive Education Program Manager
 		                        </p>
 		                      </div>
-		                      <p class="person-caption">Jessica McCutcheon-Schour</p>
+		                      <p class="person-caption">Jen Skorinko</p>
+		                    </a>
+		                  </div>
+		                </div>
+
+		                <div class='col-md-3 col-sm-4'>
+		                  <div class="person-holder">
+		                    <a href="https://www.linkedin.com/in/samantha-zyontz-2a93081">
+		                      <div class="circle red-reap person-circle">
+		                        <img alt="Sam Zyontz" class="person-img" src="./assets/images/sam-z.jpg" />
+		                        <div class="circle gray-reap overlay-circle"></div>
+		                        <p class="name-label white-text">
+		                          Sam Zyontz</br>
+		                          PhD Candidate, MIT TIES Group
+		                        </p>
+		                      </div>
+		                      <p class="person-caption">Sam Zyontz</p>
 		                    </a>
 		                  </div>
 		                </div>
